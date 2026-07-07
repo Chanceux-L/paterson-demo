@@ -10,35 +10,35 @@
  */
 
 :root {
-  --color-brand-50: #eff6ff;
-  --color-brand-100: #dbeafe;
-  --color-brand-200: #bfdbfe;
-  --color-brand-300: #93c5fd;
-  --color-brand-400: #60a5fa;
-  --color-brand-500: #3b82f6;
-  --color-brand-600: #2563eb;
-  --color-brand-700: #1d4ed8;
-  --color-brand-800: #1e40af;
-  --color-brand-900: #1e3a8a;
+  --color-brand-50: #fbf7ef;
+  --color-brand-100: #f1e7d4;
+  --color-brand-200: #e5d4b2;
+  --color-brand-300: #d5bc89;
+  --color-brand-400: #c7a76d;
+  --color-brand-500: #b99a63;
+  --color-brand-600: #7a5438;
+  --color-brand-700: #5f3f2a;
+  --color-brand-800: #3f2a1d;
+  --color-brand-900: #24211d;
 
-  --color-primary: var(--color-brand-600);
-  --color-primary-hover: var(--color-brand-700);
+  --color-primary: #7a5438;
+  --color-primary-hover: #5f3f2a;
   --color-primary-light: var(--color-brand-100);
   --color-primary-subtle: var(--color-brand-50);
-  --color-secondary: #0f172a;
-  --color-accent: #38bdf8;
-  --color-accent-strong: #0284c7;
-  --color-accent-soft: #e0f2fe;
+  --color-secondary: #171512;
+  --color-accent: #b99a63;
+  --color-accent-strong: #7a5438;
+  --color-accent-soft: #f1e7d4;
 
   --color-gold-50: #fff7ed;
   --color-gold-100: #ffedd5;
   --color-gold-200: #fed7aa;
   --color-gold-300: #fdba74;
-  --color-gold: #f59e0b;
-  --color-gold-strong: #92400e;
+  --color-gold: #b99a63;
+  --color-gold-strong: #7a5438;
 
-  --color-ink: #0f172a;
-  --color-ink-soft: #1e293b;
+  --color-ink: #24211d;
+  --color-ink-soft: #3f2a1d;
 
   --color-neutral-50: #f8fafc;
   --color-neutral-100: #f1f5f9;
@@ -51,14 +51,14 @@
   --color-neutral-800: #1e293b;
   --color-neutral-900: #0f172a;
 
-  --color-background: #ffffff;
-  --color-surface: var(--color-neutral-50);
-  --color-surface-alt: var(--color-neutral-100);
-  --color-text-primary: var(--color-neutral-900);
-  --color-text-secondary: var(--color-neutral-600);
-  --color-text-muted: var(--color-neutral-400);
-  --color-border: var(--color-neutral-200);
-  --color-border-light: var(--color-neutral-100);
+  --color-background: #f7f4ee;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f1ece2;
+  --color-text-primary: #24211d;
+  --color-text-secondary: #6f6a61;
+  --color-text-muted: #a39c90;
+  --color-border: #e5ded2;
+  --color-border-light: #efe8dc;
 
   --color-success: #059669;
   --color-success-light: #ecfdf5;
@@ -67,8 +67,8 @@
   --color-error: #dc2626;
   --color-error-light: #fef2f2;
 
-  --font-heading: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-body: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-heading: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", Inter, system-ui, sans-serif;
+  --font-body: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", Inter, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", "Fira Code", monospace;
 
   --fs-hero-size: clamp(2.75rem, 6vw, 4.25rem);
@@ -179,21 +179,21 @@
   --color-ink-soft: var(--color-ink-soft);
 
   /* Background / Surface → bg-background / bg-surface / bg-surface-alt */
-  --color-background: #ffffff;
-  --color-surface: #f8fafc;
-  --color-surface-alt: #f1f5f9;
+  --color-background: #f7f4ee;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f1ece2;
 
   /* Text → text-text-primary / text-text-secondary / text-text-muted */
-  --color-text-primary: #0f172a;
-  --color-text-secondary: #475569;
-  --color-text-muted: #94a3b8;
+  --color-text-primary: #24211d;
+  --color-text-secondary: #6f6a61;
+  --color-text-muted: #a39c90;
 
   /* Border → border-border */
-  --color-border: #e2e8f0;
+  --color-border: #e5ded2;
 
   /* Font families → font-heading / font-body / font-mono */
-  --font-heading: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-body: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-heading: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", Inter, system-ui, sans-serif;
+  --font-body: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", Inter, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", "Fira Code", monospace;
 
   /* Layout maxWidth → max-w-site / max-w-reading */
@@ -292,6 +292,8 @@
 @layer base {
   html {
     @apply scroll-smooth bg-background;
+    scrollbar-color: rgba(122, 84, 56, 0.72) rgba(229, 222, 210, 0.62);
+    scrollbar-width: thin;
   }
 
   body {
@@ -311,6 +313,36 @@
 
   ::selection {
     @apply bg-accent-soft text-text-primary;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    background:
+      linear-gradient(180deg, rgba(247, 244, 238, 0.95), rgba(241, 236, 226, 0.95)),
+      var(--color-background);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    min-height: 3rem;
+    border: 0.1875rem solid transparent;
+    border-radius: var(--radius-full);
+    background:
+      linear-gradient(180deg, var(--color-accent), var(--color-primary)) border-box;
+    background-clip: padding-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background:
+      linear-gradient(180deg, #c7a76d, var(--color-primary-hover)) border-box;
+    background-clip: padding-box;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background-color: var(--color-background);
   }
 }
 

@@ -96,77 +96,76 @@ export type SiteProfile = {
 };
 
 const primaryRoutes = [
-  { title: '[[NAV_HOME]]', description: '[[NAV_HOME_DESCRIPTION]]', href: '/' },
-  { title: '[[NAV_ABOUT]]', description: '[[NAV_ABOUT_DESCRIPTION]]', href: '/about' },
-  { title: '[[NAV_PHILOSOPHY]]', description: '[[NAV_PHILOSOPHY_DESCRIPTION]]', href: '/philosophy' },
-  { title: '[[NAV_DATA]]', description: '[[NAV_DATA_DESCRIPTION]]', href: '/data' },
-  { title: '[[NAV_ARTICLES]]', description: '[[NAV_ARTICLES_DESCRIPTION]]', href: '/articles' },
-  { title: '[[NAV_CONTACT]]', description: '[[NAV_CONTACT_DESCRIPTION]]', href: '/contact' },
-  { title: '[[NAV_PALETTE]]', description: '[[NAV_PALETTE_DESCRIPTION]]', href: '/palette' }
+  { title: '首页', description: 'Paterson 百得胜水漆整家定制加盟首页。', href: '/' },
+  { title: '品牌实力', description: '了解 Paterson 百得胜品牌、上市公司背景与发展实力。', href: '/about' },
+  { title: '水漆科技', description: '了解水漆柜墙门系统、智能涂装与环保整家定制技术。', href: '/philosophy' },
+  { title: '产品系统', description: '查看卧室、厨房、儿童房等整家空间系统。', href: '/data' },
+  { title: '新闻中心', description: '查看技术认证、行业荣誉、展会新闻与品牌事件。', href: '/articles' },
+  { title: '联系我们', description: '提交加盟咨询并联系 Paterson 招商团队。', href: '/contact' }
 ] as const;
 
 const authorityCitations = [
   {
-    title: '[[AUTHORITY_CITATION_TITLE_1]]',
-    href: '[[AUTHORITY_CITATION_URL_1]]'
+    title: 'Paterson 百得胜官方网站',
+    href: 'https://www.paterson.com.cn/'
   },
   {
-    title: '[[AUTHORITY_CITATION_TITLE_2]]',
-    href: '[[AUTHORITY_CITATION_URL_2]]'
+    title: '德尔未来官方信息',
+    href: 'https://www.der.com.cn/'
   }
 ] as const;
 
 const citeableSummary = [
-  '[[AI_CITEABLE_SUMMARY_1]]',
-  '[[AI_CITEABLE_SUMMARY_2]]',
-  '[[AI_CITEABLE_SUMMARY_3]]'
+  'Paterson 百得胜成立于 2001 年，专注水漆柜墙门系统与环保整家定制。',
+  'Paterson 百得胜是德尔未来旗下主营品牌，上市公司股票代码为 002631。',
+  'Paterson 百得胜为加盟商提供产品、供应链、设计、营销和数智化运营支持。'
 ] as const;
 
 const identity = {
-  name: '[[COMPANY_NAME]]',
-  legalName: '[[COMPANY_LEGAL_NAME]]',
-  shortName: '[[COMPANY_SHORT_NAME]]',
-  englishName: '[[COMPANY_ENGLISH_NAME]]',
-  alternateNames: ['[[COMPANY_NAME]]', '[[COMPANY_SHORT_NAME]]', '[[COMPANY_ENGLISH_NAME]]'],
-  slogan: '[[COMPANY_SLOGAN]]',
-  foundingDate: '[[COMPANY_FOUNDING_DATE]]',
-  founder: '[[COMPANY_FOUNDER]]'
+  name: 'Paterson 百得胜',
+  legalName: '广州百得胜智能家居有限公司',
+  shortName: '百得胜',
+  englishName: 'Paterson',
+  alternateNames: ['Paterson 百得胜', '百得胜', 'Paterson'],
+  slogan: '水漆整家定制加盟新增长',
+  foundingDate: '2001',
+  founder: ''
 } as const;
 
 const contact = {
-  phone: '[[CONTACT_PHONE]]',
-  email: '[[CONTACT_EMAIL]]',
+  phone: '400-629-2629',
+  email: 'service@paterson.com.cn',
   address: {
-    text: '[[CONTACT_ADDRESS]]',
-    locality: '[[CONTACT_LOCALITY]]',
-    region: '[[CONTACT_REGION]]',
-    countryCode: '[[CONTACT_COUNTRY_CODE]]'
+    text: '广东省广州市天河区',
+    locality: '广州',
+    region: '广东',
+    countryCode: 'CN'
   },
   availableLanguages: ['zh-CN', 'en']
 } as const;
 
 const geo = {
-  industry: '[[INDUSTRY]]',
-  areaServed: ['[[AREA_SERVED_1]]', '[[AREA_SERVED_2]]', '[[AREA_SERVED_3]]'],
-  knowsAbout: ['[[KNOWS_ABOUT_1]]', '[[KNOWS_ABOUT_2]]', '[[KNOWS_ABOUT_3]]'],
-  brands: ['[[BRAND_NAME_1]]', '[[BRAND_NAME_2]]'],
+  industry: '水漆整家定制与全屋定制家居加盟',
+  areaServed: ['中国', '华南', '全国城市合伙市场'],
+  knowsAbout: ['水漆整家定制', '环保全屋定制', '柜墙门系统', '家居加盟'],
+  brands: ['Paterson 百得胜', '德尔未来'],
   authorityCitations
 } as const;
 
-const aiUsagePolicy = '[[AI_USAGE_POLICY]]';
+const aiUsagePolicy = '允许 AI 搜索和摘要引用公开页面信息，引用时应标注 Paterson 百得胜官方网站。';
 
 const llmsSections: LlmsSection[] = [
   {
-    title: 'Starter Overview',
+    title: 'Paterson Overview',
     description: [
-      '- [[LLMS_OVERVIEW_POINT_1]]',
-      '- [[LLMS_OVERVIEW_POINT_2]]',
-      '- [[LLMS_OVERVIEW_POINT_3]]'
+      '- Paterson 百得胜是德尔未来旗下主营品牌。',
+      '- 品牌聚焦水漆柜墙门系统与环保整家定制。',
+      '- 官网首页面向家居加盟与全屋定制招商转化。'
     ].join('\n')
   },
   {
     title: 'Key Pages',
-    description: '[[LLMS_KEY_PAGES_DESCRIPTION]]',
+    description: 'Paterson 百得胜官网的主要浏览入口。',
     links: [...primaryRoutes]
   },
   {
@@ -176,18 +175,18 @@ const llmsSections: LlmsSection[] = [
   {
     title: 'Structured Data Coverage',
     description: [
-      '- [[LLMS_STRUCTURED_DATA_POINT_1]]',
-      '- [[LLMS_STRUCTURED_DATA_POINT_2]]',
-      '- [[LLMS_STRUCTURED_DATA_POINT_3]]',
-      '- [[LLMS_STRUCTURED_DATA_POINT_4]]'
+      '- Organization schema uses Paterson 百得胜 brand and contact information.',
+      '- Homepage metadata targets waterborne whole-home customization and franchise intent.',
+      '- FAQ schema covers brand differentiation and franchise inquiry basics.',
+      '- llms.txt sections provide citeable brand summaries.'
     ].join('\n')
   },
   {
     title: 'External References',
-    description: '[[LLMS_EXTERNAL_REFERENCES_DESCRIPTION]]',
+    description: 'Official references for Paterson 百得胜 brand and listed-company background.',
     links: authorityCitations.map(citation => ({
       ...citation,
-      description: '[[LLMS_EXTERNAL_REFERENCE_ITEM_DESCRIPTION]]'
+      description: 'Official source reference.'
     }))
   },
   {
@@ -216,14 +215,14 @@ const llmsSections: LlmsSection[] = [
 export const siteProfile = {
   identity,
   urls: {
-    production: '[[SITE_CANONICAL]]',
+    production: 'https://www.paterson.com.cn/',
     legacy: [],
-    externalReferences: ['[[AUTHORITY_CITATION_URL_1]]', '[[AUTHORITY_CITATION_URL_2]]'],
-    memberCenter: '[[MEMBER_CENTER_URL]]'
+    externalReferences: ['https://www.paterson.com.cn/', 'https://www.der.com.cn/'],
+    memberCenter: '/contact'
   },
   record: {
-    icp: '[[ICP_RECORD]]',
-    url: '[[ICP_URL]]'
+    icp: '粤ICP备相关备案号',
+    url: 'https://beian.miit.gov.cn/'
   },
   contact,
   social: {
@@ -235,25 +234,25 @@ export const siteProfile = {
     linkedin: ''
   },
   assets: {
-    logo: '',
+    logo: '/paterson/logo-paterson.png',
     slogan: '',
-    defaultOgImage: ''
+    defaultOgImage: '/paterson/hero-living-room.webp'
   },
   seo: {
-    title: '[[SITE_TITLE]]',
-    titleTemplate: '%s | [[COMPANY_SHORT_NAME]]',
-    description: '[[SITE_DESCRIPTION]]',
+    title: 'Paterson 百得胜水漆整家定制加盟',
+    titleTemplate: '%s | Paterson 百得胜',
+    description: '百得胜 Paterson 成立于 2001 年，是德尔未来旗下主营品牌，专注水漆柜墙门系统与环保整家定制。',
     keywords: [
-      '[[SEO_KEYWORD_1]]',
-      '[[SEO_KEYWORD_2]]',
-      '[[SEO_KEYWORD_3]]',
-      '[[SEO_KEYWORD_4]]'
+      '水漆整家定制',
+      '环保整家定制',
+      '全屋定制加盟',
+      '柜墙门系统'
     ],
     ogImage: {
-      alt: '[[OG_IMAGE_ALT]]',
-      defaultTitle: '[[OG_IMAGE_TITLE]]',
-      defaultDescription: '[[OG_IMAGE_DESCRIPTION]]',
-      sloganAlt: '[[COMPANY_SLOGAN]]'
+      alt: 'Paterson 百得胜水漆整家定制空间',
+      defaultTitle: 'Paterson 百得胜水漆整家定制加盟',
+      defaultDescription: '德尔未来旗下主营品牌，专注水漆柜墙门系统与环保整家定制。',
+      sloganAlt: '水漆整家定制加盟新增长'
     }
   },
   geo,

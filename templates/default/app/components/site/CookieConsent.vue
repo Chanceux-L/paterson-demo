@@ -84,14 +84,14 @@ onMounted(() => {
           <div :class="cn('grid grid-cols-3 gap-2', preferencesOpen && 'sm:flex sm:flex-row lg:w-32 lg:flex-col')">
             <button
               type="button"
-              class="inline-flex justify-center rounded-md border border-brand-primary/30 px-3 py-2 text-xs font-semibold text-brand-primary transition hover:border-brand-primary hover:bg-brand-primary/10"
+              class="inline-flex items-center justify-center rounded-md border border-brand-primary/30 px-3 py-2 text-xs font-semibold leading-none text-brand-primary transition hover:border-brand-primary hover:bg-brand-primary/10"
               @click="preferencesOpen = true"
             >
               {{ t('cookie.manage') }}
             </button>
             <button
               type="button"
-              class="inline-flex justify-center rounded-md border border-neutral-300 px-3 py-2 text-xs font-semibold text-text-secondary transition hover:border-text-secondary hover:text-text-primary"
+              class="inline-flex items-center justify-center rounded-md border border-neutral-300 px-3 py-2 text-xs font-semibold leading-none text-text-secondary transition hover:border-text-secondary hover:text-text-primary"
               @click="saveChoice('denied')"
             >
               {{ t('cookie.necessaryOnly') }}
@@ -99,14 +99,14 @@ onMounted(() => {
             <button
               v-if="preferencesOpen"
               type="button"
-              class="inline-flex justify-center rounded-md border border-brand-primary/30 bg-brand-primary/10 px-3 py-2 text-xs font-semibold text-brand-primary transition hover:border-brand-primary hover:bg-brand-primary/15"
+              class="inline-flex items-center justify-center rounded-md border border-brand-primary/30 bg-brand-primary/10 px-3 py-2 text-xs font-semibold leading-none text-brand-primary transition hover:border-brand-primary hover:bg-brand-primary/15"
               @click="savePreferences"
             >
               {{ t('cookie.save') }}
             </button>
             <button
               type="button"
-              class="inline-flex justify-center rounded-md bg-brand-primary px-3 py-2 text-xs font-semibold text-white transition hover:bg-brand-primary-hover"
+              class="inline-flex items-center justify-center rounded-md bg-brand-primary px-3 py-2 text-xs font-semibold leading-none text-white transition hover:bg-brand-primary-hover"
               @click="saveChoice('granted')"
             >
               {{ t('cookie.acceptAll') }}

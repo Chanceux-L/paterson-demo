@@ -75,7 +75,7 @@ test('only Simplified Chinese and English locales are configured', () => {
   assert.doesNotMatch(languages, /code: 'de'|code: 'fr'|code: 'ja'|code: 'ar'/);
 });
 
-test('starter pages use i18n placeholders and app SEO wrapper', () => {
+test('Paterson pages use localized copy and app SEO wrapper', () => {
   const pages = [
     templatePath('app/pages/index.vue'),
     templatePath('app/pages/about.vue'),
@@ -97,9 +97,9 @@ test('starter pages use i18n placeholders and app SEO wrapper', () => {
   }
 
   const zhCn = source(templatePath('i18n/locales/zh-CN.ts'));
-  assert.match(zhCn, /title: '\[\[HERO_TITLE\]\]'/);
-  assert.match(zhCn, /title: '\[\[PHILOSOPHY_PAGE_TITLE\]\]'/);
-  assert.match(source(templatePath('i18n/locales/en.ts')), /title: '\[\[HERO_TITLE\]\]'/);
+  assert.match(zhCn, /title: 'Paterson 百得胜水漆整家定制'/);
+  assert.match(zhCn, /title: '水漆科技'/);
+  assert.match(source(templatePath('i18n/locales/en.ts')), /title: 'Paterson Waterborne Whole-Home Customization'/);
 });
 
 test('SEO, GEO, OG Image, cookie consent, inquiry, and request modules are preserved', () => {
@@ -165,23 +165,24 @@ test('tokens and design system page expose starter design primitives', () => {
   assert.match(main, /--color-brand-primary/);
   assert.match(main, /--radius-card/);
   assert.match(palette, /designSystemPage\.sections\.colors/);
-  assert.match(palette, /StarterHeroSection/);
-  assert.match(zhCn, /title: '设计系统'/);
-  assert.match(en, /title: 'Design System'/);
+  assert.match(palette, /SiteBrandPageHero/);
+  assert.match(zhCn, /title: '品牌视觉'/);
+  assert.match(en, /title: 'Brand Visuals'/);
   assert.doesNotMatch(extractObjectBlock(zhCn, 'designSystemPage'), /\[\[/);
   assert.doesNotMatch(extractObjectBlock(en, 'designSystemPage'), /\[\[/);
 });
 
-test('starter profile uses placeholders instead of previous business copy', () => {
+test('Paterson profile replaces placeholders and previous business copy', () => {
   const profile = source(sharedPath('config/site-profile.ts'));
   const zhCn = source(templatePath('i18n/locales/zh-CN.ts'));
   const geoBooster = source(templatePath('app/components/site/GeoCitationBooster.vue'));
 
-  assert.match(profile, /name: '\[\[COMPANY_NAME\]\]'/);
-  assert.match(profile, /production: '\[\[SITE_CANONICAL\]\]'/);
-  assert.match(geoBooster, /starter placeholder page/);
+  assert.match(profile, /name: 'Paterson 百得胜'/);
+  assert.match(profile, /production: 'https:\/\/www\.paterson\.com\.cn\/'/);
+  assert.match(geoBooster, /Paterson franchise homepage/);
 
   const combined = `${profile}\n${zhCn}\n${geoBooster}`;
+  assert.doesNotMatch(combined, /\[\[[A-Z0-9_]+\]\]/);
   assert.doesNotMatch(combined, /中赛照明|NINGBO\s+CLSA\s*SELF/i);
 });
 

@@ -22,46 +22,45 @@ const common = {
 
 const navItems = [
   { label: '首页', english: 'Home', href: '/' },
-  { label: '关于', english: 'About', href: '/about' },
-  { label: '理念', english: 'Philosophy', href: '/philosophy' },
-  { label: '数据', english: 'Data', href: '/data' },
-  { label: '文章', english: 'Articles', href: '/articles' },
-  { label: '联系', english: 'Contact', href: '/contact' },
-  { label: '设计系统', english: 'Design System', href: '/palette' }
+  { label: '品牌实力', english: 'Brand', href: '/about' },
+  { label: '产品系统', english: 'Products', href: '/data' },
+  { label: '水漆科技', english: 'Technology', href: '/philosophy' },
+  { label: '招商加盟', english: 'Franchise', href: '/contact' },
+  { label: '新闻中心', english: 'News', href: '/articles' }
 ];
 
 const pageSeo = {
   home: {
     seo: {
-      title: '[[HOME_SEO_TITLE]]',
-      description: '[[HOME_SEO_DESCRIPTION]]',
-      keywords: '[[HOME_SEO_KEYWORDS]]'
+      title: 'Paterson 百得胜水漆整家定制加盟_环保柜墙门系统_全屋定制家居加盟',
+      description: '百得胜 Paterson 成立于 2001 年，是德尔未来旗下主营品牌，专注水漆柜墙门系统与环保整家定制，为加盟商提供产品、供应链、设计、营销与数智化运营支持。',
+      keywords: '水漆整家定制,水漆全屋定制,环保整家定制,全屋定制加盟,家居加盟,柜墙门系统,水性漆定制家居,Paterson 百得胜,德尔未来旗下,股票代码 002631'
     }
   },
   about: {
     seo: {
-      title: '[[ABOUT_SEO_TITLE]]',
-      description: '[[ABOUT_SEO_DESCRIPTION]]',
-      keywords: '[[ABOUT_SEO_KEYWORDS]]'
+      title: '品牌实力_百得胜 Paterson 水漆整家定制',
+      description: '了解百得胜 Paterson 的品牌历程、德尔未来上市公司背景、水漆技术能力与整家定制招商支持。',
+      keywords: '百得胜品牌实力,Paterson 百得胜,德尔未来,水漆整家定制,全屋定制加盟'
     }
   },
   articles: {
     seo: {
-      title: '[[ARTICLES_SEO_TITLE]]',
-      description: '[[ARTICLES_SEO_DESCRIPTION]]',
-      keywords: '[[ARTICLES_SEO_KEYWORDS]]'
+      title: '新闻中心_百得胜 Paterson 品牌动态与行业资讯',
+      description: '查看百得胜 Paterson 在水漆科技、行业标准、展会活动、品牌荣誉与整家定制领域的最新动态。',
+      keywords: '百得胜新闻,Paterson 新闻,水漆科技,家居展会,全屋定制行业资讯'
     },
     detailSeo: {
-      title: '[[ARTICLE_DETAIL_SEO_TITLE]]',
-      description: '[[ARTICLE_DETAIL_SEO_DESCRIPTION]]',
-      keywords: '[[ARTICLE_DETAIL_SEO_KEYWORDS]]'
+      title: '{title}_百得胜 Paterson 新闻中心',
+      description: '了解百得胜 Paterson 新闻动态：{title}',
+      keywords: '{title},百得胜新闻,Paterson 新闻,水漆整家定制'
     }
   },
   contact: {
     inquiry: {
       eyebrow: '联系咨询',
       title: '告诉我们你的需求',
-      description: '填写表单后，我们会根据你提供的信息尽快与你联系。上线前可按业务场景调整字段说明和提交接口。',
+      description: '填写表单后，招商顾问会根据你提供的信息尽快与你联系，协助评估城市机会、投资规划与合作方式。',
       name: '姓名',
       namePlaceholder: '请输入你的姓名',
       missingName: '请填写姓名',
@@ -92,7 +91,7 @@ const pageSeo = {
 
 const starter = {
   site: {
-    name: 'Starter'
+    name: 'Paterson 百得胜'
   },
   common,
   languageSwitcher: {
@@ -116,20 +115,20 @@ const starter = {
   },
   nav: {
     homeAria: '返回首页',
-    logoAlt: '站点标识',
-    sloganAlt: '通用企业站 Starter',
+    logoAlt: 'Paterson 百得胜标识',
+    sloganAlt: '德尔未来旗下主营品牌',
     menu: '菜单',
     mainNav: '主导航',
-    memberCenter: '会员中心',
-    hotline: '服务热线',
+    memberCenter: '加盟咨询',
+    hotline: '招商热线',
     items: navItems,
     search: {
       scrollTop: '回到顶部'
     }
   },
   footer: {
-    brandDescription: '一个保留 SEO、GEO、OG Image 与基础交互能力的企业站 Starter，可按需替换为真实业务内容。',
-    slogan: '为快速交付而准备的通用站点底座',
+    brandDescription: '百得胜 Paterson 成立于 2001 年，专注水漆柜墙门系统与环保整家定制，是德尔未来旗下主营品牌。',
+    slogan: '水漆整家定制加盟新增长',
     socials: [
       { icon: 'i-lucide-message-circle', label: '微信' },
       { icon: 'i-lucide-radio', label: '微博' },
@@ -140,33 +139,33 @@ const starter = {
     ],
     columns: [
       {
-        title: '站点',
+        title: '品牌',
         links: [
-          { label: '关于', href: '/about' },
-          { label: '理念', href: '/philosophy' },
-          { label: '设计系统', href: '/palette' }
+          { label: '品牌实力', href: '/about' },
+          { label: '水漆科技', href: '/philosophy' },
+          { label: '招商加盟', href: '/contact' }
         ]
       },
       {
-        title: '内容',
+        title: '产品与资讯',
         links: [
-          { label: '数据', href: '/data' },
-          { label: '文章', href: '/articles' }
+          { label: '产品系统', href: '/data' },
+          { label: '新闻中心', href: '/articles' }
         ]
       },
       {
-        title: '支持',
+        title: '联系',
         links: [
-          { label: '联系', href: '/contact' },
-          { label: '会员中心', href: 'sourceRegisterUrl', external: true }
+          { label: '联系我们', href: '/contact' },
+          { label: '加盟咨询', href: 'sourceRegisterUrl', external: true }
         ]
       }
     ],
     followUs: '联系信息',
     email: '邮箱',
     address: '地址',
-    tagline: 'Starter shell for reusable enterprise websites.',
-    copyright: '© 2026 Starter. 保留所有权利。',
+    tagline: '高端家居空间、水漆科技与清晰招商路径共同构成的品牌官网。',
+    copyright: '© 2026 Paterson 百得胜. 保留所有权利。',
     privacy: '隐私政策',
     terms: '使用条款',
     cookieSettings: 'Cookie 设置'
@@ -185,8 +184,8 @@ const starter = {
     acceptAll: '接受全部'
   },
   skewUpdate: {
-    title: '发现新版本',
-    description: '网站已更新，刷新后可使用最新版本。',
+    title: '内容已更新',
+    description: '刷新页面即可查看最新内容。',
     refresh: '立即刷新',
     dismiss: '稍后'
   },
@@ -233,36 +232,36 @@ const starter = {
     }
   },
   cta: {
-    title: '[[GLOBAL_CTA_TITLE]]',
-    description: '[[GLOBAL_CTA_DESCRIPTION]]',
-    action: '[[GLOBAL_CTA_ACTION]]',
-    contactLabel: '[[GLOBAL_CTA_CONTACT_LABEL]]',
-    bgText: '[[GLOBAL_CTA_BG_TEXT]]'
+    title: '准备了解百得胜加盟合作？',
+    description: '留下联系方式，招商顾问将根据意向城市、投资预算和店面资源，为你提供合作评估建议。',
+    action: '提交加盟咨询',
+    contactLabel: '招商热线',
+    bgText: 'PATERSON'
   },
   pages: pageSeo,
   data: {
     siteConfig: {
-      companyName: '[[COMPANY_NAME]]',
-      shortName: '[[COMPANY_SHORT_NAME]]',
-      industry: '[[INDUSTRY]]',
-      siteTitle: '[[SITE_TITLE]]',
-      siteDescription: '[[SITE_DESCRIPTION]]',
-      canonical: '[[SITE_CANONICAL]]',
+      companyName: '广州百得胜智能家居有限公司',
+      shortName: '百得胜',
+      industry: '水漆整家定制与全屋定制家居加盟',
+      siteTitle: 'Paterson 百得胜水漆整家定制加盟',
+      siteDescription: '百得胜 Paterson 成立于 2001 年，是德尔未来旗下主营品牌，专注水漆柜墙门系统与环保整家定制。',
+      canonical: 'https://www.paterson.com.cn/',
       navigation: navItems.map(item => ({ label: item.label, path: item.href })),
-      footerIntro: '[[FOOTER_INTRO]]',
+      footerIntro: '百得胜 Paterson 专注水漆柜墙门系统与环保整家定制，为城市合伙人提供产品、供应链、设计、营销与数智化运营支持。',
       footerColumns: [
         {
-          title: '[[FOOTER_COL1_TITLE]]',
+          title: '品牌',
           links: [
-            { label: '[[NAV_ABOUT]]', path: '/about' },
-            { label: '[[NAV_PHILOSOPHY]]', path: '/philosophy' }
+            { label: '品牌实力', path: '/about' },
+            { label: '水漆科技', path: '/philosophy' }
           ]
         },
         {
-          title: '[[FOOTER_COL2_TITLE]]',
+          title: '内容',
           links: [
-            { label: '[[NAV_DATA]]', path: '/data' },
-            { label: '[[NAV_ARTICLES]]', path: '/articles' }
+            { label: '产品系统', path: '/data' },
+            { label: '新闻中心', path: '/articles' }
           ]
         }
       ]
@@ -270,211 +269,386 @@ const starter = {
   },
   homePage: {
     hero: {
-      badge: '[[HERO_BADGE]]',
-      title: '[[HERO_TITLE]]',
-      subtitle: '[[HERO_SUBTITLE]]',
-      ctaLabel: '[[HERO_CTA_LABEL]]',
-      cta2Label: '[[HERO_CTA2_LABEL]]',
-      highlights: ['[[HERO_HIGHLIGHT_1]]', '[[HERO_HIGHLIGHT_2]]', '[[HERO_HIGHLIGHT_3]]']
-    },
-    stats: [
-      { title: '[[STAT_1_VALUE]]', description: '[[STAT_1_LABEL]]', icon: 'i-lucide-factory' },
-      { title: '[[STAT_2_VALUE]]', description: '[[STAT_2_LABEL]]', icon: 'i-lucide-award' },
-      { title: '[[STAT_3_VALUE]]', description: '[[STAT_3_LABEL]]', icon: 'i-lucide-globe' },
-      { title: '[[STAT_4_VALUE]]', description: '[[STAT_4_LABEL]]', icon: 'i-lucide-users' }
-    ],
-    capabilities: {
-      title: '[[CAPABILITIES_TITLE]]',
-      subtitle: '[[CAPABILITIES_SUBTITLE]]',
-      items: [
-        { icon: 'i-lucide-cpu', title: '[[CAP_1_TITLE]]', description: '[[CAP_1_DESC]]' },
-        { icon: 'i-lucide-zap', title: '[[CAP_2_TITLE]]', description: '[[CAP_2_DESC]]' },
-        { icon: 'i-lucide-lightbulb', title: '[[CAP_3_TITLE]]', description: '[[CAP_3_DESC]]' },
-        { icon: 'i-lucide-shield', title: '[[CAP_4_TITLE]]', description: '[[CAP_4_DESC]]' },
-        { icon: 'i-lucide-globe', title: '[[CAP_5_TITLE]]', description: '[[CAP_5_DESC]]' },
-        { icon: 'i-lucide-award', title: '[[CAP_6_TITLE]]', description: '[[CAP_6_DESC]]' }
+      badge: '德尔未来旗下主营品牌 · 股票代码 002631',
+      title: 'Paterson 百得胜水漆整家定制',
+      titleLine1: 'Paterson 百得胜',
+      titleLine2: '水漆整家定制',
+      subtitle: '百得胜Paterson，成立于2001年，是一家集水漆定制柜墙门及成品家具为主的环保整家定制家居企业。上市公司德尔未来旗下主营品牌。',
+      ctaLabel: '立即咨询加盟',
+      cta2Label: '查看品牌实力',
+      imageAlt: 'Paterson 百得胜水漆整家定制家居空间',
+      caption: '水漆产业链、康氧健康空间、碳纤维材料与营销支持，共同构成百得胜加盟体系的差异化能力。',
+      oxygenValue: '康氧产业链',
+      oxygenLabel: '智能康氧卧房与室内空气标准',
+      keywords: {
+        waterPaint: '水漆产业链',
+        oxygen: '康氧产业链',
+        material: '碳纤维材料',
+        marketing: '营销创新'
+      },
+      metrics: [
+        { value: '2001', label: '品牌创立时间' },
+        { value: '002631', label: '德尔未来股票代码' },
+        { value: '4.0', label: '油改水智能工厂' },
+        { value: '柜墙门', label: '整家定制系统' }
       ]
     },
-    solutions: {
-      title: '[[SOLUTIONS_TITLE]]',
-      subtitle: '[[SOLUTIONS_SUBTITLE]]',
-      items: [
-        { title: '[[SOLUTION_1_TITLE]]', description: '[[SOLUTION_1_DESC]]', href: '/data' },
-        { title: '[[SOLUTION_2_TITLE]]', description: '[[SOLUTION_2_DESC]]', href: '/data' },
-        { title: '[[SOLUTION_3_TITLE]]', description: '[[SOLUTION_3_DESC]]', href: '/data' }
+    forest: {
+      eyebrow: '康氧产业链闭环',
+      title: '智能康氧卧房，像森林氧吧一样记住百得胜',
+      description: '百得胜以智能康氧卧房、超级健康中枢和室内空气标准能力，回应家庭对洁净空气、舒适睡眠与健康空间的长期需求。',
+      center: '超级健康中枢',
+      note: '从卧房空气、环保材料到整家空间体验，让健康不止停留在概念，而是成为用户能够感知的生活场景。',
+      proofs: {
+        bedroom: '智能康氧卧房',
+        center: '超级健康中枢',
+        standard: '室内空气团标主编单位'
+      },
+      proofDescriptions: {
+        bedroom: '以卧房这一高频生活空间承载康氧体验，让健康不是抽象概念，而是可被感知的空间系统。',
+        center: '围绕空气、材料、柜墙门和生活习惯建立健康中枢，强化整家定制之外的差异化。',
+        standard: '以室内空气团体标准主编单位背书，支撑招商端对健康家居能力的信任。'
+      },
+      nodes: {
+        chain: '康氧产业链闭环',
+        forest: '森林氧吧',
+        bedroom: '智能康氧卧房',
+        standard: '室内空气团标'
+      }
+    },
+    trust: {
+      eyebrow: '关于我们',
+      title: '水漆整家定制的长期主义品牌',
+      description: '百得胜 Paterson 成立于 2001 年，是德尔未来旗下主营品牌。品牌长期深耕定制家居，以水漆科技、环保整家定制和终端运营支持建立市场信任。',
+      stats: [
+        { value: '2001 年', label: '百得胜 Paterson 成立，持续深耕定制家居赛道。' },
+        { value: '德尔未来', label: '上市公司旗下主营品牌，股票代码 002631。' },
+        { value: '团标主编', label: '水漆定制家居相关标准与技术背书。' },
+        { value: '智能涂装', label: '全水性 3D 智能涂装线与油改水 4.0 工厂。' }
       ]
     },
-    cta: {
-      title: '[[HOME_CTA_TITLE]]',
-      subtitle: '[[HOME_CTA_SUBTITLE]]',
-      button: '[[HOME_CTA_BUTTON]]',
-      button2: '[[HOME_CTA2_BUTTON]]'
+    technology: {
+      eyebrow: '水漆科技',
+      title: '从材料、工艺到整家空间的水漆产业链闭环',
+      description: '全水性 3D 智能涂装线、油改水 4.0 工厂和水漆相关标准能力，共同支撑百得胜水漆整家定制的稳定交付。',
+      summary: '材料、涂装、产品、终端交付形成同一条能力链。',
+      metrics: [
+        { value: '3D', label: '智能涂装线' },
+        { value: '4.0', label: '油改水工厂' },
+        { value: '全水性', label: '材料与交付协同' }
+      ],
+      items: [
+        { title: '水漆柜墙门系统', description: '以水漆工艺、柜墙门一体化和整家空间交付形成差异化产品能力。', href: '/data' }
+      ],
+      nodes: [
+        { icon: 'i-lucide-droplets', title: '水漆产业链闭环', description: '围绕水性漆定制家居形成材料、涂装、产品与终端交付协同。' },
+        { icon: 'i-lucide-factory', title: '全水性 3D 智能涂装线', description: '用智能化工艺提升稳定性、表面质感和批量交付能力。' },
+        { icon: 'i-lucide-leaf', title: '油改水 4.0 工厂', description: '以工厂端水性化升级承接水漆整家定制的规模交付。' },
+        { icon: 'i-lucide-award', title: '国际领先成果认证', description: '高硬度全水性涂料涂饰家居板件技术获得专家组认证。' }
+      ]
+    },
+    products: {
+      eyebrow: '我们的服务',
+      title: '水漆柜墙门系统与环保整家定制服务',
+      description: '从卧室收纳、厨房系统到儿童成长空间，百得胜以真实家居场景呈现水漆整家定制的产品价值。',
+      items: [
+        {
+          title: '衣柜定制',
+          description: '水漆衣柜，整家定制。3底2面72道纯水漆工艺，没有8大重金属伤害。',
+          image: '/paterson/product-bedroom-system.webp',
+          tags: ['水漆衣柜', '整家定制', '72道工艺']
+        },
+        {
+          title: '橱柜定制',
+          description: '百得胜橱柜，环保·健康·颜值。',
+          image: '/paterson/product-kitchen-system.webp',
+          tags: ['橱柜定制', '环保', '健康']
+        },
+        {
+          title: '百儿未来家',
+          description: '让孩子自己参与设计，打造呵护身心、启蒙智识、保护想象力的成长环境。',
+          image: '/paterson/product-children-room.webp',
+          tags: ['儿童房', '成长环境', '未来家']
+        }
+      ]
+    },
+    advantages: {
+      eyebrow: '加盟优势',
+      title: '招商加盟：水漆、康氧、材料与营销创新',
+      items: [
+        { icon: 'i-lucide-droplets', title: '水漆产业链闭环', description: '全水性3D智能涂装线、油改水4.0工厂、水漆团标主编单位。' },
+        { icon: 'i-lucide-wind', title: '康氧产业链闭环', description: '智能康氧卧房、超级健康中枢、室内空气团标主编单位。' },
+        { icon: 'i-lucide-layers-3', title: '碳纤维航空材料', description: '9大性能优势，10米正负变形≤3‰，解决传统轻高定工艺3大难题。' },
+        { icon: 'i-lucide-megaphone', title: '营销创新', description: 'AI数智化赋能帮扶、水漆新零售、活动模式多样化引流。' },
+        { icon: 'i-lucide-award', title: '企业荣誉', description: '围绕技术认证、行业奖项、标准制定和品牌大事件建立终端信任。' },
+        { icon: 'i-lucide-history', title: '长期深耕', description: '自 2001 年起持续深耕定制家居行业，以长期主义积累品牌、产品与终端经验。' }
+      ]
+    },
+    process: {
+      eyebrow: '加盟流程',
+      title: '清晰八步合作路径，让意向城市快速进入评估与落地',
+      description: '从初次咨询到建店培训，再到开业扶持和持续运营，每一步都让加盟商知道下一步发生什么。',
+      stepLabel: '阶段',
+      steps: [
+        { title: '在线咨询', description: '提交城市、预算与联系方式。' },
+        { title: '总部沟通', description: '匹配区域政策与合作模式。' },
+        { title: '实地考察', description: '了解展厅、工厂与终端样板。' },
+        { title: '城市评估', description: '评估商圈、竞争与投资规划。' },
+        { title: '签约合作', description: '明确授权、政策与开店节奏。' },
+        { title: '建店培训', description: '完成设计、产品和运营培训。' },
+        { title: '开业扶持', description: '配合活动、引流和团队启动。' },
+        { title: '持续运营', description: '提供营销、产品与数智化支持。' }
+      ]
+    },
+    news: {
+      eyebrow: '新闻与荣誉',
+      title: '关注水漆科技、品牌荣誉与行业动态',
+      more: '查看新闻中心',
+      items: [
+        {
+          tag: '技术认证',
+          title: '国际领先 | 百得胜家居水漆核心科技成果获院士领衔专家组认证',
+          description: '高硬度全水性涂料涂饰家居板件关键技术获得权威专家组认证。',
+          image: '/paterson/news-water-paint-tech.webp'
+        },
+        {
+          tag: '展会新闻',
+          title: '水漆轻高定丨百得胜携 3 大根技术与空间场景亮相广州定制家居展',
+          description: '围绕水漆整家和轻高定空间，强化终端招商展示能力。',
+          image: '/paterson/news-custom-home-expo.webp'
+        },
+        {
+          tag: '行业标准',
+          title: '家具新国标 行业顶配 水漆健康家标配',
+          description: '以环保标准和健康家居认知，延展水漆柜墙门系统的品牌价值。',
+          image: '/paterson/news-furniture-standard.webp'
+        }
+      ]
+    },
+    consult: {
+      eyebrow: '加盟留资',
+      title: '留下城市与预算，总部顾问为你评估合作机会',
+      description: '表单只收集必要信息，便于招商团队快速判断城市机会、投资规划和下一步沟通方式。',
+      privacy: '信息仅用于加盟咨询沟通，严格保密。',
+      hours: '总部咨询时间：09:00 - 18:00',
+      form: {
+        name: '姓名',
+        namePlaceholder: '请输入姓名',
+        phone: '手机号',
+        phonePlaceholder: '请输入联系电话',
+        city: '意向城市',
+        cityPlaceholder: '例如：广州 / 成都 / 杭州',
+        budget: '投资预算',
+        budgetPlaceholder: '请选择预算范围',
+        budgetOne: '50 万以内',
+        budgetTwo: '50-100 万',
+        budgetThree: '100 万以上',
+        message: '备注',
+        messagePlaceholder: '可填写店面资源、过往行业经验或想了解的问题',
+        submit: '提交加盟咨询'
+      }
+    },
+    mobileBar: {
+      consult: '咨询',
+      call: '拨号',
+      store: '门店'
     },
     faq: {
       items: [
-        { question: '[[FAQ_1_Q]]', answer: '[[FAQ_1_A]]' },
-        { question: '[[FAQ_2_Q]]', answer: '[[FAQ_2_A]]' }
+        { question: '百得胜 Paterson 的核心差异化是什么？', answer: '核心差异化是水漆柜墙门系统、环保整家定制能力以及德尔未来上市公司背景。' },
+        { question: '加盟咨询需要提供哪些信息？', answer: '建议提供姓名、手机号、意向城市、投资预算和店面资源等基础信息，便于总部评估。' }
       ]
     }
   },
   aboutPage: {
     header: {
-      title: '[[ABOUT_PAGE_TITLE]]',
-      subtitle: '[[ABOUT_PAGE_SUBTITLE]]'
+      title: '品牌实力',
+      subtitle: '百得胜 Paterson 以水漆柜墙门系统、环保整家定制与上市公司背景，构建长期可信的家居加盟品牌。'
     },
     story: {
-      heading: '[[ABOUT_STORY_HEADING]]',
-      paragraphs: ['[[ABOUT_STORY_P1]]', '[[ABOUT_STORY_P2]]', '[[ABOUT_STORY_P3]]'],
-      imagePlaceholder: '[[ABOUT_IMAGE_PLACEHOLDER]]'
+      heading: '从水漆技术到整家定制的品牌进化',
+      paragraphs: [
+        '百得胜 Paterson 成立于 2001 年，长期深耕定制家居领域，聚焦水漆柜墙门系统与环保整家定制。',
+        '作为德尔未来旗下主营品牌，百得胜把上市公司治理、供应链能力、产品研发和终端运营支持融入加盟体系。',
+        '面向城市合伙人，品牌以真实家居空间、水漆科技、健康环保和数智化营销支持，帮助终端建立清晰的差异化表达。'
+      ],
+      imagePlaceholder: 'Paterson 品牌空间形象'
     },
-    milestonesHeading: '[[ABOUT_MILESTONES_HEADING]]',
+    milestonesHeading: '品牌关键实力',
     milestones: [
-      { icon: 'i-lucide-calendar', title: '[[MILESTONE_1_YEAR]]', description: '[[MILESTONE_1_DESC]]' },
-      { icon: 'i-lucide-trending-up', title: '[[MILESTONE_2_YEAR]]', description: '[[MILESTONE_2_DESC]]' },
-      { icon: 'i-lucide-target', title: '[[MILESTONE_3_YEAR]]', description: '[[MILESTONE_3_DESC]]' },
-      { icon: 'i-lucide-eye', title: '[[MILESTONE_4_YEAR]]', description: '[[MILESTONE_4_DESC]]' }
+      { icon: 'i-lucide-calendar', title: '2001 年', description: '品牌创立并持续深耕定制家居赛道。' },
+      { icon: 'i-lucide-trending-up', title: '德尔未来', description: '上市公司旗下主营品牌，股票代码 002631。' },
+      { icon: 'i-lucide-droplets', title: '水漆科技', description: '围绕水漆材料、智能涂装与环保整家定制形成技术背书。' },
+      { icon: 'i-lucide-store', title: '加盟支持', description: '提供产品、供应链、设计、营销和数智化运营支持。' }
     ],
-    valuesHeading: '[[ABOUT_VALUES_HEADING]]',
+    valuesHeading: '我们坚持的价值',
     values: [
-      { icon: 'i-lucide-heart', title: '[[ABOUT_VALUE_1_TITLE]]', description: '[[ABOUT_VALUE_1_DESC]]' },
-      { icon: 'i-lucide-lightbulb', title: '[[ABOUT_VALUE_2_TITLE]]', description: '[[ABOUT_VALUE_2_DESC]]' },
-      { icon: 'i-lucide-target', title: '[[ABOUT_VALUE_3_TITLE]]', description: '[[ABOUT_VALUE_3_DESC]]' }
+      { icon: 'i-lucide-heart', title: '健康环保', description: '以水漆和康氧理念回应家庭对安全、舒适与长期居住品质的关注。' },
+      { icon: 'i-lucide-lightbulb', title: '技术创新', description: '通过智能涂装、材料升级和系统化产品能力提升终端竞争力。' },
+      { icon: 'i-lucide-target', title: '合作共赢', description: '以清晰加盟路径和持续运营支持，帮助城市合伙人稳健落地。' }
     ],
     cta: {
-      title: '[[ABOUT_CTA_TITLE]]',
-      subtitle: '[[ABOUT_CTA_SUBTITLE]]',
-      button: '[[ABOUT_CTA_BUTTON]]'
+      title: '了解百得胜加盟政策',
+      subtitle: '提交意向城市与联系方式，获取适合当地市场的合作评估。',
+      button: '咨询加盟'
     }
   },
   philosophyPage: {
     seo: {
-      title: '[[PHILOSOPHY_SEO_TITLE]]',
-      description: '[[PHILOSOPHY_SEO_DESCRIPTION]]',
-      keywords: '[[PHILOSOPHY_SEO_KEYWORDS]]'
+      title: '水漆科技_百得胜 Paterson 水漆柜墙门系统',
+      description: '了解百得胜 Paterson 的水漆产业链、全水性 3D 智能涂装线、油改水 4.0 工厂与环保整家定制技术。',
+      keywords: '水漆科技,水漆柜墙门系统,油改水工厂,全水性智能涂装,环保整家定制'
     },
     header: {
-      title: '[[PHILOSOPHY_PAGE_TITLE]]',
-      subtitle: '[[PHILOSOPHY_PAGE_SUBTITLE]]'
+      title: '水漆科技',
+      subtitle: '从材料、涂装、产品到终端交付，百得胜以水漆产业链闭环支撑环保整家定制。'
     },
     intro: {
-      heading: '[[PHILOSOPHY_INTRO_HEADING]]',
-      paragraphs: ['[[PHILOSOPHY_INTRO_P1]]', '[[PHILOSOPHY_INTRO_P2]]'],
-      imagePlaceholder: '[[PHILOSOPHY_IMAGE_PLACEHOLDER]]'
+      heading: '把环保能力做进工艺与交付',
+      paragraphs: [
+        '水漆不是一句口号，而是从材料选择、涂装工艺、产品系统到终端交付共同形成的能力链。',
+        '百得胜通过全水性 3D 智能涂装线、油改水 4.0 工厂和水漆相关标准背书，让环保整家定制具备更稳定的品质表达。'
+      ],
+      imagePlaceholder: '水漆科技空间展示'
     },
     pillars: {
-      heading: '[[PHILOSOPHY_PILLARS_HEADING]]',
+      heading: '水漆产业链能力',
       items: [
-        { title: '[[PHILOSOPHY_PILLAR_1_TITLE]]', description: '[[PHILOSOPHY_PILLAR_1_DESC]]' },
-        { title: '[[PHILOSOPHY_PILLAR_2_TITLE]]', description: '[[PHILOSOPHY_PILLAR_2_DESC]]' },
-        { title: '[[PHILOSOPHY_PILLAR_3_TITLE]]', description: '[[PHILOSOPHY_PILLAR_3_DESC]]' },
-        { title: '[[PHILOSOPHY_PILLAR_4_TITLE]]', description: '[[PHILOSOPHY_PILLAR_4_DESC]]' }
+        { title: '水性材料体系', description: '围绕水性漆定制家居建立材料端基础，减少传统涂装带来的健康顾虑。' },
+        { title: '智能涂装工艺', description: '以全水性 3D 智能涂装线提升表面质感、稳定性与批量交付能力。' },
+        { title: '整家产品协同', description: '柜、墙、门与成品家具形成统一风格和环保标准，服务完整家居空间。' },
+        { title: '终端信任表达', description: '用标准、认证、空间体验和清晰说明帮助加盟店建立顾客信任。' }
       ]
     },
     values: {
-      heading: '[[PHILOSOPHY_VALUES_HEADING]]',
+      heading: '面向加盟终端的价值',
       items: [
-        { title: '[[PHILOSOPHY_VALUE_1_TITLE]]', description: '[[PHILOSOPHY_VALUE_1_DESC]]' },
-        { title: '[[PHILOSOPHY_VALUE_2_TITLE]]', description: '[[PHILOSOPHY_VALUE_2_DESC]]' },
-        { title: '[[PHILOSOPHY_VALUE_3_TITLE]]', description: '[[PHILOSOPHY_VALUE_3_DESC]]' }
+        { title: '更清晰的差异化', description: '水漆与康氧概念帮助终端区别于普通全屋定制门店。' },
+        { title: '更稳定的产品表达', description: '工艺和供应链能力让设计效果、表面质感和交付标准更一致。' },
+        { title: '更容易讲清的健康主张', description: '把材料、空气、卧房和整家空间连接起来，让消费者更容易理解健康家居价值。' }
       ]
     },
     cta: {
-      title: '[[PHILOSOPHY_CTA_TITLE]]',
-      subtitle: '[[PHILOSOPHY_CTA_SUBTITLE]]',
-      button: '[[PHILOSOPHY_CTA_BUTTON]]'
+      title: '想了解水漆整家定制加盟？',
+      subtitle: '招商顾问可根据你的城市与店面资源，介绍产品系统、建店支持和运营扶持。',
+      button: '提交咨询'
     }
   },
   dataPage: {
     seo: {
-      title: '[[DATA_SEO_TITLE]]',
-      description: '[[DATA_SEO_DESCRIPTION]]',
-      keywords: '[[DATA_SEO_KEYWORDS]]'
+      title: '产品系统_百得胜 Paterson 水漆整家定制',
+      description: '查看百得胜 Paterson 衣柜定制、橱柜定制、儿童成长空间与水漆柜墙门系统。',
+      keywords: '百得胜产品系统,水漆衣柜,橱柜定制,儿童房定制,柜墙门系统,整家定制'
     },
-    title: '[[DATA_PAGE_TITLE]]',
-    subtitle: '[[DATA_PAGE_SUBTITLE]]',
-    defaultCategory: '[[DATA_CATEGORY_ALL]]',
-    searchPlaceholder: '[[DATA_SEARCH_PLACEHOLDER]]',
-    empty: '[[DATA_EMPTY_MESSAGE]]',
-    categories: ['[[DATA_CATEGORY_ALL]]', '[[DATA_CATEGORY_1]]', '[[DATA_CATEGORY_2]]'],
+    title: '产品系统',
+    subtitle: '围绕水漆柜墙门系统、厨房收纳与儿童成长空间，构建完整环保整家定制方案。',
+    defaultCategory: '全部',
+    searchPlaceholder: '搜索产品或空间',
+    empty: '暂无匹配的产品内容',
+    categories: ['全部', '卧室系统', '厨房系统', '儿童空间'],
     items: [
-      { title: '[[DATA_ITEM_1_TITLE]]', summary: '[[DATA_ITEM_1_SUMMARY]]', category: '[[DATA_ITEM_1_CATEGORY]]', detailPath: '/data/[[DATA_ITEM_1_SLUG]]' },
-      { title: '[[DATA_ITEM_2_TITLE]]', summary: '[[DATA_ITEM_2_SUMMARY]]', category: '[[DATA_ITEM_2_CATEGORY]]', detailPath: '/data/[[DATA_ITEM_2_SLUG]]' },
-      { title: '[[DATA_ITEM_3_TITLE]]', summary: '[[DATA_ITEM_3_SUMMARY]]', category: '[[DATA_ITEM_3_CATEGORY]]', detailPath: '/data/[[DATA_ITEM_3_SLUG]]' }
+      { title: '水漆衣柜定制', summary: '以水漆工艺和整家设计语言，打造环保、耐看、易收纳的卧室系统。', category: '卧室系统', detailPath: '/data/bedroom-system' },
+      { title: '环保橱柜定制', summary: '围绕厨房动线、收纳效率与健康材料，提供高颜值橱柜定制方案。', category: '厨房系统', detailPath: '/data/kitchen-system' },
+      { title: '百儿未来家', summary: '面向儿童成长需求，打造兼顾学习、收纳、休息和想象力的成长空间。', category: '儿童空间', detailPath: '/data/children-room' }
     ],
     detail: {
-      title: '[[DETAIL_TITLE]]',
-      category: '[[DETAIL_CATEGORY]]',
-      summary: '[[DETAIL_SUMMARY]]',
-      description: '[[DETAIL_DESCRIPTION]]',
-      featuresHeading: '[[DETAIL_FEATURES_HEADING]]',
-      features: ['[[DETAIL_FEATURE_1]]', '[[DETAIL_FEATURE_2]]', '[[DETAIL_FEATURE_3]]'],
-      specsHeading: '[[DETAIL_SPECS_HEADING]]',
+      title: '水漆整家定制方案',
+      category: '产品系统',
+      summary: '以水漆柜墙门系统为核心，为家庭空间提供环保、统一、可落地的整家定制方案。',
+      description: '百得胜产品系统将卧室、厨房、儿童房等高频生活空间纳入统一设计语言，通过水漆工艺、柜墙门协同和终端交付标准，帮助加盟门店向消费者清晰展示环保整家定制价值。',
+      featuresHeading: '核心特点',
+      features: ['水漆工艺与环保材料协同', '柜墙门系统化设计', '适配终端展示与加盟落地'],
+      specsHeading: '方案信息',
       specifications: [
-        { label: '[[DETAIL_SPEC_1_LABEL]]', value: '[[DETAIL_SPEC_1_VALUE]]' },
-        { label: '[[DETAIL_SPEC_2_LABEL]]', value: '[[DETAIL_SPEC_2_VALUE]]' }
+        { label: '适用空间', value: '卧室 / 厨房 / 儿童房 / 全屋' },
+        { label: '合作支持', value: '产品、设计、建店、营销与运营支持' }
       ],
-      backLabel: '[[DETAIL_BACK_LABEL]]',
-      ctaHeading: '[[DETAIL_CTA_HEADING]]',
-      ctaSubtitle: '[[DETAIL_CTA_SUBTITLE]]',
-      ctaButton: '[[DETAIL_CTA_BUTTON]]'
+      backLabel: '返回产品系统',
+      ctaHeading: '获取产品系统与加盟资料',
+      ctaSubtitle: '留下联系方式，招商顾问将结合你的城市与店面资源介绍适合的产品组合。',
+      ctaButton: '咨询产品加盟'
     }
   },
   articlesPage: {
-    title: '[[ARTICLES_PAGE_TITLE]]',
-    subtitle: '[[ARTICLES_PAGE_SUBTITLE]]',
-    readMore: '[[ARTICLES_READ_MORE]]',
-    empty: '[[ARTICLES_EMPTY]]',
-    back: '[[ARTICLE_BACK_LABEL]]'
+    title: '新闻中心',
+    subtitle: '关注百得胜 Paterson 的水漆科技、行业标准、品牌荣誉、展会动态与招商资讯。',
+    readMore: '查看详情',
+    empty: '暂无新闻内容',
+    back: '返回新闻中心',
+    imagePlaceholder: 'Paterson 新闻图片',
+    fallback: [
+      {
+        category: '技术认证',
+        date: '2026-07-01',
+        intro: '高硬度全水性涂料涂饰家居板件关键技术获得专家组认证，强化水漆整家定制技术背书。',
+        slug: 'waterborne-technology-certification',
+        title: '百得胜水漆核心科技成果获得权威认证'
+      },
+      {
+        category: '展会新闻',
+        date: '2026-06-18',
+        intro: '百得胜携水漆整家、康氧卧房与轻高定空间亮相行业展会，展示面向终端的招商表达。',
+        slug: 'custom-home-expo',
+        title: '百得胜亮相定制家居展，展示水漆整家空间方案'
+      },
+      {
+        category: '行业标准',
+        date: '2026-05-26',
+        intro: '围绕环保标准、健康家居和水漆柜墙门系统，百得胜持续推动行业高质量发展。',
+        slug: 'healthy-home-standards',
+        title: '以水漆健康家居推动整家定制标准升级'
+      }
+    ]
   },
   contactPage: {
     seo: {
-      title: '[[CONTACT_SEO_TITLE]]',
-      description: '[[CONTACT_SEO_DESCRIPTION]]',
-      keywords: '[[CONTACT_SEO_KEYWORDS]]'
+      title: '联系我们_百得胜 Paterson 招商加盟咨询',
+      description: '联系百得胜 Paterson 招商团队，提交意向城市、投资预算与联系方式，了解水漆整家定制加盟政策。',
+      keywords: '百得胜加盟,Paterson 加盟,全屋定制加盟,水漆整家定制加盟,招商咨询'
     },
-    title: '[[CONTACT_PAGE_TITLE]]',
-    subtitle: '[[CONTACT_PAGE_SUBTITLE]]',
-    infoTitle: '[[CONTACT_INFO_TITLE]]',
-    hours: '[[CONTACT_HOURS]]',
+    title: '联系我们',
+    subtitle: '提交加盟意向，招商顾问将尽快与你联系，协助评估城市机会与合作方案。',
+    infoTitle: '招商联系信息',
+    hours: '咨询时间：09:00 - 18:00',
     labels: {
-      address: '[[CONTACT_ADDRESS_LABEL]]',
-      phone: '[[CONTACT_PHONE_LABEL]]',
-      email: '[[CONTACT_EMAIL_LABEL]]',
-      hours: '[[CONTACT_HOURS_LABEL]]'
+      address: '总部地址',
+      phone: '招商热线',
+      email: '联系邮箱',
+      hours: '咨询时间'
     }
   },
   designSystemPage: {
     seo: {
-      title: '设计系统',
-      description: '查看 Starter 的颜色、字体、布局、组件和交互规范。',
-      keywords: '设计系统,Design Tokens,组件规范,Starter'
+      title: '品牌视觉',
+      description: '了解 Paterson 百得胜官网的品牌色彩、字体层级、空间排版与交互风格。',
+      keywords: 'Paterson 品牌视觉,百得胜官网,品牌色彩,空间设计'
     },
-    title: '设计系统',
-    subtitle: '一套面向企业站 starter 的基础视觉规范，用于保持页面、组件和交互的一致性。',
+    title: '品牌视觉',
+    subtitle: '以暖白、深木色、香槟金和真实空间图，呈现成熟、健康、可信的水漆整家定制品牌气质。',
     sections: {
       philosophy: '设计原则',
       colors: '颜色',
       typography: '字体',
       layout: '布局',
-      components: '组件',
+      components: '界面元素',
       interaction: '交互'
     },
     philosophy: {
       brandTitle: '品牌基调',
-      brand: '默认视觉保持中性、清晰、可信，方便后续替换为真实品牌，而不会带入旧业务的装饰风格。',
+      brand: '视觉语言保持高级稳重、健康环保和真实空间感，避免促销化、模板化和过度科技化。',
       directionTitle: '设计方向',
-      direction: '组件优先使用浅色背景、清晰边框、稳定间距和可复用 token，适合企业官网、内容站和轻量产品站。',
-      keywords: ['中性', '清晰', '可复用', '易替换']
+      direction: '页面以宽松留白、清晰层级、克制动效和真实家居图片建立品牌信任，并服务加盟转化。',
+      keywords: ['稳重', '健康', '真实空间', '招商转化']
     },
-    colorIntro: '颜色来自 main.css 内的设计 token，并通过 Tailwind theme 映射给页面和组件使用。',
-    typographyIntro: '字体层级使用标准 Tailwind utility，避免任意 clamp class，保证响应式页面稳定可控。',
-    layoutGrid: '页面内容以 max-w-7xl、section-container 和响应式 grid 为基础，确保宽屏和移动端都有稳定结构。',
-    layoutWhitespace: '区块间距使用统一 spacing token 和 Tailwind 间距阶梯，避免页面因局部样式产生割裂。',
+    colorIntro: '主色以暖白、深木黑、深木色和香槟金为基础，品牌红黄只用于小面积强调。',
+    typographyIntro: '中文标题克制稳重，正文保持舒适阅读，英文只作为辅助标签而不抢占主视觉。',
+    layoutGrid: '页面采用宽屏内容容器和响应式分栏，让空间图、品牌信息和加盟行动保持清晰节奏。',
+    layoutWhitespace: '区块间距保持舒展，避免传统招商长图式的拥挤信息堆叠。',
     samples: {
-      hero: '清晰可靠的企业站 Starter',
-      h1: '页面标题层级',
-      h2: '区块标题层级',
-      h3: '卡片标题层级'
+      hero: '水漆整家定制加盟新增长',
+      h1: '品牌首页标题',
+      h2: '核心区块标题',
+      h3: '内容卡片标题'
     },
     preview: {
       primaryButton: '主要按钮',
@@ -483,11 +657,11 @@ const starter = {
       smallButton: '小按钮',
       largeButton: '大按钮',
       cardTitle: '内容卡片',
-      cardDescription: '用于承载功能、数据或文章入口，保持清晰边界和稳定排版。',
+      cardDescription: '用于呈现产品系统、品牌实力或新闻内容，保持清晰边界和稳定排版。',
       cardAltTitle: '信息卡片',
-      cardAltDescription: '适合展示补充说明、资源链接或页面摘要。',
-      heroTitle: '页面头预览',
-      heroSubtitle: '用于展示标题、说明和行动按钮的基础 hero 区块。',
+      cardAltDescription: '适合展示技术亮点、招商支持或页面摘要。',
+      heroTitle: 'Paterson 百得胜',
+      heroSubtitle: '水漆整家定制、康氧健康空间与加盟支持共同构成的品牌官网体验。',
       heroCta: '查看详情'
     }
   },
@@ -507,7 +681,7 @@ const starter = {
           title: '我们如何处理信息',
           paragraphs: [
             '我们仅在提供服务、响应咨询、保障安全和改进体验所需的范围内处理信息。',
-            '如需替换为正式法律文本，请根据你的业务、部署地区和合规要求完善本页面。'
+            '你提交的加盟咨询信息将用于需求沟通、城市机会评估和后续服务联系。未经授权，我们不会将个人信息用于无关用途。'
           ]
         }
       ]
@@ -525,7 +699,7 @@ const starter = {
           title: '使用本网站',
           paragraphs: [
             '访问本网站即表示你同意遵守适用法律，并以合理、合法的方式使用网站内容。',
-            '本页面为 starter 默认条款，请在上线前替换为适合你业务的正式文本。'
+            '网站中的品牌、图片、文字和产品信息用于介绍 Paterson 百得胜相关业务，未经授权不得用于误导性展示或商业复制。'
           ]
         }
       ]

@@ -22,46 +22,45 @@ const common = {
 
 const navItems = [
   { label: 'Home', english: 'Home', href: '/' },
-  { label: 'About', english: 'About', href: '/about' },
-  { label: 'Philosophy', english: 'Philosophy', href: '/philosophy' },
-  { label: 'Data', english: 'Data', href: '/data' },
-  { label: 'Articles', english: 'Articles', href: '/articles' },
-  { label: 'Contact', english: 'Contact', href: '/contact' },
-  { label: 'Design System', english: 'Design System', href: '/palette' }
+  { label: 'Brand', english: 'Brand', href: '/about' },
+  { label: 'Products', english: 'Products', href: '/data' },
+  { label: 'Tech', english: 'Technology', href: '/philosophy' },
+  { label: 'Franchise', english: 'Franchise', href: '/contact' },
+  { label: 'News', english: 'News', href: '/articles' }
 ];
 
 const pageSeo = {
   home: {
     seo: {
-      title: '[[HOME_SEO_TITLE]]',
-      description: '[[HOME_SEO_DESCRIPTION]]',
-      keywords: '[[HOME_SEO_KEYWORDS]]'
+      title: 'Paterson Waterborne Whole-Home Custom Franchise | Eco Cabinet Wall Door Systems',
+      description: 'Founded in 2001, Paterson is a core brand under DareGlobal, focused on waterborne cabinet-wall-door systems and eco whole-home customization with product, supply chain, design, marketing, and digital operation support for franchise partners.',
+      keywords: 'waterborne whole-home customization,eco whole-home customization,whole-home custom franchise,home furnishing franchise,cabinet wall door system,Paterson,DareGlobal,stock code 002631'
     }
   },
   about: {
     seo: {
-      title: '[[ABOUT_SEO_TITLE]]',
-      description: '[[ABOUT_SEO_DESCRIPTION]]',
-      keywords: '[[ABOUT_SEO_KEYWORDS]]'
+      title: 'Brand Strength | Paterson Waterborne Whole-Home Customization',
+      description: 'Learn about Paterson brand history, DareGlobal listed-company backing, waterborne technology, and franchise support for whole-home customization.',
+      keywords: 'Paterson brand strength,DareGlobal,waterborne whole-home customization,home furnishing franchise'
     }
   },
   articles: {
     seo: {
-      title: '[[ARTICLES_SEO_TITLE]]',
-      description: '[[ARTICLES_SEO_DESCRIPTION]]',
-      keywords: '[[ARTICLES_SEO_KEYWORDS]]'
+      title: 'News | Paterson Brand Updates and Industry Insights',
+      description: 'Read Paterson updates on waterborne technology, industry standards, exhibitions, brand honors, and whole-home customization.',
+      keywords: 'Paterson news,waterborne technology,home furnishing exhibition,whole-home customization news'
     },
     detailSeo: {
-      title: '[[ARTICLE_DETAIL_SEO_TITLE]]',
-      description: '[[ARTICLE_DETAIL_SEO_DESCRIPTION]]',
-      keywords: '[[ARTICLE_DETAIL_SEO_KEYWORDS]]'
+      title: '{title} | Paterson News',
+      description: 'Read Paterson news update: {title}',
+      keywords: '{title},Paterson news,waterborne whole-home customization'
     }
   },
   contact: {
     inquiry: {
       eyebrow: 'Inquiry',
       title: 'Tell us what you need',
-      description: 'Submit the form and we will get back to you with the information provided. Adjust this copy and the submit flow before launch as needed.',
+      description: 'Submit the form and a franchise consultant will contact you to discuss city opportunity, investment planning, and cooperation options.',
       name: 'Name',
       namePlaceholder: 'Enter your name',
       missingName: 'Please enter your name',
@@ -92,7 +91,7 @@ const pageSeo = {
 
 const starter = {
   site: {
-    name: 'Starter'
+    name: 'Paterson'
   },
   common,
   languageSwitcher: {
@@ -116,20 +115,20 @@ const starter = {
   },
   nav: {
     homeAria: 'Back to home',
-    logoAlt: 'Site logo',
-    sloganAlt: 'Enterprise starter template',
+    logoAlt: 'Paterson logo',
+    sloganAlt: 'A core brand under DareGlobal',
     menu: 'Menu',
     mainNav: 'Main navigation',
-    memberCenter: 'Member center',
-    hotline: 'Hotline',
+    memberCenter: 'Inquiry',
+    hotline: 'Franchise hotline',
     items: navItems,
     search: {
       scrollTop: 'Back to top'
     }
   },
   footer: {
-    brandDescription: 'An enterprise website starter that preserves SEO, GEO, OG Image, and core interaction features while leaving business content ready to replace.',
-    slogan: 'A reusable site foundation for fast delivery',
+    brandDescription: 'Founded in 2001, Paterson focuses on waterborne cabinet-wall-door systems and eco whole-home customization as a core brand under DareGlobal.',
+    slogan: 'A new franchise growth path for waterborne whole-home customization',
     socials: [
       { icon: 'i-lucide-message-circle', label: 'WeChat' },
       { icon: 'i-lucide-radio', label: 'Weibo' },
@@ -140,33 +139,33 @@ const starter = {
     ],
     columns: [
       {
-        title: 'Site',
+        title: 'Brand',
         links: [
-          { label: 'About', href: '/about' },
-          { label: 'Philosophy', href: '/philosophy' },
-          { label: 'Design System', href: '/palette' }
+          { label: 'Brand Strength', href: '/about' },
+          { label: 'Waterborne Tech', href: '/philosophy' },
+          { label: 'Franchise', href: '/contact' }
         ]
       },
       {
-        title: 'Content',
+        title: 'Products & News',
         links: [
-          { label: 'Data', href: '/data' },
-          { label: 'Articles', href: '/articles' }
+          { label: 'Product Systems', href: '/data' },
+          { label: 'News', href: '/articles' }
         ]
       },
       {
-        title: 'Support',
+        title: 'Contact',
         links: [
           { label: 'Contact', href: '/contact' },
-          { label: 'Member center', href: 'sourceRegisterUrl', external: true }
+          { label: 'Franchise Inquiry', href: 'sourceRegisterUrl', external: true }
         ]
       }
     ],
     followUs: 'Contact',
     email: 'Email',
     address: 'Address',
-    tagline: 'Starter shell for reusable enterprise websites.',
-    copyright: '© 2026 Starter. All rights reserved.',
+    tagline: 'A brand website shaped by refined living spaces, waterborne technology, and a clear franchise path.',
+    copyright: '© 2026 Paterson. All rights reserved.',
     privacy: 'Privacy Policy',
     terms: 'Terms of Use',
     cookieSettings: 'Cookie settings'
@@ -233,36 +232,36 @@ const starter = {
     }
   },
   cta: {
-    title: '[[GLOBAL_CTA_TITLE]]',
-    description: '[[GLOBAL_CTA_DESCRIPTION]]',
-    action: '[[GLOBAL_CTA_ACTION]]',
-    contactLabel: '[[GLOBAL_CTA_CONTACT_LABEL]]',
-    bgText: '[[GLOBAL_CTA_BG_TEXT]]'
+    title: 'Ready to discuss Paterson franchise cooperation?',
+    description: 'Leave your contact details and our franchise team will assess your target city, budget, and store resources.',
+    action: 'Submit Inquiry',
+    contactLabel: 'Franchise Hotline',
+    bgText: 'PATERSON'
   },
   pages: pageSeo,
   data: {
     siteConfig: {
-      companyName: '[[COMPANY_NAME]]',
-      shortName: '[[COMPANY_SHORT_NAME]]',
-      industry: '[[INDUSTRY]]',
-      siteTitle: '[[SITE_TITLE]]',
-      siteDescription: '[[SITE_DESCRIPTION]]',
-      canonical: '[[SITE_CANONICAL]]',
+      companyName: 'Guangzhou Paterson Intelligent Home Co., Ltd.',
+      shortName: 'Paterson',
+      industry: 'Waterborne whole-home customization and home furnishing franchise',
+      siteTitle: 'Paterson Waterborne Whole-Home Custom Franchise',
+      siteDescription: 'Founded in 2001, Paterson is a core brand under DareGlobal, focused on waterborne cabinet-wall-door systems and eco whole-home customization.',
+      canonical: 'https://www.paterson.com.cn/',
       navigation: navItems.map(item => ({ label: item.label, path: item.href })),
-      footerIntro: '[[FOOTER_INTRO]]',
+      footerIntro: 'Paterson focuses on waterborne cabinet-wall-door systems and eco whole-home customization, supporting city partners with product, supply chain, design, marketing, and digital operations.',
       footerColumns: [
         {
-          title: '[[FOOTER_COL1_TITLE]]',
+          title: 'Brand',
           links: [
-            { label: '[[NAV_ABOUT]]', path: '/about' },
-            { label: '[[NAV_PHILOSOPHY]]', path: '/philosophy' }
+            { label: 'Brand Strength', path: '/about' },
+            { label: 'Waterborne Tech', path: '/philosophy' }
           ]
         },
         {
-          title: '[[FOOTER_COL2_TITLE]]',
+          title: 'Content',
           links: [
-            { label: '[[NAV_DATA]]', path: '/data' },
-            { label: '[[NAV_ARTICLES]]', path: '/articles' }
+            { label: 'Product Systems', path: '/data' },
+            { label: 'News', path: '/articles' }
           ]
         }
       ]
@@ -270,211 +269,386 @@ const starter = {
   },
   homePage: {
     hero: {
-      badge: '[[HERO_BADGE]]',
-      title: '[[HERO_TITLE]]',
-      subtitle: '[[HERO_SUBTITLE]]',
-      ctaLabel: '[[HERO_CTA_LABEL]]',
-      cta2Label: '[[HERO_CTA2_LABEL]]',
-      highlights: ['[[HERO_HIGHLIGHT_1]]', '[[HERO_HIGHLIGHT_2]]', '[[HERO_HIGHLIGHT_3]]']
-    },
-    stats: [
-      { title: '[[STAT_1_VALUE]]', description: '[[STAT_1_LABEL]]', icon: 'i-lucide-factory' },
-      { title: '[[STAT_2_VALUE]]', description: '[[STAT_2_LABEL]]', icon: 'i-lucide-award' },
-      { title: '[[STAT_3_VALUE]]', description: '[[STAT_3_LABEL]]', icon: 'i-lucide-globe' },
-      { title: '[[STAT_4_VALUE]]', description: '[[STAT_4_LABEL]]', icon: 'i-lucide-users' }
-    ],
-    capabilities: {
-      title: '[[CAPABILITIES_TITLE]]',
-      subtitle: '[[CAPABILITIES_SUBTITLE]]',
-      items: [
-        { icon: 'i-lucide-cpu', title: '[[CAP_1_TITLE]]', description: '[[CAP_1_DESC]]' },
-        { icon: 'i-lucide-zap', title: '[[CAP_2_TITLE]]', description: '[[CAP_2_DESC]]' },
-        { icon: 'i-lucide-lightbulb', title: '[[CAP_3_TITLE]]', description: '[[CAP_3_DESC]]' },
-        { icon: 'i-lucide-shield', title: '[[CAP_4_TITLE]]', description: '[[CAP_4_DESC]]' },
-        { icon: 'i-lucide-globe', title: '[[CAP_5_TITLE]]', description: '[[CAP_5_DESC]]' },
-        { icon: 'i-lucide-award', title: '[[CAP_6_TITLE]]', description: '[[CAP_6_DESC]]' }
+      badge: 'A core brand under DareGlobal · Stock code 002631',
+      title: 'Paterson Waterborne Whole-Home Customization',
+      titleLine1: 'Paterson',
+      titleLine2: 'Waterborne Whole-Home Customization',
+      subtitle: 'Founded in 2001, Paterson is an eco whole-home customization company focused on waterborne cabinet, wall, door, and furniture systems. It is a core brand under listed company DareGlobal.',
+      ctaLabel: 'Start Franchise Inquiry',
+      cta2Label: 'View Brand Strength',
+      imageAlt: 'Paterson waterborne whole-home custom living space',
+      caption: 'Waterborne chain capability, wellness spaces, carbon-fiber materials, and marketing support shape Paterson’s differentiated franchise system.',
+      oxygenValue: 'Wellness Oxygen',
+      oxygenLabel: 'Intelligent bedroom and indoor-air standards',
+      keywords: {
+        waterPaint: 'Waterborne chain',
+        oxygen: 'Wellness oxygen',
+        material: 'Carbon fiber',
+        marketing: 'Marketing'
+      },
+      metrics: [
+        { value: '2001', label: 'Brand founding year' },
+        { value: '002631', label: 'DareGlobal stock code' },
+        { value: '4.0', label: 'Waterborne factory upgrade' },
+        { value: 'Systems', label: 'Cabinet, wall, and door integration' }
       ]
     },
-    solutions: {
-      title: '[[SOLUTIONS_TITLE]]',
-      subtitle: '[[SOLUTIONS_SUBTITLE]]',
-      items: [
-        { title: '[[SOLUTION_1_TITLE]]', description: '[[SOLUTION_1_DESC]]', href: '/data' },
-        { title: '[[SOLUTION_2_TITLE]]', description: '[[SOLUTION_2_DESC]]', href: '/data' },
-        { title: '[[SOLUTION_3_TITLE]]', description: '[[SOLUTION_3_DESC]]', href: '/data' }
+    forest: {
+      eyebrow: 'Wellness Oxygen Chain',
+      title: 'An intelligent wellness bedroom with a forest-fresh memory point',
+      description: 'Paterson uses intelligent wellness bedrooms, super health centers, and indoor-air standard capability to answer long-term family needs around clean air, better sleep, and healthier living spaces.',
+      center: 'Super Health Center',
+      note: 'From bedroom air quality and eco materials to whole-home experience, wellness becomes a living scenario users can feel.',
+      proofs: {
+        bedroom: 'Intelligent wellness bedroom',
+        center: 'Super health center',
+        standard: 'Indoor-air standard leadership'
+      },
+      proofDescriptions: {
+        bedroom: 'The bedroom becomes the high-frequency living scenario that turns wellness oxygen from an abstract claim into a spatial system.',
+        center: 'Air, materials, cabinet-wall-door systems, and living habits are organized as a health center beyond ordinary customization.',
+        standard: 'Indoor-air standard leadership supports franchise trust in Paterson’s healthy-home capability.'
+      },
+      nodes: {
+        chain: 'Wellness oxygen chain',
+        forest: 'Forest oxygen',
+        bedroom: 'Intelligent wellness bedroom',
+        standard: 'Indoor-air standard'
+      }
+    },
+    trust: {
+      eyebrow: 'About Us',
+      title: 'A long-term brand for waterborne whole-home customization',
+      description: 'Founded in 2001, Paterson is a core brand under DareGlobal. The brand has long focused on customized home furnishing, building market trust through waterborne technology, eco whole-home customization, and terminal operation support.',
+      stats: [
+        { value: '2001', label: 'Paterson was founded and has stayed focused on customized home furnishing.' },
+        { value: 'DareGlobal', label: 'A core brand under a listed company, stock code 002631.' },
+        { value: 'Standard Lead', label: 'Technical and standard-setting credentials for waterborne custom home furnishing.' },
+        { value: 'Smart Coating', label: 'Waterborne 3D intelligent coating line and factory 4.0 upgrade.' }
       ]
     },
-    cta: {
-      title: '[[HOME_CTA_TITLE]]',
-      subtitle: '[[HOME_CTA_SUBTITLE]]',
-      button: '[[HOME_CTA_BUTTON]]',
-      button2: '[[HOME_CTA2_BUTTON]]'
+    technology: {
+      eyebrow: 'Waterborne Technology',
+      title: 'A closed-loop waterborne chain from materials and process to whole-home spaces',
+      description: 'Paterson’s waterborne 3D intelligent coating line, factory 4.0 upgrade, and standard-setting capability support stable delivery for waterborne whole-home customization.',
+      summary: 'Materials, coating, product systems, and terminal delivery are presented as one capability chain.',
+      metrics: [
+        { value: '3D', label: 'Intelligent coating line' },
+        { value: '4.0', label: 'Factory waterborne upgrade' },
+        { value: 'Waterborne', label: 'Material and delivery coordination' }
+      ],
+      items: [
+        { title: 'Waterborne Cabinet-Wall-Door System', description: 'A differentiated product capability built around waterborne process, integrated cabinet-wall-door design, and whole-home delivery.', href: '/data' }
+      ],
+      nodes: [
+        { icon: 'i-lucide-droplets', title: 'Closed-loop waterborne chain', description: 'Materials, coating, product systems, and terminal delivery work together around waterborne customization.' },
+        { icon: 'i-lucide-factory', title: '3D intelligent coating line', description: 'Intelligent processes improve stability, surface quality, and scalable delivery.' },
+        { icon: 'i-lucide-leaf', title: 'Factory 4.0 waterborne upgrade', description: 'Factory-side waterborne upgrading supports scalable delivery for whole-home customization.' },
+        { icon: 'i-lucide-award', title: 'Certified leading technology', description: 'Paterson waterborne coating technology has received expert-panel recognition.' }
+      ]
+    },
+    products: {
+      eyebrow: 'Our Services',
+      title: 'Waterborne cabinet-wall-door systems and eco whole-home customization services',
+      description: 'From bedroom storage and kitchen systems to children growth spaces, Paterson uses real home scenarios to present the value of waterborne whole-home customization.',
+      items: [
+        {
+          title: 'Wardrobe Customization',
+          description: 'Waterborne wardrobes and whole-home customization with 3 primers, 2 finishes, and 72 pure waterborne paint processes.',
+          image: '/paterson/product-bedroom-system.webp',
+          tags: ['Waterborne wardrobe', 'Whole-home custom', '72 processes']
+        },
+        {
+          title: 'Cabinet Customization',
+          description: 'Paterson cabinets: eco-friendly, healthy, and visually refined.',
+          image: '/paterson/product-kitchen-system.webp',
+          tags: ['Cabinet custom', 'Eco-friendly', 'Healthy']
+        },
+        {
+          title: 'Future Home by ér',
+          description: 'Let children participate in design and create a growth environment that protects body, mind, learning, and imagination.',
+          image: '/paterson/product-children-room.webp',
+          tags: ['Children room', 'Growth space', 'Future home']
+        }
+      ]
+    },
+    advantages: {
+      eyebrow: 'Franchise Advantages',
+      title: 'Franchise: waterborne paint, wellness oxygen, materials, and marketing innovation',
+      items: [
+        { icon: 'i-lucide-droplets', title: 'Closed-loop Waterborne Chain', description: 'Waterborne 3D intelligent coating line, factory 4.0 waterborne upgrade, and waterborne standard leadership.' },
+        { icon: 'i-lucide-wind', title: 'Wellness Oxygen Chain', description: 'Intelligent wellness bedrooms, super health center, and indoor-air standard leadership.' },
+        { icon: 'i-lucide-layers-3', title: 'Carbon Fiber Aerospace Material', description: 'Nine performance advantages and dimensional control that solves key light-luxury customization challenges.' },
+        { icon: 'i-lucide-megaphone', title: 'Marketing Innovation', description: 'AI digital enablement, waterborne new retail, and diversified campaign traffic generation.' },
+        { icon: 'i-lucide-award', title: 'Enterprise Honors', description: 'Technology certifications, industry awards, standard-setting, and major brand events build terminal trust.' },
+        { icon: 'i-lucide-history', title: 'Long-Term Focus', description: 'Since 2001, Paterson has built brand, product, and terminal experience in customized home furnishing.' }
+      ]
+    },
+    process: {
+      eyebrow: 'Franchise Process',
+      title: 'An eight-step path from inquiry to city launch',
+      description: 'From initial inquiry to training, opening support, and ongoing operations, each step gives partners a clear next action.',
+      stepLabel: 'Step',
+      steps: [
+        { title: 'Online Inquiry', description: 'Submit city, budget, and contact details.' },
+        { title: 'Headquarters Call', description: 'Match regional policies and cooperation model.' },
+        { title: 'On-site Visit', description: 'Review showroom, factory, and terminal samples.' },
+        { title: 'City Evaluation', description: 'Assess district, competition, and investment plan.' },
+        { title: 'Agreement', description: 'Confirm authorization, policies, and launch pace.' },
+        { title: 'Store Training', description: 'Complete design, product, and operation training.' },
+        { title: 'Opening Support', description: 'Coordinate campaigns, traffic, and team kickoff.' },
+        { title: 'Ongoing Operation', description: 'Receive marketing, product, and digital support.' }
+      ]
+    },
+    news: {
+      eyebrow: 'News and Honors',
+      title: 'Waterborne technology, brand honors, and industry updates',
+      more: 'View News',
+      items: [
+        {
+          tag: 'Technology',
+          title: 'Paterson waterborne core technology recognized by expert panel',
+          description: 'Key technology for high-hardness waterborne coated home panels received expert recognition.',
+          image: '/paterson/news-water-paint-tech.webp'
+        },
+        {
+          tag: 'Exhibition',
+          title: 'Paterson presents core technologies and spaces at Guangzhou custom home fair',
+          description: 'The brand strengthens terminal franchise expression around waterborne whole-home customization.',
+          image: '/paterson/news-custom-home-expo.webp'
+        },
+        {
+          tag: 'Standards',
+          title: 'New furniture standards and healthier waterborne home furnishing',
+          description: 'Environmental standards and wellness-home narratives extend the value of cabinet-wall-door systems.',
+          image: '/paterson/news-furniture-standard.webp'
+        }
+      ]
+    },
+    consult: {
+      eyebrow: 'Franchise Form',
+      title: 'Leave your city and budget for a cooperation assessment',
+      description: 'The form collects only essential information so the franchise team can evaluate city opportunity, investment plan, and next communication steps.',
+      privacy: 'Information is used only for franchise consultation and kept confidential.',
+      hours: 'Headquarters consultation hours: 09:00 - 18:00',
+      form: {
+        name: 'Name',
+        namePlaceholder: 'Enter your name',
+        phone: 'Phone',
+        phonePlaceholder: 'Enter your phone number',
+        city: 'Target city',
+        cityPlaceholder: 'e.g. Guangzhou / Chengdu / Hangzhou',
+        budget: 'Investment budget',
+        budgetPlaceholder: 'Select a budget range',
+        budgetOne: 'Under RMB 500k',
+        budgetTwo: 'RMB 500k - 1m',
+        budgetThree: 'Above RMB 1m',
+        message: 'Notes',
+        messagePlaceholder: 'Tell us about store resources, industry experience, or questions',
+        submit: 'Submit Franchise Inquiry'
+      }
+    },
+    mobileBar: {
+      consult: 'Inquiry',
+      call: 'Call',
+      store: 'Stores'
     },
     faq: {
       items: [
-        { question: '[[FAQ_1_Q]]', answer: '[[FAQ_1_A]]' },
-        { question: '[[FAQ_2_Q]]', answer: '[[FAQ_2_A]]' }
+        { question: 'What is Paterson’s core differentiation?', answer: 'Paterson combines waterborne cabinet-wall-door systems, eco whole-home customization, and DareGlobal listed-company backing.' },
+        { question: 'What information is needed for franchise inquiry?', answer: 'Name, phone, target city, budget, and store resources help headquarters evaluate the opportunity.' }
       ]
     }
   },
   aboutPage: {
     header: {
-      title: '[[ABOUT_PAGE_TITLE]]',
-      subtitle: '[[ABOUT_PAGE_SUBTITLE]]'
+      title: 'Brand Strength',
+      subtitle: 'Paterson builds long-term franchise trust through waterborne cabinet-wall-door systems, eco whole-home customization, and listed-company backing.'
     },
     story: {
-      heading: '[[ABOUT_STORY_HEADING]]',
-      paragraphs: ['[[ABOUT_STORY_P1]]', '[[ABOUT_STORY_P2]]', '[[ABOUT_STORY_P3]]'],
-      imagePlaceholder: '[[ABOUT_IMAGE_PLACEHOLDER]]'
+      heading: 'From waterborne technology to whole-home customization',
+      paragraphs: [
+        'Founded in 2001, Paterson has stayed focused on customized home furnishing, especially waterborne cabinet-wall-door systems and eco whole-home customization.',
+        'As a core brand under DareGlobal, Paterson brings listed-company governance, supply-chain capability, product development, and terminal operation support into its franchise system.',
+        'For city partners, Paterson combines real home-space imagery, waterborne technology, healthy living concepts, and digital marketing support to build a clear point of difference.'
+      ],
+      imagePlaceholder: 'Paterson brand space'
     },
-    milestonesHeading: '[[ABOUT_MILESTONES_HEADING]]',
+    milestonesHeading: 'Key Strengths',
     milestones: [
-      { icon: 'i-lucide-calendar', title: '[[MILESTONE_1_YEAR]]', description: '[[MILESTONE_1_DESC]]' },
-      { icon: 'i-lucide-trending-up', title: '[[MILESTONE_2_YEAR]]', description: '[[MILESTONE_2_DESC]]' },
-      { icon: 'i-lucide-target', title: '[[MILESTONE_3_YEAR]]', description: '[[MILESTONE_3_DESC]]' },
-      { icon: 'i-lucide-eye', title: '[[MILESTONE_4_YEAR]]', description: '[[MILESTONE_4_DESC]]' }
+      { icon: 'i-lucide-calendar', title: '2001', description: 'The brand was founded and has continued to focus on customized home furnishing.' },
+      { icon: 'i-lucide-trending-up', title: 'DareGlobal', description: 'A core brand under a listed company, stock code 002631.' },
+      { icon: 'i-lucide-droplets', title: 'Waterborne Tech', description: 'Technical support around materials, intelligent coating, and eco whole-home customization.' },
+      { icon: 'i-lucide-store', title: 'Franchise Support', description: 'Product, supply chain, design, marketing, and digital operation support for partners.' }
     ],
-    valuesHeading: '[[ABOUT_VALUES_HEADING]]',
+    valuesHeading: 'What We Stand For',
     values: [
-      { icon: 'i-lucide-heart', title: '[[ABOUT_VALUE_1_TITLE]]', description: '[[ABOUT_VALUE_1_DESC]]' },
-      { icon: 'i-lucide-lightbulb', title: '[[ABOUT_VALUE_2_TITLE]]', description: '[[ABOUT_VALUE_2_DESC]]' },
-      { icon: 'i-lucide-target', title: '[[ABOUT_VALUE_3_TITLE]]', description: '[[ABOUT_VALUE_3_DESC]]' }
+      { icon: 'i-lucide-heart', title: 'Healthy Living', description: 'Waterborne and wellness concepts answer long-term family concerns around safety, comfort, and living quality.' },
+      { icon: 'i-lucide-lightbulb', title: 'Technical Innovation', description: 'Intelligent coating, material upgrades, and systemized products strengthen terminal competitiveness.' },
+      { icon: 'i-lucide-target', title: 'Partner Growth', description: 'Clear franchise processes and ongoing operation support help city partners launch steadily.' }
     ],
     cta: {
-      title: '[[ABOUT_CTA_TITLE]]',
-      subtitle: '[[ABOUT_CTA_SUBTITLE]]',
-      button: '[[ABOUT_CTA_BUTTON]]'
+      title: 'Explore Paterson franchise policy',
+      subtitle: 'Submit your target city and contact details to receive a cooperation assessment for your local market.',
+      button: 'Start Inquiry'
     }
   },
   philosophyPage: {
     seo: {
-      title: '[[PHILOSOPHY_SEO_TITLE]]',
-      description: '[[PHILOSOPHY_SEO_DESCRIPTION]]',
-      keywords: '[[PHILOSOPHY_SEO_KEYWORDS]]'
+      title: 'Waterborne Technology | Paterson Cabinet-Wall-Door Systems',
+      description: 'Learn about Paterson waterborne chain, 3D intelligent coating line, factory 4.0 waterborne upgrade, and eco whole-home customization technology.',
+      keywords: 'waterborne technology,cabinet wall door system,intelligent coating,eco whole-home customization'
     },
     header: {
-      title: '[[PHILOSOPHY_PAGE_TITLE]]',
-      subtitle: '[[PHILOSOPHY_PAGE_SUBTITLE]]'
+      title: 'Waterborne Technology',
+      subtitle: 'From materials and coating to products and terminal delivery, Paterson uses a closed-loop waterborne chain to support eco whole-home customization.'
     },
     intro: {
-      heading: '[[PHILOSOPHY_INTRO_HEADING]]',
-      paragraphs: ['[[PHILOSOPHY_INTRO_P1]]', '[[PHILOSOPHY_INTRO_P2]]'],
-      imagePlaceholder: '[[PHILOSOPHY_IMAGE_PLACEHOLDER]]'
+      heading: 'Building environmental value into process and delivery',
+      paragraphs: [
+        'Waterborne technology is not a slogan. It is a capability chain built from materials, coating process, product systems, and terminal delivery.',
+        'Paterson’s waterborne 3D intelligent coating line, factory 4.0 upgrade, and standard-setting credentials help eco whole-home customization present quality more consistently.'
+      ],
+      imagePlaceholder: 'Waterborne technology space'
     },
     pillars: {
-      heading: '[[PHILOSOPHY_PILLARS_HEADING]]',
+      heading: 'Waterborne Chain Capability',
       items: [
-        { title: '[[PHILOSOPHY_PILLAR_1_TITLE]]', description: '[[PHILOSOPHY_PILLAR_1_DESC]]' },
-        { title: '[[PHILOSOPHY_PILLAR_2_TITLE]]', description: '[[PHILOSOPHY_PILLAR_2_DESC]]' },
-        { title: '[[PHILOSOPHY_PILLAR_3_TITLE]]', description: '[[PHILOSOPHY_PILLAR_3_DESC]]' },
-        { title: '[[PHILOSOPHY_PILLAR_4_TITLE]]', description: '[[PHILOSOPHY_PILLAR_4_DESC]]' }
+        { title: 'Waterborne Materials', description: 'Materials built around waterborne customization reduce health concerns from traditional coating.' },
+        { title: 'Intelligent Coating', description: 'A waterborne 3D intelligent coating line improves surface quality, stability, and scalable delivery.' },
+        { title: 'Whole-Home Coordination', description: 'Cabinets, walls, doors, and furniture share one style language and environmental standard.' },
+        { title: 'Terminal Trust', description: 'Standards, certifications, spatial experiences, and clear explanations help franchise stores build customer trust.' }
       ]
     },
     values: {
-      heading: '[[PHILOSOPHY_VALUES_HEADING]]',
+      heading: 'Value for Franchise Stores',
       items: [
-        { title: '[[PHILOSOPHY_VALUE_1_TITLE]]', description: '[[PHILOSOPHY_VALUE_1_DESC]]' },
-        { title: '[[PHILOSOPHY_VALUE_2_TITLE]]', description: '[[PHILOSOPHY_VALUE_2_DESC]]' },
-        { title: '[[PHILOSOPHY_VALUE_3_TITLE]]', description: '[[PHILOSOPHY_VALUE_3_DESC]]' }
+        { title: 'Clearer Differentiation', description: 'Waterborne and wellness concepts help stores stand apart from ordinary whole-home customization shops.' },
+        { title: 'More Stable Product Expression', description: 'Process and supply-chain capability make design effect, surface quality, and delivery standards more consistent.' },
+        { title: 'A Health Story Customers Understand', description: 'Materials, air, bedrooms, and whole-home spaces connect into a more understandable healthy-home value.' }
       ]
     },
     cta: {
-      title: '[[PHILOSOPHY_CTA_TITLE]]',
-      subtitle: '[[PHILOSOPHY_CTA_SUBTITLE]]',
-      button: '[[PHILOSOPHY_CTA_BUTTON]]'
+      title: 'Interested in waterborne whole-home customization franchise?',
+      subtitle: 'Our team can introduce product systems, store setup support, and operation assistance based on your city and resources.',
+      button: 'Submit Inquiry'
     }
   },
   dataPage: {
     seo: {
-      title: '[[DATA_SEO_TITLE]]',
-      description: '[[DATA_SEO_DESCRIPTION]]',
-      keywords: '[[DATA_SEO_KEYWORDS]]'
+      title: 'Product Systems | Paterson Waterborne Whole-Home Customization',
+      description: 'Explore Paterson wardrobe customization, cabinet customization, children growth spaces, and waterborne cabinet-wall-door systems.',
+      keywords: 'Paterson product systems,waterborne wardrobe,cabinet customization,children room,cabinet wall door system'
     },
-    title: '[[DATA_PAGE_TITLE]]',
-    subtitle: '[[DATA_PAGE_SUBTITLE]]',
-    defaultCategory: '[[DATA_CATEGORY_ALL]]',
-    searchPlaceholder: '[[DATA_SEARCH_PLACEHOLDER]]',
-    empty: '[[DATA_EMPTY_MESSAGE]]',
-    categories: ['[[DATA_CATEGORY_ALL]]', '[[DATA_CATEGORY_1]]', '[[DATA_CATEGORY_2]]'],
+    title: 'Product Systems',
+    subtitle: 'Whole-home solutions built around waterborne cabinet-wall-door systems, kitchen storage, and children growth spaces.',
+    defaultCategory: 'All',
+    searchPlaceholder: 'Search products or spaces',
+    empty: 'No matching product content',
+    categories: ['All', 'Bedroom System', 'Kitchen System', 'Children Space'],
     items: [
-      { title: '[[DATA_ITEM_1_TITLE]]', summary: '[[DATA_ITEM_1_SUMMARY]]', category: '[[DATA_ITEM_1_CATEGORY]]', detailPath: '/data/[[DATA_ITEM_1_SLUG]]' },
-      { title: '[[DATA_ITEM_2_TITLE]]', summary: '[[DATA_ITEM_2_SUMMARY]]', category: '[[DATA_ITEM_2_CATEGORY]]', detailPath: '/data/[[DATA_ITEM_2_SLUG]]' },
-      { title: '[[DATA_ITEM_3_TITLE]]', summary: '[[DATA_ITEM_3_SUMMARY]]', category: '[[DATA_ITEM_3_CATEGORY]]', detailPath: '/data/[[DATA_ITEM_3_SLUG]]' }
+      { title: 'Waterborne Wardrobe Customization', summary: 'An eco bedroom system with waterborne process, refined storage, and unified whole-home style.', category: 'Bedroom System', detailPath: '/data/bedroom-system' },
+      { title: 'Eco Cabinet Customization', summary: 'Kitchen solutions focused on workflow, storage efficiency, healthy materials, and refined appearance.', category: 'Kitchen System', detailPath: '/data/kitchen-system' },
+      { title: 'Future Home by er', summary: 'Growth spaces for children that combine learning, storage, rest, and imagination.', category: 'Children Space', detailPath: '/data/children-room' }
     ],
     detail: {
-      title: '[[DETAIL_TITLE]]',
-      category: '[[DETAIL_CATEGORY]]',
-      summary: '[[DETAIL_SUMMARY]]',
-      description: '[[DETAIL_DESCRIPTION]]',
-      featuresHeading: '[[DETAIL_FEATURES_HEADING]]',
-      features: ['[[DETAIL_FEATURE_1]]', '[[DETAIL_FEATURE_2]]', '[[DETAIL_FEATURE_3]]'],
-      specsHeading: '[[DETAIL_SPECS_HEADING]]',
+      title: 'Waterborne Whole-Home Customization Solution',
+      category: 'Product System',
+      summary: 'An eco, unified, and deliverable whole-home customization solution centered on waterborne cabinet-wall-door systems.',
+      description: 'Paterson product systems cover high-frequency living spaces such as bedrooms, kitchens, and children rooms. Waterborne process, cabinet-wall-door coordination, and terminal delivery standards help franchise stores clearly present the value of eco whole-home customization.',
+      featuresHeading: 'Core Features',
+      features: ['Waterborne process and eco materials', 'Systemized cabinet-wall-door design', 'Ready for terminal display and franchise launch'],
+      specsHeading: 'Solution Information',
       specifications: [
-        { label: '[[DETAIL_SPEC_1_LABEL]]', value: '[[DETAIL_SPEC_1_VALUE]]' },
-        { label: '[[DETAIL_SPEC_2_LABEL]]', value: '[[DETAIL_SPEC_2_VALUE]]' }
+        { label: 'Spaces', value: 'Bedroom / Kitchen / Children Room / Whole Home' },
+        { label: 'Support', value: 'Product, design, store setup, marketing, and operation support' }
       ],
-      backLabel: '[[DETAIL_BACK_LABEL]]',
-      ctaHeading: '[[DETAIL_CTA_HEADING]]',
-      ctaSubtitle: '[[DETAIL_CTA_SUBTITLE]]',
-      ctaButton: '[[DETAIL_CTA_BUTTON]]'
+      backLabel: 'Back to Product Systems',
+      ctaHeading: 'Get product system and franchise information',
+      ctaSubtitle: 'Leave your contact details and our team will introduce suitable product combinations for your city and store resources.',
+      ctaButton: 'Ask About Products'
     }
   },
   articlesPage: {
-    title: '[[ARTICLES_PAGE_TITLE]]',
-    subtitle: '[[ARTICLES_PAGE_SUBTITLE]]',
-    readMore: '[[ARTICLES_READ_MORE]]',
-    empty: '[[ARTICLES_EMPTY]]',
-    back: '[[ARTICLE_BACK_LABEL]]'
+    title: 'News',
+    subtitle: 'Follow Paterson updates on waterborne technology, standards, brand honors, exhibitions, and franchise information.',
+    readMore: 'Read More',
+    empty: 'No news available',
+    back: 'Back to News',
+    imagePlaceholder: 'Paterson news image',
+    fallback: [
+      {
+        category: 'Technology',
+        date: '2026-07-01',
+        intro: 'Key technology for high-hardness waterborne coated home panels received expert recognition, strengthening Paterson’s technical credibility.',
+        slug: 'waterborne-technology-certification',
+        title: 'Paterson waterborne core technology receives expert recognition'
+      },
+      {
+        category: 'Exhibition',
+        date: '2026-06-18',
+        intro: 'Paterson presented waterborne whole-home customization, wellness bedrooms, and refined spaces at a major custom home fair.',
+        slug: 'custom-home-expo',
+        title: 'Paterson presents waterborne whole-home solutions at custom home fair'
+      },
+      {
+        category: 'Standards',
+        date: '2026-05-26',
+        intro: 'Paterson continues to support industry quality through environmental standards, healthy-home narratives, and cabinet-wall-door systems.',
+        slug: 'healthy-home-standards',
+        title: 'Waterborne healthy homes support whole-home customization standards'
+      }
+    ]
   },
   contactPage: {
     seo: {
-      title: '[[CONTACT_SEO_TITLE]]',
-      description: '[[CONTACT_SEO_DESCRIPTION]]',
-      keywords: '[[CONTACT_SEO_KEYWORDS]]'
+      title: 'Contact | Paterson Franchise Inquiry',
+      description: 'Contact Paterson franchise team and submit your target city, budget, and contact details to learn about waterborne whole-home customization cooperation.',
+      keywords: 'Paterson franchise,whole-home customization franchise,waterborne customization franchise,franchise inquiry'
     },
-    title: '[[CONTACT_PAGE_TITLE]]',
-    subtitle: '[[CONTACT_PAGE_SUBTITLE]]',
-    infoTitle: '[[CONTACT_INFO_TITLE]]',
-    hours: '[[CONTACT_HOURS]]',
+    title: 'Contact Us',
+    subtitle: 'Submit your franchise interest and our consultant will contact you to assess city opportunity and cooperation options.',
+    infoTitle: 'Franchise Contact',
+    hours: 'Consultation hours: 09:00 - 18:00',
     labels: {
-      address: '[[CONTACT_ADDRESS_LABEL]]',
-      phone: '[[CONTACT_PHONE_LABEL]]',
-      email: '[[CONTACT_EMAIL_LABEL]]',
-      hours: '[[CONTACT_HOURS_LABEL]]'
+      address: 'Headquarters Address',
+      phone: 'Franchise Hotline',
+      email: 'Email',
+      hours: 'Consultation Hours'
     }
   },
   designSystemPage: {
     seo: {
-      title: 'Design System',
-      description: 'Review the Starter colors, typography, layout, components, and interaction guidelines.',
-      keywords: 'design system,design tokens,component guidelines,starter'
+      title: 'Brand Visuals',
+      description: 'Explore the Paterson website visual direction: color, typography, spacing, and interaction style.',
+      keywords: 'Paterson brand visuals,brand color,home furnishing website'
     },
-    title: 'Design System',
-    subtitle: 'A practical visual foundation for enterprise starter sites, keeping pages, components, and interactions consistent.',
+    title: 'Brand Visuals',
+    subtitle: 'Warm whites, deep wood tones, champagne gold, and real home-space imagery shape a mature, healthy, and trustworthy brand presence.',
     sections: {
       philosophy: 'Principles',
       colors: 'Colors',
       typography: 'Typography',
       layout: 'Layout',
-      components: 'Components',
+      components: 'Interface Elements',
       interaction: 'Interaction'
     },
     philosophy: {
       brandTitle: 'Brand tone',
-      brand: 'The default style stays neutral, clear, and trustworthy so a real brand can replace it without carrying old business decoration.',
+      brand: 'The visual language stays mature, healthy, and grounded in real home spaces, avoiding promotional clutter and generic technology styling.',
       directionTitle: 'Design direction',
-      direction: 'Components use light surfaces, clear borders, stable spacing, and reusable tokens for enterprise sites, content sites, and lightweight product pages.',
-      keywords: ['Neutral', 'Clear', 'Reusable', 'Replaceable']
+      direction: 'Generous whitespace, clear hierarchy, restrained motion, and real interiors build brand trust and support franchise conversion.',
+      keywords: ['Stable', 'Healthy', 'Real spaces', 'Franchise']
     },
-    colorIntro: 'Colors are sourced from design tokens in main.css and exposed to pages and components through the Tailwind theme mapping.',
-    typographyIntro: 'Type scale uses standard Tailwind utilities instead of arbitrary clamp classes, keeping responsive pages stable and predictable.',
-    layoutGrid: 'Page content is built around max-w-7xl, section-container, and responsive grids so desktop and mobile layouts stay consistent.',
-    layoutWhitespace: 'Spacing uses shared tokens and Tailwind spacing steps, preventing one-off section styles from fragmenting the page.',
+    colorIntro: 'The palette is built on warm white, deep wood black, wood brown, and champagne gold, with brand red and yellow used sparingly.',
+    typographyIntro: 'Chinese titles stay calm and refined, body text stays comfortable, and English labels support rather than dominate the page.',
+    layoutGrid: 'Wide content containers and responsive columns keep interior imagery, brand information, and franchise actions easy to scan.',
+    layoutWhitespace: 'Section spacing stays generous to avoid the crowded feeling of traditional franchise long pages.',
     samples: {
-      hero: 'A clear and reliable enterprise starter',
-      h1: 'Page title hierarchy',
-      h2: 'Section title hierarchy',
-      h3: 'Card title hierarchy'
+      hero: 'A new franchise growth path for waterborne whole-home customization',
+      h1: 'Brand page title',
+      h2: 'Core section title',
+      h3: 'Content card title'
     },
     preview: {
       primaryButton: 'Primary CTA',
@@ -483,11 +657,11 @@ const starter = {
       smallButton: 'Small',
       largeButton: 'Large',
       cardTitle: 'Content card',
-      cardDescription: 'Use this pattern for features, data entries, or article links with clear boundaries and stable layout.',
+      cardDescription: 'Use this pattern for product systems, brand strength, or news content with clear boundaries and stable layout.',
       cardAltTitle: 'Information card',
-      cardAltDescription: 'A simple surface for supporting notes, resource links, or page summaries.',
-      heroTitle: 'Hero preview',
-      heroSubtitle: 'A foundational hero block for titles, supporting copy, and action buttons.',
+      cardAltDescription: 'A simple surface for technology highlights, franchise support, or page summaries.',
+      heroTitle: 'Paterson',
+      heroSubtitle: 'Waterborne whole-home customization, wellness spaces, and franchise support shape the brand website experience.',
       heroCta: 'View details'
     }
   },
@@ -507,7 +681,7 @@ const starter = {
           title: 'How we handle information',
           paragraphs: [
             'We process information only as needed to provide the site, respond to inquiries, maintain security, and improve the experience.',
-            'This is starter copy. Replace it with formal legal text that matches your business, region, and compliance requirements before launch.'
+            'Franchise inquiry information is used for requirement communication, city opportunity assessment, and follow-up service contact. We do not use personal information for unrelated purposes without authorization.'
           ]
         }
       ]
@@ -525,7 +699,7 @@ const starter = {
           title: 'Using this website',
           paragraphs: [
             'By accessing this website, you agree to follow applicable laws and use the site content in a reasonable and lawful way.',
-            'This page contains starter terms. Replace it with formal copy suited to your business before launch.'
+            'Brand, image, text, and product information on this website are provided to introduce Paterson related services and may not be used for misleading display or unauthorized commercial copying.'
           ]
         }
       ]

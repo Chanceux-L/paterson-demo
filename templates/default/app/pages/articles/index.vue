@@ -4,7 +4,8 @@ import { ARTICLE_PAGE_SIZE } from '#shared-template/types/articles';
 
 type ArticleCard = Pick<Article, 'category' | 'date' | 'id' | 'image' | 'intro' | 'slug' | 'title'>;
 
-const { locale, t } = useI18n();
+const { locale, t, tm } = useI18n();
+const { resolveTranslatedMessageTree } = useI18nMessageTree();
 const { loadArticleBundle } = usePublicApiBundles();
 const {
   articlesItemListSchema,
@@ -25,38 +26,10 @@ const { data: articleBundleData, pending } = await useAsyncData(
   { server: !import.meta.dev, watch: [locale, currentPage] }
 );
 const articles = computed<ArticleCard[]>(() => articleBundleData.value?.items || []);
-const starterFallbackArticles = computed<ArticleCard[]>(() => [
-  {
-    category: '[[ARTICLE_CATEGORY]]',
-    date: '[[ARTICLE_DATE_1]]',
-    id: 1,
-    image: '',
-    intro: '[[ARTICLE_SUMMARY_1]]',
-    slug: '[[ARTICLE_SLUG_1]]',
-    title: '[[ARTICLE_TITLE_1]]'
-  },
-  {
-    category: '[[ARTICLE_CATEGORY]]',
-    date: '[[ARTICLE_DATE_2]]',
-    id: 2,
-    image: '',
-    intro: '[[ARTICLE_SUMMARY_2]]',
-    slug: '[[ARTICLE_SLUG_2]]',
-    title: '[[ARTICLE_TITLE_2]]'
-  },
-  {
-    category: '[[ARTICLE_CATEGORY]]',
-    date: '[[ARTICLE_DATE_3]]',
-    id: 3,
-    image: '',
-    intro: '[[ARTICLE_SUMMARY_3]]',
-    slug: '[[ARTICLE_SLUG_3]]',
-    title: '[[ARTICLE_TITLE_3]]'
-  }
-]);
+const starterFallbackArticles = computed<ArticleCard[]>(() => resolveTranslatedMessageTree(tm('articlesPage.fallback')) as ArticleCard[]);
 const visibleArticles = computed(() => articles.value.length ? articles.value : starterFallbackArticles.value);
 const totalPages = computed(() => Math.max(1, articleBundleData.value?.totalPages || 1));
-const articleImagePlaceholder = '[[ARTICLE_IMAGE_PLACEHOLDER]]';
+const articleImagePlaceholder = computed(() => t('articlesPage.imagePlaceholder'));
 
 function parsePage(value: unknown): number {
   const page = Number(value);

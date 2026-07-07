@@ -6,7 +6,6 @@ type DetailSpec = {
 
 const { t, tm } = useI18n();
 const { resolveTranslatedMessageTree } = useI18nMessageTree();
-const route = useRoute();
 
 const pageTitle = computed(() => t('dataPage.detail.title'));
 const pageDescription = computed(() => t('dataPage.detail.summary'));
@@ -47,9 +46,6 @@ useAppSeoMeta({
           </h1>
           <p class="mt-5 text-base leading-8 text-text-secondary md:text-lg">
             {{ t('dataPage.detail.summary') }}
-          </p>
-          <p class="mt-3 text-xs font-mono text-text-muted">
-            {{ route.params.id }}
           </p>
         </header>
 

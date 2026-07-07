@@ -2,7 +2,6 @@
 type Swatch = {
   hex: string;
   name: string;
-  token: string;
 };
 
 const { t, tm } = useI18n();
@@ -13,14 +12,14 @@ const pageDescription = computed(() => t('designSystemPage.seo.description'));
 const pageKeywords = computed(() => t('designSystemPage.seo.keywords'));
 const styleKeywords = computed<string[]>(() => resolveTranslatedMessageTree(tm('designSystemPage.philosophy.keywords')) as string[]);
 const swatches: Swatch[] = [
-  { name: 'Primary', token: '--color-primary', hex: '#2563eb' },
-  { name: 'Primary Hover', token: '--color-primary-hover', hex: '#1d4ed8' },
-  { name: 'Accent', token: '--color-accent', hex: '#38bdf8' },
-  { name: 'Background', token: '--color-background', hex: '#ffffff' },
-  { name: 'Surface', token: '--color-surface', hex: '#f8fafc' },
-  { name: 'Text Primary', token: '--color-text-primary', hex: '#0f172a' },
-  { name: 'Text Secondary', token: '--color-text-secondary', hex: '#475569' },
-  { name: 'Border', token: '--color-border', hex: '#e2e8f0' }
+  { name: '暖白背景', hex: '#F7F4EE' },
+  { name: '深木黑', hex: '#24211D' },
+  { name: '深木色', hex: '#7A5438' },
+  { name: '香槟金', hex: '#B99A63' },
+  { name: '健康绿', hex: '#1F3A34' },
+  { name: '品牌红', hex: '#C91F2B' },
+  { name: '品牌黄', hex: '#F2B705' },
+  { name: '分割线', hex: '#E5DED2' }
 ];
 
 useAppSeoMeta({
@@ -89,11 +88,11 @@ useAppSeoMeta({
           {{ t('designSystemPage.colorIntro') }}
         </p>
         <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <article v-for="swatch in swatches" :key="swatch.token" class="flex items-center gap-4 rounded-card border border-border bg-background p-4">
+          <article v-for="swatch in swatches" :key="swatch.name" class="flex items-center gap-4 rounded-card border border-border bg-background p-4">
             <span class="size-12 rounded-md border border-border" :style="{ backgroundColor: swatch.hex }"></span>
             <span>
               <strong class="block text-sm text-text-primary">{{ swatch.name }}</strong>
-              <span class="font-mono text-xs text-text-muted">{{ swatch.token }}</span>
+              <span class="text-xs text-text-muted">{{ swatch.hex }}</span>
             </span>
           </article>
         </div>
@@ -111,32 +110,32 @@ useAppSeoMeta({
         </p>
         <div class="grid gap-4">
           <article class="rounded-card border border-border bg-background p-5">
-            <p class="font-mono text-xs text-text-muted">
-              text-hero
+            <p class="text-xs text-text-muted">
+              首页主标题
             </p>
             <p class="mt-2 font-heading text-4xl font-bold leading-tight md:text-5xl">
               {{ t('designSystemPage.samples.hero') }}
             </p>
           </article>
           <article class="rounded-card border border-border bg-background p-5">
-            <p class="font-mono text-xs text-text-muted">
-              text-h1
+            <p class="text-xs text-text-muted">
+              页面标题
             </p>
             <p class="mt-2 font-heading text-3xl font-bold leading-tight md:text-4xl">
               {{ t('designSystemPage.samples.h1') }}
             </p>
           </article>
           <article class="rounded-card border border-border bg-background p-5">
-            <p class="font-mono text-xs text-text-muted">
-              text-h2
+            <p class="text-xs text-text-muted">
+              区块标题
             </p>
             <p class="mt-2 font-heading text-2xl font-semibold leading-tight md:text-3xl">
               {{ t('designSystemPage.samples.h2') }}
             </p>
           </article>
           <article class="rounded-card border border-border bg-background p-5">
-            <p class="font-mono text-xs text-text-muted">
-              text-h3
+            <p class="text-xs text-text-muted">
+              卡片标题
             </p>
             <p class="mt-2 font-heading text-xl font-semibold leading-snug">
               {{ t('designSystemPage.samples.h3') }}
@@ -153,8 +152,8 @@ useAppSeoMeta({
           </h2>
         </div>
         <div class="grid gap-6 md:grid-cols-2">
-          <StarterContentCard title="Grid" :description="t('designSystemPage.layoutGrid')" icon="i-lucide-layout" />
-          <StarterContentCard title="Whitespace" :description="t('designSystemPage.layoutWhitespace')" icon="i-lucide-ruler" />
+          <StarterContentCard title="内容结构" :description="t('designSystemPage.layoutGrid')" icon="i-lucide-layout" />
+          <StarterContentCard title="留白节奏" :description="t('designSystemPage.layoutWhitespace')" icon="i-lucide-ruler" />
         </div>
       </section>
 

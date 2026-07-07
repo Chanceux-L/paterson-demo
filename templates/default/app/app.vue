@@ -18,6 +18,14 @@ useHead({
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     { key: 'theme-color', name: 'theme-color', content: '#ffffff' }
   ],
+  link: [
+    { key: 'favicon', rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' },
+    { key: 'icon-16', rel: 'icon', href: '/icon-16x16.png', type: 'image/png', sizes: '16x16' },
+    { key: 'icon-32', rel: 'icon', href: '/icon-32x32.png', type: 'image/png', sizes: '32x32' },
+    { key: 'icon-192', rel: 'icon', href: '/icon-192x192.png', type: 'image/png', sizes: '192x192' },
+    { key: 'icon-512', rel: 'icon', href: '/icon-512x512.png', type: 'image/png', sizes: '512x512' },
+    { key: 'apple-touch-icon', rel: 'apple-touch-icon', href: '/apple-touch-icon.png', type: 'image/png', sizes: '180x180' }
+  ],
   script: [
     {
       key: 'organization-json-ld',

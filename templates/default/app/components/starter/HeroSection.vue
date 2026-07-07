@@ -17,12 +17,12 @@ const props = withDefaults(defineProps<{
   ctaLabel: '',
   highlights: () => [],
   layout: 'split',
-  subtitle: '[[HERO_SUBTITLE]]',
-  title: '[[HERO_TITLE]]'
+  subtitle: '以水漆科技、环保整家定制和加盟支持构建可信赖的品牌官网体验。',
+  title: 'Paterson 百得胜'
 });
 
 const isSplit = computed(() => props.layout === 'split');
-const heroVisualPlaceholder = '[[HERO_VISUAL_PLACEHOLDER]]';
+const heroVisualPlaceholder = 'Paterson 空间形象';
 </script>
 
 <template>

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { siteProfile } from '@site-profile';
+import { cn } from '#shared-template/utils/cn';
 
 type NavItem = {
   label: string;
@@ -10,7 +11,7 @@ type NavItem = {
 
 const phone = siteProfile.contact.phone;
 const sourceRegisterUrl = siteProfile.urls.memberCenter;
-const { tm, t } = useI18n();
+const { locale, tm, t } = useI18n();
 const router = useRouter();
 const localePath = useLocalePath();
 const { resolveTranslatedMessageTree } = useI18nMessageTree();
@@ -19,6 +20,7 @@ const menuOpen = ref(false);
 const headerRef = ref<HTMLElement | null>(null);
 
 const navItems = computed<NavItem[]>(() => resolveTranslatedMessageTree(tm('nav.items')) as NavItem[]);
+const isEnglishLocale = computed(() => locale.value === 'en');
 const preferredMotion = usePreferredReducedMotion();
 const bodyScrollLocked = useScrollLock(import.meta.client ? document.body : null);
 const showScrollTop = ref(false);
@@ -151,25 +153,41 @@ onBeforeUnmount(() => {
     :class="headerScrolled ? 'shadow-sm' : ''"
   >
     <div class="mx-auto flex h-full min-w-0 w-full max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-14">
-      <NuxtLinkLocale class="flex min-w-0 shrink items-center gap-3 text-text-primary" to="/" :aria-label="t('nav.homeAria')">
-        <span class="grid size-9 shrink-0 place-items-center rounded-md bg-brand-primary text-sm font-bold text-white">
-          {{ t('site.name').slice(0, 1) }}
-        </span>
-        <span class="font-heading max-w-44 truncate text-base font-semibold leading-none sm:max-w-56 sm:text-lg">
-          {{ t('site.name') }}
-        </span>
+      <NuxtLinkLocale
+        :class="cn(
+          'flex min-w-0 items-center gap-3 text-text-primary',
+          isEnglishLocale ? 'shrink-0 lg:max-w-[220px] xl:max-w-none' : 'shrink'
+        )"
+        to="/"
+        :aria-label="t('nav.homeAria')"
+      >
+        <img class="h-9 w-auto shrink-0" src="/paterson/logo-paterson.png" :alt="t('nav.logoAlt')" />
         <span class="hidden h-6 w-px bg-border sm:block"></span>
-        <span class="hidden max-w-48 truncate text-xs font-medium leading-tight text-text-muted md:block">
+        <span
+          :class="cn(
+            'hidden max-w-48 truncate text-xs font-medium leading-tight text-text-muted md:block',
+            isEnglishLocale && 'lg:hidden 2xl:block'
+          )"
+        >
           {{ t('nav.sloganAlt') }}
         </span>
       </NuxtLinkLocale>
 
-      <nav class="hidden items-center gap-1 lg:flex" :aria-label="t('nav.mainNav')">
+      <nav
+        :class="cn(
+          'hidden min-w-0 items-center lg:flex',
+          isEnglishLocale ? 'gap-0 xl:gap-1' : 'gap-1'
+        )"
+        :aria-label="t('nav.mainNav')"
+      >
         <NuxtLinkLocale
           v-for="item in navItems"
           :key="item.href"
-          class="rounded-md px-3 py-2 text-sm font-medium text-text-secondary transition hover:bg-surface-alt hover:text-text-primary"
-          :class="isNavItemActive(item) ? 'bg-brand-primary/10 text-brand-primary' : ''"
+          :class="cn(
+            'whitespace-nowrap rounded-md py-2 font-medium text-text-secondary transition hover:bg-surface-alt hover:text-text-primary',
+            isEnglishLocale ? 'px-2 text-[13px] xl:px-3 xl:text-sm' : 'px-3 text-sm',
+            isNavItemActive(item) && 'bg-brand-primary/10 text-brand-primary'
+          )"
           :to="item.href"
           :aria-current="isNavItemActive(item) ? 'page' : undefined"
         >
@@ -183,12 +201,14 @@ onBeforeUnmount(() => {
         </div>
         <a
           :href="sourceRegisterUrl"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hidden h-10 items-center justify-center rounded-md border border-border px-3 text-sm font-medium text-text-secondary transition hover:border-brand-primary hover:text-brand-primary md:inline-flex"
+          :class="cn(
+            'hidden h-10 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-brand-primary text-sm font-medium text-white transition hover:bg-brand-primary-hover md:inline-flex',
+            isEnglishLocale ? 'px-3 xl:px-4' : 'px-4'
+          )"
           :aria-label="t('nav.memberCenter')"
         >
-          <UIcon class="size-4" name="i-lucide-user" />
+          <UIcon class="size-4" name="i-lucide-message-circle" />
+          <span>{{ t('nav.memberCenter') }}</span>
         </a>
         <button
           v-if="!menuOpen"
@@ -233,10 +253,7 @@ onBeforeUnmount(() => {
             :aria-label="t('nav.homeAria')"
             @click="closeMenu"
           >
-            <span class="grid size-9 shrink-0 place-items-center rounded-md bg-brand-primary text-sm font-bold text-white">
-              {{ t('site.name').slice(0, 1) }}
-            </span>
-            <span class="min-w-0 truncate font-heading text-base font-semibold leading-none text-text-primary sm:text-lg">{{ t('site.name') }}</span>
+            <img class="h-9 w-auto shrink-0" src="/paterson/logo-paterson.png" :alt="t('nav.logoAlt')" />
           </NuxtLinkLocale>
           <button
             id="menuClose"
@@ -267,12 +284,10 @@ onBeforeUnmount(() => {
           <SiteLanguageSwitcher class="w-full" panel-align="start" @select="closeMenu" />
           <a
             :href="sourceRegisterUrl"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="flex min-h-11 items-center gap-2 rounded-md border border-border bg-background px-4 text-sm font-medium text-text-secondary transition hover:border-brand-primary hover:text-brand-primary"
+            class="flex min-h-11 items-center gap-2 rounded-md bg-brand-primary px-4 text-sm font-medium text-white transition hover:bg-brand-primary-hover"
             @click="closeMenu"
           >
-            <UIcon name="i-lucide-user" />
+            <UIcon name="i-lucide-message-circle" />
             <span>{{ t('nav.memberCenter') }}</span>
           </a>
           <a class="text-sm font-medium text-text-secondary transition hover:text-brand-primary" :href="`tel:${phone}`">

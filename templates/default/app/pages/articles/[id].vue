@@ -18,7 +18,7 @@ const sanitizedArticleContent = computed(() => sanitizeHtml(articleContent.value
 const articleTitle = computed(() => article.value?.title || '');
 const articleDescription = computed(() => article.value?.intro || '');
 const articleVideo = computed(() => article.value?.video || '');
-const articleImagePlaceholder = '[[ARTICLE_IMAGE_PLACEHOLDER]]';
+const articleImagePlaceholder = computed(() => t('articlesPage.imagePlaceholder'));
 
 useAppSeoMeta({
   title: computed(() => t('pages.articles.detailSeo.title', { title: articleTitle.value })),

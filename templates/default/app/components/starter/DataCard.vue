@@ -8,8 +8,8 @@ withDefaults(defineProps<{
   category: ''
 });
 
-const imagePlaceholder = '[[DATA_CARD_IMAGE_PLACEHOLDER]]';
-const linkText = '[[DATA_CARD_LINK_TEXT]]';
+const imagePlaceholder = 'Paterson 产品空间';
+const linkText = '查看详情';
 </script>
 
 <template>

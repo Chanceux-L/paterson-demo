@@ -23,8 +23,8 @@ const gridClass: Record<string, string> = {
   'grid-3': 'grid gap-6 md:grid-cols-2 lg:grid-cols-3',
   'grid-4': 'grid gap-6 sm:grid-cols-2 lg:grid-cols-4'
 };
-const featureLinkText = '[[FEATURE_LINK_TEXT]]';
-const featureVisualPlaceholder = '[[FEATURE_VISUAL_PLACEHOLDER]]';
+const featureLinkText = '了解更多';
+const featureVisualPlaceholder = 'Paterson 品牌空间';
 </script>
 
 <template>

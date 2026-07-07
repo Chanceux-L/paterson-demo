@@ -146,9 +146,6 @@ function openCookieConsentSettings() {
             </div>
           </div>
         </div>
-        <div class="mt-12 border-t border-border pt-8 text-center">
-          <span class="text-sm text-text-muted">{{ t('footer.tagline') }}</span>
-        </div>
       </div>
     </div>
     <div class="border-t border-border bg-background px-5 py-6 sm:px-8 lg:px-14">

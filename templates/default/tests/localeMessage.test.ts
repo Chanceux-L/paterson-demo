@@ -26,22 +26,22 @@ test('public API article adapter reads API values without locale fallbacks', () 
   assert.doesNotMatch(bundleSource, /zhCN|i18n\/locales\/zh-CN/);
 });
 
-test('all footer support link options keep the same route targets', () => {
+test('all footer contact link options keep the same route targets', () => {
   const zhCnSource = readFileSync(templatePath('i18n/locales/zh-CN.ts'), 'utf8');
-  const expectedTargets = extractFooterSupportTargets(zhCnSource);
+  const expectedTargets = extractFooterContactTargets(zhCnSource);
   const localeFiles = readdirSync(templatePath('i18n/locales')).filter(file => file.endsWith('.ts'));
 
   for (const file of localeFiles) {
     const source = readFileSync(templatePath(`i18n/locales/${file}`), 'utf8');
 
-    assert.deepEqual(extractFooterSupportTargets(source), expectedTargets, `${file} footer support links should match zh-CN targets`);
+    assert.deepEqual(extractFooterContactTargets(source), expectedTargets, `${file} footer contact links should match zh-CN targets`);
   }
 });
 
-function extractFooterSupportTargets(source: string) {
-  const match = source.match(/title: '(?:支持|Support)',\s*links:\s*\[([\s\S]*?)\]\s*\}/);
+function extractFooterContactTargets(source: string) {
+  const match = source.match(/title: '(?:联系|Contact)',\s*links:\s*\[([\s\S]*?)\]\s*\}/);
 
-  assert.ok(match, 'footer support column should exist');
+  assert.ok(match, 'footer contact column should exist');
 
   return extractLinkTargets(match[1] ?? '');
 }

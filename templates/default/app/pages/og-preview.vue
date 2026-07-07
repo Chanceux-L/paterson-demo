@@ -3,8 +3,8 @@ import { siteProfile } from '@site-profile';
 
 const { t } = useI18n();
 
-const pageTitle = 'OG Image Preview';
-const pageDescription = 'Preview the current OG image template with Chinese font rendering.';
+const pageTitle = '品牌分享图';
+const pageDescription = '查看 Paterson 百得胜品牌分享图的标题、说明与视觉呈现。';
 const previewFrame = ref<HTMLElement | null>(null);
 const { width: previewFrameWidth } = useElementSize(previewFrame);
 const previewScale = computed(() => Math.min(previewFrameWidth.value / 1200, 1));
@@ -44,7 +44,7 @@ useAppSeoMeta({
           1200 x 630
         </p>
         <h1 class="mt-2 font-heading text-3xl font-bold leading-tight text-text-primary md:text-4xl">
-          OG Image Preview
+          品牌分享图
         </h1>
       </div>
       <NuxtLinkLocale
@@ -52,14 +52,14 @@ useAppSeoMeta({
         class="inline-flex min-h-10 items-center gap-2 rounded-md border border-border px-4 text-sm font-medium text-text-secondary transition hover:border-brand-primary hover:text-brand-primary"
       >
         <UIcon name="i-lucide-arrow-left" class="size-4" />
-        Home
+        返回首页
       </NuxtLinkLocale>
     </div>
 
     <div class="grid gap-6 lg:grid-cols-[22rem_minmax(0,1fr)]">
       <form class="space-y-5 rounded-md border border-border bg-background p-5" @submit.prevent>
         <label class="block">
-          <span class="text-sm font-semibold text-text-primary">Title</span>
+          <span class="text-sm font-semibold text-text-primary">标题</span>
           <input
             v-model="previewTitle"
             class="mt-2 min-h-11 w-full rounded-md border border-border bg-surface px-3 text-sm text-text-primary outline-none transition focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20"
@@ -68,7 +68,7 @@ useAppSeoMeta({
         </label>
 
         <label class="block">
-          <span class="text-sm font-semibold text-text-primary">Description</span>
+          <span class="text-sm font-semibold text-text-primary">说明</span>
           <textarea
             v-model="previewDescription"
             class="mt-2 min-h-28 w-full resize-y rounded-md border border-border bg-surface px-3 py-3 text-sm leading-6 text-text-primary outline-none transition focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20"
@@ -76,7 +76,7 @@ useAppSeoMeta({
         </label>
 
         <label class="block">
-          <span class="text-sm font-semibold text-text-primary">Brand</span>
+          <span class="text-sm font-semibold text-text-primary">品牌</span>
           <input
             v-model="previewBrand"
             class="mt-2 min-h-11 w-full rounded-md border border-border bg-surface px-3 text-sm text-text-primary outline-none transition focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20"
@@ -85,7 +85,7 @@ useAppSeoMeta({
         </label>
 
         <label class="block">
-          <span class="text-sm font-semibold text-text-primary">Slogan</span>
+          <span class="text-sm font-semibold text-text-primary">品牌语</span>
           <input
             v-model="previewSlogan"
             class="mt-2 min-h-11 w-full rounded-md border border-border bg-surface px-3 text-sm text-text-primary outline-none transition focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20"
@@ -94,7 +94,7 @@ useAppSeoMeta({
         </label>
 
         <label class="block">
-          <span class="text-sm font-semibold text-text-primary">Font Family</span>
+          <span class="text-sm font-semibold text-text-primary">字体</span>
           <input
             v-model="previewFontFamily"
             class="mt-2 min-h-11 w-full rounded-md border border-border bg-surface px-3 text-sm text-text-primary outline-none transition focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20"
@@ -108,7 +108,7 @@ useAppSeoMeta({
           @click="resetPreview"
         >
           <UIcon name="i-lucide-rotate-ccw" class="size-4" />
-          Reset
+          恢复默认
         </button>
       </form>
 
