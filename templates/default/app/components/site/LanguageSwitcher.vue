@@ -14,6 +14,7 @@ const emit = defineEmits<{
 
 const { locale, t } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
+const publicAsset = usePublicAsset();
 
 const currentLanguage = computed(() => siteLanguages.find(language => language.code === locale.value) ?? siteLanguages[0]!);
 const orderedLanguages = computed(() => prioritizeSelectedLanguage(siteLanguages, locale.value));
@@ -31,7 +32,7 @@ function selectLanguage(code: SiteLanguageCode, close: () => void) {
   close();
 
   if (shouldNavigate && import.meta.client) {
-    window.location.assign(switchLocalePath(code));
+    window.location.assign(publicAsset(switchLocalePath(code)));
   }
 }
 </script>
@@ -39,7 +40,7 @@ function selectLanguage(code: SiteLanguageCode, close: () => void) {
 <template>
   <UPopover
     :content="popoverContent"
-    :ui="{ content: 'w-64 max-w-[calc(100vw-2rem)] overflow-hidden rounded-md border border-border bg-background p-0 text-text-primary shadow-lg ring-0' }"
+    :ui="{ content: 'w-[min(20rem,calc(100vw-2rem))] overflow-hidden rounded-md border border-border bg-background p-0 text-text-primary shadow-lg ring-0' }"
   >
     <button
       type="button"

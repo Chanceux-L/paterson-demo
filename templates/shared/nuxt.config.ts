@@ -3,7 +3,7 @@ import { fileURLToPath } from 'node:url';
 import { defineNuxtConfig } from 'nuxt/config';
 import urlJoin from 'proper-url-join';
 import { siteProfile } from './config/site-profile';
-import { siteLanguages } from './app/utils/languages';
+import { getLanguageFlagBundleIcons, siteLanguages } from './app/utils/languages';
 import { APP_OG_FALLBACK_IMAGE_PATH, isAppOgImageEnabled } from './app/utils/og-image';
 import { dynamicSitemapSourcePath } from './app/utils/sitemap';
 
@@ -341,6 +341,9 @@ export default defineNuxtConfig({
     serverBundle: 'auto',
     clientBundle: {
       icons: [
+        ...getLanguageFlagBundleIcons(),
+        'lucide:check',
+        'lucide:chevron-down',
         'lucide:chevron-right',
         'lucide:chevron-up',
         'lucide:sliders-horizontal',
