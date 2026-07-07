@@ -702,28 +702,33 @@ useSchemaOrg(computed(() => [
   transform-origin: 58% 48%;
 }
 
-.hero-image-panel {
-  background-image: url("/paterson/oxygen-space-bg.webp");
-  background-position: 60% 50%;
-  background-size: cover;
-}
-
 .hero-image-panel::before {
   position: absolute;
   inset-block: 0;
-  left: -18%;
+  left: -34%;
   z-index: 1;
-  width: 44%;
+  width: 60%;
   pointer-events: none;
   content: "";
   background: linear-gradient(
     90deg,
     #f4f1ea 0%,
-    rgba(244, 241, 234, 0.98) 18%,
-    rgba(244, 241, 234, 0.82) 38%,
-    rgba(244, 241, 234, 0.46) 66%,
+    rgba(244, 241, 234, 0.96) 24%,
+    rgba(244, 241, 234, 0.78) 48%,
+    rgba(244, 241, 234, 0.36) 76%,
     rgba(244, 241, 234, 0) 100%
   );
+}
+
+.hero-image-panel::after {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 18%;
+  pointer-events: none;
+  content: "";
+  background: linear-gradient(180deg, rgba(244, 241, 234, 0) 0%, #f4f1ea 100%);
 }
 
 .hero-side-image {
@@ -731,19 +736,19 @@ useSchemaOrg(computed(() => [
   -webkit-mask-image: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(0, 0, 0, 0.12) 5%,
-    rgba(0, 0, 0, 0.34) 12%,
-    rgba(0, 0, 0, 0.68) 22%,
-    black 36%,
+    rgba(0, 0, 0, 0.08) 6%,
+    rgba(0, 0, 0, 0.28) 16%,
+    rgba(0, 0, 0, 0.62) 30%,
+    black 48%,
     black 100%
   );
   mask-image: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(0, 0, 0, 0.12) 5%,
-    rgba(0, 0, 0, 0.34) 12%,
-    rgba(0, 0, 0, 0.68) 22%,
-    black 36%,
+    rgba(0, 0, 0, 0.08) 6%,
+    rgba(0, 0, 0, 0.28) 16%,
+    rgba(0, 0, 0, 0.62) 30%,
+    black 48%,
     black 100%
   );
 }
