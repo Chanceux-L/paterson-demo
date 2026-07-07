@@ -200,8 +200,8 @@ onBeforeUnmount(() => {
         <div class="hidden sm:block">
           <SiteLanguageSwitcher />
         </div>
-        <a
-          :href="sourceRegisterUrl"
+        <NuxtLinkLocale
+          :to="sourceRegisterUrl"
           :class="cn(
             'hidden h-10 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-brand-primary text-sm font-medium text-white transition hover:bg-brand-primary-hover md:inline-flex',
             isEnglishLocale ? 'px-3 xl:px-4' : 'px-4'
@@ -210,7 +210,7 @@ onBeforeUnmount(() => {
         >
           <UIcon class="size-4" name="i-lucide-message-circle" />
           <span>{{ t('nav.memberCenter') }}</span>
-        </a>
+        </NuxtLinkLocale>
         <button
           v-if="!menuOpen"
           id="menuToggle"
@@ -283,14 +283,14 @@ onBeforeUnmount(() => {
 
         <div class="mt-auto grid gap-3 border-t border-border pt-5">
           <SiteLanguageSwitcher class="w-full" panel-align="start" @select="closeMenu" />
-          <a
-            :href="sourceRegisterUrl"
+          <NuxtLinkLocale
+            :to="sourceRegisterUrl"
             class="flex min-h-11 items-center gap-2 rounded-md bg-brand-primary px-4 text-sm font-medium text-white transition hover:bg-brand-primary-hover"
             @click="closeMenu"
           >
             <UIcon name="i-lucide-message-circle" />
             <span>{{ t('nav.memberCenter') }}</span>
-          </a>
+          </NuxtLinkLocale>
           <a class="text-sm font-medium text-text-secondary transition hover:text-brand-primary" :href="`tel:${phone}`">
             {{ t('nav.hotline') }}: {{ phone }}
           </a>
