@@ -3,6 +3,7 @@ import { getSiteLanguageDirection } from '#shared-template/utils/languages';
 
 const { locale, t } = useI18n();
 const { organizationJsonLd } = useGeoSchemas();
+const publicAsset = usePublicAsset();
 
 // Canonical, hreflang alternates and og:locale handled by @nuxtjs/i18n.
 // lang/dir stay managed by the existing htmlAttrs below to avoid duplication.
@@ -19,12 +20,12 @@ useHead({
     { key: 'theme-color', name: 'theme-color', content: '#ffffff' }
   ],
   link: [
-    { key: 'favicon', rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' },
-    { key: 'icon-16', rel: 'icon', href: '/icon-16x16.png', type: 'image/png', sizes: '16x16' },
-    { key: 'icon-32', rel: 'icon', href: '/icon-32x32.png', type: 'image/png', sizes: '32x32' },
-    { key: 'icon-192', rel: 'icon', href: '/icon-192x192.png', type: 'image/png', sizes: '192x192' },
-    { key: 'icon-512', rel: 'icon', href: '/icon-512x512.png', type: 'image/png', sizes: '512x512' },
-    { key: 'apple-touch-icon', rel: 'apple-touch-icon', href: '/apple-touch-icon.png', type: 'image/png', sizes: '180x180' }
+    { key: 'favicon', rel: 'icon', href: () => publicAsset('/favicon.ico'), type: 'image/x-icon' },
+    { key: 'icon-16', rel: 'icon', href: () => publicAsset('/icon-16x16.png'), type: 'image/png', sizes: '16x16' },
+    { key: 'icon-32', rel: 'icon', href: () => publicAsset('/icon-32x32.png'), type: 'image/png', sizes: '32x32' },
+    { key: 'icon-192', rel: 'icon', href: () => publicAsset('/icon-192x192.png'), type: 'image/png', sizes: '192x192' },
+    { key: 'icon-512', rel: 'icon', href: () => publicAsset('/icon-512x512.png'), type: 'image/png', sizes: '512x512' },
+    { key: 'apple-touch-icon', rel: 'apple-touch-icon', href: () => publicAsset('/apple-touch-icon.png'), type: 'image/png', sizes: '180x180' }
   ],
   script: [
     {

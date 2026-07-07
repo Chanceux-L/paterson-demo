@@ -338,7 +338,10 @@ export default defineNuxtConfig({
 
   icon: {
     provider: 'server',
-    serverBundle: 'auto'
+    serverBundle: 'auto',
+    clientBundle: {
+      icons: ['lucide:sliders-horizontal']
+    }
   },
 
   linkChecker: {

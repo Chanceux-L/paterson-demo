@@ -14,6 +14,7 @@ const sourceRegisterUrl = siteProfile.urls.memberCenter;
 const { locale, tm, t } = useI18n();
 const router = useRouter();
 const localePath = useLocalePath();
+const publicAsset = usePublicAsset();
 const { resolveTranslatedMessageTree } = useI18nMessageTree();
 
 const menuOpen = ref(false);
@@ -161,7 +162,7 @@ onBeforeUnmount(() => {
         to="/"
         :aria-label="t('nav.homeAria')"
       >
-        <img class="h-9 w-auto shrink-0" src="/paterson/logo-paterson.png" :alt="t('nav.logoAlt')" />
+        <img class="h-9 w-auto shrink-0" :src="publicAsset('/paterson/logo-paterson.png')" :alt="t('nav.logoAlt')" />
         <span class="hidden h-6 w-px bg-border sm:block"></span>
         <span
           :class="cn(
@@ -253,7 +254,7 @@ onBeforeUnmount(() => {
             :aria-label="t('nav.homeAria')"
             @click="closeMenu"
           >
-            <img class="h-9 w-auto shrink-0" src="/paterson/logo-paterson.png" :alt="t('nav.logoAlt')" />
+            <img class="h-9 w-auto shrink-0" :src="publicAsset('/paterson/logo-paterson.png')" :alt="t('nav.logoAlt')" />
           </NuxtLinkLocale>
           <button
             id="menuClose"

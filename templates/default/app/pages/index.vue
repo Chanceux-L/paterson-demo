@@ -41,6 +41,7 @@ const { t, tm } = useI18n();
 const { resolveTranslatedMessageTree } = useI18nMessageTree();
 const localePath = useLocalePath();
 const { faqPageSchema } = useGeoSchemas();
+const publicAsset = usePublicAsset();
 
 const phone = siteProfile.contact.phone;
 const pageTitle = computed(() => t('pages.home.seo.title'));
@@ -50,10 +51,20 @@ const heroMetrics = computed<HeroMetric[]>(() => resolveTranslatedMessageTree(tm
 const trustStats = computed<HeroMetric[]>(() => resolveTranslatedMessageTree(tm('homePage.trust.stats')) as HeroMetric[]);
 const technologyMetrics = computed<TechnologyMetric[]>(() => resolveTranslatedMessageTree(tm('homePage.technology.metrics')) as TechnologyMetric[]);
 const technologyNodes = computed<IconCard[]>(() => resolveTranslatedMessageTree(tm('homePage.technology.nodes')) as IconCard[]);
-const productSystems = computed<ProductSystem[]>(() => resolveTranslatedMessageTree(tm('homePage.products.items')) as ProductSystem[]);
+const productSystems = computed<ProductSystem[]>(() =>
+  (resolveTranslatedMessageTree(tm('homePage.products.items')) as ProductSystem[]).map(item => ({
+    ...item,
+    image: publicAsset(item.image)
+  }))
+);
 const advantages = computed<IconCard[]>(() => resolveTranslatedMessageTree(tm('homePage.advantages.items')) as IconCard[]);
 const processSteps = computed<ProcessStep[]>(() => resolveTranslatedMessageTree(tm('homePage.process.steps')) as ProcessStep[]);
-const newsItems = computed<NewsItem[]>(() => resolveTranslatedMessageTree(tm('homePage.news.items')) as NewsItem[]);
+const newsItems = computed<NewsItem[]>(() =>
+  (resolveTranslatedMessageTree(tm('homePage.news.items')) as NewsItem[]).map(item => ({
+    ...item,
+    image: publicAsset(item.image)
+  }))
+);
 const productSwiperRef = ref<SwiperContainer | null>(null);
 const productSwiper = useSwiper(productSwiperRef, {
   autoplay: {
@@ -93,11 +104,11 @@ useAppSeoMeta({
   description: pageDescription,
   ogDescription: pageDescription,
   twitterDescription: pageDescription,
-  ogImage: '/paterson/hero-living-room.webp',
+  ogImage: () => publicAsset('/paterson/hero-living-room.webp'),
   ogType: 'website',
   ogSiteName: t('site.name'),
   twitterCard: 'summary_large_image',
-  twitterImage: '/paterson/hero-living-room.webp',
+  twitterImage: () => publicAsset('/paterson/hero-living-room.webp'),
   keywords: pageKeywords
 });
 
@@ -112,7 +123,7 @@ useSchemaOrg(computed(() => [
       <div class="hero-image-panel absolute inset-y-0 right-0 hidden w-[46%] bg-[#F4F1EA] lg:block">
         <img
           class="hero-side-image paterson-hero-image size-full object-cover object-[60%_50%]"
-          src="/paterson/oxygen-space-bg.webp"
+          :src="publicAsset('/paterson/oxygen-space-bg.webp')"
           :alt="t('homePage.hero.imageAlt')"
         />
       </div>
@@ -172,7 +183,7 @@ useSchemaOrg(computed(() => [
         <div class="hero-showcase relative min-h-[360px] overflow-hidden bg-[#171512] lg:hidden">
           <img
             class="paterson-hero-image absolute inset-0 size-full object-cover object-[72%_50%] opacity-86"
-            src="/paterson/oxygen-space-bg.webp"
+            :src="publicAsset('/paterson/oxygen-space-bg.webp')"
             :alt="t('homePage.hero.imageAlt')"
           />
           <div class="absolute inset-0 bg-[linear-gradient(180deg,transparent_0%,rgba(23,21,18,0.22)_100%)]"></div>
@@ -183,7 +194,7 @@ useSchemaOrg(computed(() => [
     <section class="relative overflow-hidden bg-[#14352F] px-5 py-20 text-white sm:px-8 lg:px-14 lg:py-28">
       <img
         class="wellness-airflow-svg"
-        src="/paterson/wellness-airflow.svg"
+        :src="publicAsset('/paterson/wellness-airflow.svg')"
         alt=""
         aria-hidden="true"
       />
@@ -285,7 +296,7 @@ useSchemaOrg(computed(() => [
     <section id="technology" class="relative overflow-hidden bg-[#171512] px-5 py-20 text-white sm:px-8 lg:px-14 lg:py-28">
       <img
         class="absolute inset-0 size-full object-cover opacity-62"
-        src="/paterson/technology-wood-factory-bg.webp"
+        :src="publicAsset('/paterson/technology-wood-factory-bg.webp')"
         alt=""
         aria-hidden="true"
       />
@@ -401,7 +412,7 @@ useSchemaOrg(computed(() => [
                 class="group home-media-card relative min-h-[380px] overflow-hidden bg-[#171512] text-white shadow-xl shadow-[#7A5438]/10 md:min-h-[440px]"
                 :style="{ '--stagger': `${index * 90}ms` }"
               >
-                <img class="absolute inset-0 size-full object-cover transition duration-700 group-hover:scale-105" :src="item.image" :alt="item.title" />
+                <img class="absolute inset-0 size-full object-cover transition duration-700 group-hover:scale-105" :src="publicAsset(item.image)" :alt="item.title" />
                 <div class="absolute inset-0 bg-linear-to-t from-[#171512]/90 via-[#171512]/24 to-transparent"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5 md:p-6">
                   <div class="flex flex-wrap gap-2">
@@ -565,7 +576,7 @@ useSchemaOrg(computed(() => [
         </div>
         <div class="mt-10 grid gap-6 md:grid-cols-3">
           <article v-for="item in newsItems" :key="item.title" class="group home-soft-card border border-[#E8E0D3] bg-[#FBFAF7] shadow-sm shadow-[#7A5438]/6 transition duration-300 hover:-translate-y-1 hover:border-[#D6C5A5] hover:bg-white hover:shadow-lg hover:shadow-[#7A5438]/10">
-            <img class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105" :src="item.image" :alt="item.title" />
+            <img class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105" :src="publicAsset(item.image)" :alt="item.title" />
             <div class="p-6">
               <span class="text-xs font-semibold text-[#B99A63]">{{ item.tag }}</span>
               <h3 class="mt-3 line-clamp-2 text-base font-semibold leading-7">
