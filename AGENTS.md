@@ -20,6 +20,11 @@ export function cn(...inputs: ClassValue[]) {
 - Do not bind raw external content directly to `v-html` or `innerHTML`. Use sanitized computed values or sanitize at the adapter boundary before the value reaches the template.
 - `innerHTML` is only acceptable for trusted non-HTML payloads such as JSON-LD generated with `JSON.stringify()`.
 
+## Nuxt Icon
+
+- For GitHub Pages or other static deployments, any `UIcon` that only appears after client-side interaction, for example inside `v-if`, menus, modals, drawers, cookie preferences, or scroll-only controls, must be listed in `templates/shared/nuxt.config.ts` under `icon.clientBundle.icons`.
+- Keep the icon name in the component unchanged. Add the matching `lucide:*` entry to the client bundle instead of swapping to a different icon that already appears in SSR HTML.
+
 ## Paterson Website Redesign
 
 - Before implementing or reviewing Paterson website UI, read `docs/paterson-redesign-plan.md` and follow its design positioning, color system, typography, layout, animation, content, and conversion guidance.

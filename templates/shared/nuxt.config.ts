@@ -340,7 +340,12 @@ export default defineNuxtConfig({
     provider: 'server',
     serverBundle: 'auto',
     clientBundle: {
-      icons: ['lucide:sliders-horizontal']
+      icons: [
+        'lucide:chevron-right',
+        'lucide:chevron-up',
+        'lucide:sliders-horizontal',
+        'lucide:x'
+      ]
     }
   },
 

@@ -119,7 +119,7 @@ useSchemaOrg(computed(() => [
 
 <template>
   <main class="bg-[#F4F1EA] text-[#24211D]">
-    <section class="relative overflow-hidden bg-[#F4F1EA] px-5 pt-24 text-[#24211D] sm:px-8 lg:px-14">
+    <section class="relative overflow-hidden bg-[#F4F1EA] px-5 pt-16 text-[#24211D] sm:px-8 lg:px-14 lg:pt-24">
       <div class="hero-image-panel absolute inset-y-0 right-0 hidden w-[46%] bg-[#F4F1EA] lg:block">
         <img
           class="hero-side-image paterson-hero-image size-full object-cover object-[60%_50%]"
@@ -127,7 +127,7 @@ useSchemaOrg(computed(() => [
           :alt="t('homePage.hero.imageAlt')"
         />
       </div>
-      <div class="relative mx-auto grid max-w-7xl gap-12 py-16 lg:min-h-[760px] lg:grid-cols-[0.9fr_0.82fr] lg:items-center lg:py-20">
+      <div class="relative mx-auto grid max-w-7xl gap-10 py-10 lg:min-h-[760px] lg:grid-cols-[0.9fr_0.82fr] lg:items-center lg:gap-12 lg:py-20">
         <div class="relative z-10 max-w-xl motion-safe:animate-[paterson-fade-up_560ms_cubic-bezier(0.22,1,0.36,1)_both]">
           <p class="inline-flex items-center gap-3 text-sm font-medium text-[#7A5438]">
             <span class="h-px w-10 bg-[#B99A63]"></span>
@@ -924,8 +924,8 @@ useSchemaOrg(computed(() => [
 
 .oxygen-proof {
   position: relative;
-  min-height: 22rem;
-  padding: 2rem;
+  padding: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   transition: background-color 300ms ease, transform 300ms ease;
 }
 
@@ -964,6 +964,8 @@ useSchemaOrg(computed(() => [
 
 @media (min-width: 1024px) {
   .oxygen-proof {
+    min-height: 22rem;
+    padding: 2rem;
     border-top: 0;
   }
 
