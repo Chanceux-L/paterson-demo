@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Enterprise Standard Template</title>
+  <desc id="desc">A geometric template mark for generated favicons.</desc>
+  <rect width="512" height="512" rx="96" fill="#111827"/>
+  <path fill="#22c55e" d="M136 154h240v58H136z"/>
+  <path fill="#38bdf8" d="M136 227h172v58H136z"/>
+  <path fill="#f97316" d="M136 300h240v58H136z"/>
+  <path fill="#f9fafb" d="M352 227h24v58h-24z"/>
+</svg>

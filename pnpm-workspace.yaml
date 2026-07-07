@@ -1,0 +1,24 @@
+allowBuilds:
+  '@parcel/watcher': true
+  cpu-features: true
+  esbuild: true
+  ssh2: true
+  unrs-resolver: true
+  vue-demi: true
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - cpu-features
+  - esbuild
+  - ssh2
+  - unrs-resolver
+  - vue-demi
+supportedArchitectures:
+  os:
+    - current
+    - linux
+  cpu:
+    - current
+    - x64
+  libc:
+    - current
+    - glibc

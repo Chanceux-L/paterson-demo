@@ -1,0 +1,31 @@
+# Nuxt dev/build outputs
+.output/
+.data
+.nuxt/
+.nitro
+.cache
+dist/
+dist
+*.gz
+
+# Node dependencies
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.env.local
+.fleet
+.idea
+
+# VSC
+.history
+.claude
+.vscode
+
+.codex-screenshots
+.gstack/
+.codex-visual-check

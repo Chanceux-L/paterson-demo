@@ -1,0 +1,467 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+@plugin "@tailwindcss/typography";
+
+/* Starter Design Tokens
+ *
+ * Edit this file first when applying a real brand. Tailwind utilities are
+ * exposed from the @theme mappings below, while these variables remain the
+ * source color, spacing, radius, typography, shadow, and pattern values.
+ */
+
+:root {
+  --color-brand-50: #eef8ff;
+  --color-brand-100: #d8edff;
+  --color-brand-200: #b8ddff;
+  --color-brand-300: #84c7ff;
+  --color-brand-400: #48a5f5;
+  --color-brand-500: #1684dc;
+  --color-brand-600: #0b67bd;
+  --color-brand-700: #0c5299;
+  --color-brand-800: #10477e;
+  --color-brand-900: #123b68;
+
+  --color-primary: var(--color-brand-600);
+  --color-primary-hover: var(--color-brand-700);
+  --color-primary-light: var(--color-brand-100);
+  --color-primary-subtle: var(--color-brand-50);
+  --color-secondary: #0f172a;
+  --color-accent: #0ea5e9;
+  --color-accent-strong: #0369a1;
+  --color-accent-soft: #e0f2fe;
+
+  --color-gold-50: #fff7ed;
+  --color-gold-100: #ffedd5;
+  --color-gold-200: #fed7aa;
+  --color-gold-300: #fdba74;
+  --color-gold: #f59e0b;
+  --color-gold-strong: #92400e;
+
+  --color-ink: #111827;
+  --color-ink-soft: #243041;
+
+  --color-neutral-50: #f7f8f8;
+  --color-neutral-100: #eceff0;
+  --color-neutral-200: #dce2e4;
+  --color-neutral-300: #c2ccd0;
+  --color-neutral-400: #8d9ba3;
+  --color-neutral-500: #65747d;
+  --color-neutral-600: #4b5961;
+  --color-neutral-700: #344149;
+  --color-neutral-800: #202a31;
+  --color-neutral-900: #12191f;
+
+  --color-background: #f7f8f8;
+  --color-surface: #ffffff;
+  --color-surface-alt: #eef2f4;
+  --color-text-primary: #12191f;
+  --color-text-secondary: #4b5961;
+  --color-text-muted: #71818a;
+  --color-border: #dce2e4;
+  --color-border-light: #e8edef;
+
+  --color-success: #059669;
+  --color-success-light: #ecfdf5;
+  --color-warning: #d97706;
+  --color-warning-light: #fffbeb;
+  --color-error: #dc2626;
+  --color-error-light: #fef2f2;
+
+  --font-heading: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+
+  --fs-hero-size: clamp(2.75rem, 6vw, 4.25rem);
+  --fs-hero-leading: 1.06;
+  --fs-hero-weight: 750;
+  --fs-hero-tracking: 0;
+
+  --fs-h1-size: clamp(2rem, 4.5vw, 3rem);
+  --fs-h1-leading: 1.12;
+  --fs-h1-weight: 700;
+  --fs-h1-tracking: 0;
+
+  --fs-h2-size: clamp(1.625rem, 3.5vw, 2.25rem);
+  --fs-h2-leading: 1.2;
+  --fs-h2-weight: 650;
+  --fs-h2-tracking: 0;
+
+  --fs-h3-size: 1.25rem;
+  --fs-h3-leading: 1.35;
+  --fs-h3-weight: 600;
+  --fs-h3-tracking: 0;
+
+  --fs-body-lg: 1.125rem;
+  --fs-body: 1rem;
+  --fs-body-sm: 0.875rem;
+  --fs-caption: 0.75rem;
+  --fs-label: 0.8125rem;
+
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+  --spacing-4xl: 6rem;
+
+  --max-width: 1280px;
+  --max-width-narrow: 960px;
+  --reading-width: 72ch;
+  --section-padding-y: clamp(4rem, 8vw, 7rem);
+  --section-gap: clamp(1.5rem, 3vw, 2.5rem);
+  --nav-height: 4.5rem;
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.75rem;
+  --radius-full: 9999px;
+
+  --shadow-xs: 0 1px 2px rgba(18, 25, 31, 0.04);
+  --shadow-sm: 0 10px 30px rgba(18, 25, 31, 0.05);
+  --shadow-md: 0 18px 50px rgba(18, 25, 31, 0.08);
+  --shadow-lg: 0 28px 70px rgba(18, 25, 31, 0.11);
+  --shadow-xl: 0 36px 90px rgba(18, 25, 31, 0.14);
+  --shadow-card: var(--shadow-sm);
+  --shadow-card-hover: var(--shadow-md);
+
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-spring: 350ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --pattern-dots: radial-gradient(circle, rgba(14, 165, 233, 0.2) 1px, transparent 1px);
+  --pattern-grid: linear-gradient(var(--color-border-light) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-border-light) 1px, transparent 1px);
+}
+
+/*
+ * @theme - Tailwind 4 utility mappings
+ *
+ * 同名 token 直接在这里给具体值，避免自循环。
+ * 不同名 token 才用 var(...) 从上面的 source tokens 取值。
+ */
+@theme {
+  /* Brand colors → bg-brand-primary / text-brand-primary / ... */
+  --color-brand-primary: var(--color-primary);
+  --color-brand-primary-hover: var(--color-primary-hover);
+  --color-brand-secondary: var(--color-secondary);
+  --color-brand-accent: var(--color-accent);
+  --color-accent: var(--color-accent);
+  --color-accent-strong: var(--color-accent-strong);
+  --color-accent-soft: var(--color-accent-soft);
+
+  /* 完整品牌色阶 → bg-brand-600 / text-brand-700 ... */
+  --color-brand-50: var(--color-brand-50);
+  --color-brand-100: var(--color-brand-100);
+  --color-brand-200: var(--color-brand-200);
+  --color-brand-300: var(--color-brand-300);
+  --color-brand-400: var(--color-brand-400);
+  --color-brand-500: var(--color-brand-500);
+  --color-brand-600: var(--color-brand-600);
+  --color-brand-700: var(--color-brand-700);
+  --color-brand-800: var(--color-brand-800);
+  --color-brand-900: var(--color-brand-900);
+
+  /* 暖金强调色阶 → text-gold / bg-gold-100 / hover:bg-gold-300 ... */
+  --color-gold-50: var(--color-gold-50);
+  --color-gold-100: var(--color-gold-100);
+  --color-gold-200: var(--color-gold-200);
+  --color-gold-300: var(--color-gold-300);
+  --color-gold: var(--color-gold);
+  --color-gold-strong: var(--color-gold-strong);
+
+  /* 石墨墨色 → bg-ink / text-ink */
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+
+  /* Background / Surface → bg-background / bg-surface / bg-surface-alt */
+  --color-background: #f7f8f8;
+  --color-surface: #ffffff;
+  --color-surface-alt: #eef2f4;
+
+  /* Text → text-text-primary / text-text-secondary / text-text-muted */
+  --color-text-primary: #12191f;
+  --color-text-secondary: #4b5961;
+  --color-text-muted: #71818a;
+
+  /* Border → border-border */
+  --color-border: #dce2e4;
+
+  /* Font families → font-heading / font-body / font-mono */
+  --font-heading: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+
+  /* Layout maxWidth → max-w-site / max-w-reading */
+  --container-site: var(--max-width);
+  --container-reading: var(--reading-width);
+
+  /* Radius → rounded-card / rounded-button */
+  --radius-card: 1.25rem;
+  --radius-button: 9999px;
+
+  /* Spacing → p-section / py-section */
+  --spacing-section: var(--section-padding-y);
+
+  /* Typography scale → text-hero / text-h1 / text-h2 / text-h3 */
+  --text-hero: var(--fs-hero-size);
+  --text-hero--line-height: var(--fs-hero-leading);
+  --text-hero--font-weight: var(--fs-hero-weight);
+  --text-hero--letter-spacing: var(--fs-hero-tracking);
+
+  --text-h1: var(--fs-h1-size);
+  --text-h1--line-height: var(--fs-h1-leading);
+  --text-h1--font-weight: var(--fs-h1-weight);
+  --text-h1--letter-spacing: var(--fs-h1-tracking);
+
+  --text-h2: var(--fs-h2-size);
+  --text-h2--line-height: var(--fs-h2-leading);
+  --text-h2--font-weight: var(--fs-h2-weight);
+  --text-h2--letter-spacing: var(--fs-h2-tracking);
+
+  --text-h3: var(--fs-h3-size);
+  --text-h3--line-height: var(--fs-h3-leading);
+  --text-h3--font-weight: var(--fs-h3-weight);
+  --text-h3--letter-spacing: var(--fs-h3-tracking);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #12191f;
+    --color-surface: #192229;
+    --color-surface-alt: #202a31;
+    --color-text-primary: #f4f7f8;
+    --color-text-secondary: #c2ccd0;
+    --color-text-muted: #8d9ba3;
+    --color-border: #344149;
+    --color-border-light: #243041;
+    --color-accent: #38bdf8;
+    --color-accent-strong: #7dd3fc;
+    --color-accent-soft: #0c3147;
+  }
+}
+
+/* Animations 是 Tailwind 自身需要声明的 keyframes，仍走普通 @theme */
+@theme {
+  --animate-gallery-scroll: gallery-scroll 42s linear infinite;
+  --animate-card-shine: card-shine 3s ease-in-out infinite;
+  --animate-hero-scroll-pulse: hero-scroll-pulse 2s ease-in-out infinite;
+  --animate-menu-nav-in: menu-nav-in 0.45s ease both;
+  --animate-product-scroll: product-scroll 30s linear infinite;
+
+  @keyframes gallery-scroll {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes card-shine {
+    from {
+      transform: translateX(-100%) skewX(-18deg);
+    }
+
+    to {
+      transform: translateX(100%) skewX(-18deg);
+    }
+  }
+
+  @keyframes hero-scroll-pulse {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+
+    20%,
+    80% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+  }
+
+  @keyframes product-scroll {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes menu-nav-in {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth bg-background;
+  }
+
+  body {
+    @apply bg-background font-body text-text-primary subpixel-antialiased;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  body::before {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    content: "";
+    background:
+      radial-gradient(circle at 12% 8%, rgba(14, 165, 233, 0.14), transparent 28rem),
+      radial-gradient(circle at 92% 18%, rgba(18, 25, 31, 0.08), transparent 24rem),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(247, 248, 248, 0.94));
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body::before {
+      background:
+        radial-gradient(circle at 12% 8%, rgba(56, 189, 248, 0.18), transparent 28rem),
+        radial-gradient(circle at 92% 18%, rgba(255, 255, 255, 0.06), transparent 24rem),
+        linear-gradient(180deg, rgba(18, 25, 31, 0.96), rgba(18, 25, 31, 0.98));
+    }
+  }
+
+  button,
+  a {
+    @apply touch-manipulation;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+
+  ::selection {
+    @apply bg-accent-soft text-text-primary;
+  }
+}
+
+@layer components {
+  .section-container {
+    max-width: var(--max-width);
+    margin-inline: auto;
+    padding-inline: clamp(1.25rem, 5vw, 3.5rem);
+  }
+
+  .section {
+    padding-block: var(--section-padding-y);
+  }
+
+  .section-alt {
+    background-color: var(--color-surface);
+  }
+
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+  }
+
+  .card-surface {
+    border: 1px solid var(--color-border);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.8)),
+      var(--color-surface);
+    box-shadow: var(--shadow-sm);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .card-surface {
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01)),
+        var(--color-surface);
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
+    }
+  }
+
+  .image-frame {
+    box-shadow: var(--shadow-lg);
+  }
+
+  .eyebrow {
+    @apply text-sm font-bold text-accent;
+  }
+
+  .tag-chip {
+    @apply rounded-button bg-accent-soft px-3 py-1 text-xs font-bold text-accent-strong;
+  }
+
+  .primary-button {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background inline-flex min-h-12 items-center justify-center rounded-button bg-text-primary px-6 py-3 text-sm font-bold text-background transition hover:bg-accent-strong active:scale-95;
+  }
+
+  .secondary-button {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background inline-flex min-h-12 items-center justify-center rounded-button border border-border bg-surface px-6 py-3 text-sm font-bold text-text-primary transition hover:border-accent hover:text-accent active:scale-95;
+  }
+
+  .personal-page-enter-active,
+  .personal-page-leave-active {
+    transition:
+      opacity var(--transition-slow),
+      transform var(--transition-slow);
+  }
+
+  .personal-page-enter-from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  .personal-page-leave-to {
+    opacity: 0;
+    transform: translateY(-0.75rem);
+  }
+}
+
+@utility scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility pause-animation-on-hover {
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .personal-page-enter-from,
+  .personal-page-leave-to {
+    transform: none;
+  }
+}
