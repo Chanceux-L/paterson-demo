@@ -30,6 +30,7 @@ export function cn(...inputs: ClassValue[]) {
 - Before implementing or reviewing Paterson website UI, read `docs/paterson-redesign-plan.md` and follow its design positioning, color system, typography, layout, animation, content, and conversion guidance.
 - The site must support both Chinese and English content. When adding navigation, page copy, SEO metadata, forms, buttons, labels, and structured content, provide Chinese and English versions instead of hard-coding Chinese-only text.
 - Use the official website, `https://www.paterson.com.cn/`, as the source of truth for brand assets, product imagery, space photos, logos, and visual references.
+- Paterson page copy should read like the official website’s visitor-facing marketing copy, not like implementation notes, admin labels, or code logic. Avoid wording such as “按服务分类查看不同产品目录”, “切换 tab”, “筛选维度”, or explaining how UI state changes; use natural product/brand showcase language instead.
 - Download required official website assets into the repository and reference local files from the app. Do not hotlink images or other production assets from the official website.
 - Optimize downloaded assets before committing them. Images should be compressed appropriately for web usage and converted to `.webp` unless there is a specific technical reason to preserve another format.
 - Keep original asset naming understandable and stable enough to identify source and purpose, for example `hero-living-room.webp`, `logo-paterson.webp`, or `product-bedroom-system.webp`.

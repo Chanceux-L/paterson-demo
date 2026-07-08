@@ -603,9 +603,190 @@ const starter = {
   },
   dataPage: {
     seo: {
-      title: '产品系统_百得胜 Paterson 水漆整家定制',
-      description: '查看百得胜 Paterson 衣柜定制、橱柜定制、儿童成长空间与水漆柜墙门系统。',
-      keywords: '百得胜产品系统,水漆衣柜,橱柜定制,儿童房定制,柜墙门系统,整家定制'
+      title: '产品系统_百得胜 Paterson 水漆柜墙门系统_环保整家定制',
+      description: '查看百得胜 Paterson 水漆衣柜、入户、客餐厅、卧房、阳台、宠物与电竞等空间系统，了解环保整家定制产品组合与加盟终端展示价值。',
+      keywords: '百得胜产品系统,水漆衣柜,水漆柜墙门系统,环保整家定制,全屋定制加盟,媞雅系列,光引系列,原野系列'
+    },
+    hero: {
+      eyebrow: '产品系统',
+      titleLine1: '以水漆柜墙门系统',
+      titleLine2: '组织完整生活空间',
+      subtitle: '从衣柜定制延展到入户、客餐厅、卧房、阳台、宠物与电竞空间，百得胜把水漆工艺、收纳系统和整家风格统一到可展示、可成交、可交付的终端产品体系。',
+      imageAlt: '百得胜产品系统空间形象',
+      primaryCta: '咨询产品加盟',
+      metrics: [
+        { value: '3底2面', label: '72 道纯水漆工艺，强化环保与表面质感表达' },
+        { value: '6大空间', label: '覆盖入户、客厅、餐厅、书房、卧房与阳台' },
+        { value: '23年', label: '专研环保定制，沉淀终端产品与交付经验' }
+      ]
+    },
+
+    serviceLines: {
+      navAria: '产品服务分类',
+      eyebrow: '我们的服务',
+      title: '水漆整家定制产品体系',
+      description: '围绕衣柜定制、橱柜定制、百得胜家具与百儿未来家，百得胜以环保材料、空间美学和系统交付，为不同家庭场景提供完整定制方案。',
+      items: [
+        { title: '衣柜定制', description: '百得胜，专研环保定制 23 年，水漆团标主编单位。水漆衣柜，基材无醛添加，面材水漆木皮，3 底 2 面 72 道纯水漆工艺。无味亲肤即装即住，水漆定制，就定百得胜。', image: '/paterson/product-wardrobe-intro.webp', points: ['水漆衣柜', '无醛添加', '即装即住'] },
+        { title: '橱柜定制', description: '百得胜橱柜秉承环保长期主义，以环保创造更安全健康的居家环境；用美学为客户打造舒适高颜的家；以客户为中心，高质高效服务用户。', image: '/paterson/product-cabinet-intro.webp', points: ['厨电一体化', '衣橱一体化', '多风格体系'] },
+        { title: '百得胜家具', description: '百得胜家具延展柜类定制之外的生活场景，以客餐厅、卧房和多功能空间家具补充整家产品体系，让空间风格、收纳功能与日常体验保持统一。', image: '/paterson/product-series-guangyin.webp', points: ['客餐厅', '成品家具', '整家配套'] },
+        { title: '百儿未来家', description: '百儿未来家面向儿童成长需求，围绕学习、收纳、睡眠和安全环保构建成长空间，让儿童房从单一家具配置升级为可陪伴成长的生活系统。', image: '/paterson/product-series-yuanye.webp', points: ['儿童成长', '学习收纳', '健康空间'] }
+      ]
+    },
+
+    catalog: {
+      eyebrow: '产品展示',
+      title: '甄选系列与空间方案',
+      description: '从空间、风格与产品系列出发，呈现百得胜水漆整家定制的真实产品组合，让终端门店更直观地展示环保、颜值与收纳价值。',
+      emptyTitle: '暂无匹配产品',
+      emptyDescription: '可选择更多空间、风格或系列，查看适合不同家庭场景的产品方案。',
+      serviceCatalogs: {
+        衣柜定制: {
+          filters: [
+            { label: '空间', options: ['全部', '入户空间', '客厅空间', '餐厅空间', '书房空间', '卧房空间', '阳台空间'] },
+            { label: '风格', options: ['全部', '欧式风格', '现代风格', '新中式风格', '轻奢风格', '美式风格', '未来风格'] },
+            { label: '款式', options: ['全部', '青春款', '经典款'] }
+          ],
+          items: [
+            { title: '媞雅系列', category: '衣柜定制', image: '/paterson/product-series-tiya.webp', tags: ['卧房空间', '轻奢风格', '经典款'] },
+            { title: '光引系列', category: '衣柜定制', image: '/paterson/product-series-guangyin.webp', tags: ['客厅空间', '现代风格', '经典款'] },
+            { title: '原野系列', category: '衣柜定制', image: '/paterson/product-series-yuanye.webp', tags: ['卧房空间', '现代风格', '青春款'] },
+            { title: '养宠空间', category: '衣柜定制', image: '/paterson/product-pet-living-space.webp', tags: ['客厅空间', '未来风格', '青春款'] },
+            { title: '情侣电竞房', category: '衣柜定制', image: '/paterson/product-gaming-bedroom.webp', tags: ['卧房空间', '未来风格', '青春款'] },
+            { title: '水漆衣柜定制', category: '衣柜定制', image: '/paterson/product-water-paint-wardrobe.webp', tags: ['卧房空间', '水漆工艺', '柜墙门'] }
+          ]
+        },
+        橱柜定制: {
+          filters: [
+            { label: '系列', options: ['全部', '饰面系列', '烤漆系列', '膜压系列', '实木系列'] },
+            { label: '风格', options: ['全部', '欧式风格', '现代风格', '新中式风格', '轻奢风格', '美式风格', '未来风格'] },
+            { label: '款式', options: ['全部', 'L型橱柜', 'U型橱柜', '一字型橱柜', '岛型橱柜'] }
+          ],
+          items: [
+            { title: '橱柜功能配件希尔斯', category: '橱柜定制', image: '/paterson/product-cabinet-hills.webp', tags: ['饰面系列', '现代风格', 'L型橱柜'] },
+            { title: '阿尔卑斯P', category: '橱柜定制', image: '/paterson/product-cabinet-alps.webp', tags: ['烤漆系列', '轻奢风格', '岛型橱柜'] },
+            { title: '卡森Max', category: '橱柜定制', image: '/paterson/product-cabinet-kasen.webp', tags: ['膜压系列', '现代风格', 'U型橱柜'] },
+            { title: '写意Nature', category: '橱柜定制', image: '/paterson/product-cabinet-nature.webp', tags: ['实木系列', '新中式风格', '一字型橱柜'] },
+            { title: '慕莎P', category: '橱柜定制', image: '/paterson/product-cabinet-musha.webp', tags: ['烤漆系列', '欧式风格', 'L型橱柜'] },
+            { title: '莫奈P', category: '橱柜定制', image: '/paterson/product-cabinet-monet.webp', tags: ['饰面系列', '美式风格', 'U型橱柜'] }
+          ]
+        },
+        百得胜家具: {
+          filters: [
+            { label: '场景', options: ['全部', '客厅', '餐厅', '卧房', '多功能空间'] },
+            { label: '类型', options: ['全部', '收纳柜', '餐边柜', '宠物空间', '电竞空间'] }
+          ],
+          items: [
+            { title: '光引客餐厅家具', category: '百得胜家具', image: '/paterson/product-series-guangyin.webp', tags: ['客厅', '收纳柜', '现代风格'] },
+            { title: '日咖夜酒餐边柜', category: '百得胜家具', image: '/paterson/product-series-yuanye.webp', tags: ['餐厅', '餐边柜', '轻奢风格'] },
+            { title: '养宠空间', category: '百得胜家具', image: '/paterson/product-pet-living-space.webp', tags: ['多功能空间', '宠物空间', '未来风格'] },
+            { title: '情侣电竞房', category: '百得胜家具', image: '/paterson/product-gaming-bedroom.webp', tags: ['卧房', '电竞空间', '未来风格'] }
+          ]
+        },
+        百儿未来家: {
+          filters: [
+            { label: '年龄', options: ['全部', '幼童', '学龄', '青少年'] },
+            { label: '功能', options: ['全部', '学习区', '收纳区', '睡眠区', '成长空间'] }
+          ],
+          items: [
+            { title: '百儿未来家成长房', category: '百儿未来家', image: '/paterson/product-children-room.webp', tags: ['学龄', '学习区', '成长空间'] },
+            { title: '儿童收纳学习系统', category: '百儿未来家', image: '/paterson/product-bedroom-system.webp', tags: ['青少年', '收纳区', '学习区'] },
+            { title: '健康睡眠儿童房', category: '百儿未来家', image: '/paterson/product-water-paint-wardrobe.webp', tags: ['幼童', '睡眠区', '成长空间'] }
+          ]
+        }
+      }
+    },
+    intro: {
+      eyebrow: '水漆衣柜定制',
+      title: '把环保定制做成终端可感知的产品语言',
+      description: '官方产品页强调“水漆衣柜，基材无醛添加，面材水漆木皮，3底2面72道纯水漆工艺”。新版产品系统将这组技术点转译为消费者能理解的空间价值：无味亲肤、即装即住、风格统一、收纳清晰。',
+      proof: '水漆定制不是单一柜体卖点，而是贯穿材料、工艺、柜墙门协同、空间展示与加盟门店讲解的一整套产品系统。',
+      imageAlt: '百得胜水漆衣柜定制空间',
+      captionEyebrow: '官方素材来源',
+      caption: '素材取自百得胜官网“我们的服务 / 衣柜定制”页面，已下载到本地并压缩为 webp。'
+    },
+    systems: {
+      eyebrow: '空间系统',
+      title: '从单品列表升级为空间解决方案',
+      description: '按照重设计方案，产品页不只罗列衣柜、橱柜和家具，而是把产品组织为终端更容易销售的空间系统，让加盟商可以用真实场景讲清整家定制价值。',
+      items: [
+        {
+          title: '卧房系统',
+          description: '以水漆衣柜、护墙、床头与收纳组合形成健康卧房表达，适合承接康氧卧房与环保材料主张。',
+          image: '/paterson/product-series-tiya.webp',
+          tags: ['水漆衣柜', '卧房收纳', '柜墙协同']
+        },
+        {
+          title: '客餐厅系统',
+          description: '以电视柜、餐边柜、展示收纳和背景墙统一空间语言，让整家风格在家庭公共区先被看见。',
+          image: '/paterson/product-series-guangyin.webp',
+          tags: ['客厅空间', '餐边柜', '整家风格']
+        },
+        {
+          title: '自然生活系统',
+          description: '围绕木质纹理、留白比例与轻高定质感，呈现更温和、更耐看的全屋定制空间。',
+          image: '/paterson/product-series-yuanye.webp',
+          tags: ['原野系列', '自然质感', '轻高定']
+        },
+        {
+          title: '养宠空间',
+          description: '把宠物活动、清洁收纳与家庭公共空间整合，回应年轻家庭对复合生活场景的需求。',
+          image: '/paterson/product-pet-living-space.webp',
+          tags: ['宠物友好', '复合收纳', '家庭互动']
+        },
+        {
+          title: '电竞卧房',
+          description: '兼顾休息、双人娱乐、桌面设备和氛围灯光，适合终端展示年轻化产品组合。',
+          image: '/paterson/product-gaming-bedroom.webp',
+          tags: ['情侣电竞房', '年轻客群', '灯光氛围']
+        },
+        {
+          title: '柜墙门一体化系统',
+          description: '通过材质、色彩、比例和收口协同，把衣柜、墙面、门与家具纳入统一交付标准。',
+          image: '/paterson/product-water-paint-wardrobe.webp',
+          tags: ['柜墙门', '统一交付', '终端展示']
+        }
+      ]
+    },
+    features: {
+      eyebrow: '产品优势',
+      title: '加盟终端真正需要的是好讲、好看、好落地',
+      description: '产品系统页强化百得胜区别于普通全屋定制的核心证据：水漆工艺、空间化表达、系列化素材和终端交付标准。',
+      items: [
+        { icon: 'i-lucide-droplets', title: '水漆工艺背书', description: '用无醛添加基材、水漆木皮和多道水漆工艺建立环保与质感的共同记忆点。' },
+        { icon: 'i-lucide-layout-grid', title: '空间系统销售', description: '以入户、客餐厅、卧房、阳台等空间组织产品，比单品清单更适合终端转化。' },
+        { icon: 'i-lucide-store', title: '门店展示友好', description: '真实空间图、系列名和卖点标签便于店面样板、活动物料和销售话术复用。' },
+        { icon: 'i-lucide-factory', title: '供应链协同', description: '柜体、墙面、门板与家具统一标准，减少风格割裂和交付不稳定。' }
+      ]
+    },
+    series: {
+      eyebrow: '官方系列素材',
+      title: '保留真实产品名，重构现代官网呈现',
+      description: '素材来自官网产品列表，页面保留媞雅、光引、原野等真实系列名，同时用更克制的版式呈现空间气质与可销售场景。',
+      items: [
+        { title: '媞雅系列', subtitle: '精致卧房与整家质感', description: '以柔和材质、细腻比例和水漆表面质感强化卧房系统的高级感。', image: '/paterson/product-series-tiya.webp', meta: 'Bedroom' },
+        { title: '光引系列', subtitle: '明亮公共空间', description: '用轻盈线条和明亮空间感承接客餐厅、展示柜与生活收纳需求。', image: '/paterson/product-series-guangyin.webp', meta: 'Living' },
+        { title: '原野系列', subtitle: '自然整家表达', description: '更强调木纹、留白与温润气质，适合环保整家定制的生活方式叙事。', image: '/paterson/product-series-yuanye.webp', meta: 'Nature' },
+        { title: '情侣电竞房', subtitle: '年轻化生活场景', description: '把设备收纳、双人使用和氛围感整合到卧房系统，拓展终端销售话题。', image: '/paterson/product-gaming-bedroom.webp', meta: 'Gaming' }
+      ]
+    },
+    delivery: {
+      eyebrow: '终端落地',
+      title: '产品系统服务招商，而不是停在展示',
+      description: '页面把产品、销售、展示和交付连接起来，让城市合伙人理解加盟后如何用产品体系获得转化。',
+      steps: [
+        { title: '产品组合建议', description: '依据目标城市、店面面积和客群定位，规划主推空间与样板组合。' },
+        { title: '设计与物料支持', description: '围绕系列图、空间卖点和水漆工艺，形成终端可复用的讲解素材。' },
+        { title: '门店场景呈现', description: '把卧房、客餐厅、宠物、电竞等高感知空间做成可体验的样板场景。' },
+        { title: '交付标准协同', description: '以柜墙门系统和供应链标准保障风格、材质与安装效果的一致性。' }
+      ]
+    },
+    cta: {
+      eyebrow: '产品加盟资料',
+      title: '想了解百得胜产品系统如何配置到门店？',
+      description: '提交意向城市与联系方式，招商顾问可结合你的店面资源介绍产品组合、样板规划和加盟支持政策。',
+      primary: '提交加盟咨询',
+      secondary: '拨打招商热线'
     },
     title: '产品系统',
     subtitle: '围绕水漆柜墙门系统、厨房收纳与儿童成长空间，构建完整环保整家定制方案。',

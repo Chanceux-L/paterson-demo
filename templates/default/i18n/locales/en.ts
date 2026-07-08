@@ -603,9 +603,190 @@ const starter = {
   },
   dataPage: {
     seo: {
-      title: 'Product Systems | Paterson Waterborne Whole-Home Customization',
-      description: 'Explore Paterson wardrobe customization, cabinet customization, children growth spaces, and waterborne cabinet-wall-door systems.',
-      keywords: 'Paterson product systems,waterborne wardrobe,cabinet customization,children room,cabinet wall door system'
+      title: 'Product Systems | Paterson Waterborne Cabinet-Wall-Door Systems',
+      description: 'Explore Paterson waterborne wardrobes, entry, living, dining, bedroom, balcony, pet, and gaming space systems for eco whole-home customization and franchise terminal display.',
+      keywords: 'Paterson product systems,waterborne wardrobe,cabinet wall door system,eco whole-home customization,whole-home franchise,Tiya series,Guangyin series,Yuanye series'
+    },
+    hero: {
+      eyebrow: 'Product Systems',
+      titleLine1: 'Waterborne',
+      titleLine2: 'Home Systems',
+      subtitle: 'Wardrobes, cabinets, furniture, and children’s spaces shaped by eco materials, storage design, and whole-home style.',
+      imageAlt: 'Paterson product system interior space',
+      primaryCta: 'Explore Products',
+      metrics: [
+        { value: '3+2', label: 'Waterborne coating process for eco value and surface quality' },
+        { value: '6 spaces', label: 'Entry, living, dining, study, bedroom, and balcony scenarios' },
+        { value: '23 years', label: 'Long-term focus on eco customization and home delivery' }
+      ]
+    },
+
+    serviceLines: {
+      navAria: 'Product service categories',
+      eyebrow: 'Our Services',
+      title: 'Whole-home product lines',
+      description: 'Wardrobes, cabinets, furniture, and children’s rooms come together through eco materials, refined style, and reliable delivery.',
+      items: [
+        { title: 'Wardrobe Customization', description: 'Paterson has focused on eco customization for 23 years and is a chief editor of the waterborne coating group standard. Its waterborne wardrobes use formaldehyde-free substrates, waterborne wood veneer, and a multi-step pure waterborne process for low-odor, ready-living customization.', image: '/paterson/product-wardrobe-intro.webp', points: ['Waterborne wardrobe', 'Formaldehyde-free', 'Ready living'] },
+        { title: 'Cabinet Customization', description: 'Paterson cabinets follow long-term eco principles, creating safer and healthier home environments with environmental materials, comfortable aesthetics, and efficient user-centered service.', image: '/paterson/product-cabinet-intro.webp', points: ['Appliance integration', 'Wardrobe-cabinet integration', 'Multi-style system'] },
+        { title: 'Paterson Furniture', description: 'Paterson furniture extends the whole-home product system beyond cabinetry, using living, dining, bedroom, and multi-function furniture to align style, storage, and daily experience.', image: '/paterson/product-series-guangyin.webp', points: ['Living dining', 'Furniture', 'Whole-home matching'] },
+        { title: 'Future Home by er', description: 'Future Home by er is built for children’s growth needs, organizing study, storage, sleep, safety, and eco health into a room system that can grow with the child.', image: '/paterson/product-series-yuanye.webp', points: ['Children growth', 'Study storage', 'Healthy space'] }
+      ]
+    },
+
+    catalog: {
+      eyebrow: 'Product Showcase',
+      title: 'Series & Spaces',
+      description: 'Eco materials, refined style, smart storage.',
+      emptyTitle: 'No matching products',
+      emptyDescription: 'Choose another space, style, or series.',
+      serviceCatalogs: {
+        'Wardrobe Customization': {
+          filters: [
+            { label: 'Space', options: ['All', 'Entry', 'Living Room', 'Dining Room', 'Study', 'Bedroom', 'Balcony'] },
+            { label: 'Style', options: ['All', 'European', 'Modern', 'New Chinese', 'Light Luxury', 'American', 'Future'] },
+            { label: 'Type', options: ['All', 'Youth', 'Classic'] }
+          ],
+          items: [
+            { title: 'Tiya Series', category: 'Wardrobe Customization', image: '/paterson/product-series-tiya.webp', tags: ['Bedroom', 'Light Luxury', 'Classic'] },
+            { title: 'Guangyin Series', category: 'Wardrobe Customization', image: '/paterson/product-series-guangyin.webp', tags: ['Living Room', 'Modern', 'Classic'] },
+            { title: 'Yuanye Series', category: 'Wardrobe Customization', image: '/paterson/product-series-yuanye.webp', tags: ['Bedroom', 'Modern', 'Youth'] },
+            { title: 'Pet-Friendly Space', category: 'Wardrobe Customization', image: '/paterson/product-pet-living-space.webp', tags: ['Living Room', 'Future', 'Youth'] },
+            { title: 'Couple Gaming Room', category: 'Wardrobe Customization', image: '/paterson/product-gaming-bedroom.webp', tags: ['Bedroom', 'Future', 'Youth'] },
+            { title: 'Waterborne Wardrobe', category: 'Wardrobe Customization', image: '/paterson/product-water-paint-wardrobe.webp', tags: ['Bedroom', 'Waterborne', 'Cabinet-wall-door'] }
+          ]
+        },
+        'Cabinet Customization': {
+          filters: [
+            { label: 'Series', options: ['All', 'Decorative Surface', 'Lacquer', 'Membrane Press', 'Solid Wood'] },
+            { label: 'Style', options: ['All', 'European', 'Modern', 'New Chinese', 'Light Luxury', 'American', 'Future'] },
+            { label: 'Type', options: ['All', 'L-shaped', 'U-shaped', 'One-wall', 'Island'] }
+          ],
+          items: [
+            { title: 'Hills Cabinet Accessories', category: 'Cabinet Customization', image: '/paterson/product-cabinet-hills.webp', tags: ['Decorative Surface', 'Modern', 'L-shaped'] },
+            { title: 'Alps P', category: 'Cabinet Customization', image: '/paterson/product-cabinet-alps.webp', tags: ['Lacquer', 'Light Luxury', 'Island'] },
+            { title: 'Kasen Max', category: 'Cabinet Customization', image: '/paterson/product-cabinet-kasen.webp', tags: ['Membrane Press', 'Modern', 'U-shaped'] },
+            { title: 'Nature', category: 'Cabinet Customization', image: '/paterson/product-cabinet-nature.webp', tags: ['Solid Wood', 'New Chinese', 'One-wall'] },
+            { title: 'Musha P', category: 'Cabinet Customization', image: '/paterson/product-cabinet-musha.webp', tags: ['Lacquer', 'European', 'L-shaped'] },
+            { title: 'Monet P', category: 'Cabinet Customization', image: '/paterson/product-cabinet-monet.webp', tags: ['Decorative Surface', 'American', 'U-shaped'] }
+          ]
+        },
+        'Paterson Furniture': {
+          filters: [
+            { label: 'Scene', options: ['All', 'Living', 'Dining', 'Bedroom', 'Multi-function'] },
+            { label: 'Type', options: ['All', 'Storage Cabinet', 'Sideboard', 'Pet Space', 'Gaming Space'] }
+          ],
+          items: [
+            { title: 'Guangyin Living Furniture', category: 'Paterson Furniture', image: '/paterson/product-series-guangyin.webp', tags: ['Living', 'Storage Cabinet', 'Modern'] },
+            { title: 'Day Coffee Night Bar Sideboard', category: 'Paterson Furniture', image: '/paterson/product-series-yuanye.webp', tags: ['Dining', 'Sideboard', 'Light Luxury'] },
+            { title: 'Pet-Friendly Space', category: 'Paterson Furniture', image: '/paterson/product-pet-living-space.webp', tags: ['Multi-function', 'Pet Space', 'Future'] },
+            { title: 'Couple Gaming Room', category: 'Paterson Furniture', image: '/paterson/product-gaming-bedroom.webp', tags: ['Bedroom', 'Gaming Space', 'Future'] }
+          ]
+        },
+        'Future Home by er': {
+          filters: [
+            { label: 'Age', options: ['All', 'Toddler', 'School Age', 'Teen'] },
+            { label: 'Function', options: ['All', 'Study Area', 'Storage Area', 'Sleep Area', 'Growth Space'] }
+          ],
+          items: [
+            { title: 'Future Home Growth Room', category: 'Future Home by er', image: '/paterson/product-children-room.webp', tags: ['School Age', 'Study Area', 'Growth Space'] },
+            { title: 'Children Storage Study System', category: 'Future Home by er', image: '/paterson/product-bedroom-system.webp', tags: ['Teen', 'Storage Area', 'Study Area'] },
+            { title: 'Healthy Sleep Children Room', category: 'Future Home by er', image: '/paterson/product-water-paint-wardrobe.webp', tags: ['Toddler', 'Sleep Area', 'Growth Space'] }
+          ]
+        }
+      }
+    },
+    intro: {
+      eyebrow: 'Waterborne Wardrobe Customization',
+      title: 'Turning eco customization into a product language customers can feel',
+      description: 'The official product page highlights formaldehyde-free substrates, waterborne wood veneer, and a multi-step pure waterborne process. The redesigned product system translates those technical points into spatial value customers understand: gentle touch, low odor, ready living, unified style, and clear storage.',
+      proof: 'Waterborne customization is not a single cabinet feature. It runs through materials, process, cabinet-wall-door coordination, space display, and the way franchise stores explain the value.',
+      imageAlt: 'Paterson waterborne wardrobe customization space',
+      captionEyebrow: 'Official asset source',
+      caption: 'Image assets are sourced from the Paterson official “Services / Wardrobe Customization” page, downloaded locally, and compressed as webp.'
+    },
+    systems: {
+      eyebrow: 'Space Systems',
+      title: 'From product lists to space solutions',
+      description: 'Following the redesign direction, this page avoids listing wardrobes, cabinets, and furniture as isolated items. Products are organized into space systems that help franchise stores sell whole-home value through real scenes.',
+      items: [
+        {
+          title: 'Bedroom System',
+          description: 'Waterborne wardrobes, wall panels, headboards, and storage combine into a healthy bedroom expression that supports wellness and eco material narratives.',
+          image: '/paterson/product-series-tiya.webp',
+          tags: ['Waterborne wardrobe', 'Bedroom storage', 'Cabinet-wall coordination']
+        },
+        {
+          title: 'Living and Dining System',
+          description: 'TV cabinets, sideboards, display storage, and background walls share one style language so whole-home design is visible in public family spaces.',
+          image: '/paterson/product-series-guangyin.webp',
+          tags: ['Living space', 'Sideboard', 'Whole-home style']
+        },
+        {
+          title: 'Natural Living System',
+          description: 'Wood textures, measured whitespace, and refined custom-home quality create warmer, more durable whole-home spaces.',
+          image: '/paterson/product-series-yuanye.webp',
+          tags: ['Yuanye series', 'Natural texture', 'Refined customization']
+        },
+        {
+          title: 'Pet-Friendly Space',
+          description: 'Pet activity, cleaning storage, and family public areas are integrated for young households with compound living needs.',
+          image: '/paterson/product-pet-living-space.webp',
+          tags: ['Pet friendly', 'Hybrid storage', 'Family interaction']
+        },
+        {
+          title: 'Gaming Bedroom',
+          description: 'Rest, dual entertainment, equipment storage, and ambient lighting are combined into a younger terminal display scenario.',
+          image: '/paterson/product-gaming-bedroom.webp',
+          tags: ['Couple gaming room', 'Young customers', 'Ambient lighting']
+        },
+        {
+          title: 'Cabinet-Wall-Door System',
+          description: 'Materials, colors, proportions, and installation details align wardrobes, walls, doors, and furniture under one delivery standard.',
+          image: '/paterson/product-water-paint-wardrobe.webp',
+          tags: ['Cabinet wall door', 'Unified delivery', 'Terminal display']
+        }
+      ]
+    },
+    features: {
+      eyebrow: 'Product Advantages',
+      title: 'Franchise stores need products that are easy to explain, attractive, and deliverable',
+      description: 'The product system page emphasizes the core evidence that separates Paterson from ordinary whole-home customization: waterborne process, spatial expression, series assets, and terminal delivery standards.',
+      items: [
+        { icon: 'i-lucide-droplets', title: 'Waterborne process proof', description: 'Formaldehyde-free substrates, waterborne wood veneer, and refined coating steps create a shared memory of eco value and surface quality.' },
+        { icon: 'i-lucide-layout-grid', title: 'Space-system selling', description: 'Entry, living, dining, bedroom, and balcony spaces convert better than an isolated product catalog.' },
+        { icon: 'i-lucide-store', title: 'Store display friendly', description: 'Real scenes, series names, and value tags can be reused in showrooms, campaign materials, and sales scripts.' },
+        { icon: 'i-lucide-factory', title: 'Supply-chain coordination', description: 'Cabinets, walls, doors, and furniture share standards to reduce style fragmentation and unstable delivery.' }
+      ]
+    },
+    series: {
+      eyebrow: 'Official Series Assets',
+      title: 'Keep real product names, rebuild the modern presentation',
+      description: 'Images come from the official product list. The page keeps real series names such as Tiya, Guangyin, and Yuanye while presenting space mood and selling scenarios with a calmer layout.',
+      items: [
+        { title: 'Tiya Series', subtitle: 'Refined bedroom and whole-home texture', description: 'Soft materials, measured proportions, and waterborne surface quality strengthen the bedroom system’s premium feel.', image: '/paterson/product-series-tiya.webp', meta: 'Bedroom' },
+        { title: 'Guangyin Series', subtitle: 'Bright public living spaces', description: 'Light lines and bright spatial rhythm support living rooms, sideboards, display cabinets, and everyday storage.', image: '/paterson/product-series-guangyin.webp', meta: 'Living' },
+        { title: 'Yuanye Series', subtitle: 'Natural whole-home expression', description: 'Wood grain, whitespace, and warmth support the lifestyle story of eco whole-home customization.', image: '/paterson/product-series-yuanye.webp', meta: 'Nature' },
+        { title: 'Couple Gaming Room', subtitle: 'Younger living scenario', description: 'Equipment storage, dual use, and atmosphere are integrated into the bedroom system to extend terminal sales topics.', image: '/paterson/product-gaming-bedroom.webp', meta: 'Gaming' }
+      ]
+    },
+    delivery: {
+      eyebrow: 'Terminal Implementation',
+      title: 'The product system supports franchise conversion, not just display',
+      description: 'The page connects product, sales, display, and delivery so city partners understand how the product system drives conversion after joining.',
+      steps: [
+        { title: 'Product mix planning', description: 'Plan hero spaces and showroom combinations based on city, store size, and target customers.' },
+        { title: 'Design and material support', description: 'Turn series images, space benefits, and waterborne process into reusable sales materials.' },
+        { title: 'Store scene display', description: 'Build high-perception sample spaces such as bedrooms, living rooms, pet spaces, and gaming rooms.' },
+        { title: 'Delivery standard coordination', description: 'Use cabinet-wall-door systems and supply-chain standards to align style, materials, and installation quality.' }
+      ]
+    },
+    cta: {
+      eyebrow: 'Product Franchise Materials',
+      title: 'Want to see how Paterson product systems fit your store?',
+      description: 'Submit your city and contact details. Our franchise team can introduce product combinations, showroom planning, and cooperation policies based on your store resources.',
+      primary: 'Submit Inquiry',
+      secondary: 'Call Hotline'
     },
     title: 'Product Systems',
     subtitle: 'Whole-home solutions built around waterborne cabinet-wall-door systems, kitchen storage, and children growth spaces.',
