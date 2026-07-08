@@ -118,7 +118,7 @@ useSchemaOrg(computed(() => [
 </script>
 
 <template>
-  <main class="bg-[#F4F1EA] text-[#24211D]">
+  <main class="home-page bg-[#F4F1EA] text-[#24211D]">
     <section class="relative overflow-hidden bg-[#F4F1EA] px-5 pt-16 text-[#24211D] sm:px-8 lg:px-14 lg:pt-24">
       <div class="hero-image-panel absolute inset-y-0 right-0 hidden w-[46%] bg-[#F4F1EA] lg:block">
         <img
@@ -660,7 +660,7 @@ useSchemaOrg(computed(() => [
       </div>
     </section>
 
-    <div class="fixed inset-x-0 bottom-0 z-30 grid grid-cols-3 border-t border-[#E5DED2] bg-white text-sm font-medium text-[#24211D] shadow-lg md:hidden">
+    <div class="mobile-action-bar fixed z-30 grid grid-cols-3 border border-[#E5DED2] bg-white text-sm font-medium text-[#24211D] shadow-lg md:hidden">
       <NuxtLinkLocale class="flex h-12 items-center justify-center gap-1" :to="localePath('/contact')">
         <UIcon name="i-lucide-message-circle" />
         {{ t('homePage.mobileBar.consult') }}
@@ -703,6 +703,22 @@ useSchemaOrg(computed(() => [
 .paterson-hero-image {
   animation: paterson-hero-kenburns 12s ease-out both;
   transform-origin: 58% 48%;
+}
+
+.mobile-action-bar {
+  right: 16px;
+  bottom: max(14px, env(safe-area-inset-bottom));
+  left: 16px;
+}
+
+.home-page {
+  padding-bottom: calc(72px + env(safe-area-inset-bottom));
+}
+
+@media (min-width: 48rem) {
+  .home-page {
+    padding-bottom: 0;
+  }
 }
 
 .hero-image-panel::before {
