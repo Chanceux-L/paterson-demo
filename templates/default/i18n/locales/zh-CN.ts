@@ -566,36 +566,74 @@ const starter = {
       description: '了解百得胜 Paterson 的水漆产业链、全水性 3D 智能涂装线、油改水 4.0 工厂与环保整家定制技术。',
       keywords: '水漆科技,水漆柜墙门系统,油改水工厂,全水性智能涂装,环保整家定制'
     },
-    header: {
+    hero: {
+      eyebrow: '水漆科技',
       title: '水漆科技',
-      subtitle: '从材料、涂装、产品到终端交付，百得胜以水漆产业链闭环支撑环保整家定制。'
-    },
-    intro: {
-      heading: '把环保能力做进工艺与交付',
-      paragraphs: [
-        '水漆不是一句口号，而是从材料选择、涂装工艺、产品系统到终端交付共同形成的能力链。',
-        '百得胜通过全水性 3D 智能涂装线、油改水 4.0 工厂和水漆相关标准背书，让环保整家定制具备更稳定的品质表达。'
-      ],
-      imagePlaceholder: '水漆科技空间展示'
-    },
-    pillars: {
-      heading: '水漆产业链能力',
-      items: [
-        { title: '水性材料体系', description: '围绕水性漆定制家居建立材料端基础，减少传统涂装带来的健康顾虑。' },
-        { title: '智能涂装工艺', description: '以全水性 3D 智能涂装线提升表面质感、稳定性与批量交付能力。' },
-        { title: '整家产品协同', description: '柜、墙、门与成品家具形成统一风格和环保标准，服务完整家居空间。' },
-        { title: '终端信任表达', description: '用标准、认证、空间体验和清晰说明帮助加盟店建立顾客信任。' }
+      titleLine1: '把环保能力',
+      titleLine2: '做进整家交付',
+      subtitle: '从水性材料、连续化涂饰到柜墙门一体化应用，百得胜以水漆产业链闭环支撑环保整家定制，让技术优势能被终端清晰展示、被消费者真实感知。',
+      primaryCta: '咨询水漆加盟',
+      imageAlt: '百得胜水漆智能涂装与整家定制工艺',
+      metrics: [
+        { value: '3D', label: '全水性智能涂装线' },
+        { value: '4.0', label: '油改水工厂升级' },
+        { value: '72道', label: '纯水漆工艺表达' }
       ]
     },
-    values: {
-      heading: '面向加盟终端的价值',
+    sectionNavAria: '水漆科技页面导航',
+    sectionNav: [
+      { label: '产业链能力', href: '#chain' },
+      { label: '权威证据', href: '#proof' },
+      { label: '空间体验', href: '#experience' },
+      { label: '终端价值', href: '#terminal' }
+    ],
+    chain: {
+      eyebrow: '产业链能力',
+      title: '从材料、涂装到柜墙门系统的水漆闭环',
+      description: '水漆科技不是单一卖点，而是一条贯穿材料选择、涂装工艺、产品系统和门店讲解的能力链。页面重点呈现可理解、可展示、可转化的技术差异。',
+      nodes: [
+        { icon: 'i-lucide-droplets', title: '水性材料体系', description: '围绕水性漆定制家居建立材料端基础，减少传统涂装带来的气味和健康顾虑。' },
+        { icon: 'i-lucide-factory', title: '连续化智能涂装', description: '全水性 3D 智能涂装线与油改水 4.0 工厂，让表面质感、稳定性和批量交付更可控。' },
+        { icon: 'i-lucide-panels-top-left', title: '柜墙门一体应用', description: '水漆衣柜、墙板、木门与整家空间协同呈现，让环保工艺落到真实家居场景。' },
+        { icon: 'i-lucide-badge-check', title: '标准与终端讲解', description: '以水漆团标、行业认证和空间样板支撑门店讲解，帮助加盟商建立顾客信任。' }
+      ]
+    },
+    proof: {
+      eyebrow: '权威证据',
+      title: '让技术主张有出处、有画面、有结果',
+      description: '官网新闻显示，百得胜“高硬度全水性涂料涂饰家居板件”及关键技术获得专家组认证，并围绕全水性连续化涂饰、漆膜性能和绿色制造形成更完整的技术叙事。',
+      imageAlt: '百得胜水漆核心科技成果认证新闻',
+      captionEyebrow: '水漆核心科技成果',
+      caption: '以产学研协同和专家认证作为科技背书，把“环保”从概念转译为可展示的工艺能力。',
+      cards: [
+        { value: '国际领先', label: '成果认证', description: '官网新闻提到相关水漆核心科技成果获专家组认证，强化品牌技术可信度。' },
+        { value: '六面一体', label: '连续化涂饰', description: '围绕木质制品六面一体涂饰，让柜墙门应用具备更完整的工艺表达。' },
+        { value: '2H', label: '漆膜硬度', description: '配合附着力、耐湿热、耐污染等指标，回应消费者对耐用和质感的关注。' }
+      ]
+    },
+    experience: {
+      eyebrow: '空间体验',
+      title: '技术最终要回到看得见的家',
+      description: '水漆科技页不只展示工厂和概念，也需要把水漆工艺落到衣柜、卧房、柜墙门系统和生活场景中，让加盟商知道终端该如何讲、消费者能获得什么。',
       items: [
-        { title: '更清晰的差异化', description: '水漆与康氧概念帮助终端区别于普通全屋定制门店。' },
-        { title: '更稳定的产品表达', description: '工艺和供应链能力让设计效果、表面质感和交付标准更一致。' },
-        { title: '更容易讲清的健康主张', description: '把材料、空气、卧房和整家空间连接起来，让消费者更容易理解健康家居价值。' }
+        { title: '水漆衣柜定制', description: '基材无醛添加、面材水漆木皮、3 底 2 面 72 道纯水漆工艺，形成可被消费者记住的产品表达。', image: '/paterson/product-water-paint-wardrobe.webp', tags: ['水漆衣柜', '无味亲肤', '即装即住'] },
+        { title: '健康卧房空间', description: '以衣柜、床头、护墙和收纳系统共同呈现健康卧房，让环保主张进入真实生活场景。', image: '/paterson/product-bedroom-system.webp', tags: ['卧房系统', '柜墙协同', '健康家居'] },
+        { title: '新国标与健康家', description: '结合家具新国标和水漆健康家认知，强化门店对环保、耐用和空间品质的讲解能力。', image: '/paterson/news-furniture-standard.webp', tags: ['标准背书', '环保认知', '终端讲解'] }
+      ]
+    },
+    terminal: {
+      eyebrow: '终端价值',
+      title: '让加盟门店更容易讲清差异化',
+      description: '水漆科技页面的目的不是堆技术名词，而是帮助潜在加盟商判断：这套产品能不能展示、能不能讲清、能不能形成持续的成交理由。',
+      items: [
+        { icon: 'i-lucide-store', title: '门店展示更有主题', description: '以水漆衣柜、健康卧房、柜墙门系统组织展厅动线，让顾客从空间体验理解环保价值。' },
+        { icon: 'i-lucide-message-square-text', title: '销售讲解更有依据', description: '用材料、工艺、标准和权威新闻建立讲解路径，减少空泛的环保口号。' },
+        { icon: 'i-lucide-sparkles', title: '产品质感更容易感知', description: '把无味亲肤、木皮纹理、漆膜性能和整家风格统一，转化为可触摸的终端体验。' },
+        { icon: 'i-lucide-trending-up', title: '招商记忆点更明确', description: '水漆整家、康氧空间和营销支持共同形成区别于普通全屋定制门店的加盟理由。' }
       ]
     },
     cta: {
+      eyebrow: '水漆整家加盟',
       title: '想了解水漆整家定制加盟？',
       subtitle: '招商顾问可根据你的城市与店面资源，介绍产品系统、建店支持和运营扶持。',
       button: '提交咨询'
