@@ -53,6 +53,40 @@ APP_OG_IMAGE_FALLBACK_PATH=https://placehold.co/1200x630/png?text=OG+Image
 - `APP_OG_IMAGE_CACHE_BASE`：OG Image 缓存目录。
 - `APP_OG_IMAGE_FALLBACK_PATH`：动态 OG Image 关闭时使用的静态 fallback 图片，可使用 `placehold.co` 这类绝对 URL。
 
+## Vercel 部署
+
+Vercel 上使用仓库根目录的 `vercel.json`：
+
+```json
+{
+  "framework": "nuxtjs",
+  "installCommand": "corepack enable && pnpm install --frozen-lockfile",
+  "buildCommand": "pnpm build",
+  "devCommand": "pnpm dev"
+}
+```
+
+Vercel 会把 Nuxt SSR、server API、routeRules 和 sitemap 相关逻辑打包到函数环境。项目不需要改成 `nuxt generate`，否则动态 sitemap、SSR 和 SWR 能力会被削弱。
+
+Vercel Project Settings 里至少配置：
+
+```bash
+APP_PUBLIC_API_BASE=https://api.aida.yun
+APP_CODE=<app-code>
+APP_SITE_URL=https://<project>.vercel.app
+APP_BASE_PATH=/
+APP_TRACKER_API=https://api.aida.yun/public_api/v1
+APP_OG_IMAGE_ENABLED=true
+APP_OG_IMAGE_FALLBACK_PATH=https://placehold.co/1200x630/png?text=OG+Image
+```
+
+注意：
+
+- `APP_SITE_URL` 要改成当前生产域名；绑定正式域名后也要同步修改。
+- `APP_BASE_PATH` 在 Vercel 根域名部署时用 `/`。
+- Vercel 函数文件系统不适合作为跨请求持久缓存，通常不要配置 `APP_RESPONSE_CACHE_BASE` 和 `APP_OG_IMAGE_CACHE_BASE`。如果后续确实需要持久缓存，应改用外部存储。
+- 如果 Vercel 构建日志里没有使用 pnpm，先检查 Project Settings 是否覆盖了仓库内的 `vercel.json`。
+
 ## 本地开发
 
 本地开发使用：

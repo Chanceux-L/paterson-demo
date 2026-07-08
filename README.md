@@ -179,6 +179,34 @@ APP_OSS_ACCESS_KEY_SECRET=<access-key-secret>
 
 ## 构建部署
 
+### Vercel
+
+项目已提供 `vercel.json`，Vercel 会按 Nuxt SSR 项目部署，使用 `pnpm build` 构建。
+
+Vercel Project Settings 建议保持：
+
+```text
+Framework Preset: Nuxt.js
+Install Command: corepack enable && pnpm install --frozen-lockfile
+Build Command: pnpm build
+```
+
+Vercel 环境变量至少配置：
+
+```env
+APP_PUBLIC_API_BASE=https://api.aida.yun
+APP_CODE=<app-code>
+APP_BASE_PATH=/
+APP_SITE_URL=https://<project>.vercel.app
+APP_TRACKER_API=https://api.aida.yun/public_api/v1
+APP_OG_IMAGE_ENABLED=true
+APP_OG_IMAGE_FALLBACK_PATH=https://placehold.co/1200x630/png?text=OG+Image
+```
+
+`APP_SITE_URL` 需要随 Vercel 生产域名或正式域名调整，否则 canonical、robots、sitemap、OG URL 会指向错误域名。Vercel 函数环境不适合依赖本地文件系统做持久缓存，`APP_RESPONSE_CACHE_BASE` 和 `APP_OG_IMAGE_CACHE_BASE` 通常不需要配置。
+
+### PM2 / Nginx
+
 ```bash
 # Staging
 pnpm build:staging
