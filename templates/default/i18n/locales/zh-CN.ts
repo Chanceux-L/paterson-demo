@@ -59,8 +59,8 @@ const pageSeo = {
   contact: {
     inquiry: {
       eyebrow: '联系咨询',
-      title: '告诉我们你的需求',
-      description: '填写表单后，招商顾问会根据你提供的信息尽快与你联系，协助评估城市机会、投资规划与合作方式。',
+      title: '开启百得胜加盟咨询',
+      description: '留下联系方式与意向城市，招商顾问将为你介绍品牌实力、开店支持与合作政策。',
       name: '姓名',
       namePlaceholder: '请输入你的姓名',
       missingName: '请填写姓名',
@@ -72,9 +72,9 @@ const pageSeo = {
       emailPlaceholder: '请输入邮箱地址',
       company: '公司',
       companyPlaceholder: '请输入公司名称',
-      message: '需求说明',
-      messagePlaceholder: '请简单描述你的需求、项目背景或希望了解的内容',
-      missingMessage: '请填写需求说明',
+      message: '加盟意向',
+      messagePlaceholder: '可填写意向城市、店面资源、投资计划或希望了解的加盟政策',
+      missingMessage: '请填写加盟意向',
       captcha: '验证码',
       captchaPlaceholder: '请输入验证码',
       captchaAlt: '验证码图片',
@@ -233,7 +233,7 @@ const starter = {
   },
   cta: {
     title: '准备了解百得胜加盟合作？',
-    description: '留下联系方式，招商顾问将根据意向城市、投资预算和店面资源，为你提供合作评估建议。',
+    description: '留下联系方式，招商顾问将为你介绍百得胜品牌实力、开店支持与合作政策。',
     action: '提交加盟咨询',
     contactLabel: '招商热线',
     bgText: 'PATERSON'
@@ -386,14 +386,14 @@ const starter = {
     },
     process: {
       eyebrow: '加盟流程',
-      title: '清晰八步合作路径，让意向城市快速进入评估与落地',
-      description: '从初次咨询到建店培训，再到开业扶持和持续运营，每一步都让加盟商知道下一步发生什么。',
+      title: '清晰八步合作路径，陪伴门店稳步开业',
+      description: '从初次咨询到建店培训，再到开业扶持和持续运营，总部陪伴加盟商稳步推进。',
       stepLabel: '阶段',
       steps: [
         { title: '在线咨询', description: '提交城市、预算与联系方式。' },
-        { title: '总部沟通', description: '匹配区域政策与合作模式。' },
+        { title: '总部沟通', description: '介绍区域政策与合作方式。' },
         { title: '实地考察', description: '了解展厅、工厂与终端样板。' },
-        { title: '城市评估', description: '评估商圈、竞争与投资规划。' },
+        { title: '城市洽谈', description: '沟通商圈、客群与开店规划。' },
         { title: '签约合作', description: '明确授权、政策与开店节奏。' },
         { title: '建店培训', description: '完成设计、产品和运营培训。' },
         { title: '开业扶持', description: '配合活动、引流和团队启动。' },
@@ -427,8 +427,8 @@ const starter = {
     },
     consult: {
       eyebrow: '加盟留资',
-      title: '留下城市与预算，总部顾问为你评估合作机会',
-      description: '表单只收集必要信息，便于招商团队快速判断城市机会、投资规划和下一步沟通方式。',
+      title: '留下加盟意向，获取百得胜合作资料',
+      description: '填写联系方式与意向城市，招商顾问将为你介绍水漆整家定制加盟政策。',
       privacy: '信息仅用于加盟咨询沟通，严格保密。',
       hours: '总部咨询时间：09:00 - 18:00',
       form: {
@@ -444,7 +444,7 @@ const starter = {
         budgetTwo: '50-100 万',
         budgetThree: '100 万以上',
         message: '备注',
-        messagePlaceholder: '可填写店面资源、过往行业经验或想了解的问题',
+        messagePlaceholder: '可填写店面资源、经营经验或希望了解的加盟政策',
         submit: '提交加盟咨询'
       }
     },
@@ -456,7 +456,7 @@ const starter = {
     faq: {
       items: [
         { question: '百得胜 Paterson 的核心差异化是什么？', answer: '核心差异化是水漆柜墙门系统、环保整家定制能力以及德尔未来上市公司背景。' },
-        { question: '加盟咨询需要提供哪些信息？', answer: '建议提供姓名、手机号、意向城市、投资预算和店面资源等基础信息，便于总部评估。' }
+        { question: '加盟咨询需要提供哪些信息？', answer: '建议留下姓名、手机号、意向城市、投资预算和店面资源，便于招商顾问介绍更适合的合作政策。' }
       ]
     }
   },
@@ -556,7 +556,7 @@ const starter = {
     cta: {
       eyebrow: '加盟合作',
       title: '了解百得胜品牌实力与加盟政策',
-      subtitle: '提交意向城市与联系方式，招商顾问将结合当地市场、投资预算和店面资源提供合作评估。',
+      subtitle: '提交意向城市与联系方式，招商顾问将介绍品牌实力、开店支持与合作政策。',
       button: '咨询加盟'
     }
   },
@@ -624,7 +624,7 @@ const starter = {
     terminal: {
       eyebrow: '终端价值',
       title: '让加盟门店更容易讲清差异化',
-      description: '水漆科技页面的目的不是堆技术名词，而是帮助潜在加盟商判断：这套产品能不能展示、能不能讲清、能不能形成持续的成交理由。',
+      description: '水漆科技不止停留在技术名词，而是落到门店可展示、顾客可感知、空间可体验的健康家居价值。',
       items: [
         { icon: 'i-lucide-store', title: '门店展示更有主题', description: '以水漆衣柜、健康卧房、柜墙门系统组织展厅动线，让顾客从空间体验理解环保价值。' },
         { icon: 'i-lucide-message-square-text', title: '销售讲解更有依据', description: '用材料、工艺、标准和权威新闻建立讲解路径，减少空泛的环保口号。' },
@@ -810,8 +810,8 @@ const starter = {
     },
     delivery: {
       eyebrow: '终端落地',
-      title: '产品系统服务招商，而不是停在展示',
-      description: '页面把产品、销售、展示和交付连接起来，让城市合伙人理解加盟后如何用产品体系获得转化。',
+      title: '产品系统走进门店，也走进真实生活',
+      description: '从产品组合、空间样板到交付标准，百得胜让城市合伙人更清楚地呈现水漆整家的价值。',
       steps: [
         { title: '产品组合建议', description: '依据目标城市、店面面积和客群定位，规划主推空间与样板组合。' },
         { title: '设计与物料支持', description: '围绕系列图、空间卖点和水漆工艺，形成终端可复用的讲解素材。' },
@@ -888,12 +888,78 @@ const starter = {
   },
   contactPage: {
     seo: {
-      title: '联系我们_百得胜 Paterson 招商加盟咨询',
-      description: '联系百得胜 Paterson 招商团队，提交意向城市、投资预算与联系方式，了解水漆整家定制加盟政策。',
+      title: '招商加盟_百得胜 Paterson 水漆整家定制加盟咨询',
+      description: '了解百得胜 Paterson 水漆整家定制加盟优势、总部支持、合作流程与招商政策，提交意向城市与联系方式获取加盟资料。',
       keywords: '百得胜加盟,Paterson 加盟,全屋定制加盟,水漆整家定制加盟,招商咨询'
     },
-    title: '联系我们',
-    subtitle: '提交加盟意向，招商顾问将尽快与你联系，协助评估城市机会与合作方案。',
+    title: '招商加盟',
+    subtitle: '以水漆柜墙门系统、环保整家定制和总部全链路支持，帮助城市合伙人建立更有差异化的定制家居门店。',
+    sectionNavAria: '招商加盟页面导航',
+    sectionNav: [
+      { label: '加盟机会', href: '#opportunity' },
+      { label: '总部支持', href: '#support' },
+      { label: '合作流程', href: '#process' },
+      { label: '提交咨询', href: '#inquiry' }
+    ],
+    hero: {
+      eyebrow: '招商加盟',
+      titleLine1: '水漆整家定制',
+      titleLine2: '加盟新增长',
+      subtitle: '百得胜 Paterson 以德尔未来上市公司背景、水漆柜墙门系统和成熟终端运营支持，为城市合伙人提供从产品、建店到营销运营的加盟路径。',
+      primaryCta: '提交加盟咨询',
+      imageAlt: '百得胜 Paterson 招商加盟门店支持形象',
+      metrics: [
+        { value: '2001', label: '品牌创立，长期深耕定制家居领域' },
+        { value: '002631', label: '德尔未来上市公司股票代码' },
+        { value: '全链路', label: '产品、供应链、设计、建店、营销与运营支持' }
+      ]
+    },
+    opportunity: {
+      eyebrow: '加盟机会',
+      title: '以水漆整家定制，打开健康家居新生意',
+      description: '当消费者更关注环保、质感与一站式空间体验，水漆柜墙门系统让门店拥有更鲜明的产品主张。百得胜以真实空间、健康材料与整家方案，帮助加盟门店讲好健康定制的价值。',
+      imageAlt: '百得胜水漆整家定制生活空间'
+    },
+    proof: {
+      items: [
+        { value: '水漆', label: '健康环保主张', description: '以水漆衣柜、康氧卧房和柜墙门系统，形成区别于普通全屋定制门店的品牌记忆。' },
+        { value: '整家', label: '完整空间体验', description: '从衣柜延展到厨房、卧房、儿童房和客餐厅，让消费者在门店看见更完整的家。' },
+        { value: '总部', label: '开店运营陪伴', description: '围绕选址建店、设计培训、营销活动和数智化工具，陪伴加盟商稳健起步。' }
+      ]
+    },
+    support: {
+      eyebrow: '总部支持',
+      title: '从品牌到终端，陪伴门店稳健开局',
+      description: '百得胜为城市合伙人提供品牌、产品、供应链、设计、营销和运营支持，让门店从形象搭建、团队训练到开业推广都更有章法。',
+      items: [
+        { icon: 'i-lucide-award', title: '品牌优势', description: '2001 年品牌积累、德尔未来上市公司背景与水漆科技背书，为城市市场建立信任基础。' },
+        { icon: 'i-lucide-layout-grid', title: '产品优势', description: '水漆柜墙门系统、衣柜橱柜与整家空间方案协同，形成更有辨识度的展厅体验。' },
+        { icon: 'i-lucide-factory', title: '供应链优势', description: '以材料、工艺、生产与交付能力支撑终端品质，让好产品稳定走进更多家庭。' },
+        { icon: 'i-lucide-pencil-ruler', title: '设计支持', description: '围绕空间方案、展厅形象、终端物料与产品培训，呈现更贴近生活的整家定制体验。' },
+        { icon: 'i-lucide-megaphone', title: '营销支持', description: '结合开业活动、节日节点、内容传播与总部物料，帮助门店持续吸引本地客群。' },
+        { icon: 'i-lucide-chart-no-axes-combined', title: '数智运营支持', description: '以运营方法、数据工具和持续培训，陪伴门店做好客户跟进、成交转化与服务管理。' }
+      ]
+    },
+    process: {
+      eyebrow: '合作流程',
+      title: '从初次沟通到门店开业，一路有总部支持',
+      description: '百得胜招商团队将围绕城市市场、店面资源与经营规划，与意向合伙人逐步沟通合作细节。',
+      steps: [
+        { title: '在线咨询', description: '留下联系方式与意向城市，开启百得胜加盟沟通。' },
+        { title: '总部沟通', description: '招商顾问介绍品牌实力、产品体系、合作政策与开店支持。' },
+        { title: '实地考察', description: '走近总部或标杆门店，感受水漆整家定制的产品与终端形象。' },
+        { title: '城市洽谈', description: '围绕当地市场、店面资源和投入规划，沟通适合的合作方案。' },
+        { title: '签约合作', description: '确认合作区域、门店规划与支持内容，正式成为城市合伙人。' },
+        { title: '建店培训', description: '推进门店设计、样品配置、团队培训与开业筹备。' },
+        { title: '开业扶持', description: '总部协助开业活动、物料投放、销售演练与首批客户承接。' },
+        { title: '持续运营', description: '通过营销、培训、运营复盘与新品导入，陪伴门店长期成长。' }
+      ]
+    },
+    inquiry: {
+      eyebrow: '提交咨询',
+      title: '留下加盟意向，获取百得胜合作资料',
+      description: '填写联系方式与意向城市后，招商顾问将尽快与你沟通水漆整家定制加盟政策。'
+    },
     infoTitle: '招商联系信息',
     hours: '咨询时间：09:00 - 18:00',
     labels: {

@@ -59,8 +59,8 @@ const pageSeo = {
   contact: {
     inquiry: {
       eyebrow: 'Inquiry',
-      title: 'Tell us what you need',
-      description: 'Submit the form and a franchise consultant will contact you to discuss city opportunity, investment planning, and cooperation options.',
+      title: 'Start Your Paterson Franchise Inquiry',
+      description: 'Leave your contact details and target city. Our franchise team will introduce Paterson brand strength, store support, and cooperation policy.',
       name: 'Name',
       namePlaceholder: 'Enter your name',
       missingName: 'Please enter your name',
@@ -72,9 +72,9 @@ const pageSeo = {
       emailPlaceholder: 'Enter your email address',
       company: 'Company',
       companyPlaceholder: 'Enter your company name',
-      message: 'Message',
-      messagePlaceholder: 'Briefly describe your needs, project context, or what you would like to learn',
-      missingMessage: 'Please enter your message',
+      message: 'Franchise Interest',
+      messagePlaceholder: 'Share your target city, store resources, investment plan, or the franchise policy you would like to learn about',
+      missingMessage: 'Please enter your franchise interest',
       captcha: 'Verification code',
       captchaPlaceholder: 'Enter the verification code',
       captchaAlt: 'Verification code image',
@@ -233,7 +233,7 @@ const starter = {
   },
   cta: {
     title: 'Ready to discuss Paterson franchise cooperation?',
-    description: 'Leave your contact details and our franchise team will assess your target city, budget, and store resources.',
+    description: 'Leave your contact details and our franchise team will introduce Paterson brand strength, store support, and cooperation policy.',
     action: 'Submit Inquiry',
     contactLabel: 'Franchise Hotline',
     bgText: 'PATERSON'
@@ -387,13 +387,13 @@ const starter = {
     process: {
       eyebrow: 'Franchise Process',
       title: 'An eight-step path from inquiry to city launch',
-      description: 'From initial inquiry to training, opening support, and ongoing operations, each step gives partners a clear next action.',
+      description: 'From first inquiry to training, opening support, and ongoing operations, headquarters supports partners through each key step.',
       stepLabel: 'Step',
       steps: [
         { title: 'Online Inquiry', description: 'Submit city, budget, and contact details.' },
-        { title: 'Headquarters Call', description: 'Match regional policies and cooperation model.' },
+        { title: 'Headquarters Call', description: 'Introduce regional policies and cooperation options.' },
         { title: 'On-site Visit', description: 'Review showroom, factory, and terminal samples.' },
-        { title: 'City Evaluation', description: 'Assess district, competition, and investment plan.' },
+        { title: 'City Discussion', description: 'Discuss district, customers, and store planning.' },
         { title: 'Agreement', description: 'Confirm authorization, policies, and launch pace.' },
         { title: 'Store Training', description: 'Complete design, product, and operation training.' },
         { title: 'Opening Support', description: 'Coordinate campaigns, traffic, and team kickoff.' },
@@ -427,8 +427,8 @@ const starter = {
     },
     consult: {
       eyebrow: 'Franchise Form',
-      title: 'Leave your city and budget for a cooperation assessment',
-      description: 'The form collects only essential information so the franchise team can evaluate city opportunity, investment plan, and next communication steps.',
+      title: 'Leave your franchise interest to receive Paterson cooperation materials',
+      description: 'Share your contact details and target city. Our franchise team will introduce Paterson waterborne whole-home customization cooperation.',
       privacy: 'Information is used only for franchise consultation and kept confidential.',
       hours: 'Headquarters consultation hours: 09:00 - 18:00',
       form: {
@@ -444,7 +444,7 @@ const starter = {
         budgetTwo: 'RMB 500k - 1m',
         budgetThree: 'Above RMB 1m',
         message: 'Notes',
-        messagePlaceholder: 'Tell us about store resources, industry experience, or questions',
+        messagePlaceholder: 'Share store resources, business experience, or the franchise policy you would like to learn about',
         submit: 'Submit Franchise Inquiry'
       }
     },
@@ -456,7 +456,7 @@ const starter = {
     faq: {
       items: [
         { question: 'What is Paterson’s core differentiation?', answer: 'Paterson combines waterborne cabinet-wall-door systems, eco whole-home customization, and DareGlobal listed-company backing.' },
-        { question: 'What information is needed for franchise inquiry?', answer: 'Name, phone, target city, budget, and store resources help headquarters evaluate the opportunity.' }
+        { question: 'What information is needed for franchise inquiry?', answer: 'Name, phone, target city, budget, and store resources help our franchise team introduce more suitable cooperation policies.' }
       ]
     }
   },
@@ -556,7 +556,7 @@ const starter = {
     cta: {
       eyebrow: 'Franchise Cooperation',
       title: 'Explore Paterson brand strength and franchise policy',
-      subtitle: 'Submit your target city and contact details. Our franchise team will assess local market opportunity, budget, and store resources.',
+      subtitle: 'Submit your target city and contact details. Our franchise team will introduce brand strength, store support, and cooperation policy.',
       button: 'Start Inquiry'
     }
   },
@@ -809,8 +809,8 @@ const starter = {
     },
     delivery: {
       eyebrow: 'Terminal Implementation',
-      title: 'The product system supports franchise conversion, not just display',
-      description: 'The page connects product, sales, display, and delivery so city partners understand how the product system drives conversion after joining.',
+      title: 'Product systems belong in stores and in real homes',
+      description: 'From product combinations and showroom scenes to delivery standards, Paterson helps city partners present the value of waterborne whole-home customization.',
       steps: [
         { title: 'Product mix planning', description: 'Plan hero spaces and showroom combinations based on city, store size, and target customers.' },
         { title: 'Design and material support', description: 'Turn series images, space benefits, and waterborne process into reusable sales materials.' },
@@ -887,12 +887,78 @@ const starter = {
   },
   contactPage: {
     seo: {
-      title: 'Contact | Paterson Franchise Inquiry',
-      description: 'Contact Paterson franchise team and submit your target city, budget, and contact details to learn about waterborne whole-home customization cooperation.',
+      title: 'Franchise | Paterson Waterborne Whole-Home Customization Inquiry',
+      description: 'Explore Paterson franchise advantages, headquarters support, cooperation process, and policy for waterborne whole-home customization. Submit your target city and contact details to receive franchise information.',
       keywords: 'Paterson franchise,whole-home customization franchise,waterborne customization franchise,franchise inquiry'
     },
-    title: 'Contact Us',
-    subtitle: 'Submit your franchise interest and our consultant will contact you to assess city opportunity and cooperation options.',
+    title: 'Franchise',
+    subtitle: 'Waterborne cabinet-wall-door systems, eco whole-home customization, and full headquarters support help city partners build a differentiated custom home store.',
+    sectionNavAria: 'Franchise page navigation',
+    sectionNav: [
+      { label: 'Opportunity', href: '#opportunity' },
+      { label: 'Support', href: '#support' },
+      { label: 'Process', href: '#process' },
+      { label: 'Inquiry', href: '#inquiry' }
+    ],
+    hero: {
+      eyebrow: 'Franchise',
+      titleLine1: 'Waterborne whole-home',
+      titleLine2: 'custom franchise growth',
+      subtitle: 'Backed by DareGlobal, Paterson combines waterborne cabinet-wall-door systems with mature terminal operation support, giving city partners a clear path from product and store setup to marketing and operations.',
+      primaryCta: 'Submit Inquiry',
+      imageAlt: 'Paterson franchise store and support image',
+      metrics: [
+        { value: '2001', label: 'Brand founded with long-term focus on custom home furnishings' },
+        { value: '002631', label: 'DareGlobal listed-company stock code' },
+        { value: 'Full path', label: 'Product, supply chain, design, store setup, marketing, and operation support' }
+      ]
+    },
+    opportunity: {
+      eyebrow: 'Opportunity',
+      title: 'Build a healthier home business with waterborne whole-home customization',
+      description: 'As families care more about eco materials, refined finishes, and one-stop living spaces, waterborne cabinet-wall-door systems give stores a clearer product story. Paterson brings together real interiors, healthier materials, and whole-home solutions for franchise partners.',
+      imageAlt: 'Paterson waterborne whole-home living space'
+    },
+    proof: {
+      items: [
+        { value: 'Waterborne', label: 'Healthy eco positioning', description: 'Waterborne wardrobes, wellness bedrooms, and cabinet-wall-door systems build a distinct Paterson brand memory.' },
+        { value: 'Whole home', label: 'Complete living spaces', description: 'From wardrobes to kitchens, bedrooms, children rooms, living and dining spaces, customers can see a more complete home in store.' },
+        { value: 'HQ support', label: 'Store opening support', description: 'Location advice, store setup, design training, marketing campaigns, and digital tools help partners start with confidence.' }
+      ]
+    },
+    support: {
+      eyebrow: 'Headquarters Support',
+      title: 'From brand strength to store launch, Paterson supports every key step',
+      description: 'Paterson supports city partners with brand, product, supply chain, design, marketing, and operation resources so showroom setup, team training, and opening campaigns can move with clearer rhythm.',
+      items: [
+        { icon: 'i-lucide-award', title: 'Brand Strength', description: 'Founded in 2001 with DareGlobal backing and waterborne technology credibility, Paterson gives local stores a trusted starting point.' },
+        { icon: 'i-lucide-layout-grid', title: 'Product Strength', description: 'Waterborne cabinet-wall-door systems, wardrobes, kitchens, and whole-home spaces create a more recognizable showroom experience.' },
+        { icon: 'i-lucide-factory', title: 'Supply Chain Strength', description: 'Material, process, production, and delivery capabilities support stable quality as good products enter more homes.' },
+        { icon: 'i-lucide-pencil-ruler', title: 'Design Support', description: 'Space plans, showroom image, terminal materials, and product training present whole-home customization through real living scenes.' },
+        { icon: 'i-lucide-megaphone', title: 'Marketing Support', description: 'Opening campaigns, seasonal moments, content communication, and headquarters materials help stores reach local customers.' },
+        { icon: 'i-lucide-chart-no-axes-combined', title: 'Digital Operation Support', description: 'Operation methods, data tools, and continuous training support customer follow-up, conversion, and service management.' }
+      ]
+    },
+    process: {
+      eyebrow: 'Cooperation Process',
+      title: 'From first conversation to store opening, headquarters walks with you',
+      description: 'The Paterson franchise team discusses city market potential, store resources, and business planning with prospective partners step by step.',
+      steps: [
+        { title: 'Online Inquiry', description: 'Leave your contact details and target city to begin the Paterson franchise conversation.' },
+        { title: 'HQ Discussion', description: 'A franchise consultant introduces brand strength, product systems, cooperation policy, and store support.' },
+        { title: 'Site Visit', description: 'Visit headquarters or benchmark stores to experience waterborne whole-home products and showroom image.' },
+        { title: 'City Discussion', description: 'Discuss a suitable cooperation plan around local market conditions, store resources, and investment planning.' },
+        { title: 'Agreement', description: 'Confirm cooperation area, store plan, and support details before becoming a city partner.' },
+        { title: 'Store Setup Training', description: 'Move through store design, sample configuration, team training, and opening preparation.' },
+        { title: 'Opening Support', description: 'Headquarters supports opening campaigns, materials, sales rehearsal, and first customer reception.' },
+        { title: 'Ongoing Operation', description: 'Marketing, training, operation reviews, and new product rollout support long-term store growth.' }
+      ]
+    },
+    inquiry: {
+      eyebrow: 'Submit Inquiry',
+      title: 'Leave your franchise interest to receive Paterson cooperation materials',
+      description: 'After you submit your contact details and target city, our franchise team will contact you about waterborne whole-home customization cooperation.'
+    },
     infoTitle: 'Franchise Contact',
     hours: 'Consultation hours: 09:00 - 18:00',
     labels: {

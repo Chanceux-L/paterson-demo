@@ -75,14 +75,14 @@ useAppSeoMeta({
   <main class="brand-strength-page bg-[#F4F1EA] text-[#24211D]">
     <section class="relative overflow-hidden bg-[#171512] px-5 pt-20 text-white sm:px-8 md:pt-24 lg:px-14 lg:pt-24">
       <img
-        class="brand-hero-image absolute inset-0 size-full object-cover opacity-72"
+        class="brand-hero-image absolute inset-x-0 top-0 h-72 w-full object-cover opacity-72 sm:h-88 md:inset-0 md:h-full"
         :src="publicAsset('/paterson/brand-hero-banner.webp')"
         :alt="t('aboutPage.hero.imageAlt')"
       />
-      <div class="absolute inset-0 bg-linear-to-r from-[#171512]/92 via-[#171512]/66 to-[#171512]/28"></div>
-      <div class="absolute inset-0 bg-linear-to-t from-[#171512] via-transparent to-[#171512]/20"></div>
+      <div class="absolute inset-x-0 top-0 h-72 bg-linear-to-b from-[#171512]/26 via-[#171512]/48 to-[#171512] sm:h-88 md:inset-0 md:h-full md:bg-linear-to-r md:from-[#171512]/92 md:via-[#171512]/66 md:to-[#171512]/28"></div>
+      <div class="absolute inset-0 bg-linear-to-t from-[#171512] via-[#171512]/70 to-[#171512]/14 md:via-transparent md:to-[#171512]/20"></div>
 
-      <div class="relative mx-auto grid max-w-7xl gap-8 py-10 md:gap-10 md:py-16 lg:min-h-[560px] lg:grid-cols-[0.86fr_0.74fr] lg:items-center lg:py-16">
+      <div class="relative mx-auto grid max-w-7xl gap-8 py-10 md:min-h-[520px] md:gap-10 md:py-16 lg:min-h-[560px] lg:grid-cols-[0.86fr_0.74fr] lg:items-center lg:py-16">
         <div class="max-w-3xl motion-safe:animate-[brand-fade-up_560ms_cubic-bezier(0.22,1,0.36,1)_both]">
           <p class="inline-flex items-center gap-3 text-sm font-semibold text-[#D2B574]">
             <span class="h-px w-10 bg-[#D2B574]"></span>

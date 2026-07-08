@@ -46,20 +46,20 @@ type FormState = {
 };
 
 const fieldUi = {
-  root: 'space-y-2',
-  label: 'text-sm font-semibold text-text-primary',
+  root: 'space-y-2.5',
+  label: 'text-sm font-semibold text-[#24211D]',
   error: 'mt-2 text-sm font-medium text-error'
 };
 const inputUi = {
-  base: 'min-h-12 rounded-md bg-surface px-4 text-sm font-medium text-text-primary ring-1 ring-inset ring-border placeholder:text-text-muted transition duration-200 focus:bg-white focus-visible:ring-2 focus-visible:ring-brand-primary/35 disabled:cursor-not-allowed disabled:opacity-60'
+  base: 'min-h-12 rounded-none bg-white px-4 text-sm font-medium text-[#24211D] ring-1 ring-inset ring-[#E5DED2] placeholder:text-[#A39C90] transition duration-200 hover:ring-[#D6CBB9] focus:bg-white focus-visible:ring-2 focus-visible:ring-[#B99A63]/45 disabled:cursor-not-allowed disabled:opacity-60'
 };
 const selectUi = {
-  base: 'min-h-12 rounded-md bg-surface px-4 text-sm font-medium text-text-primary ring-1 ring-inset ring-border transition duration-200 hover:bg-white focus:bg-white focus-visible:ring-2 focus-visible:ring-brand-primary/35',
-  trailingIcon: 'text-brand-primary',
-  content: 'rounded-md border border-border shadow-xl',
-  input: 'border-border bg-surface',
+  base: 'min-h-12 rounded-none bg-white px-4 text-sm font-medium text-[#24211D] ring-1 ring-inset ring-[#E5DED2] transition duration-200 hover:bg-white hover:ring-[#D6CBB9] focus:bg-white focus-visible:ring-2 focus-visible:ring-[#B99A63]/45',
+  trailingIcon: 'text-[#7A5438]',
+  content: 'rounded-none border border-[#E5DED2] shadow-xl',
+  input: 'border-[#E5DED2] bg-white',
   viewport: 'max-h-72',
-  item: 'cursor-pointer rounded-md px-3 py-2 text-sm transition hover:bg-surface'
+  item: 'cursor-pointer rounded-none px-3 py-2 text-sm transition hover:bg-[#F7F4EE]'
 };
 const countrySearchInput = {
   placeholder: '',
@@ -69,10 +69,10 @@ const countrySearchInput = {
   }
 };
 const textareaUi = {
-  base: 'min-h-40 rounded-md bg-surface px-4 py-3 text-sm font-medium leading-7 text-text-primary ring-1 ring-inset ring-border placeholder:text-text-muted transition duration-200 focus:bg-white focus-visible:ring-2 focus-visible:ring-brand-primary/35 disabled:cursor-not-allowed disabled:opacity-60'
+  base: 'min-h-36 rounded-none bg-white px-4 py-3 text-sm font-medium leading-7 text-[#24211D] ring-1 ring-inset ring-[#E5DED2] placeholder:text-[#A39C90] transition duration-200 hover:ring-[#D6CBB9] focus:bg-white focus-visible:ring-2 focus-visible:ring-[#B99A63]/45 disabled:cursor-not-allowed disabled:opacity-60'
 };
 const alertUi = {
-  root: 'rounded-md border px-4 py-3',
+  root: 'rounded-none border px-4 py-3',
   description: 'text-sm leading-6'
 };
 
@@ -103,8 +103,8 @@ const captchaImageUrl = ref(captchaUrl());
 const submitting = ref(false);
 const success = ref(false);
 const errorMessage = ref('');
-const sectionTitleClass = 'font-heading text-3xl font-bold leading-tight text-text-primary wrap-break-word md:text-4xl xl:text-5xl';
-const eyebrowClass = 'mb-4 inline-flex rounded-full border border-brand-primary/15 bg-brand-primary/8 px-3 py-1 text-xs font-semibold uppercase text-brand-primary';
+const sectionTitleClass = 'font-heading text-3xl font-semibold leading-tight text-[#24211D] wrap-break-word md:text-4xl';
+const eyebrowClass = 'inline-flex items-center gap-3 text-sm font-semibold text-[#7A5438]';
 const selectedPhoneCountry = computed(() => phoneCountryOptions.value.find(option => option.value === form.phoneCountry));
 const selectedCallingCode = computed(() => selectedPhoneCountry.value?.callingCode || getPhoneCallingCode(form.phoneCountry));
 
@@ -214,26 +214,28 @@ async function handleSubmit() {
 </script>
 
 <template>
-  <div class="grid gap-6">
-    <div class="rounded-card border border-border bg-surface p-6">
-      <p :class="eyebrowClass">
-        {{ inquiryCopy.eyebrow }}
-      </p>
-      <h2 :class="sectionTitleClass">
-        {{ inquiryCopy.title }}
-      </h2>
-      <p class="mt-4 text-base leading-8 text-text-secondary">
-        {{ inquiryCopy.description }}
-      </p>
-    </div>
-
+  <div>
     <UForm
       :state="form"
-      class="relative overflow-hidden rounded-card border border-border bg-background p-5 shadow-lg shadow-slate-200/60 sm:p-6 md:p-8"
+      class="relative overflow-hidden border border-[#E5DED2] bg-white p-5 shadow-[0_24px_70px_rgba(36,33,29,0.08)] sm:p-6 md:p-8"
+      novalidate
       :validate-on="[]"
       @submit="handleSubmit"
     >
-      <div class="pointer-events-none absolute inset-x-0 top-0 h-1 bg-brand-primary"></div>
+      <div class="pointer-events-none absolute inset-x-0 top-0 h-1 bg-[#7A5438]"></div>
+
+      <div class="mb-8 border-b border-[#E5DED2] pb-7">
+        <p :class="eyebrowClass">
+          <span class="h-px w-10 bg-[#B99A63]"></span>
+          {{ inquiryCopy.eyebrow }}
+        </p>
+        <h2 :class="sectionTitleClass">
+          {{ inquiryCopy.title }}
+        </h2>
+        <p class="mt-4 max-w-3xl text-base leading-8 text-[#6F6A61]">
+          {{ inquiryCopy.description }}
+        </p>
+      </div>
 
       <input
         v-model="form.website"
@@ -246,7 +248,7 @@ async function handleSubmit() {
         aria-hidden="true"
       />
 
-      <div class="grid gap-5 md:grid-cols-2">
+      <div class="grid gap-x-6 gap-y-5 md:grid-cols-2">
         <UFormField
           name="name"
           :label="inquiryCopy.name"
@@ -260,7 +262,6 @@ async function handleSubmit() {
             size="xl"
             variant="outline"
             color="neutral"
-            required
             :aria-label="inquiryCopy.name"
             :placeholder="inquiryCopy.namePlaceholder"
             :ui="inputUi"
@@ -318,7 +319,6 @@ async function handleSubmit() {
               color="neutral"
               inputmode="tel"
               autocomplete="tel"
-              required
               :aria-label="inquiryCopy.phone"
               :placeholder="inquiryCopy.phonePlaceholder"
               :ui="inputUi"
@@ -370,7 +370,7 @@ async function handleSubmit() {
         </UFormField>
       </div>
 
-      <div class="mt-6 space-y-5 border-t border-border pt-6">
+      <div class="mt-7 space-y-5 border-t border-[#E5DED2] pt-7">
         <UFormField
           name="message"
           :label="inquiryCopy.message"
@@ -381,7 +381,6 @@ async function handleSubmit() {
             id="inquiry-message"
             v-model.trim="form.message"
             name="message"
-            required
             autoresize
             :rows="5"
             :maxrows="8"
@@ -395,9 +394,9 @@ async function handleSubmit() {
           />
         </UFormField>
 
-        <div class="grid gap-3 rounded-md border border-border bg-surface p-3 sm:grid-cols-[auto_1fr] sm:items-end sm:p-4">
+        <div class="grid gap-4 border border-[#E5DED2] bg-[#F7F4EE] p-4 sm:grid-cols-[180px_1fr] sm:items-end">
           <UButton
-            class="h-12 w-full overflow-hidden rounded-md border border-border bg-white p-0 transition hover:border-brand-primary/40 hover:bg-white active:scale-95 sm:w-40"
+            class="h-12 w-full overflow-hidden rounded-none border border-[#E5DED2] bg-white p-0 transition hover:border-[#B99A63] hover:bg-white active:scale-95"
             type="button"
             variant="ghost"
             color="neutral"
@@ -421,7 +420,6 @@ async function handleSubmit() {
               id="inquiry-captcha"
               v-model.trim="form.rucaptcha"
               name="rucaptcha"
-              required
               autocomplete="off"
               size="xl"
               variant="outline"
@@ -455,7 +453,7 @@ async function handleSubmit() {
       />
 
       <UButton
-        class="mt-7 min-h-12 w-full justify-center rounded-md bg-brand-primary px-7 py-3 text-sm font-semibold text-white shadow-sm shadow-brand-primary/20 transition hover:-translate-y-0.5 hover:bg-brand-primary-hover active:translate-y-0 active:scale-95 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto sm:min-w-44"
+        class="mt-8 min-h-12 w-full justify-center rounded-none bg-[#7A5438] px-8 py-3 text-sm font-semibold text-white shadow-sm shadow-[#7A5438]/20 transition hover:-translate-y-0.5 hover:bg-[#5F3F2A] active:translate-y-0 active:scale-95 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto sm:min-w-44"
         type="submit"
         :loading="submitting"
         :disabled="submitting"

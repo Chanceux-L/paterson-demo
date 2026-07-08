@@ -76,14 +76,14 @@ useAppSeoMeta({
   <main class="water-paint-page bg-[#F4F1EA] text-[#24211D]">
     <section class="relative overflow-hidden bg-[#171512] px-5 pt-20 text-white sm:px-8 md:pt-24 lg:px-14">
       <img
-        class="water-paint-hero-image absolute inset-0 size-full object-cover opacity-74"
+        class="water-paint-hero-image absolute inset-x-0 top-0 h-72 w-full object-cover opacity-74 sm:h-88 md:inset-0 md:h-full"
         :src="publicAsset('/paterson/technology-wood-factory-bg.webp')"
         :alt="t('philosophyPage.hero.imageAlt')"
       />
-      <div class="absolute inset-0 bg-linear-to-r from-[#171512]/94 via-[#171512]/64 to-[#171512]/24"></div>
-      <div class="absolute inset-0 bg-linear-to-t from-[#171512] via-transparent to-[#171512]/24"></div>
+      <div class="absolute inset-x-0 top-0 h-72 bg-linear-to-b from-[#171512]/30 via-[#171512]/52 to-[#171512] sm:h-88 md:inset-0 md:h-full md:bg-linear-to-r md:from-[#171512]/94 md:via-[#171512]/64 md:to-[#171512]/24"></div>
+      <div class="absolute inset-0 bg-linear-to-t from-[#171512] via-[#171512]/72 to-[#171512]/16 md:via-transparent md:to-[#171512]/24"></div>
 
-      <div class="relative mx-auto grid max-w-7xl gap-10 py-12 md:py-16 lg:min-h-[640px] lg:grid-cols-[0.84fr_0.76fr] lg:items-center">
+      <div class="relative mx-auto grid max-w-7xl gap-10 py-12 md:min-h-[620px] md:py-16 lg:min-h-[640px] lg:grid-cols-[0.84fr_0.76fr] lg:items-center">
         <div class="max-w-3xl motion-safe:animate-[water-paint-fade-up_560ms_cubic-bezier(0.22,1,0.36,1)_both]">
           <p class="inline-flex items-center gap-3 text-sm font-semibold text-[#D2B574]">
             <span class="h-px w-10 bg-[#D2B574]"></span>

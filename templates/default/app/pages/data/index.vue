@@ -126,7 +126,7 @@ useAppSeoMeta({
 <template>
   <main class="product-system-page bg-[#F4F1EA] text-[#24211D]">
     <section class="relative overflow-hidden bg-[#171512] px-5 pt-20 text-white sm:px-8 md:pt-24 lg:px-14">
-      <picture>
+      <picture class="absolute inset-x-0 top-0 h-72 sm:h-88 md:inset-0 md:h-full">
         <source media="(max-width: 767px)" :srcset="publicAsset('/paterson/product-mobile-banner.webp')" />
         <img
           class="product-hero-image absolute inset-0 size-full object-cover opacity-80"
@@ -134,10 +134,10 @@ useAppSeoMeta({
           :alt="t('dataPage.hero.imageAlt')"
         />
       </picture>
-      <div class="absolute inset-0 bg-linear-to-r from-[#171512]/92 via-[#171512]/58 to-[#171512]/18"></div>
-      <div class="absolute inset-0 bg-linear-to-t from-[#171512] via-transparent to-[#171512]/18"></div>
+      <div class="absolute inset-x-0 top-0 h-72 bg-linear-to-b from-[#171512]/26 via-[#171512]/46 to-[#171512] sm:h-88 md:inset-0 md:h-full md:bg-linear-to-r md:from-[#171512]/92 md:via-[#171512]/58 md:to-[#171512]/18"></div>
+      <div class="absolute inset-0 bg-linear-to-t from-[#171512] via-[#171512]/70 to-[#171512]/14 md:via-transparent md:to-[#171512]/18"></div>
 
-      <div class="relative mx-auto grid max-w-7xl gap-10 py-12 md:py-16 lg:min-h-[640px] lg:grid-cols-[0.84fr_0.76fr] lg:items-center">
+      <div class="relative mx-auto grid max-w-7xl gap-10 py-12 md:min-h-[620px] md:py-16 lg:min-h-[640px] lg:grid-cols-[0.84fr_0.76fr] lg:items-center">
         <div class="max-w-3xl motion-safe:animate-[product-fade-up_560ms_cubic-bezier(0.22,1,0.36,1)_both]">
           <p class="inline-flex items-center gap-3 text-sm font-semibold text-[#D2B574]">
             <span class="h-px w-10 bg-[#D2B574]"></span>
