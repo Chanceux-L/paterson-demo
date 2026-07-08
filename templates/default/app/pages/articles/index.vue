@@ -75,11 +75,14 @@ useSchemaOrg(computed(() => [
   <main class="news-center-page bg-[#F4F1EA] text-[#24211D]">
     <section class="relative overflow-hidden bg-[#171512] px-5 pt-0 text-white sm:px-8 lg:px-14">
       <img
-        class="news-hero-image absolute inset-x-0 top-0 h-72 w-full object-cover opacity-76 sm:h-88 md:inset-0 md:h-full"
+        class="news-hero-image absolute inset-0 h-full w-full object-cover opacity-76"
         :src="publicAsset('/paterson/news-hero-banner.webp')"
         :alt="t('articlesPage.hero.imageAlt')"
+        decoding="async"
+        fetchpriority="high"
+        loading="eager"
       />
-      <div class="absolute inset-x-0 top-0 h-72 bg-linear-to-b from-[#171512]/30 via-[#171512]/54 to-[#171512] sm:h-88 md:inset-0 md:h-full md:bg-linear-to-r md:from-[#171512]/94 md:via-[#171512]/62 md:to-[#171512]/20"></div>
+      <div class="absolute inset-0 bg-linear-to-b from-[#171512]/30 via-[#171512]/54 to-[#171512] md:bg-linear-to-r md:from-[#171512]/94 md:via-[#171512]/62 md:to-[#171512]/20"></div>
       <div class="absolute inset-0 bg-linear-to-t from-[#171512] via-[#171512]/72 to-[#171512]/14 md:via-transparent md:to-[#171512]/22"></div>
 
       <div class="relative mx-auto grid max-w-7xl gap-10 py-12 md:min-h-[560px] md:py-16 lg:min-h-[600px] lg:grid-cols-[0.86fr_0.74fr] lg:items-center">

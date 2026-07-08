@@ -126,15 +126,18 @@ useAppSeoMeta({
 <template>
   <main class="product-system-page bg-[#F4F1EA] text-[#24211D]">
     <section class="relative overflow-hidden bg-[#171512] px-5 pt-0 text-white sm:px-8 lg:px-14">
-      <picture class="absolute inset-x-0 top-0 h-72 sm:h-88 md:inset-0 md:h-full">
+      <picture class="absolute inset-0">
         <source media="(max-width: 767px)" :srcset="publicAsset('/paterson/product-mobile-banner.webp')" />
         <img
           class="product-hero-image absolute inset-0 size-full object-cover opacity-80"
           :src="publicAsset('/paterson/product-system-hero.webp')"
           :alt="t('dataPage.hero.imageAlt')"
+          decoding="async"
+          fetchpriority="high"
+          loading="eager"
         />
       </picture>
-      <div class="absolute inset-x-0 top-0 h-72 bg-linear-to-b from-[#171512]/26 via-[#171512]/46 to-[#171512] sm:h-88 md:inset-0 md:h-full md:bg-linear-to-r md:from-[#171512]/92 md:via-[#171512]/58 md:to-[#171512]/18"></div>
+      <div class="absolute inset-0 bg-linear-to-b from-[#171512]/26 via-[#171512]/46 to-[#171512] md:bg-linear-to-r md:from-[#171512]/92 md:via-[#171512]/58 md:to-[#171512]/18"></div>
       <div class="absolute inset-0 bg-linear-to-t from-[#171512] via-[#171512]/70 to-[#171512]/14 md:via-transparent md:to-[#171512]/18"></div>
 
       <div class="relative mx-auto grid max-w-7xl gap-10 py-12 md:min-h-[620px] md:py-16 lg:min-h-[640px] lg:grid-cols-[0.84fr_0.76fr] lg:items-center">

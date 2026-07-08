@@ -75,11 +75,14 @@ useAppSeoMeta({
   <main class="brand-strength-page bg-[#F4F1EA] text-[#24211D]">
     <section class="relative overflow-hidden bg-[#171512] px-5 pt-0 text-white sm:px-8 lg:px-14">
       <img
-        class="brand-hero-image absolute inset-x-0 top-0 h-72 w-full object-cover opacity-72 sm:h-88 md:inset-0 md:h-full"
+        class="brand-hero-image absolute inset-0 h-full w-full object-cover opacity-72"
         :src="publicAsset('/paterson/brand-hero-banner.webp')"
         :alt="t('aboutPage.hero.imageAlt')"
+        decoding="async"
+        fetchpriority="high"
+        loading="eager"
       />
-      <div class="absolute inset-x-0 top-0 h-72 bg-linear-to-b from-[#171512]/26 via-[#171512]/48 to-[#171512] sm:h-88 md:inset-0 md:h-full md:bg-linear-to-r md:from-[#171512]/92 md:via-[#171512]/66 md:to-[#171512]/28"></div>
+      <div class="absolute inset-0 bg-linear-to-b from-[#171512]/26 via-[#171512]/48 to-[#171512] md:bg-linear-to-r md:from-[#171512]/92 md:via-[#171512]/66 md:to-[#171512]/28"></div>
       <div class="absolute inset-0 bg-linear-to-t from-[#171512] via-[#171512]/70 to-[#171512]/14 md:via-transparent md:to-[#171512]/20"></div>
 
       <div class="relative mx-auto grid max-w-7xl gap-8 py-10 md:min-h-[620px] md:gap-10 md:py-16 lg:min-h-[640px] lg:grid-cols-[0.86fr_0.74fr] lg:items-center lg:py-16">
@@ -132,15 +135,17 @@ useAppSeoMeta({
     </section>
 
     <nav class="sticky top-16 z-30 border-b border-[#E5DED2] bg-white/96 backdrop-blur" :aria-label="t('aboutPage.sectionNavAria')">
-      <div class="mx-auto flex max-w-7xl snap-x justify-center gap-8 overflow-x-auto px-5 sm:px-8 md:gap-12 lg:px-14">
-        <a
-          v-for="item in sectionNav"
-          :key="item.href"
-          class="about-section-link snap-start whitespace-nowrap px-1 py-4 text-sm font-medium text-[#6F6A61] transition hover:text-[#B99A63] md:text-base"
-          :href="item.href"
-        >
-          {{ item.label }}
-        </a>
+      <div class="about-section-scroller mx-auto max-w-7xl overflow-x-auto">
+        <div class="flex w-max min-w-full snap-x justify-start gap-8 px-5 sm:px-8 md:justify-center md:gap-12 lg:w-auto lg:px-14">
+          <a
+            v-for="item in sectionNav"
+            :key="item.href"
+            class="about-section-link snap-start whitespace-nowrap px-1 py-4 text-sm font-medium text-[#6F6A61] transition hover:text-[#B99A63] md:text-base"
+            :href="item.href"
+          >
+            {{ item.label }}
+          </a>
+        </div>
       </div>
     </nav>
 
