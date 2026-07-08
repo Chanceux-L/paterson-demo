@@ -127,6 +127,18 @@ useSchemaOrg(computed(() => [
           :alt="t('homePage.hero.imageAlt')"
         />
       </div>
+      <img
+        class="hero-mobile-pattern absolute inset-x-0 top-10 h-full w-full object-cover lg:hidden"
+        :src="publicAsset('/paterson/hero-mobile-pattern.svg')"
+        alt=""
+        aria-hidden="true"
+      />
+      <img
+        class="hero-desktop-pattern absolute inset-y-0 left-0 hidden h-full w-[52%] object-cover lg:block"
+        :src="publicAsset('/paterson/hero-desktop-pattern.svg')"
+        alt=""
+        aria-hidden="true"
+      />
       <div class="relative mx-auto grid max-w-7xl gap-10 py-10 lg:min-h-[760px] lg:grid-cols-[0.9fr_0.82fr] lg:items-center lg:gap-12 lg:py-20">
         <div class="relative z-10 max-w-xl motion-safe:animate-[paterson-fade-up_560ms_cubic-bezier(0.22,1,0.36,1)_both]">
           <p class="inline-flex items-center gap-3 text-sm font-medium text-[#7A5438]">
@@ -178,15 +190,6 @@ useSchemaOrg(computed(() => [
               </p>
             </div>
           </div>
-        </div>
-
-        <div class="hero-showcase relative min-h-[360px] overflow-hidden bg-[#171512] lg:hidden">
-          <img
-            class="paterson-hero-image absolute inset-0 size-full object-cover object-[72%_50%] opacity-86"
-            :src="publicAsset('/paterson/oxygen-space-bg.webp')"
-            :alt="t('homePage.hero.imageAlt')"
-          />
-          <div class="absolute inset-0 bg-[linear-gradient(180deg,transparent_0%,rgba(23,21,18,0.22)_100%)]"></div>
         </div>
       </div>
     </section>
@@ -705,17 +708,16 @@ useSchemaOrg(computed(() => [
 .hero-image-panel::before {
   position: absolute;
   inset-block: 0;
-  left: -34%;
+  left: -20%;
   z-index: 1;
-  width: 60%;
+  width: 42%;
   pointer-events: none;
   content: "";
   background: linear-gradient(
     90deg,
     #f4f1ea 0%,
-    rgba(244, 241, 234, 0.96) 24%,
-    rgba(244, 241, 234, 0.78) 48%,
-    rgba(244, 241, 234, 0.36) 76%,
+    rgba(244, 241, 234, 0.88) 30%,
+    rgba(244, 241, 234, 0.52) 62%,
     rgba(244, 241, 234, 0) 100%
   );
 }
@@ -751,6 +753,22 @@ useSchemaOrg(computed(() => [
     black 48%,
     black 100%
   );
+}
+
+.hero-mobile-pattern {
+  pointer-events: none;
+  opacity: 0.68;
+  mix-blend-mode: multiply;
+  -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.4) 46%, transparent 78%);
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.4) 46%, transparent 78%);
+}
+
+.hero-desktop-pattern {
+  pointer-events: none;
+  opacity: 0.52;
+  mix-blend-mode: multiply;
+  -webkit-mask-image: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0.68) 76%, transparent 100%);
+  mask-image: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0.68) 76%, transparent 100%);
 }
 
 .home-soft-stat,
