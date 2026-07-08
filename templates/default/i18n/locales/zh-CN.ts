@@ -461,35 +461,102 @@ const starter = {
     }
   },
   aboutPage: {
-    header: {
-      title: '品牌实力',
-      subtitle: '百得胜 Paterson 以水漆柜墙门系统、环保整家定制与上市公司背景，构建长期可信的家居加盟品牌。'
+    sectionNavAria: '关于我们栏目导航',
+    sectionNav: [
+      { label: '公司简介', href: '#company' },
+      { label: '企业文化', href: '#culture' },
+      { label: '企业荣誉', href: '#honors' },
+      { label: '发展历程', href: '#history' },
+      { label: '联系我们', href: '#contact' }
+    ],
+    hero: {
+      eyebrow: '品牌实力',
+      titleLine1: '百得胜 Paterson',
+      titleLine2: '长期主义品牌实力',
+      subtitle: '从 2001 年创立到德尔未来旗下主营品牌，百得胜以水漆柜墙门系统、环保整家定制和终端运营支持，构建面向城市合伙人的长期信任。',
+      primaryCta: '咨询加盟合作',
+      imageAlt: '百得胜 Paterson 品牌实力形象',
+      stats: [
+        { value: '2001', label: '品牌创立，持续深耕定制家居领域' },
+        { value: '002631', label: '德尔未来上市公司股票代码' },
+        { value: '水漆', label: '柜墙门系统与环保整家定制差异化' },
+        { value: '全链路', label: '产品、供应链、设计、营销与运营支持' }
+      ]
     },
-    story: {
-      heading: '从水漆技术到整家定制的品牌进化',
-      paragraphs: [
-        '百得胜 Paterson 成立于 2001 年，长期深耕定制家居领域，聚焦水漆柜墙门系统与环保整家定制。',
-        '作为德尔未来旗下主营品牌，百得胜把上市公司治理、供应链能力、产品研发和终端运营支持融入加盟体系。',
-        '面向城市合伙人，品牌以真实家居空间、水漆科技、健康环保和数智化营销支持，帮助终端建立清晰的差异化表达。'
+    proof: {
+      eyebrow: '可信背书',
+      title: '稳健品牌基础',
+      description: '百得胜成立于 2001 年，是德尔未来旗下主营品牌，长期专注水漆柜墙门系统与环保整家定制，以产品创新、技术驱动和聚焦零售建立品牌竞争力。',
+      tags: [
+        { label: '2001 年创立' },
+        { label: '德尔未来旗下' },
+        { label: '水漆柜墙门系统' },
+        { label: '环保整家定制' }
       ],
-      imagePlaceholder: 'Paterson 品牌空间形象'
+      items: [
+        { icon: 'i-lucide-building-2', title: '德尔未来旗下', description: '上市公司旗下主营品牌，以更稳定的治理与资源能力支撑品牌长期发展。' },
+        { icon: 'i-lucide-droplets', title: '水漆技术背书', description: '围绕水漆材料、智能涂装、油改水工厂和行业标准，形成环保整家定制差异化。' },
+        { icon: 'i-lucide-factory', title: '供应链交付', description: '从工艺、产品系统到终端交付建立统一能力，让加盟门店更容易呈现稳定品质。' },
+        { icon: 'i-lucide-store', title: '终端运营支持', description: '面向城市合伙人提供设计、建店、营销、培训和数智化运营等落地支持。' }
+      ]
     },
-    milestonesHeading: '品牌关键实力',
-    milestones: [
-      { icon: 'i-lucide-calendar', title: '2001 年', description: '品牌创立并持续深耕定制家居赛道。' },
-      { icon: 'i-lucide-trending-up', title: '德尔未来', description: '上市公司旗下主营品牌，股票代码 002631。' },
-      { icon: 'i-lucide-droplets', title: '水漆科技', description: '围绕水漆材料、智能涂装与环保整家定制形成技术背书。' },
-      { icon: 'i-lucide-store', title: '加盟支持', description: '提供产品、供应链、设计、营销和数智化运营支持。' }
+    origin: {
+      eyebrow: '公司实力',
+      title: '以生产体系支撑水漆整家定制交付',
+      description: '百得胜围绕水漆柜墙门、环保材料、智能涂装和整家定制交付持续投入，在生产基地、产品工艺和终端门店之间形成稳定协同。',
+      imageAlt: '百得胜 Paterson 工厂生产体系',
+      captionEyebrow: '生产与交付',
+      caption: '以水漆柜墙门为核心，持续投入环保材料、生产工艺与整家定制交付能力。',
+      quote: '品牌实力最终要落到稳定的产品系统、生产能力和终端交付体验。'
+    },
+    capabilities: {
+      eyebrow: '核心能力',
+      title: '品牌、技术、产品、终端一体化',
+      description: '从基材无醛添加、水漆工艺到康氧卧房和水漆轻高定，百得胜持续推动环保健康整家定制升级，为终端门店提供清晰的产品主张与交付基础。',
+      items: [
+        { icon: 'i-lucide-award', title: '品牌公信力', description: '以 2001 年品牌积累、上市公司背景和行业标准参与，降低加盟商选择的不确定性。' },
+        { icon: 'i-lucide-leaf', title: '环保健康主张', description: '水漆、康氧卧房和室内空气标准相关能力，让健康家居从概念进入真实生活场景。' },
+        { icon: 'i-lucide-layout-grid', title: '整家产品系统', description: '柜、墙、门、厨房、卧房和儿童空间形成统一风格，便于终端完整呈现。' },
+        { icon: 'i-lucide-megaphone', title: '招商运营支持', description: '围绕建店、培训、活动引流、营销工具和数智化运营，帮助城市合伙人稳健启动。' }
+      ]
+    },
+    culture: {
+      eyebrow: '企业文化',
+      title: '从 Paterson Street 到健康整家定制',
+      description: '百得胜源自 PATERSON 的品牌记忆，秉承“为人们定制一个健康智能的家”的使命，致力于成为全球健康家居的领先者。',
+      items: [
+        { icon: 'i-lucide-compass', title: '使命', description: '为人们定制一个健康智能的家。' },
+        { icon: 'i-lucide-heart-handshake', title: '价值观', description: '以客户为中心，以奋斗者为本，长期坚持小正果。' },
+        { icon: 'i-lucide-rocket', title: '经营理念', description: '产品领先，技术驱动，聚焦零售。' }
+      ]
+    },
+    proofImages: [
+      {
+        image: '/paterson/brand-culture-vision.webp',
+        title: '品牌文化记忆',
+        description: 'PATERSON 香港街名承载品牌源起，也延展出百得胜对长期主义与健康家居的坚持。'
+      },
+      {
+        image: '/paterson/brand-franchise-support.webp',
+        title: '终端支持能力',
+        description: '以产品、设计、建店、营销、培训和数智化运营支持城市合伙人稳健落地。'
+      }
     ],
-    valuesHeading: '我们坚持的价值',
-    values: [
-      { icon: 'i-lucide-heart', title: '健康环保', description: '以水漆和康氧理念回应家庭对安全、舒适与长期居住品质的关注。' },
-      { icon: 'i-lucide-lightbulb', title: '技术创新', description: '通过智能涂装、材料升级和系统化产品能力提升终端竞争力。' },
-      { icon: 'i-lucide-target', title: '合作共赢', description: '以清晰加盟路径和持续运营支持，帮助城市合伙人稳健落地。' }
-    ],
+    timeline: {
+      eyebrow: '发展脉络',
+      title: '品牌实力来自持续积累，而不是单次传播',
+      description: '百得胜坚持环保长期主义，围绕无醛添加、水漆工艺、健康空气和轻高定方向持续进化。',
+      items: [
+        { year: '2001', title: '品牌创立', description: '百得胜 Paterson 创立，进入定制家居领域并持续深耕。' },
+        { year: '002631', title: '上市公司背景', description: '成为德尔未来旗下主营品牌，以资本市场治理和资源能力支撑长期发展。' },
+        { year: '水漆科技', title: '形成差异化技术主张', description: '围绕水漆柜墙门系统、智能涂装和油改水工厂建立环保整家定制优势。' },
+        { year: '现在', title: '面向城市合伙人', description: '通过产品、供应链、设计、营销和数智化运营支持，服务全屋定制加盟落地。' }
+      ]
+    },
     cta: {
-      title: '了解百得胜加盟政策',
-      subtitle: '提交意向城市与联系方式，获取适合当地市场的合作评估。',
+      eyebrow: '加盟合作',
+      title: '了解百得胜品牌实力与加盟政策',
+      subtitle: '提交意向城市与联系方式，招商顾问将结合当地市场、投资预算和店面资源提供合作评估。',
       button: '咨询加盟'
     }
   },

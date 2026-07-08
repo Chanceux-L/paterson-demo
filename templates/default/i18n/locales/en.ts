@@ -461,35 +461,102 @@ const starter = {
     }
   },
   aboutPage: {
-    header: {
-      title: 'Brand Strength',
-      subtitle: 'Paterson builds long-term franchise trust through waterborne cabinet-wall-door systems, eco whole-home customization, and listed-company backing.'
+    sectionNavAria: 'About section navigation',
+    sectionNav: [
+      { label: 'Company Profile', href: '#company' },
+      { label: 'Culture', href: '#culture' },
+      { label: 'Honors', href: '#honors' },
+      { label: 'History', href: '#history' },
+      { label: 'Contact', href: '#contact' }
+    ],
+    hero: {
+      eyebrow: 'Brand Strength',
+      titleLine1: 'Paterson',
+      titleLine2: 'Long-Term Brand Strength',
+      subtitle: 'From its founding in 2001 to becoming a core brand under DareGlobal, Paterson builds long-term trust for city partners through waterborne cabinet-wall-door systems, eco whole-home customization, and terminal operation support.',
+      primaryCta: 'Discuss Franchise Cooperation',
+      imageAlt: 'Paterson brand strength visual',
+      stats: [
+        { value: '2001', label: 'Founded and focused on customized home furnishing' },
+        { value: '002631', label: 'DareGlobal listed-company stock code' },
+        { value: 'Waterborne', label: 'Cabinet-wall-door systems and eco customization' },
+        { value: 'Full Chain', label: 'Product, supply chain, design, marketing, and operations' }
+      ]
     },
-    story: {
-      heading: 'From waterborne technology to whole-home customization',
-      paragraphs: [
-        'Founded in 2001, Paterson has stayed focused on customized home furnishing, especially waterborne cabinet-wall-door systems and eco whole-home customization.',
-        'As a core brand under DareGlobal, Paterson brings listed-company governance, supply-chain capability, product development, and terminal operation support into its franchise system.',
-        'For city partners, Paterson combines real home-space imagery, waterborne technology, healthy living concepts, and digital marketing support to build a clear point of difference.'
+    proof: {
+      eyebrow: 'Trust Proof',
+      title: 'A Stable Brand Foundation',
+      description: 'Founded in 2001, Paterson is a core brand under DareGlobal. It focuses on waterborne cabinet-wall-door systems and eco whole-home customization, building competitiveness through product innovation, technology, and retail focus.',
+      tags: [
+        { label: 'Founded in 2001' },
+        { label: 'Under DareGlobal' },
+        { label: 'Waterborne Systems' },
+        { label: 'Eco Whole-Home Customization' }
       ],
-      imagePlaceholder: 'Paterson brand space'
+      items: [
+        { icon: 'i-lucide-building-2', title: 'Under DareGlobal', description: 'A core brand under a listed company, supported by more stable governance and long-term resources.' },
+        { icon: 'i-lucide-droplets', title: 'Waterborne Credibility', description: 'Materials, intelligent coating, factory waterborne upgrades, and standards shape eco whole-home differentiation.' },
+        { icon: 'i-lucide-factory', title: 'Supply-Chain Delivery', description: 'Process, product systems, and terminal delivery are aligned so stores can present consistent quality.' },
+        { icon: 'i-lucide-store', title: 'Terminal Support', description: 'City partners receive design, store setup, marketing, training, and digital operation support.' }
+      ]
     },
-    milestonesHeading: 'Key Strengths',
-    milestones: [
-      { icon: 'i-lucide-calendar', title: '2001', description: 'The brand was founded and has continued to focus on customized home furnishing.' },
-      { icon: 'i-lucide-trending-up', title: 'DareGlobal', description: 'A core brand under a listed company, stock code 002631.' },
-      { icon: 'i-lucide-droplets', title: 'Waterborne Tech', description: 'Technical support around materials, intelligent coating, and eco whole-home customization.' },
-      { icon: 'i-lucide-store', title: 'Franchise Support', description: 'Product, supply chain, design, marketing, and digital operation support for partners.' }
+    origin: {
+      eyebrow: 'Company Strength',
+      title: 'A production system built for waterborne whole-home delivery',
+      description: 'Paterson continues to invest in waterborne cabinet-wall-door systems, eco materials, intelligent coating, and whole-home delivery, connecting production bases, product processes, and terminal stores into a stable operating system.',
+      imageAlt: 'Paterson factory production system',
+      captionEyebrow: 'Production and Delivery',
+      caption: 'With waterborne cabinet-wall-door systems at the core, Paterson continues to invest in eco materials, production processes, and whole-home delivery capability.',
+      quote: 'Brand strength ultimately has to show up in product systems, production capability, and terminal delivery experience.'
+    },
+    capabilities: {
+      eyebrow: 'Core Capability',
+      title: 'Brand, technology, products, and terminal operations as one system',
+      description: 'From formaldehyde-free substrates and waterborne coating to wellness bedrooms and waterborne light luxury customization, Paterson keeps upgrading eco healthy whole-home solutions for clearer terminal presentation and delivery.',
+      items: [
+        { icon: 'i-lucide-award', title: 'Brand Credibility', description: 'A founding history since 2001, listed-company backing, and standard participation reduce uncertainty for partners.' },
+        { icon: 'i-lucide-leaf', title: 'Healthy-Home Positioning', description: 'Waterborne systems, wellness bedrooms, and indoor-air capabilities move healthy living from concept to real space.' },
+        { icon: 'i-lucide-layout-grid', title: 'Whole-Home Product System', description: 'Cabinets, walls, doors, kitchens, bedrooms, and children spaces share one coherent terminal language.' },
+        { icon: 'i-lucide-megaphone', title: 'Franchise Operations', description: 'Store setup, training, traffic generation, marketing tools, and digital operations help city partners launch steadily.' }
+      ]
+    },
+    culture: {
+      eyebrow: 'Culture',
+      title: 'From Paterson Street to healthy whole-home customization',
+      description: 'Rooted in the brand memory of PATERSON, Paterson carries the mission of customizing healthy smart homes and the vision of becoming a global leader in healthy home living.',
+      items: [
+        { icon: 'i-lucide-compass', title: 'Mission', description: 'Customize a healthy smart home for people.' },
+        { icon: 'i-lucide-heart-handshake', title: 'Values', description: 'Customer-centered, striver-oriented, and committed to long-term progress.' },
+        { icon: 'i-lucide-rocket', title: 'Business Philosophy', description: 'Product leadership, technology driven, and retail focus.' }
+      ]
+    },
+    proofImages: [
+      {
+        image: '/paterson/brand-culture-vision.webp',
+        title: 'Brand Culture Memory',
+        description: 'The PATERSON street-name origin carries the brand’s memory and extends into Paterson’s long-term commitment to healthy home living.'
+      },
+      {
+        image: '/paterson/brand-franchise-support.webp',
+        title: 'Terminal Support Capability',
+        description: 'Product, design, store setup, marketing, training, and digital operations support city partners through implementation.'
+      }
     ],
-    valuesHeading: 'What We Stand For',
-    values: [
-      { icon: 'i-lucide-heart', title: 'Healthy Living', description: 'Waterborne and wellness concepts answer long-term family concerns around safety, comfort, and living quality.' },
-      { icon: 'i-lucide-lightbulb', title: 'Technical Innovation', description: 'Intelligent coating, material upgrades, and systemized products strengthen terminal competitiveness.' },
-      { icon: 'i-lucide-target', title: 'Partner Growth', description: 'Clear franchise processes and ongoing operation support help city partners launch steadily.' }
-    ],
+    timeline: {
+      eyebrow: 'Development',
+      title: 'Brand strength comes from continuous accumulation',
+      description: 'Paterson follows long-term eco development, continuously evolving through formaldehyde-free substrates, waterborne processes, healthy air, and light luxury customization.',
+      items: [
+        { year: '2001', title: 'Brand Founded', description: 'Paterson was founded and entered the customized home furnishing sector.' },
+        { year: '002631', title: 'Listed-Company Backing', description: 'As a core brand under DareGlobal, Paterson is supported by governance and resources from a listed company.' },
+        { year: 'Waterborne Tech', title: 'Differentiated Technology Proposition', description: 'Waterborne cabinet-wall-door systems, intelligent coating, and factory upgrades shape eco whole-home advantages.' },
+        { year: 'Now', title: 'For City Partners', description: 'Product, supply chain, design, marketing, and digital operation support help whole-home franchise stores launch.' }
+      ]
+    },
     cta: {
-      title: 'Explore Paterson franchise policy',
-      subtitle: 'Submit your target city and contact details to receive a cooperation assessment for your local market.',
+      eyebrow: 'Franchise Cooperation',
+      title: 'Explore Paterson brand strength and franchise policy',
+      subtitle: 'Submit your target city and contact details. Our franchise team will assess local market opportunity, budget, and store resources.',
       button: 'Start Inquiry'
     }
   },
