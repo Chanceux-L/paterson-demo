@@ -164,7 +164,7 @@ const starter = {
     followUs: '联系信息',
     email: '邮箱',
     address: '地址',
-    tagline: '高端家居空间、水漆科技与清晰招商路径共同构成的品牌官网。',
+    tagline: '高端家居空间、水漆科技与加盟支持，共同呈现百得胜水漆整家的品牌价值。',
     copyright: '© 2026 Paterson 百得胜. 保留所有权利。',
     privacy: '隐私政策',
     terms: '使用条款',
@@ -319,7 +319,7 @@ const starter = {
     trust: {
       eyebrow: '关于我们',
       title: '水漆整家定制的长期主义品牌',
-      description: '百得胜 Paterson 成立于 2001 年，是德尔未来旗下主营品牌。品牌长期深耕定制家居，以水漆科技、环保整家定制和终端运营支持建立市场信任。',
+      description: '百得胜 Paterson 成立于 2001 年，是德尔未来旗下主营品牌。品牌长期深耕定制家居，以水漆科技、环保整家定制和全链路服务建立市场信任。',
       stats: [
         { value: '2001 年', label: '百得胜 Paterson 成立，持续深耕定制家居赛道。' },
         { value: '德尔未来', label: '上市公司旗下主营品牌，股票代码 002631。' },
@@ -331,7 +331,7 @@ const starter = {
       eyebrow: '水漆科技',
       title: '从材料、工艺到整家空间的水漆产业链闭环',
       description: '全水性 3D 智能涂装线、油改水 4.0 工厂和水漆相关标准能力，共同支撑百得胜水漆整家定制的稳定交付。',
-      summary: '材料、涂装、产品、终端交付形成同一条能力链。',
+      summary: '材料、涂装、产品与交付形成同一条能力链。',
       metrics: [
         { value: '3D', label: '智能涂装线' },
         { value: '4.0', label: '油改水工厂' },
@@ -341,7 +341,7 @@ const starter = {
         { title: '水漆柜墙门系统', description: '以水漆工艺、柜墙门一体化和整家空间交付形成差异化产品能力。', href: '/data' }
       ],
       nodes: [
-        { icon: 'i-lucide-droplets', title: '水漆产业链闭环', description: '围绕水性漆定制家居形成材料、涂装、产品与终端交付协同。' },
+        { icon: 'i-lucide-droplets', title: '水漆产业链闭环', description: '围绕水性漆定制家居形成材料、涂装、产品与交付协同。' },
         { icon: 'i-lucide-factory', title: '全水性 3D 智能涂装线', description: '用智能化工艺提升稳定性、表面质感和批量交付能力。' },
         { icon: 'i-lucide-leaf', title: '油改水 4.0 工厂', description: '以工厂端水性化升级承接水漆整家定制的规模交付。' },
         { icon: 'i-lucide-award', title: '国际领先成果认证', description: '高硬度全水性涂料涂饰家居板件技术获得专家组认证。' }
@@ -380,8 +380,8 @@ const starter = {
         { icon: 'i-lucide-wind', title: '康氧产业链闭环', description: '智能康氧卧房、超级健康中枢、室内空气团标主编单位。' },
         { icon: 'i-lucide-layers-3', title: '碳纤维航空材料', description: '9大性能优势，10米正负变形≤3‰，解决传统轻高定工艺3大难题。' },
         { icon: 'i-lucide-megaphone', title: '营销创新', description: 'AI数智化赋能帮扶、水漆新零售、活动模式多样化引流。' },
-        { icon: 'i-lucide-award', title: '企业荣誉', description: '围绕技术认证、行业奖项、标准制定和品牌大事件建立终端信任。' },
-        { icon: 'i-lucide-history', title: '长期深耕', description: '自 2001 年起持续深耕定制家居行业，以长期主义积累品牌、产品与终端经验。' }
+        { icon: 'i-lucide-award', title: '企业荣誉', description: '技术认证、行业奖项、标准制定和品牌大事件，共同构成可信品牌背书。' },
+        { icon: 'i-lucide-history', title: '长期深耕', description: '自 2001 年起持续深耕定制家居行业，以长期主义积累品牌、产品与服务经验。' }
       ]
     },
     process: {
@@ -414,7 +414,7 @@ const starter = {
         {
           tag: '展会新闻',
           title: '水漆轻高定丨百得胜携 3 大根技术与空间场景亮相广州定制家居展',
-          description: '围绕水漆整家和轻高定空间，强化终端招商展示能力。',
+          description: '围绕水漆整家和轻高定空间，展示百得胜在产品、技术与空间美学上的综合实力。',
           image: '/paterson/news-custom-home-expo.webp'
         },
         {
@@ -473,7 +473,7 @@ const starter = {
       eyebrow: '品牌实力',
       titleLine1: '百得胜 Paterson',
       titleLine2: '长期主义品牌实力',
-      subtitle: '从 2001 年创立到德尔未来旗下主营品牌，百得胜以水漆柜墙门系统、环保整家定制和终端运营支持，构建面向城市合伙人的长期信任。',
+      subtitle: '从 2001 年创立到德尔未来旗下主营品牌，百得胜以水漆柜墙门系统、环保整家定制和总部服务体系，构建面向城市合伙人的长期信任。',
       primaryCta: '咨询加盟合作',
       imageAlt: '百得胜 Paterson 品牌实力形象',
       stats: [
@@ -496,27 +496,27 @@ const starter = {
       items: [
         { icon: 'i-lucide-building-2', title: '德尔未来旗下', description: '上市公司旗下主营品牌，以更稳定的治理与资源能力支撑品牌长期发展。' },
         { icon: 'i-lucide-droplets', title: '水漆技术背书', description: '围绕水漆材料、智能涂装、油改水工厂和行业标准，形成环保整家定制差异化。' },
-        { icon: 'i-lucide-factory', title: '供应链交付', description: '从工艺、产品系统到终端交付建立统一能力，让加盟门店更容易呈现稳定品质。' },
-        { icon: 'i-lucide-store', title: '终端运营支持', description: '面向城市合伙人提供设计、建店、营销、培训和数智化运营等落地支持。' }
+        { icon: 'i-lucide-factory', title: '供应链交付', description: '从工艺、产品系统到交付标准建立统一能力，让品质稳定走进更多家庭。' },
+        { icon: 'i-lucide-store', title: '运营支持', description: '面向城市合伙人提供设计、建店、营销、培训和数智化运营等支持。' }
       ]
     },
     origin: {
       eyebrow: '公司实力',
       title: '以生产体系支撑水漆整家定制交付',
-      description: '百得胜围绕水漆柜墙门、环保材料、智能涂装和整家定制交付持续投入，在生产基地、产品工艺和终端门店之间形成稳定协同。',
+      description: '百得胜围绕水漆柜墙门、环保材料、智能涂装和整家定制交付持续投入，在生产基地、产品工艺和服务体系之间形成稳定协同。',
       imageAlt: '百得胜 Paterson 工厂生产体系',
       captionEyebrow: '生产与交付',
       caption: '以水漆柜墙门为核心，持续投入环保材料、生产工艺与整家定制交付能力。',
-      quote: '品牌实力最终要落到稳定的产品系统、生产能力和终端交付体验。'
+      quote: '品牌实力最终要落到稳定的产品系统、生产能力和用户交付体验。'
     },
     capabilities: {
       eyebrow: '核心能力',
-      title: '品牌、技术、产品、终端一体化',
-      description: '从基材无醛添加、水漆工艺到康氧卧房和水漆轻高定，百得胜持续推动环保健康整家定制升级，为终端门店提供清晰的产品主张与交付基础。',
+      title: '品牌、技术、产品、服务一体化',
+      description: '从基材无醛添加、水漆工艺到康氧卧房和水漆轻高定，百得胜持续推动环保健康整家定制升级，形成清晰的产品主张与交付基础。',
       items: [
         { icon: 'i-lucide-award', title: '品牌公信力', description: '以 2001 年品牌积累、上市公司背景和行业标准参与，降低加盟商选择的不确定性。' },
         { icon: 'i-lucide-leaf', title: '环保健康主张', description: '水漆、康氧卧房和室内空气标准相关能力，让健康家居从概念进入真实生活场景。' },
-        { icon: 'i-lucide-layout-grid', title: '整家产品系统', description: '柜、墙、门、厨房、卧房和儿童空间形成统一风格，便于终端完整呈现。' },
+        { icon: 'i-lucide-layout-grid', title: '整家产品系统', description: '柜、墙、门、厨房、卧房和儿童空间形成统一风格，完整呈现家的整体美学。' },
         { icon: 'i-lucide-megaphone', title: '招商运营支持', description: '围绕建店、培训、活动引流、营销工具和数智化运营，帮助城市合伙人稳健启动。' }
       ]
     },
@@ -538,7 +538,7 @@ const starter = {
       },
       {
         image: '/paterson/brand-franchise-support.webp',
-        title: '终端支持能力',
+        title: '总部支持能力',
         description: '以产品、设计、建店、营销、培训和数智化运营支持城市合伙人稳健落地。'
       }
     ],
@@ -571,7 +571,7 @@ const starter = {
       title: '水漆科技',
       titleLine1: '把环保能力',
       titleLine2: '做进整家交付',
-      subtitle: '从水性材料、连续化涂饰到柜墙门一体化应用，百得胜以水漆产业链闭环支撑环保整家定制，让技术优势能被终端清晰展示、被消费者真实感知。',
+      subtitle: '从水性材料、连续化涂饰到柜墙门一体化应用，百得胜以水漆产业链闭环支撑环保整家定制，让技术优势融入真实居住体验。',
       primaryCta: '咨询水漆加盟',
       imageAlt: '百得胜水漆智能涂装与整家定制工艺',
       metrics: [
@@ -585,17 +585,17 @@ const starter = {
       { label: '产业链能力', href: '#chain' },
       { label: '权威证据', href: '#proof' },
       { label: '空间体验', href: '#experience' },
-      { label: '终端价值', href: '#terminal' }
+      { label: '家居价值', href: '#terminal' }
     ],
     chain: {
       eyebrow: '产业链能力',
       title: '从材料、涂装到柜墙门系统的水漆闭环',
-      description: '水漆科技不是单一卖点，而是一条贯穿材料选择、涂装工艺、产品系统和门店讲解的能力链。页面重点呈现可理解、可展示、可转化的技术差异。',
+      description: '水漆科技不是单一卖点，而是一条贯穿材料选择、涂装工艺、产品系统和空间交付的能力链，让环保、质感与耐用都能被清晰感知。',
       nodes: [
         { icon: 'i-lucide-droplets', title: '水性材料体系', description: '围绕水性漆定制家居建立材料端基础，减少传统涂装带来的气味和健康顾虑。' },
         { icon: 'i-lucide-factory', title: '连续化智能涂装', description: '全水性 3D 智能涂装线与油改水 4.0 工厂，让表面质感、稳定性和批量交付更可控。' },
         { icon: 'i-lucide-panels-top-left', title: '柜墙门一体应用', description: '水漆衣柜、墙板、木门与整家空间协同呈现，让环保工艺落到真实家居场景。' },
-        { icon: 'i-lucide-badge-check', title: '标准与终端讲解', description: '以水漆团标、行业认证和空间样板支撑门店讲解，帮助加盟商建立顾客信任。' }
+        { icon: 'i-lucide-badge-check', title: '标准与认证背书', description: '水漆团标、行业认证和空间样板共同支撑百得胜水漆整家的专业可信度。' }
       ]
     },
     proof: {
@@ -604,7 +604,7 @@ const starter = {
       description: '官网新闻显示，百得胜“高硬度全水性涂料涂饰家居板件”及关键技术获得专家组认证，并围绕全水性连续化涂饰、漆膜性能和绿色制造形成更完整的技术叙事。',
       imageAlt: '百得胜水漆核心科技成果认证新闻',
       captionEyebrow: '水漆核心科技成果',
-      caption: '以产学研协同和专家认证作为科技背书，把“环保”从概念转译为可展示的工艺能力。',
+      caption: '以产学研协同和专家认证作为科技背书，让“环保”从概念进入可感知的工艺与空间体验。',
       cards: [
         { value: '国际领先', label: '成果认证', description: '官网新闻提到相关水漆核心科技成果获专家组认证，强化品牌技术可信度。' },
         { value: '六面一体', label: '连续化涂饰', description: '围绕木质制品六面一体涂饰，让柜墙门应用具备更完整的工艺表达。' },
@@ -614,22 +614,22 @@ const starter = {
     experience: {
       eyebrow: '空间体验',
       title: '技术最终要回到看得见的家',
-      description: '水漆科技页不只展示工厂和概念，也需要把水漆工艺落到衣柜、卧房、柜墙门系统和生活场景中，让加盟商知道终端该如何讲、消费者能获得什么。',
+      description: '水漆科技最终回到衣柜、卧房、柜墙门系统和生活场景中，让家庭看见更安心、更舒适、更统一的整家定制方案。',
       items: [
         { title: '水漆衣柜定制', description: '基材无醛添加、面材水漆木皮、3 底 2 面 72 道纯水漆工艺，形成可被消费者记住的产品表达。', image: '/paterson/product-water-paint-wardrobe.webp', tags: ['水漆衣柜', '无味亲肤', '即装即住'] },
         { title: '健康卧房空间', description: '以衣柜、床头、护墙和收纳系统共同呈现健康卧房，让环保主张进入真实生活场景。', image: '/paterson/product-bedroom-system.webp', tags: ['卧房系统', '柜墙协同', '健康家居'] },
-        { title: '新国标与健康家', description: '结合家具新国标和水漆健康家认知，强化门店对环保、耐用和空间品质的讲解能力。', image: '/paterson/news-furniture-standard.webp', tags: ['标准背书', '环保认知', '终端讲解'] }
+        { title: '新国标与健康家', description: '结合家具新国标和水漆健康家认知，呈现环保、耐用和空间品质的综合价值。', image: '/paterson/news-furniture-standard.webp', tags: ['标准背书', '环保认知', '健康家居'] }
       ]
     },
     terminal: {
-      eyebrow: '终端价值',
-      title: '让加盟门店更容易讲清差异化',
-      description: '水漆科技不止停留在技术名词，而是落到门店可展示、顾客可感知、空间可体验的健康家居价值。',
+      eyebrow: '家居价值',
+      title: '让水漆科技成为看得见的健康家',
+      description: '水漆科技不止停留在技术名词，而是落到可触摸、可感知、可长期居住的健康家居价值。',
       items: [
-        { icon: 'i-lucide-store', title: '门店展示更有主题', description: '以水漆衣柜、健康卧房、柜墙门系统组织展厅动线，让顾客从空间体验理解环保价值。' },
-        { icon: 'i-lucide-message-square-text', title: '销售讲解更有依据', description: '用材料、工艺、标准和权威新闻建立讲解路径，减少空泛的环保口号。' },
-        { icon: 'i-lucide-sparkles', title: '产品质感更容易感知', description: '把无味亲肤、木皮纹理、漆膜性能和整家风格统一，转化为可触摸的终端体验。' },
-        { icon: 'i-lucide-trending-up', title: '招商记忆点更明确', description: '水漆整家、康氧空间和营销支持共同形成区别于普通全屋定制门店的加盟理由。' }
+        { icon: 'i-lucide-store', title: '空间主题更鲜明', description: '以水漆衣柜、健康卧房和柜墙门系统组织居住场景，让环保价值自然进入空间体验。' },
+        { icon: 'i-lucide-message-square-text', title: '技术证据更清晰', description: '材料、工艺、标准和权威新闻共同支撑水漆整家的专业背书。' },
+        { icon: 'i-lucide-sparkles', title: '产品质感更可感知', description: '无味亲肤、木皮纹理、漆膜性能和整家风格统一，形成可触摸的居住体验。' },
+        { icon: 'i-lucide-trending-up', title: '品牌记忆点更明确', description: '水漆整家、康氧空间和总部支持共同构成区别于普通全屋定制的品牌理由。' }
       ]
     },
     cta: {
@@ -642,20 +642,20 @@ const starter = {
   dataPage: {
     seo: {
       title: '产品系统_百得胜 Paterson 水漆柜墙门系统_环保整家定制',
-      description: '查看百得胜 Paterson 水漆衣柜、入户、客餐厅、卧房、阳台、宠物与电竞等空间系统，了解环保整家定制产品组合与加盟终端展示价值。',
+      description: '查看百得胜 Paterson 水漆衣柜、入户、客餐厅、卧房、阳台、宠物与电竞等空间系统，了解环保整家定制产品组合与空间价值。',
       keywords: '百得胜产品系统,水漆衣柜,水漆柜墙门系统,环保整家定制,全屋定制加盟,媞雅系列,光引系列,原野系列'
     },
     hero: {
       eyebrow: '产品系统',
       titleLine1: '以水漆柜墙门系统',
       titleLine2: '组织完整生活空间',
-      subtitle: '从衣柜定制延展到入户、客餐厅、卧房、阳台、宠物与电竞空间，百得胜把水漆工艺、收纳系统和整家风格统一到可展示、可成交、可交付的终端产品体系。',
+      subtitle: '从衣柜定制延展到入户、客餐厅、卧房、阳台、宠物与电竞空间，百得胜把水漆工艺、收纳系统和整家风格统一到完整的产品体系。',
       imageAlt: '百得胜产品系统空间形象',
       primaryCta: '咨询产品加盟',
       metrics: [
         { value: '3底2面', label: '72 道纯水漆工艺，强化环保与表面质感表达' },
         { value: '6大空间', label: '覆盖入户、客厅、餐厅、书房、卧房与阳台' },
-        { value: '23年', label: '专研环保定制，沉淀终端产品与交付经验' }
+        { value: '23年', label: '专研环保定制，沉淀产品与交付经验' }
       ]
     },
 
@@ -675,7 +675,7 @@ const starter = {
     catalog: {
       eyebrow: '产品展示',
       title: '甄选系列与空间方案',
-      description: '从空间、风格与产品系列出发，呈现百得胜水漆整家定制的真实产品组合，让终端门店更直观地展示环保、颜值与收纳价值。',
+      description: '从空间、风格与产品系列出发，呈现百得胜水漆整家定制的真实产品组合，让环保、颜值与收纳价值更直观。',
       emptyTitle: '暂无匹配产品',
       emptyDescription: '可选择更多空间、风格或系列，查看适合不同家庭场景的产品方案。',
       serviceCatalogs: {
@@ -736,17 +736,17 @@ const starter = {
     },
     intro: {
       eyebrow: '水漆衣柜定制',
-      title: '把环保定制做成终端可感知的产品语言',
-      description: '官方产品页强调“水漆衣柜，基材无醛添加，面材水漆木皮，3底2面72道纯水漆工艺”。新版产品系统将这组技术点转译为消费者能理解的空间价值：无味亲肤、即装即住、风格统一、收纳清晰。',
-      proof: '水漆定制不是单一柜体卖点，而是贯穿材料、工艺、柜墙门协同、空间展示与加盟门店讲解的一整套产品系统。',
+      title: '把环保定制做成可感知的产品语言',
+      description: '百得胜水漆衣柜强调基材无醛添加、面材水漆木皮、3 底 2 面 72 道纯水漆工艺，把环保、质感和收纳体验放进真实生活空间。',
+      proof: '水漆定制不是单一柜体卖点，而是贯穿材料、工艺、柜墙门协同和整家空间的一整套产品系统。',
       imageAlt: '百得胜水漆衣柜定制空间',
-      captionEyebrow: '官方素材来源',
-      caption: '素材取自百得胜官网“我们的服务 / 衣柜定制”页面，已下载到本地并压缩为 webp。'
+      captionEyebrow: '水漆衣柜定制',
+      caption: '水漆衣柜、环保材料与整家风格共同构成百得胜产品系统的核心表达。'
     },
     systems: {
       eyebrow: '空间系统',
       title: '从单品列表升级为空间解决方案',
-      description: '按照重设计方案，产品页不只罗列衣柜、橱柜和家具，而是把产品组织为终端更容易销售的空间系统，让加盟商可以用真实场景讲清整家定制价值。',
+      description: '产品系统不只罗列衣柜、橱柜和家具，而是以真实空间呈现卧房、客餐厅、儿童房和多功能生活场景的整家定制价值。',
       items: [
         {
           title: '卧房系统',
@@ -774,7 +774,7 @@ const starter = {
         },
         {
           title: '电竞卧房',
-          description: '兼顾休息、双人娱乐、桌面设备和氛围灯光，适合终端展示年轻化产品组合。',
+          description: '兼顾休息、双人娱乐、桌面设备和氛围灯光，回应年轻家庭对个性化卧房的期待。',
           image: '/paterson/product-gaming-bedroom.webp',
           tags: ['情侣电竞房', '年轻客群', '灯光氛围']
         },
@@ -782,46 +782,46 @@ const starter = {
           title: '柜墙门一体化系统',
           description: '通过材质、色彩、比例和收口协同，把衣柜、墙面、门与家具纳入统一交付标准。',
           image: '/paterson/product-water-paint-wardrobe.webp',
-          tags: ['柜墙门', '统一交付', '终端展示']
+          tags: ['柜墙门', '统一交付', '整家风格']
         }
       ]
     },
     features: {
       eyebrow: '产品优势',
-      title: '加盟终端真正需要的是好讲、好看、好落地',
-      description: '产品系统页强化百得胜区别于普通全屋定制的核心证据：水漆工艺、空间化表达、系列化素材和终端交付标准。',
+      title: '好看、环保、耐用，才是真正的整家产品力',
+      description: '百得胜区别于普通全屋定制的核心证据，来自水漆工艺、空间化表达、系列化产品和稳定交付标准。',
       items: [
         { icon: 'i-lucide-droplets', title: '水漆工艺背书', description: '用无醛添加基材、水漆木皮和多道水漆工艺建立环保与质感的共同记忆点。' },
-        { icon: 'i-lucide-layout-grid', title: '空间系统销售', description: '以入户、客餐厅、卧房、阳台等空间组织产品，比单品清单更适合终端转化。' },
-        { icon: 'i-lucide-store', title: '门店展示友好', description: '真实空间图、系列名和卖点标签便于店面样板、活动物料和销售话术复用。' },
+        { icon: 'i-lucide-layout-grid', title: '空间系统表达', description: '以入户、客餐厅、卧房、阳台等空间组织产品，让整家价值比单品清单更直观。' },
+        { icon: 'i-lucide-store', title: '真实场景呈现', description: '真实空间图、系列名和卖点标签共同呈现产品风格、环保价值与生活方式。' },
         { icon: 'i-lucide-factory', title: '供应链协同', description: '柜体、墙面、门板与家具统一标准，减少风格割裂和交付不稳定。' }
       ]
     },
     series: {
-      eyebrow: '官方系列素材',
-      title: '保留真实产品名，重构现代官网呈现',
-      description: '素材来自官网产品列表，页面保留媞雅、光引、原野等真实系列名，同时用更克制的版式呈现空间气质与可销售场景。',
+      eyebrow: '产品系列',
+      title: '真实系列名，真实空间气质',
+      description: '媞雅、光引、原野等产品系列承载不同空间气质，以更克制的方式呈现百得胜水漆整家的生活美学。',
       items: [
         { title: '媞雅系列', subtitle: '精致卧房与整家质感', description: '以柔和材质、细腻比例和水漆表面质感强化卧房系统的高级感。', image: '/paterson/product-series-tiya.webp', meta: 'Bedroom' },
         { title: '光引系列', subtitle: '明亮公共空间', description: '用轻盈线条和明亮空间感承接客餐厅、展示柜与生活收纳需求。', image: '/paterson/product-series-guangyin.webp', meta: 'Living' },
         { title: '原野系列', subtitle: '自然整家表达', description: '更强调木纹、留白与温润气质，适合环保整家定制的生活方式叙事。', image: '/paterson/product-series-yuanye.webp', meta: 'Nature' },
-        { title: '情侣电竞房', subtitle: '年轻化生活场景', description: '把设备收纳、双人使用和氛围感整合到卧房系统，拓展终端销售话题。', image: '/paterson/product-gaming-bedroom.webp', meta: 'Gaming' }
+        { title: '情侣电竞房', subtitle: '年轻化生活场景', description: '把设备收纳、双人使用和氛围感整合到卧房系统，回应年轻一代的生活方式。', image: '/paterson/product-gaming-bedroom.webp', meta: 'Gaming' }
       ]
     },
     delivery: {
-      eyebrow: '终端落地',
-      title: '产品系统走进门店，也走进真实生活',
+      eyebrow: '空间落地',
+      title: '产品系统走进真实生活',
       description: '从产品组合、空间样板到交付标准，百得胜让城市合伙人更清楚地呈现水漆整家的价值。',
       steps: [
         { title: '产品组合建议', description: '依据目标城市、店面面积和客群定位，规划主推空间与样板组合。' },
-        { title: '设计与物料支持', description: '围绕系列图、空间卖点和水漆工艺，形成终端可复用的讲解素材。' },
-        { title: '门店场景呈现', description: '把卧房、客餐厅、宠物、电竞等高感知空间做成可体验的样板场景。' },
+        { title: '设计与内容支持', description: '围绕系列图、空间卖点和水漆工艺，形成清晰一致的品牌表达。' },
+        { title: '空间场景呈现', description: '把卧房、客餐厅、宠物、电竞等高感知空间做成可体验的生活场景。' },
         { title: '交付标准协同', description: '以柜墙门系统和供应链标准保障风格、材质与安装效果的一致性。' }
       ]
     },
     cta: {
       eyebrow: '产品加盟资料',
-      title: '想了解百得胜产品系统如何配置到门店？',
+      title: '想了解百得胜产品系统如何配置到你的城市？',
       description: '提交意向城市与联系方式，招商顾问可结合你的店面资源介绍产品组合、样板规划和加盟支持政策。',
       primary: '提交加盟咨询',
       secondary: '拨打招商热线'
@@ -841,9 +841,9 @@ const starter = {
       title: '水漆整家定制方案',
       category: '产品系统',
       summary: '以水漆柜墙门系统为核心，为家庭空间提供环保、统一、可落地的整家定制方案。',
-      description: '百得胜产品系统将卧室、厨房、儿童房等高频生活空间纳入统一设计语言，通过水漆工艺、柜墙门协同和终端交付标准，帮助加盟门店向消费者清晰展示环保整家定制价值。',
+      description: '百得胜产品系统将卧室、厨房、儿童房等高频生活空间纳入统一设计语言，通过水漆工艺、柜墙门协同和交付标准，清晰呈现环保整家定制价值。',
       featuresHeading: '核心特点',
-      features: ['水漆工艺与环保材料协同', '柜墙门系统化设计', '适配终端展示与加盟落地'],
+      features: ['水漆工艺与环保材料协同', '柜墙门系统化设计', '适配整家空间与加盟落地'],
       specsHeading: '方案信息',
       specifications: [
         { label: '适用空间', value: '卧室 / 厨房 / 儿童房 / 全屋' },
@@ -862,27 +862,189 @@ const starter = {
     empty: '暂无新闻内容',
     back: '返回新闻中心',
     imagePlaceholder: 'Paterson 新闻图片',
+    sectionNavAria: '新闻中心页面导航',
+    sectionNav: [
+      { label: '新闻快讯', href: '#updates' },
+      { label: '最新活动', href: '#activities' }
+    ],
+    hero: {
+      eyebrow: '新闻中心',
+      titleLine1: '看见水漆整家',
+      titleLine2: '持续向前的证据',
+      subtitle: '从核心技术认证、产品标准到展会活动，百得胜以可验证的品牌动态呈现水漆整家定制的长期价值。',
+      imageAlt: '百得胜 Paterson 新闻中心形象'
+    },
+    highlights: [
+      { value: '水漆', label: '核心科技', description: '围绕全水性涂饰、环保材料和柜墙门系统，建立清晰的品牌技术背书。' },
+      { value: '整家', label: '空间表达', description: '通过衣柜、橱柜、儿童房和轻高定空间，呈现完整生活方案。' },
+      { value: '加盟', label: '市场信任', description: '新闻、展会和案例共同呈现百得胜面向市场的长期品牌信任。' }
+    ],
+    featured: {
+      eyebrow: '重点动态',
+      title: '水漆科技与品牌动态',
+      description: '聚焦水漆核心科技、行业标准、展会活动与健康家居趋势，记录百得胜在环保整家定制领域的持续进展。'
+    },
+    updates: {
+      eyebrow: '新闻快讯',
+      title: '水漆定制、健康家居与行业动态'
+    },
+    activities: {
+      eyebrow: '最新活动',
+      title: '品牌活动与用户互动',
+      description: '品牌活动集中呈现全国促销、直播互动和水漆定制认知活动，让百得胜与更多家庭建立连接。',
+      items: [
+        {
+          id: 1724,
+          categoryId: 4,
+          category: '最新活动',
+          date: '2021-10-08',
+          browse: 0,
+          image: '/paterson/news-activity-sanya.webp',
+          intro: '奥运冠军组团邀消费者游三亚，“水漆定制柜 当然百得胜”活动以更轻松的方式放大水漆定制认知。',
+          slug: 'waterborne-cabinet-sanya-campaign',
+          title: '奥运冠军组团邀您游三亚，“水漆定制柜 当然百得胜”活动花式礼献全国！',
+          content: [
+            '百得胜围绕“水漆定制柜 当然百得胜”展开全国活动传播，用更容易参与的方式强化水漆定制柜认知。',
+            '活动将奥运冠军、旅行权益与家居消费场景结合，让品牌传播不只停留在产品参数，也连接到家庭装修决策和生活期待。',
+            '活动让消费者在促销节点更快记住百得胜水漆定制的品牌主张，也让健康家居选择更具体。'
+          ]
+        },
+        {
+          id: 1722,
+          categoryId: 4,
+          category: '最新活动',
+          date: '2021-10-07',
+          browse: 0,
+          image: '/paterson/news-activity-luo-xuejuan.webp',
+          intro: '百得胜借奥运冠军罗雪娟的装修话题，讲清水漆实木定制柜无味、亲肤和环保价值。',
+          slug: 'luo-xuejuan-renovation-waterborne-cabinet',
+          title: '雅典奥运会冠军罗雪娟也有装修烦恼？小问题，别慌！',
+          content: [
+            '活动内容以真实装修烦恼切入，把水漆实木定制柜的环保、无味和亲肤价值转化为消费者容易理解的话题。',
+            '百得胜在水漆定制柜上的持续表达，让健康材料和整柜环保不再只是技术说明，而是面向家庭生活的具体选择。',
+            '故事化内容让水漆产品的消费场景更具体，也提升用户对环保定制的感知。'
+          ]
+        },
+        {
+          id: 91,
+          categoryId: 4,
+          category: '最新活动',
+          date: '2021-04-19',
+          browse: 0,
+          image: '/paterson/news-activity-pet-ai.webp',
+          intro: '百得胜宠 ai 定制节结合直播与活动权益，集中释放品牌互动声量。',
+          slug: 'pet-ai-custom-festival',
+          title: '宠ai定制节丨明星主持李艾空降百得胜直播间，撒千万豪礼只为宠ai你！',
+          content: [
+            '百得胜宠 ai 定制节通过直播、明星主持和活动权益，提升消费者对品牌活动的参与感。',
+            '活动以更轻松的传播方式连接定制家居消费需求，在重要节点形成更鲜明的品牌话题。',
+            '这类活动内容补充新闻快讯之外的品牌温度，让新闻中心同时呈现行业动态和用户互动。'
+          ]
+        }
+      ]
+    },
+    cta: {
+      eyebrow: '招商加盟',
+      title: '从品牌动态看见百得胜长期实力',
+      description: '了解百得胜水漆整家定制的产品体系、技术背书和总部支持，获取适合本地市场的加盟资料。',
+      button: '咨询加盟支持'
+    },
     fallback: [
       {
+        id: 4029,
+        categoryId: 1,
+        category: '水漆定制',
+        date: '2026-01-12',
+        browse: 0,
+        image: '/paterson/product-cabinet-intro.webp',
+        intro: '当健康成为家装首要考量，水漆定制柜凭借性能与质感进入更多家庭视野。百得胜以清晰的水漆战略，成为环保定制的重要代表。',
+        slug: 'waterborne-cabinet-brand',
+        title: '水漆定制柜什么牌子好用？国内十大品牌百得胜不翻车！',
+        content: [
+          '健康、环保和长期耐用正在成为家庭定制柜选择的核心标准。水漆定制柜以水性涂饰工艺、细腻质感和更友好的居住体验，回应了消费者对安心装修的期待。',
+          '百得胜围绕水漆柜墙门系统持续构建产品表达，让“全屋定制”进一步连接材料、工艺、空间和健康价值。',
+          '水漆定制的差异化不只来自环保主张，也来自能够落到整家方案中的完整产品能力。'
+        ]
+      },
+      {
+        id: 4028,
+        categoryId: 1,
+        category: '健康家居',
+        date: '2026-01-04',
+        browse: 0,
+        image: '/paterson/news-waterborne-renovation.webp',
+        intro: '全屋环保水漆定制正在成为更多家庭的装修选择。百得胜以环保技术和成熟产品体系，为健康家居提供更完整的解决方案。',
+        slug: 'waterborne-renovation',
+        title: '装修真没味儿！选国内水漆定制主流品牌百得胜',
+        content: [
+          '新房装修后的异味和材料安全，是许多家庭最敏感的问题。水漆定制从涂饰源头减少传统装修材料带来的顾虑，让健康家居不只停留在口号上。',
+          '百得胜通过水漆工艺、环保材料和整家产品系统，把衣柜、橱柜、卧房和儿童空间纳入统一的健康表达。',
+          '当消费者走进门店时，清晰的水漆定制方案可以帮助他们更直观地看见环保、质感和空间功能如何同时落地。'
+        ]
+      },
+      {
+        id: 4027,
+        categoryId: 1,
+        category: '产品系统',
+        date: '2025-12-18',
+        browse: 0,
+        image: '/paterson/news-premium-wardrobe.webp',
+        intro: '高端衣柜选择不只看外观，也要看环保、品质与长期使用体验。百得胜以主流水漆定制能力回应家庭核心收纳需求。',
+        slug: 'premium-waterborne-wardrobe',
+        title: '高端衣柜别乱订！认准主流水漆定制放心品牌百得胜',
+        content: [
+          '衣柜是全屋定制中使用频率最高、与居住健康关系最密切的系统之一。高端衣柜不仅需要好看，也要在环保、耐用和收纳体验上经得起长期使用。',
+          '百得胜将水漆工艺与卧室空间设计结合，让衣柜产品兼顾质感、环保和整体家居风格。',
+          '从材料安全到柜体品质，再到完整卧房方案，百得胜让高端衣柜拥有更完整的价值锚点。'
+        ]
+      },
+      {
+        id: 4026,
+        categoryId: 1,
+        category: '品牌背书',
+        date: '2025-11-06',
+        browse: 0,
+        image: '/paterson/news-healthy-home-choice.webp',
+        intro: '环保与健康成为家居装修核心议题。百得胜水漆定制以技术创新连接安全、审美和整家交付，成为家庭安心选择。',
+        slug: 'healthy-home-choice',
+        title: '家装安心之选：认准水漆定制十大品牌百得胜',
+        content: [
+          '消费者对家装安全的关注，正在推动定制家居行业从单一外观竞争走向材料、工艺和空间体验的综合竞争。',
+          '百得胜以水漆定制为核心，将环保技术、家居美学和整家方案连接起来，帮助家庭减少装修顾虑。',
+          '品牌背书与产品差异化共同支撑百得胜在本地市场建立更稳定的用户信任。'
+        ]
+      },
+      {
+        id: 4025,
+        categoryId: 2,
         category: '技术认证',
-        date: '2026-07-01',
-        intro: '高硬度全水性涂料涂饰家居板件关键技术获得专家组认证，强化水漆整家定制技术背书。',
+        date: '2025-11-05',
+        browse: 0,
+        image: '/paterson/news-waterborne-tech-certification.webp',
+        intro: '百得胜“高硬度全水性涂料涂饰家居板件”及关键技术获院士领衔专家组认证，达到国际领先水平。',
         slug: 'waterborne-technology-certification',
-        title: '百得胜水漆核心科技成果获得权威认证'
+        title: '国际领先 | 百得胜家居水漆核心科技成果获院士领衔专家组认证，产学研深度融合引领定制家居绿色革命',
+        content: [
+          '官网新闻显示，百得胜家居联合中国林业科学研究院木材工业研究所完成的“高硬度全水性涂料涂饰家居板件”及关键技术，获得院士领衔专家组认证。',
+          '该成果围绕全水性连续化涂饰、漆膜性能和绿色制造展开，为水漆柜墙门系统提供更强的技术可信度。',
+          '技术认证不仅是品牌荣誉，也让水漆整家定制的环保价值拥有更清晰、更专业的背书。'
+        ]
       },
       {
+        id: 4004,
+        categoryId: 3,
         category: '展会新闻',
-        date: '2026-06-18',
-        intro: '百得胜携水漆整家、康氧卧房与轻高定空间亮相行业展会，展示面向终端的招商表达。',
-        slug: 'custom-home-expo',
-        title: '百得胜亮相定制家居展，展示水漆整家空间方案'
-      },
-      {
-        category: '行业标准',
-        date: '2026-05-26',
-        intro: '围绕环保标准、健康家居和水漆柜墙门系统，百得胜持续推动行业高质量发展。',
-        slug: 'healthy-home-standards',
-        title: '以水漆健康家居推动整家定制标准升级'
+        date: '2025-03-17',
+        browse: 0,
+        image: '/paterson/news-custom-home-expo-2025.webp',
+        intro: '百得胜携水漆轻高定根技术与空间场景亮相广州定制家居展，集中展示水漆整家的空间表达。',
+        slug: 'custom-home-expo-2025',
+        title: '水漆轻高定丨百得胜携3大根技术 3大轻高定空间场景，即将亮相广州定制家居展',
+        content: [
+          '展会是品牌向行业与加盟伙伴集中展示产品系统、技术方向和空间表达的重要窗口。',
+          '百得胜以水漆轻高定为核心，将根技术与空间场景结合，让参观者更直观看到水漆整家定制的生活方式呈现。',
+          '展会动态持续放大百得胜水漆轻高定的品牌声量，也让城市合伙人看到更完整的合作前景。'
+        ]
       }
     ]
   },

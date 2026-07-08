@@ -164,7 +164,7 @@ const starter = {
     followUs: 'Contact',
     email: 'Email',
     address: 'Address',
-    tagline: 'A brand website shaped by refined living spaces, waterborne technology, and a clear franchise path.',
+    tagline: 'Refined living spaces, waterborne technology, and franchise support present the value of Paterson whole-home customization.',
     copyright: '© 2026 Paterson. All rights reserved.',
     privacy: 'Privacy Policy',
     terms: 'Terms of Use',
@@ -319,7 +319,7 @@ const starter = {
     trust: {
       eyebrow: 'About Us',
       title: 'A long-term brand for waterborne whole-home customization',
-      description: 'Founded in 2001, Paterson is a core brand under DareGlobal. The brand has long focused on customized home furnishing, building market trust through waterborne technology, eco whole-home customization, and terminal operation support.',
+      description: 'Founded in 2001, Paterson is a core brand under DareGlobal. The brand has long focused on customized home furnishing, building market trust through waterborne technology, eco whole-home customization, and full-chain service capability.',
       stats: [
         { value: '2001', label: 'Paterson was founded and has stayed focused on customized home furnishing.' },
         { value: 'DareGlobal', label: 'A core brand under a listed company, stock code 002631.' },
@@ -331,7 +331,7 @@ const starter = {
       eyebrow: 'Waterborne Technology',
       title: 'A closed-loop waterborne chain from materials and process to whole-home spaces',
       description: 'Paterson’s waterborne 3D intelligent coating line, factory 4.0 upgrade, and standard-setting capability support stable delivery for waterborne whole-home customization.',
-      summary: 'Materials, coating, product systems, and terminal delivery are presented as one capability chain.',
+      summary: 'Materials, coating, product systems, and delivery work as one capability chain.',
       metrics: [
         { value: '3D', label: 'Intelligent coating line' },
         { value: '4.0', label: 'Factory waterborne upgrade' },
@@ -341,7 +341,7 @@ const starter = {
         { title: 'Waterborne Cabinet-Wall-Door System', description: 'A differentiated product capability built around waterborne process, integrated cabinet-wall-door design, and whole-home delivery.', href: '/data' }
       ],
       nodes: [
-        { icon: 'i-lucide-droplets', title: 'Closed-loop waterborne chain', description: 'Materials, coating, product systems, and terminal delivery work together around waterborne customization.' },
+        { icon: 'i-lucide-droplets', title: 'Closed-loop waterborne chain', description: 'Materials, coating, product systems, and delivery work together around waterborne customization.' },
         { icon: 'i-lucide-factory', title: '3D intelligent coating line', description: 'Intelligent processes improve stability, surface quality, and scalable delivery.' },
         { icon: 'i-lucide-leaf', title: 'Factory 4.0 waterborne upgrade', description: 'Factory-side waterborne upgrading supports scalable delivery for whole-home customization.' },
         { icon: 'i-lucide-award', title: 'Certified leading technology', description: 'Paterson waterborne coating technology has received expert-panel recognition.' }
@@ -380,8 +380,8 @@ const starter = {
         { icon: 'i-lucide-wind', title: 'Wellness Oxygen Chain', description: 'Intelligent wellness bedrooms, super health center, and indoor-air standard leadership.' },
         { icon: 'i-lucide-layers-3', title: 'Carbon Fiber Aerospace Material', description: 'Nine performance advantages and dimensional control that solves key light-luxury customization challenges.' },
         { icon: 'i-lucide-megaphone', title: 'Marketing Innovation', description: 'AI digital enablement, waterborne new retail, and diversified campaign traffic generation.' },
-        { icon: 'i-lucide-award', title: 'Enterprise Honors', description: 'Technology certifications, industry awards, standard-setting, and major brand events build terminal trust.' },
-        { icon: 'i-lucide-history', title: 'Long-Term Focus', description: 'Since 2001, Paterson has built brand, product, and terminal experience in customized home furnishing.' }
+        { icon: 'i-lucide-award', title: 'Enterprise Honors', description: 'Technology certifications, industry awards, standard-setting, and major brand events create credible brand proof.' },
+        { icon: 'i-lucide-history', title: 'Long-Term Focus', description: 'Since 2001, Paterson has built brand, product, and service experience in customized home furnishing.' }
       ]
     },
     process: {
@@ -414,7 +414,7 @@ const starter = {
         {
           tag: 'Exhibition',
           title: 'Paterson presents core technologies and spaces at Guangzhou custom home fair',
-          description: 'The brand strengthens terminal franchise expression around waterborne whole-home customization.',
+          description: 'The brand presents product, technology, and interior-space strength around waterborne whole-home customization.',
           image: '/paterson/news-custom-home-expo.webp'
         },
         {
@@ -473,7 +473,7 @@ const starter = {
       eyebrow: 'Brand Strength',
       titleLine1: 'Paterson',
       titleLine2: 'Long-Term Brand Strength',
-      subtitle: 'From its founding in 2001 to becoming a core brand under DareGlobal, Paterson builds long-term trust for city partners through waterborne cabinet-wall-door systems, eco whole-home customization, and terminal operation support.',
+      subtitle: 'From its founding in 2001 to becoming a core brand under DareGlobal, Paterson builds long-term trust for city partners through waterborne cabinet-wall-door systems, eco whole-home customization, and headquarters service capability.',
       primaryCta: 'Discuss Franchise Cooperation',
       imageAlt: 'Paterson brand strength visual',
       stats: [
@@ -496,27 +496,27 @@ const starter = {
       items: [
         { icon: 'i-lucide-building-2', title: 'Under DareGlobal', description: 'A core brand under a listed company, supported by more stable governance and long-term resources.' },
         { icon: 'i-lucide-droplets', title: 'Waterborne Credibility', description: 'Materials, intelligent coating, factory waterborne upgrades, and standards shape eco whole-home differentiation.' },
-        { icon: 'i-lucide-factory', title: 'Supply-Chain Delivery', description: 'Process, product systems, and terminal delivery are aligned so stores can present consistent quality.' },
-        { icon: 'i-lucide-store', title: 'Terminal Support', description: 'City partners receive design, store setup, marketing, training, and digital operation support.' }
+        { icon: 'i-lucide-factory', title: 'Supply-Chain Delivery', description: 'Process, product systems, and delivery standards are aligned so consistent quality reaches more homes.' },
+        { icon: 'i-lucide-store', title: 'Operation Support', description: 'City partners receive design, store setup, marketing, training, and digital operation support.' }
       ]
     },
     origin: {
       eyebrow: 'Company Strength',
       title: 'A production system built for waterborne whole-home delivery',
-      description: 'Paterson continues to invest in waterborne cabinet-wall-door systems, eco materials, intelligent coating, and whole-home delivery, connecting production bases, product processes, and terminal stores into a stable operating system.',
+      description: 'Paterson continues to invest in waterborne cabinet-wall-door systems, eco materials, intelligent coating, and whole-home delivery, connecting production bases, product processes, and service systems into a stable operating model.',
       imageAlt: 'Paterson factory production system',
       captionEyebrow: 'Production and Delivery',
       caption: 'With waterborne cabinet-wall-door systems at the core, Paterson continues to invest in eco materials, production processes, and whole-home delivery capability.',
-      quote: 'Brand strength ultimately has to show up in product systems, production capability, and terminal delivery experience.'
+      quote: 'Brand strength ultimately has to show up in product systems, production capability, and user delivery experience.'
     },
     capabilities: {
       eyebrow: 'Core Capability',
-      title: 'Brand, technology, products, and terminal operations as one system',
-      description: 'From formaldehyde-free substrates and waterborne coating to wellness bedrooms and waterborne light luxury customization, Paterson keeps upgrading eco healthy whole-home solutions for clearer terminal presentation and delivery.',
+      title: 'Brand, technology, products, and service as one system',
+      description: 'From formaldehyde-free substrates and waterborne coating to wellness bedrooms and waterborne light luxury customization, Paterson keeps upgrading eco healthy whole-home solutions with a clear product proposition and delivery foundation.',
       items: [
         { icon: 'i-lucide-award', title: 'Brand Credibility', description: 'A founding history since 2001, listed-company backing, and standard participation reduce uncertainty for partners.' },
         { icon: 'i-lucide-leaf', title: 'Healthy-Home Positioning', description: 'Waterborne systems, wellness bedrooms, and indoor-air capabilities move healthy living from concept to real space.' },
-        { icon: 'i-lucide-layout-grid', title: 'Whole-Home Product System', description: 'Cabinets, walls, doors, kitchens, bedrooms, and children spaces share one coherent terminal language.' },
+        { icon: 'i-lucide-layout-grid', title: 'Whole-Home Product System', description: 'Cabinets, walls, doors, kitchens, bedrooms, and children spaces share one coherent home aesthetic.' },
         { icon: 'i-lucide-megaphone', title: 'Franchise Operations', description: 'Store setup, training, traffic generation, marketing tools, and digital operations help city partners launch steadily.' }
       ]
     },
@@ -570,7 +570,7 @@ const starter = {
       eyebrow: 'Waterborne Technology',
       titleLine1: 'Environmental value',
       titleLine2: 'built into delivery',
-      subtitle: 'From waterborne materials and continuous coating to cabinet-wall-door applications, Paterson uses a closed-loop waterborne chain to support eco whole-home customization that stores can clearly present and customers can feel.',
+      subtitle: 'From waterborne materials and continuous coating to cabinet-wall-door applications, Paterson uses a closed-loop waterborne chain to bring environmental value into real living spaces.',
       primaryCta: 'Ask About Franchise',
       imageAlt: 'Paterson waterborne intelligent coating and whole-home customization process',
       metrics: [
@@ -584,17 +584,17 @@ const starter = {
       { label: 'Capability Chain', href: '#chain' },
       { label: 'Proof', href: '#proof' },
       { label: 'Experience', href: '#experience' },
-      { label: 'Store Value', href: '#terminal' }
+      { label: 'Home Value', href: '#terminal' }
     ],
     chain: {
       eyebrow: 'Capability Chain',
       title: 'A closed waterborne loop from materials and coating to cabinet-wall-door systems',
-      description: 'Waterborne technology is not a single selling point. It is a capability chain across material selection, coating process, product systems, and store explanation, presented here as a clear and conversion-oriented advantage.',
+      description: 'Waterborne technology is not a single selling point. It is a capability chain across material selection, coating process, product systems, and spatial delivery, making eco value, texture, and durability easier to feel.',
       nodes: [
         { icon: 'i-lucide-droplets', title: 'Waterborne Materials', description: 'Materials built around waterborne customization reduce odor and health concerns from traditional coating.' },
         { icon: 'i-lucide-factory', title: 'Continuous Intelligent Coating', description: 'The waterborne 3D intelligent coating line and factory 4.0 upgrade make surface quality, stability, and scalable delivery more controllable.' },
         { icon: 'i-lucide-panels-top-left', title: 'Cabinet-Wall-Door Application', description: 'Waterborne wardrobes, wall panels, doors, and whole-home spaces work together so the process lands in real interiors.' },
-        { icon: 'i-lucide-badge-check', title: 'Standards and Store Explanation', description: 'Industry standards, certifications, and spatial samples help franchise stores explain value and build customer trust.' }
+        { icon: 'i-lucide-badge-check', title: 'Standards and Certification', description: 'Waterborne standards, industry certifications, and spatial samples support the professional credibility of Paterson whole-home customization.' }
       ]
     },
     proof: {
@@ -603,7 +603,7 @@ const starter = {
       description: 'Paterson official news reports expert recognition for high-hardness fully waterborne coated home panels and related key technologies, connecting continuous waterborne coating, coating-film performance, and green manufacturing.',
       imageAlt: 'Paterson waterborne core technology certification news',
       captionEyebrow: 'Waterborne Core Technology',
-      caption: 'Research collaboration and expert recognition translate the environmental claim into a demonstrable process capability.',
+      caption: 'Research collaboration and expert recognition turn environmental value into a process and living-space experience that can be felt.',
       cards: [
         { value: 'Leading', label: 'Recognized Result', description: 'Official news presents expert recognition of the waterborne core technology result, strengthening technology credibility.' },
         { value: 'Six-Side', label: 'Continuous Coating', description: 'A six-side integrated coating story gives cabinet-wall-door applications a more complete process narrative.' },
@@ -613,22 +613,22 @@ const starter = {
     experience: {
       eyebrow: 'Experience',
       title: 'Technology must return to a visible home',
-      description: 'The technology page should not only show factory concepts. It should connect waterborne process with wardrobes, bedrooms, cabinet-wall-door systems, and lifestyle scenes so stores know how to explain the value.',
+      description: 'Waterborne technology returns to wardrobes, bedrooms, cabinet-wall-door systems, and real living scenes, giving families a safer, more comfortable, and more unified whole-home solution.',
       items: [
         { title: 'Waterborne Wardrobe', description: 'No-added-formaldehyde substrate, waterborne wood veneer, and a 72-step coating process create a product story customers can remember.', image: '/paterson/product-water-paint-wardrobe.webp', tags: ['Wardrobe', 'Skin-Friendly', 'Move-In Ready'] },
         { title: 'Healthy Bedroom Space', description: 'Wardrobes, headboards, wall panels, and storage systems present the healthy-bedroom claim in a real living scene.', image: '/paterson/product-bedroom-system.webp', tags: ['Bedroom', 'Cabinet-Wall', 'Healthy Home'] },
-        { title: 'Standard and Healthy Home', description: 'Furniture standards and waterborne healthy-home messaging strengthen store explanation around environmental value, durability, and spatial quality.', image: '/paterson/news-furniture-standard.webp', tags: ['Standards', 'Eco Value', 'Store Story'] }
+        { title: 'Standard and Healthy Home', description: 'Furniture standards and waterborne healthy-home messaging present environmental value, durability, and spatial quality together.', image: '/paterson/news-furniture-standard.webp', tags: ['Standards', 'Eco Value', 'Healthy Home'] }
       ]
     },
     terminal: {
-      eyebrow: 'Store Value',
-      title: 'Helping franchise stores explain differentiation clearly',
-      description: 'The point of this page is not to stack technical terms. It helps potential partners judge whether the product can be displayed, explained, and turned into a durable reason to choose Paterson.',
+      eyebrow: 'Home Value',
+      title: 'Making waterborne technology visible in a healthy home',
+      description: 'Waterborne technology is not just a technical term. It becomes a healthy-home value that can be touched, felt, and lived with over time.',
       items: [
-        { icon: 'i-lucide-store', title: 'A stronger showroom theme', description: 'Waterborne wardrobes, healthy bedrooms, and cabinet-wall-door systems can organize showroom flow around tangible environmental value.' },
-        { icon: 'i-lucide-message-square-text', title: 'More evidence for sales conversations', description: 'Materials, process, standards, and official news create a structured explanation path beyond generic eco slogans.' },
-        { icon: 'i-lucide-sparkles', title: 'Texture customers can feel', description: 'Skin-friendly touch, wood veneer grain, coating performance, and unified whole-home style become a direct store experience.' },
-        { icon: 'i-lucide-trending-up', title: 'A clearer franchise memory point', description: 'Waterborne whole-home systems, wellness spaces, and marketing support create a stronger reason to join than ordinary whole-home customization.' }
+        { icon: 'i-lucide-store', title: 'Clearer spatial themes', description: 'Waterborne wardrobes, healthy bedrooms, and cabinet-wall-door systems organize living scenes around tangible environmental value.' },
+        { icon: 'i-lucide-message-square-text', title: 'Clearer technical proof', description: 'Materials, process, standards, and official news support the professional credibility of waterborne whole-home customization.' },
+        { icon: 'i-lucide-sparkles', title: 'Texture customers can feel', description: 'Skin-friendly touch, wood veneer grain, coating performance, and unified whole-home style become a direct living experience.' },
+        { icon: 'i-lucide-trending-up', title: 'A clearer brand memory point', description: 'Waterborne whole-home systems, wellness spaces, and headquarters support create a stronger reason to choose Paterson.' }
       ]
     },
     cta: {
@@ -641,7 +641,7 @@ const starter = {
   dataPage: {
     seo: {
       title: 'Product Systems | Paterson Waterborne Cabinet-Wall-Door Systems',
-      description: 'Explore Paterson waterborne wardrobes, entry, living, dining, bedroom, balcony, pet, and gaming space systems for eco whole-home customization and franchise terminal display.',
+      description: 'Explore Paterson waterborne wardrobes, entry, living, dining, bedroom, balcony, pet, and gaming space systems for eco whole-home customization and spatial value.',
       keywords: 'Paterson product systems,waterborne wardrobe,cabinet wall door system,eco whole-home customization,whole-home franchise,Tiya series,Guangyin series,Yuanye series'
     },
     hero: {
@@ -736,16 +736,16 @@ const starter = {
     intro: {
       eyebrow: 'Waterborne Wardrobe Customization',
       title: 'Turning eco customization into a product language customers can feel',
-      description: 'The official product page highlights formaldehyde-free substrates, waterborne wood veneer, and a multi-step pure waterborne process. The redesigned product system translates those technical points into spatial value customers understand: gentle touch, low odor, ready living, unified style, and clear storage.',
-      proof: 'Waterborne customization is not a single cabinet feature. It runs through materials, process, cabinet-wall-door coordination, space display, and the way franchise stores explain the value.',
+      description: 'Paterson waterborne wardrobes highlight formaldehyde-free substrates, waterborne wood veneer, and a multi-step pure waterborne process, bringing eco value, texture, and storage experience into real living spaces.',
+      proof: 'Waterborne customization is not a single cabinet feature. It runs through materials, process, cabinet-wall-door coordination, and whole-home spaces.',
       imageAlt: 'Paterson waterborne wardrobe customization space',
-      captionEyebrow: 'Official asset source',
-      caption: 'Image assets are sourced from the Paterson official “Services / Wardrobe Customization” page, downloaded locally, and compressed as webp.'
+      captionEyebrow: 'Waterborne Wardrobe Customization',
+      caption: 'Waterborne wardrobes, eco materials, and whole-home style form a core expression of the Paterson product system.'
     },
     systems: {
       eyebrow: 'Space Systems',
       title: 'From product lists to space solutions',
-      description: 'Following the redesign direction, this page avoids listing wardrobes, cabinets, and furniture as isolated items. Products are organized into space systems that help franchise stores sell whole-home value through real scenes.',
+      description: 'The product system goes beyond isolated wardrobes, cabinets, and furniture, using real interiors to present bedrooms, living-dining spaces, children rooms, and multi-function whole-home scenes.',
       items: [
         {
           title: 'Bedroom System',
@@ -773,7 +773,7 @@ const starter = {
         },
         {
           title: 'Gaming Bedroom',
-          description: 'Rest, dual entertainment, equipment storage, and ambient lighting are combined into a younger terminal display scenario.',
+          description: 'Rest, dual entertainment, equipment storage, and ambient lighting are combined for young families who want a more personal bedroom.',
           image: '/paterson/product-gaming-bedroom.webp',
           tags: ['Couple gaming room', 'Young customers', 'Ambient lighting']
         },
@@ -781,40 +781,40 @@ const starter = {
           title: 'Cabinet-Wall-Door System',
           description: 'Materials, colors, proportions, and installation details align wardrobes, walls, doors, and furniture under one delivery standard.',
           image: '/paterson/product-water-paint-wardrobe.webp',
-          tags: ['Cabinet wall door', 'Unified delivery', 'Terminal display']
+          tags: ['Cabinet wall door', 'Unified delivery', 'Whole-home style']
         }
       ]
     },
     features: {
       eyebrow: 'Product Advantages',
-      title: 'Franchise stores need products that are easy to explain, attractive, and deliverable',
-      description: 'The product system page emphasizes the core evidence that separates Paterson from ordinary whole-home customization: waterborne process, spatial expression, series assets, and terminal delivery standards.',
+      title: 'Beauty, eco value, and durability define real whole-home product strength',
+      description: 'Paterson’s difference from ordinary whole-home customization comes from waterborne process, spatial expression, product series, and stable delivery standards.',
       items: [
         { icon: 'i-lucide-droplets', title: 'Waterborne process proof', description: 'Formaldehyde-free substrates, waterborne wood veneer, and refined coating steps create a shared memory of eco value and surface quality.' },
-        { icon: 'i-lucide-layout-grid', title: 'Space-system selling', description: 'Entry, living, dining, bedroom, and balcony spaces convert better than an isolated product catalog.' },
-        { icon: 'i-lucide-store', title: 'Store display friendly', description: 'Real scenes, series names, and value tags can be reused in showrooms, campaign materials, and sales scripts.' },
+        { icon: 'i-lucide-layout-grid', title: 'Space-system expression', description: 'Entry, living, dining, bedroom, and balcony spaces make whole-home value more intuitive than isolated product lists.' },
+        { icon: 'i-lucide-store', title: 'Real scene presentation', description: 'Real interiors, series names, and value tags present product style, eco value, and lifestyle together.' },
         { icon: 'i-lucide-factory', title: 'Supply-chain coordination', description: 'Cabinets, walls, doors, and furniture share standards to reduce style fragmentation and unstable delivery.' }
       ]
     },
     series: {
-      eyebrow: 'Official Series Assets',
-      title: 'Keep real product names, rebuild the modern presentation',
-      description: 'Images come from the official product list. The page keeps real series names such as Tiya, Guangyin, and Yuanye while presenting space mood and selling scenarios with a calmer layout.',
+      eyebrow: 'Product Series',
+      title: 'Real series names, real spatial moods',
+      description: 'Tiya, Guangyin, Yuanye, and other product series carry different spatial moods, presenting the lifestyle aesthetics of Paterson waterborne whole-home customization.',
       items: [
         { title: 'Tiya Series', subtitle: 'Refined bedroom and whole-home texture', description: 'Soft materials, measured proportions, and waterborne surface quality strengthen the bedroom system’s premium feel.', image: '/paterson/product-series-tiya.webp', meta: 'Bedroom' },
         { title: 'Guangyin Series', subtitle: 'Bright public living spaces', description: 'Light lines and bright spatial rhythm support living rooms, sideboards, display cabinets, and everyday storage.', image: '/paterson/product-series-guangyin.webp', meta: 'Living' },
         { title: 'Yuanye Series', subtitle: 'Natural whole-home expression', description: 'Wood grain, whitespace, and warmth support the lifestyle story of eco whole-home customization.', image: '/paterson/product-series-yuanye.webp', meta: 'Nature' },
-        { title: 'Couple Gaming Room', subtitle: 'Younger living scenario', description: 'Equipment storage, dual use, and atmosphere are integrated into the bedroom system to extend terminal sales topics.', image: '/paterson/product-gaming-bedroom.webp', meta: 'Gaming' }
+        { title: 'Couple Gaming Room', subtitle: 'Younger living scenario', description: 'Equipment storage, dual use, and atmosphere are integrated into the bedroom system for a younger way of living.', image: '/paterson/product-gaming-bedroom.webp', meta: 'Gaming' }
       ]
     },
     delivery: {
-      eyebrow: 'Terminal Implementation',
-      title: 'Product systems belong in stores and in real homes',
-      description: 'From product combinations and showroom scenes to delivery standards, Paterson helps city partners present the value of waterborne whole-home customization.',
+      eyebrow: 'Space Delivery',
+      title: 'Product systems belong in real homes',
+      description: 'From product combinations and spatial scenes to delivery standards, Paterson presents the value of waterborne whole-home customization in real homes.',
       steps: [
         { title: 'Product mix planning', description: 'Plan hero spaces and showroom combinations based on city, store size, and target customers.' },
-        { title: 'Design and material support', description: 'Turn series images, space benefits, and waterborne process into reusable sales materials.' },
-        { title: 'Store scene display', description: 'Build high-perception sample spaces such as bedrooms, living rooms, pet spaces, and gaming rooms.' },
+        { title: 'Design and content support', description: 'Use series images, space benefits, and waterborne process to create a clear and consistent brand expression.' },
+        { title: 'Spatial scene presentation', description: 'Build high-perception living scenes such as bedrooms, living rooms, pet spaces, and gaming rooms.' },
         { title: 'Delivery standard coordination', description: 'Use cabinet-wall-door systems and supply-chain standards to align style, materials, and installation quality.' }
       ]
     },
@@ -840,9 +840,9 @@ const starter = {
       title: 'Waterborne Whole-Home Customization Solution',
       category: 'Product System',
       summary: 'An eco, unified, and deliverable whole-home customization solution centered on waterborne cabinet-wall-door systems.',
-      description: 'Paterson product systems cover high-frequency living spaces such as bedrooms, kitchens, and children rooms. Waterborne process, cabinet-wall-door coordination, and terminal delivery standards help franchise stores clearly present the value of eco whole-home customization.',
+      description: 'Paterson product systems cover high-frequency living spaces such as bedrooms, kitchens, and children rooms. Waterborne process, cabinet-wall-door coordination, and delivery standards clearly present the value of eco whole-home customization.',
       featuresHeading: 'Core Features',
-      features: ['Waterborne process and eco materials', 'Systemized cabinet-wall-door design', 'Ready for terminal display and franchise launch'],
+      features: ['Waterborne process and eco materials', 'Systemized cabinet-wall-door design', 'Ready for whole-home spaces and franchise launch'],
       specsHeading: 'Solution Information',
       specifications: [
         { label: 'Spaces', value: 'Bedroom / Kitchen / Children Room / Whole Home' },
@@ -861,27 +861,189 @@ const starter = {
     empty: 'No news available',
     back: 'Back to News',
     imagePlaceholder: 'Paterson news image',
+    sectionNavAria: 'News page navigation',
+    sectionNav: [
+      { label: 'News Flash', href: '#updates' },
+      { label: 'Activities', href: '#activities' }
+    ],
+    hero: {
+      eyebrow: 'News',
+      titleLine1: 'Evidence of waterborne',
+      titleLine2: 'whole-home progress',
+      subtitle: 'From technology recognition and product standards to exhibitions and brand activities, Paterson news shows the long-term value behind waterborne whole-home customization.',
+      imageAlt: 'Paterson news center image'
+    },
+    highlights: [
+      { value: 'Waterborne', label: 'Core Technology', description: 'Waterborne coating, eco materials, and cabinet-wall-door systems create a clearer technical story.' },
+      { value: 'Whole Home', label: 'Living Scenes', description: 'Wardrobes, kitchens, children rooms, and refined spaces present complete home solutions.' },
+      { value: 'Franchise', label: 'Market Trust', description: 'News, exhibitions, and cases show Paterson’s long-term market credibility.' }
+    ],
+    featured: {
+      eyebrow: 'Highlights',
+      title: 'Waterborne technology and brand updates',
+      description: 'Technology recognition, industry standards, exhibitions, and healthy-home trends trace Paterson’s continued progress in eco whole-home customization.'
+    },
+    updates: {
+      eyebrow: 'News Flash',
+      title: 'Waterborne customization, healthy homes, and industry news'
+    },
+    activities: {
+      eyebrow: 'Activities',
+      title: 'Brand campaigns and user interaction',
+      description: 'Activity updates show brand campaigns, national promotions, livestream moments, and waterborne customization education that connect Paterson with more families.',
+      items: [
+        {
+          id: 1724,
+          categoryId: 4,
+          category: 'Activity',
+          date: '2021-10-08',
+          browse: 0,
+          image: '/paterson/news-activity-sanya.webp',
+          intro: 'The campaign invited customers to join an Olympic-champion-themed Sanya trip while strengthening awareness of Paterson waterborne custom cabinets.',
+          slug: 'waterborne-cabinet-sanya-campaign',
+          title: 'Olympic champions invite customers to Sanya through Paterson waterborne custom cabinet campaign',
+          content: [
+            'Paterson official activity content shows a national campaign around the phrase “waterborne custom cabinets, naturally Paterson”, using a more participatory format to strengthen product awareness.',
+            'The campaign connects Olympic champions, travel benefits, and home furnishing decisions, moving brand communication beyond product parameters.',
+            'The campaign helps consumers remember Paterson’s waterborne customization message during key promotion moments and makes healthy home choices more concrete.'
+          ]
+        },
+        {
+          id: 1722,
+          categoryId: 4,
+          category: 'Activity',
+          date: '2021-10-07',
+          browse: 0,
+          image: '/paterson/news-activity-luo-xuejuan.webp',
+          intro: 'Paterson used Olympic champion Luo Xuejuan’s renovation topic to explain odorless, skin-friendly, and eco waterborne custom cabinet value.',
+          slug: 'luo-xuejuan-renovation-waterborne-cabinet',
+          title: 'Olympic champion Luo Xuejuan also has renovation concerns, and Paterson offers a waterborne answer',
+          content: [
+            'The activity starts from a real renovation concern and turns the eco, odorless, and skin-friendly value of waterborne solid-wood custom cabinets into a consumer-friendly story.',
+            'Paterson’s continued communication around waterborne custom cabinets turns material health and full-cabinet eco value into a concrete home choice.',
+            'The story makes waterborne product scenarios more concrete and improves customer understanding of eco customization.'
+          ]
+        },
+        {
+          id: 91,
+          categoryId: 4,
+          category: 'Activity',
+          date: '2021-04-19',
+          browse: 0,
+          image: '/paterson/news-activity-pet-ai.webp',
+          intro: 'Paterson’s custom festival combined livestreaming and campaign benefits to create a stronger interactive brand moment.',
+          slug: 'pet-ai-custom-festival',
+          title: 'Paterson custom festival brings host Li Ai to the livestream with campaign benefits',
+          content: [
+            'The Paterson custom festival used livestreaming, a celebrity host, and campaign benefits to increase consumer participation in brand activities.',
+            'The activity connects custom home demand with lighter campaign communication and creates a stronger brand topic during marketing moments.',
+            'This activity content complements news flash updates by showing not only industry events, but also user-facing brand interaction.'
+          ]
+        }
+      ]
+    },
+    cta: {
+      eyebrow: 'Franchise',
+      title: 'See Paterson’s long-term strength through brand updates',
+      description: 'Explore Paterson product systems, waterborne technology proof points, and headquarters support for your local market.',
+      button: 'Ask About Franchise'
+    },
     fallback: [
       {
+        id: 4029,
+        categoryId: 1,
+        category: 'Waterborne Customization',
+        date: '2026-01-12',
+        browse: 0,
+        image: '/paterson/product-cabinet-intro.webp',
+        intro: 'As healthy home decoration becomes a top priority, waterborne custom cabinets are gaining attention for performance and refined finish. Paterson presents a clear waterborne strategy for eco customization.',
+        slug: 'waterborne-cabinet-brand',
+        title: 'Which waterborne custom cabinet brand is worth choosing? Paterson stands out among leading domestic brands',
+        content: [
+          'Health, eco performance, and long-term durability are becoming core standards for custom cabinets. Waterborne customization responds with waterborne finishing, refined texture, and a more comfortable living experience.',
+          'Paterson keeps building its product narrative around waterborne cabinet-wall-door systems, connecting materials, process, space, and healthy living value.',
+          'The differentiation of waterborne customization comes not only from eco claims, but also from complete product capability that lands in whole-home solutions.'
+        ]
+      },
+      {
+        id: 4028,
+        categoryId: 1,
+        category: 'Healthy Home',
+        date: '2026-01-04',
+        browse: 0,
+        image: '/paterson/news-waterborne-renovation.webp',
+        intro: 'Eco waterborne whole-home customization is becoming a stronger choice for families. Paterson combines eco technology with a mature product system for healthier home solutions.',
+        slug: 'waterborne-renovation',
+        title: 'A home without harsh renovation odor: choose Paterson, a mainstream waterborne customization brand',
+        content: [
+          'Renovation odor and material safety are common concerns for families. Waterborne customization reduces concerns from the finishing source and turns healthy homes into something more concrete.',
+          'Paterson connects waterborne process, eco materials, and whole-home product systems across wardrobes, kitchens, bedrooms, and children spaces.',
+          'When customers enter a store, a clear waterborne customization solution helps them see how eco value, finish quality, and spatial function can land together.'
+        ]
+      },
+      {
+        id: 4027,
+        categoryId: 1,
+        category: 'Product System',
+        date: '2025-12-18',
+        browse: 0,
+        image: '/paterson/news-premium-wardrobe.webp',
+        intro: 'Premium wardrobes need more than appearance. Paterson uses mainstream waterborne customization capability to address eco value, quality, and long-term bedroom use.',
+        slug: 'premium-waterborne-wardrobe',
+        title: 'Choose premium wardrobes with confidence through Paterson waterborne customization',
+        content: [
+          'Wardrobes are among the most frequently used custom home systems and closely connected to living health. A premium wardrobe needs appearance, eco value, durability, and storage experience.',
+          'Paterson combines waterborne process with bedroom system design so wardrobe products carry texture, environmental value, and a unified home style.',
+          'From material safety and cabinet quality to complete bedroom solutions, Paterson gives premium wardrobes a fuller value anchor.'
+        ]
+      },
+      {
+        id: 4026,
+        categoryId: 1,
+        category: 'Brand Proof',
+        date: '2025-11-06',
+        browse: 0,
+        image: '/paterson/news-healthy-home-choice.webp',
+        intro: 'Eco value and health are central to home renovation. Paterson waterborne customization connects technology, design, and whole-home delivery for safer family choices.',
+        slug: 'healthy-home-choice',
+        title: 'A reliable home decoration choice: Paterson as a leading waterborne customization brand',
+        content: [
+          'Consumer concern for home safety is shifting custom home competition from appearance alone toward materials, process, and full living experience.',
+          'Paterson centers on waterborne customization and connects eco technology, home aesthetics, and whole-home solutions to reduce renovation concerns.',
+          'Brand proof and product differentiation help Paterson build steadier customer trust in local markets.'
+        ]
+      },
+      {
+        id: 4025,
+        categoryId: 2,
         category: 'Technology',
-        date: '2026-07-01',
-        intro: 'Key technology for high-hardness waterborne coated home panels received expert recognition, strengthening Paterson’s technical credibility.',
+        date: '2025-11-05',
+        browse: 0,
+        image: '/paterson/news-waterborne-tech-certification.webp',
+        intro: 'Paterson reports that its high-hardness fully waterborne coated home panel and key technologies received expert recognition led by an academician, reaching an internationally leading level.',
         slug: 'waterborne-technology-certification',
-        title: 'Paterson waterborne core technology receives expert recognition'
+        title: 'Paterson waterborne core technology receives expert recognition and supports a greener custom home industry',
+        content: [
+          'According to Paterson official news, the high-hardness fully waterborne coated home panel and related key technologies developed with the Research Institute of Wood Industry received expert recognition.',
+          'The result covers continuous fully waterborne coating, coating-film performance, and green manufacturing, giving stronger technical credibility to waterborne cabinet-wall-door systems.',
+          'Technology recognition is not only a brand honor. It also gives the eco value of waterborne whole-home customization clearer and more professional proof.'
+        ]
       },
       {
+        id: 4004,
+        categoryId: 3,
         category: 'Exhibition',
-        date: '2026-06-18',
-        intro: 'Paterson presented waterborne whole-home customization, wellness bedrooms, and refined spaces at a major custom home fair.',
-        slug: 'custom-home-expo',
-        title: 'Paterson presents waterborne whole-home solutions at custom home fair'
-      },
-      {
-        category: 'Standards',
-        date: '2026-05-26',
-        intro: 'Paterson continues to support industry quality through environmental standards, healthy-home narratives, and cabinet-wall-door systems.',
-        slug: 'healthy-home-standards',
-        title: 'Waterborne healthy homes support whole-home customization standards'
+        date: '2025-03-17',
+        browse: 0,
+        image: '/paterson/news-custom-home-expo-2025.webp',
+        intro: 'Paterson prepared to present waterborne refined customization technologies and spatial scenes at the Guangzhou custom home fair, showing how waterborne whole-home solutions appear in stores.',
+        slug: 'custom-home-expo-2025',
+        title: 'Paterson brings waterborne refined customization technologies and spatial scenes to Guangzhou custom home fair',
+        content: [
+          'Exhibitions give the brand a focused window to show product systems, technology direction, and spatial expression to the industry and franchise partners.',
+          'With waterborne refined customization at the center, Paterson connects core technologies with spatial scenes and presents the lifestyle value of waterborne whole-home customization.',
+          'These exhibition updates continue to amplify Paterson’s waterborne refined customization momentum and show city partners a fuller cooperation outlook.'
+        ]
       }
     ]
   },

@@ -22,10 +22,6 @@ type InquiryCopy = {
   message: string;
   messagePlaceholder: string;
   missingMessage: string;
-  captcha: string;
-  captchaPlaceholder: string;
-  captchaAlt: string;
-  missingCaptcha: string;
   submit: string;
   submitting: string;
   success: string;
@@ -79,8 +75,6 @@ const alertUi = {
 const { locale, tm } = useI18n();
 const { resolveTranslatedMessageTree } = useI18nMessageTree();
 const {
-  captchaUrl,
-  refreshCaptchaUrl,
   submitInquiry
 } = useInquiries();
 const { phoneCountryOptions } = usePhoneCountries(locale);
@@ -99,7 +93,6 @@ const form = reactive<FormState>({
   rucaptcha: '',
   website: ''
 });
-const captchaImageUrl = ref(captchaUrl());
 const submitting = ref(false);
 const success = ref(false);
 const errorMessage = ref('');
@@ -107,10 +100,6 @@ const sectionTitleClass = 'font-heading text-3xl font-semibold leading-tight tex
 const eyebrowClass = 'inline-flex items-center gap-3 text-sm font-semibold text-[#7A5438]';
 const selectedPhoneCountry = computed(() => phoneCountryOptions.value.find(option => option.value === form.phoneCountry));
 const selectedCallingCode = computed(() => selectedPhoneCountry.value?.callingCode || getPhoneCallingCode(form.phoneCountry));
-
-function reloadCaptcha() {
-  captchaImageUrl.value = refreshCaptchaUrl();
-}
 
 function resetForm() {
   Object.assign(form, {
@@ -160,11 +149,6 @@ function validateForm() {
     return;
   }
 
-  if (!form.rucaptcha.trim()) {
-    errorMessage.value = inquiryCopy.value.missingCaptcha;
-    return;
-  }
-
   return phoneNumber;
 }
 
@@ -184,7 +168,7 @@ async function handleSubmit() {
       email: form.email.trim() || undefined,
       company: form.company.trim() || undefined,
       message: form.message.trim(),
-      rucaptcha: form.rucaptcha.trim(),
+      rucaptcha: '',
       website: form.website,
       locale: locale.value,
       extra_data: {
@@ -202,11 +186,9 @@ async function handleSubmit() {
 
     success.value = true;
     resetForm();
-    reloadCaptcha();
   } catch (error) {
     errorMessage.value = error instanceof Error && error.message ? error.message : inquiryCopy.value.failed;
     form.rucaptcha = '';
-    reloadCaptcha();
   } finally {
     submitting.value = false;
   }
@@ -393,44 +375,6 @@ async function handleSubmit() {
             class="w-full"
           />
         </UFormField>
-
-        <div class="grid gap-4 border border-[#E5DED2] bg-[#F7F4EE] p-4 sm:grid-cols-[180px_1fr] sm:items-end">
-          <UButton
-            class="h-12 w-full overflow-hidden rounded-none border border-[#E5DED2] bg-white p-0 transition hover:border-[#B99A63] hover:bg-white active:scale-95"
-            type="button"
-            variant="ghost"
-            color="neutral"
-            :aria-label="inquiryCopy.captchaAlt"
-            @click="reloadCaptcha"
-          >
-            <img
-              class="h-full w-full object-cover"
-              :src="captchaImageUrl"
-              :alt="inquiryCopy.captchaAlt"
-            />
-          </UButton>
-
-          <UFormField
-            name="rucaptcha"
-            :label="inquiryCopy.captcha"
-            required
-            :ui="fieldUi"
-          >
-            <UInput
-              id="inquiry-captcha"
-              v-model.trim="form.rucaptcha"
-              name="rucaptcha"
-              autocomplete="off"
-              size="xl"
-              variant="outline"
-              color="neutral"
-              :aria-label="inquiryCopy.captcha"
-              :placeholder="inquiryCopy.captchaPlaceholder"
-              :ui="inputUi"
-              class="w-full"
-            />
-          </UFormField>
-        </div>
       </div>
 
       <UAlert

@@ -74,7 +74,7 @@ useAppSeoMeta({
 
 <template>
   <main class="water-paint-page bg-[#F4F1EA] text-[#24211D]">
-    <section class="relative overflow-hidden bg-[#171512] px-5 pt-20 text-white sm:px-8 md:pt-24 lg:px-14">
+    <section class="relative overflow-hidden bg-[#171512] px-5 pt-0 text-white sm:px-8 lg:px-14">
       <img
         class="water-paint-hero-image absolute inset-x-0 top-0 h-72 w-full object-cover opacity-74 sm:h-88 md:inset-0 md:h-full"
         :src="publicAsset('/paterson/technology-wood-factory-bg.webp')"
@@ -133,7 +133,7 @@ useAppSeoMeta({
     </section>
 
     <nav class="sticky top-16 z-30 border-b border-[#E5DED2] bg-white/96 backdrop-blur" :aria-label="t('philosophyPage.sectionNavAria')">
-      <div class="mx-auto flex max-w-7xl snap-x gap-8 overflow-x-auto px-5 sm:px-8 lg:justify-between lg:px-14">
+      <div class="mx-auto flex max-w-7xl snap-x justify-center gap-8 overflow-x-auto px-5 sm:px-8 md:gap-12 lg:px-14">
         <a
           v-for="item in sectionNav"
           :key="item.href"

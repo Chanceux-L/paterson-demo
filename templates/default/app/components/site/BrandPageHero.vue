@@ -47,7 +47,7 @@ const isCompact = computed(() => props.variant === 'compact');
 
 const heroClasses = computed(() => [
   'brand-page-hero relative overflow-hidden border-b border-border bg-surface text-text-primary',
-  isCompact.value ? 'pt-24 pb-12 md:pt-28 md:pb-14' : 'pt-28 pb-16 md:pt-32 md:pb-20 lg:pt-36 lg:pb-24'
+  isCompact.value ? 'py-12 md:py-14' : 'py-16 md:py-20 lg:py-24'
 ]);
 
 function actionClasses(action: HeroAction) {

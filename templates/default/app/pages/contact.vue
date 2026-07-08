@@ -73,7 +73,7 @@ useAppSeoMeta({
 
 <template>
   <main class="franchise-page bg-[#F4F1EA] text-[#24211D]">
-    <section class="relative overflow-hidden bg-[#171512] px-5 pt-20 text-white sm:px-8 md:pt-24 lg:px-14">
+    <section class="relative overflow-hidden bg-[#171512] px-5 pt-0 text-white sm:px-8 lg:px-14">
       <picture class="absolute inset-x-0 top-0 h-72 sm:h-88 md:inset-0 md:h-full">
         <source media="(max-width: 767px)" :srcset="publicAsset('/paterson/product-mobile-banner.webp')" />
         <img
@@ -135,11 +135,11 @@ useAppSeoMeta({
     </section>
 
     <nav class="sticky top-16 z-30 border-b border-[#E5DED2] bg-white/96 backdrop-blur" :aria-label="t('contactPage.sectionNavAria')">
-      <div class="mx-auto flex max-w-7xl snap-x gap-8 overflow-x-auto px-5 sm:px-8 lg:justify-between lg:px-14">
+      <div class="mx-auto flex max-w-7xl snap-x justify-center gap-8 overflow-x-auto px-5 sm:px-8 md:gap-12 lg:px-14">
         <a
           v-for="item in sectionNav"
           :key="item.href"
-          class="snap-start whitespace-nowrap px-1 py-4 text-sm font-medium text-[#6F6A61] transition hover:text-[#B99A63] md:text-base"
+          class="franchise-section-link snap-start whitespace-nowrap px-1 py-4 text-sm font-medium text-[#6F6A61] transition hover:text-[#B99A63] md:text-base"
           :href="item.href"
         >
           {{ item.label }}
@@ -187,8 +187,8 @@ useAppSeoMeta({
 
     <section id="support" class="scroll-mt-32 bg-white px-5 py-12 sm:px-8 md:py-20 lg:px-14 lg:py-28">
       <div class="mx-auto max-w-7xl">
-        <div class="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
-          <div class="max-w-2xl">
+        <div class="flex max-w-4xl flex-col gap-5">
+          <div>
             <p class="text-sm font-semibold text-[#C91F2B]">
               {{ t('contactPage.support.eyebrow') }}
             </p>
@@ -196,7 +196,7 @@ useAppSeoMeta({
               {{ t('contactPage.support.title') }}
             </h2>
           </div>
-          <p class="max-w-xl text-base leading-8 text-[#6F6A61]">
+          <p class="max-w-3xl text-base leading-8 text-[#6F6A61]">
             {{ t('contactPage.support.description') }}
           </p>
         </div>
@@ -323,6 +323,30 @@ useAppSeoMeta({
   border: 1px solid rgba(255, 255, 255, 0.14);
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(16px);
+}
+
+.franchise-section-link {
+  position: relative;
+}
+
+.franchise-section-link::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  content: "";
+  background: #b99a63;
+  opacity: 0;
+  transform: scaleX(0.64);
+  transition:
+    opacity 220ms ease,
+    transform 220ms ease;
+}
+
+.franchise-section-link:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
 }
 
 @media (prefers-reduced-motion: reduce) {

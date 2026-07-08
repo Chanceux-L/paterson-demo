@@ -150,7 +150,7 @@ onBeforeUnmount(() => {
   <header
     id="mainHeader"
     ref="headerRef"
-    class="fixed inset-x-0 top-0 z-40 flex h-16 items-center border-b border-border bg-background/95 text-text-primary backdrop-blur transition-shadow duration-200"
+    class="sticky top-0 z-40 flex h-16 items-center border-b border-border bg-background/95 text-text-primary backdrop-blur transition-shadow duration-200"
     :class="headerScrolled ? 'shadow-sm' : ''"
   >
     <div class="mx-auto flex h-full min-w-0 w-full max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-14">

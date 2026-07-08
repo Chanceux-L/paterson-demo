@@ -119,7 +119,7 @@ useSchemaOrg(computed(() => [
 
 <template>
   <main class="home-page bg-[#F4F1EA] text-[#24211D]">
-    <section class="relative overflow-hidden bg-[#F4F1EA] px-5 pt-16 text-[#24211D] sm:px-8 lg:px-14 lg:pt-24">
+    <section class="relative overflow-hidden bg-[#F4F1EA] px-5 pt-0 text-[#24211D] sm:px-8 lg:px-14">
       <div class="hero-image-panel absolute inset-y-0 right-0 hidden w-[46%] bg-[#F4F1EA] lg:block">
         <img
           class="hero-side-image paterson-hero-image size-full object-cover object-[60%_50%]"
@@ -128,37 +128,37 @@ useSchemaOrg(computed(() => [
         />
       </div>
       <img
-        class="hero-mobile-pattern absolute inset-x-0 top-10 h-full w-full object-cover lg:hidden"
+        class="hero-mobile-pattern absolute inset-x-0 top-0 h-full w-full object-cover opacity-35 lg:hidden"
         :src="publicAsset('/paterson/hero-mobile-pattern.svg')"
         alt=""
         aria-hidden="true"
       />
       <img
-        class="hero-desktop-pattern absolute inset-y-0 left-0 hidden h-full w-[52%] object-cover lg:block"
+        class="hero-desktop-pattern absolute inset-y-0 left-0 hidden h-full w-[52%] object-cover opacity-40 lg:block"
         :src="publicAsset('/paterson/hero-desktop-pattern.svg')"
         alt=""
         aria-hidden="true"
       />
-      <div class="relative mx-auto grid max-w-7xl gap-10 py-10 lg:min-h-[760px] lg:grid-cols-[0.9fr_0.82fr] lg:items-center lg:gap-12 lg:py-20">
+      <div class="relative mx-auto grid max-w-7xl gap-10 py-6 md:py-10 lg:min-h-[760px] lg:grid-cols-[0.9fr_0.82fr] lg:items-center lg:gap-12 lg:py-20">
         <div class="relative z-10 max-w-xl motion-safe:animate-[paterson-fade-up_560ms_cubic-bezier(0.22,1,0.36,1)_both]">
           <p class="inline-flex items-center gap-3 text-sm font-medium text-[#7A5438]">
             <span class="h-px w-10 bg-[#B99A63]"></span>
             {{ t('homePage.hero.badge') }}
           </p>
-          <h1 class="mt-8 max-w-3xl text-4xl font-semibold leading-tight text-[#24211D] md:text-6xl xl:text-7xl">
+          <h1 class="mt-5 max-w-3xl text-4xl font-semibold leading-tight text-[#24211D] md:mt-8 md:text-6xl xl:text-7xl">
             <span class="block">{{ t('homePage.hero.titleLine1') }}</span>
             <span class="block">{{ t('homePage.hero.titleLine2') }}</span>
           </h1>
-          <p class="mt-7 max-w-xl text-base leading-8 text-[#6F6A61] md:text-lg">
+          <p class="mt-5 max-w-xl text-base leading-7 text-[#6F6A61] md:mt-7 md:text-lg md:leading-8">
             {{ t('homePage.hero.subtitle') }}
           </p>
-          <div class="mt-6 flex max-w-xl flex-wrap gap-x-5 gap-y-2 text-sm font-medium text-[#7A5438]">
+          <div class="mt-4 flex max-w-xl flex-wrap gap-x-5 gap-y-2 text-sm font-medium text-[#7A5438] md:mt-6">
             <span>{{ t('homePage.hero.keywords.waterPaint') }}</span>
             <span>{{ t('homePage.hero.keywords.oxygen') }}</span>
             <span>{{ t('homePage.hero.keywords.material') }}</span>
             <span>{{ t('homePage.hero.keywords.marketing') }}</span>
           </div>
-          <div class="mt-10 flex flex-col gap-3 sm:flex-row">
+          <div class="mt-7 flex flex-col gap-3 sm:flex-row md:mt-10">
             <NuxtLinkLocale
               class="inline-flex h-12 items-center justify-center gap-2 bg-[#D2B574] px-6 text-sm font-medium text-[#171512] transition hover:bg-[#E5CC8F]"
               to="/contact"
@@ -175,7 +175,7 @@ useSchemaOrg(computed(() => [
             </NuxtLinkLocale>
           </div>
 
-          <div class="motion-safe:animate-[paterson-fade-up_640ms_cubic-bezier(0.22,1,0.36,1)_160ms_both] mt-14 grid max-w-xl grid-cols-2 gap-3 sm:grid-cols-4">
+          <div class="motion-safe:animate-[paterson-fade-up_640ms_cubic-bezier(0.22,1,0.36,1)_160ms_both] mt-8 grid max-w-xl grid-cols-2 gap-3 sm:grid-cols-4 md:mt-14">
             <div
               v-for="(metric, index) in heroMetrics"
               :key="metric.label"
@@ -777,6 +777,7 @@ useSchemaOrg(computed(() => [
   mix-blend-mode: multiply;
   -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.4) 46%, transparent 78%);
   mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.4) 46%, transparent 78%);
+  animation: paterson-pattern-float 8s ease-in-out infinite alternate;
 }
 
 .hero-desktop-pattern {
@@ -785,6 +786,7 @@ useSchemaOrg(computed(() => [
   mix-blend-mode: multiply;
   -webkit-mask-image: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0.68) 76%, transparent 100%);
   mask-image: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0.68) 76%, transparent 100%);
+  animation: paterson-pattern-float 9s ease-in-out infinite alternate;
 }
 
 .home-soft-stat,
@@ -1042,8 +1044,20 @@ useSchemaOrg(computed(() => [
   }
 }
 
+@keyframes paterson-pattern-float {
+  from {
+    transform: translate3d(0, -4px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 4px, 0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .paterson-hero-image,
+  .hero-mobile-pattern,
+  .hero-desktop-pattern,
   .wellness-airflow-svg,
   .home-soft-stat,
   .home-soft-card,

@@ -30,7 +30,7 @@ useAppSeoMeta({
 
 <template>
   <div>
-    <section class="section pt-28">
+    <section class="section py-10 md:py-14">
       <div class="section-container">
         <NuxtLinkLocale to="/data" class="mb-8 inline-flex items-center gap-2 text-sm font-semibold text-text-secondary transition hover:text-brand-primary">
           <UIcon name="i-lucide-arrow-left" class="size-4" />
