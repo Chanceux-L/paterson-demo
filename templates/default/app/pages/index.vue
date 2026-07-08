@@ -145,20 +145,20 @@ useSchemaOrg(computed(() => [
             <span class="h-px w-10 bg-[#B99A63]"></span>
             {{ t('homePage.hero.badge') }}
           </p>
-          <h1 class="mt-5 max-w-3xl text-4xl font-semibold leading-tight text-[#24211D] md:mt-8 md:text-6xl xl:text-7xl">
+          <h1 class="mt-5 max-w-3xl text-4xl font-semibold leading-none text-[#24211D] md:mt-7 md:text-6xl xl:text-7xl">
             <span class="block">{{ t('homePage.hero.titleLine1') }}</span>
             <span class="block">{{ t('homePage.hero.titleLine2') }}</span>
           </h1>
-          <p class="mt-5 max-w-xl text-base leading-7 text-[#6F6A61] md:mt-7 md:text-lg md:leading-8">
+          <p class="mt-5 max-w-xl text-base leading-7 text-[#6F6A61] md:mt-6 md:text-lg md:leading-8">
             {{ t('homePage.hero.subtitle') }}
           </p>
-          <div class="mt-4 flex max-w-xl flex-wrap gap-x-5 gap-y-2 text-sm font-medium text-[#7A5438] md:mt-6">
+          <div class="mt-4 flex max-w-xl flex-wrap gap-x-4 gap-y-2 text-sm font-medium text-[#7A5438] md:mt-5">
             <span>{{ t('homePage.hero.keywords.waterPaint') }}</span>
             <span>{{ t('homePage.hero.keywords.oxygen') }}</span>
             <span>{{ t('homePage.hero.keywords.material') }}</span>
             <span>{{ t('homePage.hero.keywords.marketing') }}</span>
           </div>
-          <div class="mt-7 flex flex-col gap-3 sm:flex-row md:mt-10">
+          <div class="mt-6 flex flex-col gap-3 sm:flex-row md:mt-8">
             <NuxtLinkLocale
               class="inline-flex h-12 items-center justify-center gap-2 bg-[#D2B574] px-6 text-sm font-medium text-[#171512] transition hover:bg-[#E5CC8F]"
               to="/contact"

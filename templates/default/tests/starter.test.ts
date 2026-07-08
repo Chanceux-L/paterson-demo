@@ -99,7 +99,7 @@ test('Paterson pages use localized copy and app SEO wrapper', () => {
   const zhCn = source(templatePath('i18n/locales/zh-CN.ts'));
   assert.match(zhCn, /title: 'Paterson 百得胜水漆整家定制'/);
   assert.match(zhCn, /title: '水漆科技'/);
-  assert.match(source(templatePath('i18n/locales/en.ts')), /title: 'Paterson Waterborne Whole-Home Customization'/);
+  assert.match(source(templatePath('i18n/locales/en.ts')), /title: 'Paterson Eco Home Custom'/);
 });
 
 test('SEO, GEO, OG Image, cookie consent, inquiry, and request modules are preserved', () => {

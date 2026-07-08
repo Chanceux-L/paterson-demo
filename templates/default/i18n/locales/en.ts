@@ -270,10 +270,10 @@ const starter = {
   homePage: {
     hero: {
       badge: 'A core brand under DareGlobal · Stock code 002631',
-      title: 'Paterson Waterborne Whole-Home Customization',
+      title: 'Paterson Eco Home Custom',
       titleLine1: 'Paterson',
-      titleLine2: 'Waterborne Whole-Home Customization',
-      subtitle: 'Founded in 2001, Paterson is an eco whole-home customization company focused on waterborne cabinet, wall, door, and furniture systems. It is a core brand under listed company DareGlobal.',
+      titleLine2: 'Eco Home Custom',
+      subtitle: 'Founded in 2001, Paterson creates eco cabinet, wall, door, and home systems under listed company DareGlobal.',
       ctaLabel: 'Start Franchise Inquiry',
       cta2Label: 'View Brand Strength',
       imageAlt: 'Paterson waterborne whole-home custom living space',
@@ -281,9 +281,9 @@ const starter = {
       oxygenValue: 'Wellness Oxygen',
       oxygenLabel: 'Intelligent bedroom and indoor-air standards',
       keywords: {
-        waterPaint: 'Waterborne chain',
-        oxygen: 'Wellness oxygen',
-        material: 'Carbon fiber',
+        waterPaint: 'Waterborne',
+        oxygen: 'Wellness',
+        material: 'Carbon',
         marketing: 'Marketing'
       },
       metrics: [
