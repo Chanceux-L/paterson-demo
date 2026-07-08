@@ -566,36 +566,73 @@ const starter = {
       description: 'Learn about Paterson waterborne chain, 3D intelligent coating line, factory 4.0 waterborne upgrade, and eco whole-home customization technology.',
       keywords: 'waterborne technology,cabinet wall door system,intelligent coating,eco whole-home customization'
     },
-    header: {
-      title: 'Waterborne Technology',
-      subtitle: 'From materials and coating to products and terminal delivery, Paterson uses a closed-loop waterborne chain to support eco whole-home customization.'
-    },
-    intro: {
-      heading: 'Building environmental value into process and delivery',
-      paragraphs: [
-        'Waterborne technology is not a slogan. It is a capability chain built from materials, coating process, product systems, and terminal delivery.',
-        'Paterson’s waterborne 3D intelligent coating line, factory 4.0 upgrade, and standard-setting credentials help eco whole-home customization present quality more consistently.'
-      ],
-      imagePlaceholder: 'Waterborne technology space'
-    },
-    pillars: {
-      heading: 'Waterborne Chain Capability',
-      items: [
-        { title: 'Waterborne Materials', description: 'Materials built around waterborne customization reduce health concerns from traditional coating.' },
-        { title: 'Intelligent Coating', description: 'A waterborne 3D intelligent coating line improves surface quality, stability, and scalable delivery.' },
-        { title: 'Whole-Home Coordination', description: 'Cabinets, walls, doors, and furniture share one style language and environmental standard.' },
-        { title: 'Terminal Trust', description: 'Standards, certifications, spatial experiences, and clear explanations help franchise stores build customer trust.' }
+    hero: {
+      eyebrow: 'Waterborne Technology',
+      titleLine1: 'Environmental value',
+      titleLine2: 'built into delivery',
+      subtitle: 'From waterborne materials and continuous coating to cabinet-wall-door applications, Paterson uses a closed-loop waterborne chain to support eco whole-home customization that stores can clearly present and customers can feel.',
+      primaryCta: 'Ask About Franchise',
+      imageAlt: 'Paterson waterborne intelligent coating and whole-home customization process',
+      metrics: [
+        { value: '3D', label: 'Waterborne intelligent coating line' },
+        { value: '4.0', label: 'Factory waterborne upgrade' },
+        { value: '72', label: 'Waterborne process steps' }
       ]
     },
-    values: {
-      heading: 'Value for Franchise Stores',
+    sectionNavAria: 'Waterborne technology page navigation',
+    sectionNav: [
+      { label: 'Capability Chain', href: '#chain' },
+      { label: 'Proof', href: '#proof' },
+      { label: 'Experience', href: '#experience' },
+      { label: 'Store Value', href: '#terminal' }
+    ],
+    chain: {
+      eyebrow: 'Capability Chain',
+      title: 'A closed waterborne loop from materials and coating to cabinet-wall-door systems',
+      description: 'Waterborne technology is not a single selling point. It is a capability chain across material selection, coating process, product systems, and store explanation, presented here as a clear and conversion-oriented advantage.',
+      nodes: [
+        { icon: 'i-lucide-droplets', title: 'Waterborne Materials', description: 'Materials built around waterborne customization reduce odor and health concerns from traditional coating.' },
+        { icon: 'i-lucide-factory', title: 'Continuous Intelligent Coating', description: 'The waterborne 3D intelligent coating line and factory 4.0 upgrade make surface quality, stability, and scalable delivery more controllable.' },
+        { icon: 'i-lucide-panels-top-left', title: 'Cabinet-Wall-Door Application', description: 'Waterborne wardrobes, wall panels, doors, and whole-home spaces work together so the process lands in real interiors.' },
+        { icon: 'i-lucide-badge-check', title: 'Standards and Store Explanation', description: 'Industry standards, certifications, and spatial samples help franchise stores explain value and build customer trust.' }
+      ]
+    },
+    proof: {
+      eyebrow: 'Proof',
+      title: 'Technology claims need sources, visuals, and outcomes',
+      description: 'Paterson official news reports expert recognition for high-hardness fully waterborne coated home panels and related key technologies, connecting continuous waterborne coating, coating-film performance, and green manufacturing.',
+      imageAlt: 'Paterson waterborne core technology certification news',
+      captionEyebrow: 'Waterborne Core Technology',
+      caption: 'Research collaboration and expert recognition translate the environmental claim into a demonstrable process capability.',
+      cards: [
+        { value: 'Leading', label: 'Recognized Result', description: 'Official news presents expert recognition of the waterborne core technology result, strengthening technology credibility.' },
+        { value: 'Six-Side', label: 'Continuous Coating', description: 'A six-side integrated coating story gives cabinet-wall-door applications a more complete process narrative.' },
+        { value: '2H', label: 'Film Hardness', description: 'Together with adhesion, heat resistance, moisture resistance, and stain resistance, this answers durability and texture concerns.' }
+      ]
+    },
+    experience: {
+      eyebrow: 'Experience',
+      title: 'Technology must return to a visible home',
+      description: 'The technology page should not only show factory concepts. It should connect waterborne process with wardrobes, bedrooms, cabinet-wall-door systems, and lifestyle scenes so stores know how to explain the value.',
       items: [
-        { title: 'Clearer Differentiation', description: 'Waterborne and wellness concepts help stores stand apart from ordinary whole-home customization shops.' },
-        { title: 'More Stable Product Expression', description: 'Process and supply-chain capability make design effect, surface quality, and delivery standards more consistent.' },
-        { title: 'A Health Story Customers Understand', description: 'Materials, air, bedrooms, and whole-home spaces connect into a more understandable healthy-home value.' }
+        { title: 'Waterborne Wardrobe', description: 'No-added-formaldehyde substrate, waterborne wood veneer, and a 72-step coating process create a product story customers can remember.', image: '/paterson/product-water-paint-wardrobe.webp', tags: ['Wardrobe', 'Skin-Friendly', 'Move-In Ready'] },
+        { title: 'Healthy Bedroom Space', description: 'Wardrobes, headboards, wall panels, and storage systems present the healthy-bedroom claim in a real living scene.', image: '/paterson/product-bedroom-system.webp', tags: ['Bedroom', 'Cabinet-Wall', 'Healthy Home'] },
+        { title: 'Standard and Healthy Home', description: 'Furniture standards and waterborne healthy-home messaging strengthen store explanation around environmental value, durability, and spatial quality.', image: '/paterson/news-furniture-standard.webp', tags: ['Standards', 'Eco Value', 'Store Story'] }
+      ]
+    },
+    terminal: {
+      eyebrow: 'Store Value',
+      title: 'Helping franchise stores explain differentiation clearly',
+      description: 'The point of this page is not to stack technical terms. It helps potential partners judge whether the product can be displayed, explained, and turned into a durable reason to choose Paterson.',
+      items: [
+        { icon: 'i-lucide-store', title: 'A stronger showroom theme', description: 'Waterborne wardrobes, healthy bedrooms, and cabinet-wall-door systems can organize showroom flow around tangible environmental value.' },
+        { icon: 'i-lucide-message-square-text', title: 'More evidence for sales conversations', description: 'Materials, process, standards, and official news create a structured explanation path beyond generic eco slogans.' },
+        { icon: 'i-lucide-sparkles', title: 'Texture customers can feel', description: 'Skin-friendly touch, wood veneer grain, coating performance, and unified whole-home style become a direct store experience.' },
+        { icon: 'i-lucide-trending-up', title: 'A clearer franchise memory point', description: 'Waterborne whole-home systems, wellness spaces, and marketing support create a stronger reason to join than ordinary whole-home customization.' }
       ]
     },
     cta: {
+      eyebrow: 'Waterborne Whole-Home Franchise',
       title: 'Interested in waterborne whole-home customization franchise?',
       subtitle: 'Our team can introduce product systems, store setup support, and operation assistance based on your city and resources.',
       button: 'Submit Inquiry'
