@@ -127,6 +127,13 @@ useSchemaOrg(computed(() => [
           :alt="t('homePage.hero.imageAlt')"
         />
       </div>
+      <div class="hero-mobile-image-panel absolute inset-x-0 top-0 h-full lg:hidden" aria-hidden="true">
+        <img
+          class="hero-mobile-image size-full object-cover object-[64%_28%]"
+          :src="publicAsset('/paterson/oxygen-space-bg.webp')"
+          alt=""
+        />
+      </div>
       <img
         class="hero-mobile-pattern absolute inset-x-0 top-0 h-full w-full object-cover opacity-35 lg:hidden"
         :src="publicAsset('/paterson/hero-mobile-pattern.svg')"
@@ -771,12 +778,55 @@ useSchemaOrg(computed(() => [
   );
 }
 
+.hero-mobile-image-panel {
+  pointer-events: none;
+}
+
+.hero-mobile-image-panel::before,
+.hero-mobile-image-panel::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  content: "";
+}
+
+.hero-mobile-image-panel::before {
+  background:
+    linear-gradient(180deg, rgba(244, 241, 234, 0.66) 0%, rgba(244, 241, 234, 0.82) 38%, #f4f1ea 79%),
+    linear-gradient(90deg, #f4f1ea 0%, rgba(244, 241, 234, 0.9) 34%, rgba(244, 241, 234, 0.58) 100%);
+}
+
+.hero-mobile-image-panel::after {
+  background:
+    radial-gradient(circle at 86% 18%, rgba(185, 154, 99, 0.1) 0 24%, transparent 25%),
+    radial-gradient(circle at 0% 35%, transparent 0 13px, rgba(185, 154, 99, 0.18) 14px 15px, transparent 16px),
+    radial-gradient(circle at 5% 68%, rgba(122, 84, 56, 0.06) 0 7px, transparent 8px),
+    radial-gradient(circle at 2% 84%, transparent 0 8px, rgba(185, 154, 99, 0.12) 9px 10px, transparent 11px),
+    radial-gradient(circle at 96% 48%, transparent 0 10px, rgba(185, 154, 99, 0.12) 11px 12px, transparent 13px),
+    radial-gradient(circle at 100% 74%, rgba(122, 84, 56, 0.05) 0 9px, transparent 10px),
+    radial-gradient(circle at 88% 78%, transparent 0 9px, rgba(185, 154, 99, 0.1) 10px 11px, transparent 12px),
+    radial-gradient(circle at 78% 91%, rgba(122, 84, 56, 0.05) 0 6px, transparent 7px);
+  opacity: 0.72;
+  animation: paterson-mobile-orbits 7s ease-in-out infinite alternate;
+}
+
+.hero-mobile-image {
+  filter: brightness(1.12) saturate(0.84) contrast(0.92);
+  opacity: 0.46;
+  transform: scale(1.04);
+  transform-origin: 66% 28%;
+  animation: paterson-hero-kenburns 14s ease-out both;
+  -webkit-mask-image: linear-gradient(180deg, black 0%, rgba(0, 0, 0, 0.82) 54%, transparent 86%);
+  mask-image: linear-gradient(180deg, black 0%, rgba(0, 0, 0, 0.82) 54%, transparent 86%);
+}
+
 .hero-mobile-pattern {
   pointer-events: none;
-  opacity: 0.68;
+  opacity: 0.82;
   mix-blend-mode: multiply;
-  -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.4) 46%, transparent 78%);
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.4) 46%, transparent 78%);
+  -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.54) 50%, transparent 86%);
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.54) 50%, transparent 86%);
   animation: paterson-pattern-float 8s ease-in-out infinite alternate;
 }
 
@@ -1054,8 +1104,19 @@ useSchemaOrg(computed(() => [
   }
 }
 
+@keyframes paterson-mobile-orbits {
+  from {
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .paterson-hero-image,
+  .hero-mobile-image-panel::after,
   .hero-mobile-pattern,
   .hero-desktop-pattern,
   .wellness-airflow-svg,
