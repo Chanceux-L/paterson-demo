@@ -73,7 +73,7 @@ useSchemaOrg(computed(() => [
 
 <template>
   <main class="news-center-page bg-[#F4F1EA] text-[#24211D]">
-    <section class="relative overflow-hidden bg-[#171512] px-5 pt-0 text-white sm:px-8 lg:px-14">
+    <section class="relative overflow-hidden bg-[#241E19] px-5 pt-0 text-white sm:px-8 lg:bg-[#171512] lg:px-14">
       <img
         class="news-hero-image absolute inset-0 h-full w-full object-cover opacity-76"
         :src="publicAsset('/paterson/news-hero-banner.webp')"
@@ -82,8 +82,8 @@ useSchemaOrg(computed(() => [
         fetchpriority="high"
         loading="eager"
       />
-      <div class="absolute inset-0 bg-linear-to-b from-[#171512]/30 via-[#171512]/54 to-[#171512] md:bg-linear-to-r md:from-[#171512]/94 md:via-[#171512]/62 md:to-[#171512]/20"></div>
-      <div class="absolute inset-0 bg-linear-to-t from-[#171512] via-[#171512]/72 to-[#171512]/14 md:via-transparent md:to-[#171512]/22"></div>
+      <div class="absolute inset-0 bg-linear-to-b from-[#241E19]/18 via-[#3D3128]/42 to-[#241E19] md:bg-linear-to-r md:from-[#171512]/94 md:via-[#171512]/62 md:to-[#171512]/20"></div>
+      <div class="absolute inset-0 bg-linear-to-t from-[#241E19] via-[#332A22]/70 to-transparent md:via-transparent md:to-[#171512]/22"></div>
 
       <div class="relative mx-auto grid max-w-7xl gap-10 py-12 md:min-h-[560px] md:py-16 lg:min-h-[600px] lg:grid-cols-[0.86fr_0.74fr] lg:items-center">
         <div class="max-w-3xl motion-safe:animate-[news-fade-up_560ms_cubic-bezier(0.22,1,0.36,1)_both]">
@@ -326,6 +326,18 @@ useSchemaOrg(computed(() => [
 .news-hero-image {
   animation: news-hero-kenburns 12s ease-out both;
   transform-origin: 50% 52%;
+}
+
+@media (max-width: 767px) {
+  .news-hero-image {
+    bottom: auto;
+    height: min(52vh, 26rem);
+    object-position: center top;
+    animation: none;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 58%, rgba(0, 0, 0, 0.82) 70%, transparent 100%);
+    mask-image: linear-gradient(180deg, #000 0%, #000 58%, rgba(0, 0, 0, 0.82) 70%, transparent 100%);
+    transform: none;
+  }
 }
 
 .news-hero-stat {

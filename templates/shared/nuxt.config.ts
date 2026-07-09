@@ -346,6 +346,7 @@ export default defineNuxtConfig({
         'lucide:chevron-down',
         'lucide:chevron-right',
         'lucide:chevron-up',
+        'lucide:package-search',
         'lucide:sliders-horizontal',
         'lucide:x'
       ]

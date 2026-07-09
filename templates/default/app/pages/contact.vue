@@ -73,8 +73,8 @@ useAppSeoMeta({
 
 <template>
   <main class="franchise-page bg-[#F4F1EA] text-[#24211D]">
-    <section class="relative overflow-hidden bg-[#171512] px-5 pt-0 text-white sm:px-8 lg:px-14">
-      <picture class="absolute inset-0">
+    <section class="relative overflow-hidden bg-[#211D19] px-5 pt-0 text-white sm:px-8 lg:bg-[#171512] lg:px-14">
+      <picture class="franchise-hero-picture absolute inset-0">
         <source media="(max-width: 767px)" :srcset="publicAsset('/paterson/product-mobile-banner.webp')" />
         <img
           class="franchise-hero-image absolute inset-0 size-full object-cover object-center opacity-88"
@@ -85,8 +85,8 @@ useAppSeoMeta({
           loading="eager"
         />
       </picture>
-      <div class="absolute inset-0 bg-linear-to-b from-[#171512]/28 via-[#171512]/46 to-[#171512] md:bg-linear-to-r md:from-[#171512]/94 md:via-[#171512]/70 md:to-[#171512]/18"></div>
-      <div class="absolute inset-0 bg-linear-to-t from-[#171512] via-[#171512]/72 to-[#171512]/12 md:from-[#171512]/90 md:via-[#171512]/14 md:to-[#171512]/20"></div>
+      <div class="absolute inset-0 bg-linear-to-b from-[#211D19]/12 via-[#41382F]/34 to-[#211D19] md:bg-linear-to-r md:from-[#171512]/94 md:via-[#171512]/70 md:to-[#171512]/18"></div>
+      <div class="absolute inset-0 bg-linear-to-t from-[#211D19] via-[#2F2923]/66 to-transparent md:from-[#171512]/90 md:via-[#171512]/14 md:to-[#171512]/20"></div>
 
       <div class="relative mx-auto grid max-w-7xl gap-10 py-12 md:min-h-[620px] md:py-16 lg:min-h-[660px] lg:grid-cols-[0.9fr_0.7fr] lg:items-center">
         <div class="max-w-3xl motion-safe:animate-[franchise-fade-up_560ms_cubic-bezier(0.22,1,0.36,1)_both]">
@@ -317,6 +317,18 @@ useAppSeoMeta({
 .franchise-hero-image {
   animation: franchise-hero-kenburns 12s ease-out both;
   transform-origin: 52% 52%;
+}
+
+@media (max-width: 767px) {
+  .franchise-hero-image {
+    bottom: auto;
+    height: min(52vh, 26rem);
+    object-position: center top;
+    animation: none;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 58%, rgba(0, 0, 0, 0.82) 70%, transparent 100%);
+    mask-image: linear-gradient(180deg, #000 0%, #000 58%, rgba(0, 0, 0, 0.82) 70%, transparent 100%);
+    transform: none;
+  }
 }
 
 .franchise-hero-stat {

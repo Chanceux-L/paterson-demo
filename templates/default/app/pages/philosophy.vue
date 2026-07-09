@@ -74,7 +74,7 @@ useAppSeoMeta({
 
 <template>
   <main class="water-paint-page bg-[#F4F1EA] text-[#24211D]">
-    <section class="relative overflow-hidden bg-[#171512] px-5 pt-0 text-white sm:px-8 lg:px-14">
+    <section class="relative overflow-hidden bg-[#241F1A] px-5 pt-0 text-white sm:px-8 lg:bg-[#171512] lg:px-14">
       <img
         class="water-paint-hero-image absolute inset-0 h-full w-full object-cover opacity-74"
         :src="publicAsset('/paterson/technology-wood-factory-bg.webp')"
@@ -83,8 +83,8 @@ useAppSeoMeta({
         fetchpriority="high"
         loading="eager"
       />
-      <div class="absolute inset-0 bg-linear-to-b from-[#171512]/30 via-[#171512]/52 to-[#171512] md:bg-linear-to-r md:from-[#171512]/94 md:via-[#171512]/64 md:to-[#171512]/24"></div>
-      <div class="absolute inset-0 bg-linear-to-t from-[#171512] via-[#171512]/72 to-[#171512]/16 md:via-transparent md:to-[#171512]/24"></div>
+      <div class="absolute inset-0 bg-linear-to-b from-[#241F1A]/18 via-[#3E342A]/44 to-[#241F1A] md:bg-linear-to-r md:from-[#171512]/94 md:via-[#171512]/64 md:to-[#171512]/24"></div>
+      <div class="absolute inset-0 bg-linear-to-t from-[#241F1A] via-[#332B23]/70 to-transparent md:via-transparent md:to-[#171512]/24"></div>
 
       <div class="relative mx-auto grid max-w-7xl gap-10 py-12 md:min-h-[620px] md:py-16 lg:min-h-[640px] lg:grid-cols-[0.84fr_0.76fr] lg:items-center">
         <div class="max-w-3xl motion-safe:animate-[water-paint-fade-up_560ms_cubic-bezier(0.22,1,0.36,1)_both]">
@@ -372,6 +372,18 @@ useAppSeoMeta({
 .water-paint-hero-image {
   animation: water-paint-hero-kenburns 12s ease-out both;
   transform-origin: 52% 52%;
+}
+
+@media (max-width: 767px) {
+  .water-paint-hero-image {
+    bottom: auto;
+    height: min(52vh, 26rem);
+    object-position: center top;
+    animation: none;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 58%, rgba(0, 0, 0, 0.82) 70%, transparent 100%);
+    mask-image: linear-gradient(180deg, #000 0%, #000 58%, rgba(0, 0, 0, 0.82) 70%, transparent 100%);
+    transform: none;
+  }
 }
 
 .water-paint-hero-stat,

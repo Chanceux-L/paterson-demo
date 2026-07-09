@@ -125,7 +125,7 @@ useAppSeoMeta({
 
 <template>
   <main class="product-system-page bg-[#F4F1EA] text-[#24211D]">
-    <section class="relative overflow-hidden bg-[#171512] px-5 pt-0 text-white sm:px-8 lg:px-14">
+    <section class="relative overflow-hidden bg-[#211D19] px-5 pt-0 text-white sm:px-8 lg:bg-[#171512] lg:px-14">
       <picture class="absolute inset-0">
         <source media="(max-width: 767px)" :srcset="publicAsset('/paterson/product-mobile-banner.webp')" />
         <img
@@ -137,8 +137,8 @@ useAppSeoMeta({
           loading="eager"
         />
       </picture>
-      <div class="absolute inset-0 bg-linear-to-b from-[#171512]/26 via-[#171512]/46 to-[#171512] md:bg-linear-to-r md:from-[#171512]/92 md:via-[#171512]/58 md:to-[#171512]/18"></div>
-      <div class="absolute inset-0 bg-linear-to-t from-[#171512] via-[#171512]/70 to-[#171512]/14 md:via-transparent md:to-[#171512]/18"></div>
+      <div class="absolute inset-0 bg-linear-to-b from-[#211D19]/12 via-[#41382F]/34 to-[#211D19] md:bg-linear-to-r md:from-[#171512]/92 md:via-[#171512]/58 md:to-[#171512]/18"></div>
+      <div class="absolute inset-0 bg-linear-to-t from-[#211D19] via-[#2F2923]/66 to-transparent md:via-transparent md:to-[#171512]/18"></div>
 
       <div class="relative mx-auto grid max-w-7xl gap-10 py-12 md:min-h-[620px] md:py-16 lg:min-h-[640px] lg:grid-cols-[0.84fr_0.76fr] lg:items-center">
         <div class="max-w-3xl motion-safe:animate-[product-fade-up_560ms_cubic-bezier(0.22,1,0.36,1)_both]">
@@ -269,31 +269,34 @@ useAppSeoMeta({
           </div>
         </div>
 
-        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <article v-for="item in filteredCatalogProducts" :key="item.title" class="group bg-white">
-            <div class="relative overflow-hidden bg-[#171512]">
-              <img class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105" :src="item.image" :alt="item.title" />
-              <div class="absolute left-4 top-4 bg-white/90 px-3 py-1 text-xs font-semibold text-[#7A5438]">
+        <div v-if="filteredCatalogProducts.length > 0" class="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <article v-for="item in filteredCatalogProducts" :key="item.title" class="group w-full overflow-hidden border border-[#E5DED2] bg-[#FBFAF7] transition duration-300 hover:-translate-y-1 hover:border-[#D6C5A5] hover:bg-white hover:shadow-lg hover:shadow-[#7A5438]/10">
+            <div class="relative w-full overflow-hidden bg-[#171512]">
+              <img class="block aspect-[5/3] w-full object-cover transition duration-700 group-hover:scale-105 sm:aspect-[4/3]" :src="item.image" :alt="item.title" />
+              <div class="absolute left-3 top-3 bg-white/92 px-3 py-1.5 text-xs font-semibold text-[#7A5438] shadow-sm shadow-[#7A5438]/8 sm:left-4 sm:top-4">
                 {{ item.category }}
               </div>
             </div>
-            <div class="border-x border-b border-[#E5DED2] px-5 py-4">
+            <div class="px-4 py-4 sm:px-5 sm:py-5">
               <h3 class="text-xl font-semibold leading-tight">
                 {{ item.title }}
               </h3>
               <div class="mt-4 flex flex-wrap gap-2">
-                <span v-for="tag in item.tags" :key="tag" class="bg-[#F4F1EA] px-3 py-1 text-xs font-semibold text-[#7A5438]">
+                <span v-for="tag in item.tags" :key="tag" class="bg-[#F1E7D4]/62 px-3 py-1.5 text-xs font-semibold text-[#7A5438]">
                   {{ tag }}
                 </span>
               </div>
             </div>
           </article>
         </div>
-        <div v-if="filteredCatalogProducts.length === 0" class="mt-10 border border-[#E5DED2] bg-[#FBFAF7] px-6 py-10 text-center">
-          <p class="text-base font-semibold text-[#24211D]">
+        <div v-else class="mt-10 border border-[#E5DED2] bg-[#FBFAF7] px-6 py-8 text-center">
+          <span class="mx-auto grid size-11 place-items-center bg-[#F1E7D4] text-[#7A5438]">
+            <UIcon class="size-5" name="i-lucide-package-search" />
+          </span>
+          <p class="mt-4 text-base font-semibold text-[#24211D]">
             {{ t('dataPage.catalog.emptyTitle') }}
           </p>
-          <p class="mt-3 text-sm leading-6 text-[#6F6A61]">
+          <p class="mt-2 text-sm leading-6 text-[#6F6A61]">
             {{ t('dataPage.catalog.emptyDescription') }}
           </p>
         </div>
@@ -360,6 +363,18 @@ useAppSeoMeta({
 .product-hero-image {
   animation: product-hero-kenburns 12s ease-out both;
   transform-origin: 52% 52%;
+}
+
+@media (max-width: 767px) {
+  .product-hero-image {
+    bottom: auto;
+    height: min(52vh, 26rem);
+    object-position: center top;
+    animation: none;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 58%, rgba(0, 0, 0, 0.82) 70%, transparent 100%);
+    mask-image: linear-gradient(180deg, #000 0%, #000 58%, rgba(0, 0, 0, 0.82) 70%, transparent 100%);
+    transform: none;
+  }
 }
 
 .product-hero-stat {

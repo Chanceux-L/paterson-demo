@@ -286,10 +286,10 @@ onBeforeUnmount(() => {
           <SiteLanguageSwitcher class="w-full" panel-align="start" @select="closeMenu" />
           <NuxtLinkLocale
             :to="sourceRegisterUrl"
-            class="flex min-h-11 items-center gap-2 rounded-md bg-brand-primary px-4 text-sm font-medium text-white transition hover:bg-brand-primary-hover"
+            class="inline-flex h-11 w-fit min-w-36 items-center justify-center gap-2 rounded-md bg-brand-primary px-5 text-sm font-medium text-white transition hover:bg-brand-primary-hover"
             @click="closeMenu"
           >
-            <UIcon name="i-lucide-message-circle" />
+            <UIcon class="size-4" name="i-lucide-message-circle" />
             <span>{{ t('nav.memberCenter') }}</span>
           </NuxtLinkLocale>
           <a class="text-sm font-medium text-text-secondary transition hover:text-brand-primary" :href="`tel:${phone}`">

@@ -73,7 +73,7 @@ useAppSeoMeta({
 
 <template>
   <main class="brand-strength-page bg-[#F4F1EA] text-[#24211D]">
-    <section class="relative overflow-hidden bg-[#171512] px-5 pt-0 text-white sm:px-8 lg:px-14">
+    <section class="relative overflow-hidden bg-[#2A241F] px-5 pt-0 text-white sm:px-8 lg:bg-[#171512] lg:px-14">
       <img
         class="brand-hero-image absolute inset-0 h-full w-full object-cover opacity-72"
         :src="publicAsset('/paterson/brand-hero-banner.webp')"
@@ -82,8 +82,8 @@ useAppSeoMeta({
         fetchpriority="high"
         loading="eager"
       />
-      <div class="absolute inset-0 bg-linear-to-b from-[#171512]/26 via-[#171512]/48 to-[#171512] md:bg-linear-to-r md:from-[#171512]/92 md:via-[#171512]/66 md:to-[#171512]/28"></div>
-      <div class="absolute inset-0 bg-linear-to-t from-[#171512] via-[#171512]/70 to-[#171512]/14 md:via-transparent md:to-[#171512]/20"></div>
+      <div class="absolute inset-0 bg-linear-to-b from-[#2A241F]/16 via-[#4E4337]/38 to-[#2A241F] md:bg-linear-to-r md:from-[#171512]/92 md:via-[#171512]/66 md:to-[#171512]/28"></div>
+      <div class="absolute inset-0 bg-linear-to-t from-[#2A241F] via-[#3A3128]/68 to-transparent md:via-transparent md:to-[#171512]/20"></div>
 
       <div class="relative mx-auto grid max-w-7xl gap-8 py-10 md:min-h-[620px] md:gap-10 md:py-16 lg:min-h-[640px] lg:grid-cols-[0.86fr_0.74fr] lg:items-center lg:py-16">
         <div class="max-w-3xl motion-safe:animate-[brand-fade-up_560ms_cubic-bezier(0.22,1,0.36,1)_both]">
@@ -424,6 +424,18 @@ useAppSeoMeta({
 .brand-hero-image {
   animation: brand-hero-kenburns 12s ease-out both;
   transform-origin: 50% 52%;
+}
+
+@media (max-width: 767px) {
+  .brand-hero-image {
+    bottom: auto;
+    height: min(52vh, 26rem);
+    object-position: center top;
+    animation: none;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 58%, rgba(0, 0, 0, 0.82) 70%, transparent 100%);
+    mask-image: linear-gradient(180deg, #000 0%, #000 58%, rgba(0, 0, 0, 0.82) 70%, transparent 100%);
+    transform: none;
+  }
 }
 
 .brand-glass-stat,
