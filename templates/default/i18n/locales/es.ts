@@ -1,32 +1,32 @@
 const common = {
-  all: 'All',
-  apply: 'Apply',
-  back: 'Back',
+  all: 'Todo',
+  apply: 'Aplicar',
+  back: 'Volver',
   breadcrumb: 'Breadcrumb',
-  clear: 'Clear',
+  clear: 'Limpiar',
   clearAll: 'Clear all',
-  close: 'Close',
-  home: 'Home',
-  inquiry: 'Inquiry',
-  loadMore: 'Load more',
-  loading: 'Loading',
+  close: 'Cerrar',
+  home: 'Inicio',
+  inquiry: 'Consulta',
+  loadMore: 'Ver más',
+  loading: 'Cargando',
   nextImage: 'Next image',
   nextPage: 'Next page',
-  none: 'None',
+  none: 'Ninguno',
   previousImage: 'Previous image',
   previousPage: 'Previous page',
-  showLess: 'Show less',
-  showMore: 'Show more',
+  showLess: 'Menos',
+  showMore: 'Más',
   viewImageIndex: 'View image {index}'
 };
 
 const navItems = [
-  { label: 'Home', english: 'Home', href: '/' },
-  { label: 'Brand', english: 'Brand', href: '/about' },
-  { label: 'Products', english: 'Products', href: '/data' },
-  { label: 'Tech', english: 'Technology', href: '/philosophy' },
-  { label: 'Franchise', english: 'Franchise', href: '/contact' },
-  { label: 'News', english: 'News', href: '/articles' }
+  { label: 'Inicio', english: 'Home', href: '/' },
+  { label: 'Marca', english: 'Brand', href: '/about' },
+  { label: 'Productos', english: 'Products', href: '/data' },
+  { label: 'Tecnología', english: 'Technology', href: '/philosophy' },
+  { label: 'Franquicia', english: 'Franchise', href: '/contact' },
+  { label: 'Noticias', english: 'News', href: '/articles' }
 ];
 
 const pageSeo = {
@@ -79,12 +79,12 @@ const pageSeo = {
       captchaPlaceholder: 'Enter the verification code',
       captchaAlt: 'Verification code image',
       missingCaptcha: 'Please enter the verification code',
-      submit: 'Submit inquiry',
-      submitting: 'Submitting',
-      success: 'Submitted successfully. We will contact you soon.',
+      submit: 'Enviar consulta',
+      submitting: 'Enviando',
+      success: 'Enviado. Te contactaremos pronto.',
       missingPhone: 'Please enter your phone number',
       invalidPhone: 'Please enter a valid phone number',
-      failed: 'Submission failed. Please try again later'
+      failed: 'No se pudo enviar. Inténtalo más tarde.'
     }
   }
 };
@@ -95,64 +95,64 @@ const starter = {
   },
   common,
   languageSwitcher: {
-    aria: 'Switch language',
-    label: 'Language',
-    localeName: 'English',
-    search: 'Search languages',
-    empty: 'No languages available',
+    aria: 'Cambiar idioma',
+    label: 'Idioma',
+    localeName: 'Español',
+    search: 'Buscar idiomas',
+    empty: 'Sin idiomas',
     languages: {
       'zh-CN': {
         label: '简体中文',
-        localeName: 'Simplified Chinese',
-        searchTerms: ['Chinese', 'Mandarin', 'zh']
+        localeName: 'Chino simplificado',
+        searchTerms: ['Chino', 'Mandarin', 'zh']
       },
       'zh-TW': {
         label: '繁體中文',
-        localeName: 'Traditional Chinese',
-        searchTerms: ['Traditional Chinese', 'Chinese', 'tw']
+        localeName: 'Chino tradicional',
+        searchTerms: ['Chino tradicional', 'Chino', 'tw']
       },
       'en': {
         label: 'English',
-        localeName: 'English',
-        searchTerms: ['English', 'en']
+        localeName: 'Inglés',
+        searchTerms: ['Inglés', 'en']
       },
       'ru': {
         label: 'Русский',
-        localeName: 'Russian',
-        searchTerms: ['Russian', 'ru']
+        localeName: 'Ruso',
+        searchTerms: ['Ruso', 'ru']
       },
       'de': {
         label: 'Deutsch',
-        localeName: 'German',
-        searchTerms: ['German', 'de']
+        localeName: 'Alemán',
+        searchTerms: ['Alemán', 'de']
       },
       'it': {
         label: 'Italiano',
-        localeName: 'Italian',
-        searchTerms: ['Italian', 'it']
+        localeName: 'Italiano',
+        searchTerms: ['Italiano', 'it']
       },
       'es': {
         label: 'Español',
-        localeName: 'Spanish',
-        searchTerms: ['Spanish', 'es']
+        localeName: 'Español',
+        searchTerms: ['Español', 'es']
       },
       'fr': {
         label: 'Français',
-        localeName: 'French',
-        searchTerms: ['French', 'fr']
+        localeName: 'Francés',
+        searchTerms: ['Francés', 'fr']
       }
     }
   },
   nav: {
-    homeAria: 'Back to home',
+    homeAria: 'Volver al inicio',
     logoAlt: 'Paterson logo',
     sloganAlt: 'A core brand under Der Future',
-    menu: 'Menu',
-    mainNav: 'Main navigation',
-    memberCenter: 'Inquiry',
-    hotline: 'Franchise hotline',
-    stockLabel: 'Stock code',
-    topInfoBrand: 'Under Der Future',
+    menu: 'Menú',
+    mainNav: 'Navegación',
+    memberCenter: 'Consulta',
+    hotline: 'Línea de franquicia',
+    stockLabel: 'Código bursátil',
+    topInfoBrand: 'Parte de Der Future',
     items: navItems,
     search: {
       scrollTop: 'Back to top'
@@ -272,7 +272,7 @@ const starter = {
   cta: {
     title: 'Ready to discuss Paterson franchise cooperation?',
     description: 'Leave your contact details and our franchise team will introduce Paterson brand strength, store support, and cooperation policy.',
-    action: 'Submit Inquiry',
+    action: 'Enviar consulta',
     contactLabel: 'Franchise Hotline',
     bgText: 'PATERSON'
   },
@@ -308,12 +308,12 @@ const starter = {
   homePage: {
     hero: {
       badge: 'A core brand under Der Future · Stock code 002631',
-      title: 'Paterson Eco Home Custom',
+      title: 'Paterson Hogar Eco',
       titleLine1: 'Paterson',
       titleLine2: 'Eco Home Custom',
       subtitle: 'Founded in 2001, Paterson creates eco cabinet, wall, door, and home systems under listed company Der Future.',
-      ctaLabel: 'Start Franchise Inquiry',
-      cta2Label: 'View Brand Strength',
+      ctaLabel: 'Consultar franquicia',
+      cta2Label: 'Ver marca',
       imageAlt: 'Paterson waterborne whole-home custom living space',
       caption: 'Waterborne chain capability, wellness spaces, carbon-fiber materials, and marketing support shape Paterson’s differentiated franchise system.',
       oxygenValue: 'Wellness Oxygen',
@@ -673,7 +673,7 @@ const starter = {
       eyebrow: 'Waterborne Whole-Home Franchise',
       title: 'Interested in waterborne whole-home customization franchise?',
       subtitle: 'Our team can introduce product systems, store setup support, and operation assistance based on your city and resources.',
-      button: 'Submit Inquiry'
+      button: 'Enviar consulta'
     }
   },
   dataPage: {
@@ -1105,7 +1105,7 @@ const starter = {
       titleLine1: 'Waterborne whole-home',
       titleLine2: 'custom franchise growth',
       subtitle: 'Backed by Der Future, Paterson combines waterborne cabinet-wall-door systems with mature terminal operation support, giving city partners a clear path from product and store setup to marketing and operations.',
-      primaryCta: 'Submit Inquiry',
+      primaryCta: 'Enviar consulta',
       imageAlt: 'Paterson franchise store and support image',
       metrics: [
         { value: '2001', label: 'Brand founded with long-term focus on custom home furnishings' },

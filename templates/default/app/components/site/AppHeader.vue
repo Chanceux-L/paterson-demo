@@ -21,7 +21,7 @@ const menuOpen = ref(false);
 const headerRef = ref<HTMLElement | null>(null);
 
 const navItems = computed<NavItem[]>(() => resolveTranslatedMessageTree(tm('nav.items')) as NavItem[]);
-const isEnglishLocale = computed(() => locale.value === 'en');
+const isCompactHeaderLocale = computed(() => locale.value !== 'zh-CN' && locale.value !== 'zh-TW');
 const preferredMotion = usePreferredReducedMotion();
 const bodyScrollLocked = useScrollLock(import.meta.client ? document.body : null);
 const { visible: cookieConsentVisible } = useCookieConsent();
@@ -154,11 +154,11 @@ onBeforeUnmount(() => {
     class="sticky top-0 z-40 flex h-16 items-center border-b border-border bg-background/95 text-text-primary backdrop-blur transition-shadow duration-200"
     :class="headerScrolled ? 'shadow-sm' : ''"
   >
-    <div class="relative flex h-16 min-w-0 w-full items-center justify-between px-5 sm:px-8 lg:px-14">
+    <div class="relative flex h-16 min-w-0 w-full items-center justify-between px-3 sm:px-8 lg:px-14">
       <NuxtLinkLocale
         :class="cn(
           'flex min-w-0 shrink-0 items-center text-text-primary',
-          isEnglishLocale ? 'shrink-0 lg:max-w-[220px] xl:max-w-none' : 'shrink'
+          isCompactHeaderLocale ? 'shrink-0 lg:max-w-[220px] xl:max-w-none' : 'shrink'
         )"
         to="/"
         :aria-label="t('nav.homeAria')"
@@ -169,7 +169,7 @@ onBeforeUnmount(() => {
       <nav
         :class="cn(
           'pointer-events-auto absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center px-1 lg:flex',
-          isEnglishLocale ? 'gap-1 xl:gap-1.5' : 'gap-1.5 xl:gap-2'
+          isCompactHeaderLocale ? 'gap-1 xl:gap-1.5' : 'gap-1.5 xl:gap-2'
         )"
         :aria-label="t('nav.mainNav')"
       >
@@ -178,7 +178,7 @@ onBeforeUnmount(() => {
           :key="item.href"
           :class="cn(
             'whitespace-nowrap rounded-md py-2 font-medium text-text-secondary transition hover:bg-surface-alt hover:text-text-primary',
-            isEnglishLocale ? 'px-2 text-[13px] xl:px-3 xl:text-sm' : 'px-3 text-sm',
+            isCompactHeaderLocale ? 'px-2 text-[13px] xl:px-3 xl:text-sm' : 'px-3 text-sm',
             isNavItemActive(item) && 'bg-brand-primary/10 text-brand-primary'
           )"
           :to="item.href"
@@ -189,10 +189,10 @@ onBeforeUnmount(() => {
       </nav>
 
       <div class="ml-auto flex shrink-0 items-center gap-2">
-        <a class="inline-flex max-w-[8.5rem] items-center justify-center truncate text-sm font-semibold text-text-secondary transition hover:text-brand-primary sm:max-w-none lg:hidden" :href="`tel:${phone}`">
+        <a class="hidden max-w-[8.5rem] items-center justify-center truncate text-sm font-semibold text-text-secondary transition hover:text-brand-primary sm:inline-flex sm:max-w-none lg:hidden" :href="`tel:${phone}`">
           Tel:{{ phone }}
         </a>
-        <span class="h-6 w-px bg-border lg:hidden"></span>
+        <span class="hidden h-6 w-px bg-border sm:block lg:hidden"></span>
         <div class="hidden sm:block">
           <SiteLanguageSwitcher />
         </div>
@@ -211,7 +211,7 @@ onBeforeUnmount(() => {
           :to="sourceRegisterUrl"
           :class="cn(
             'hidden h-10 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-brand-primary text-sm font-medium text-white transition hover:bg-brand-primary-hover md:inline-flex',
-            isEnglishLocale ? 'px-3 2xl:px-4' : 'px-3 2xl:px-4'
+            isCompactHeaderLocale ? 'px-3 2xl:px-4' : 'px-3 2xl:px-4'
           )"
           :aria-label="t('nav.memberCenter')"
         >
@@ -222,7 +222,7 @@ onBeforeUnmount(() => {
           v-if="!menuOpen"
           id="menuToggle"
           type="button"
-          class="inline-flex h-10 items-center gap-2 rounded-md border border-border bg-background px-3 text-sm font-medium text-text-primary transition hover:border-brand-primary hover:text-brand-primary active:scale-95 lg:hidden"
+          class="inline-flex size-10 items-center justify-center rounded-md border border-border bg-background text-sm font-medium text-text-primary transition hover:border-brand-primary hover:text-brand-primary active:scale-95 sm:w-auto sm:gap-2 sm:px-3 lg:hidden"
           :aria-expanded="menuOpen"
           aria-controls="site-menu"
           :aria-label="t('nav.menu')"

@@ -60,7 +60,7 @@ const comparisonAnswer = computed(() => (
 </script>
 
 <template>
-  <section class="sr-only" aria-labelledby="siteGeoCitationBoosterTitle">
+  <section class="geo-citation-booster" aria-labelledby="siteGeoCitationBoosterTitle">
     <h2 id="siteGeoCitationBoosterTitle">
       Summary / Key Takeaways
     </h2>
@@ -109,3 +109,15 @@ const comparisonAnswer = computed(() => (
     </table>
   </section>
 </template>
+
+<style scoped>
+.geo-citation-booster {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: normal;
+}
+</style>

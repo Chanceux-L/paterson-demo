@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { Article } from '#shared-template/types/articles';
-import { sanitizeHtml } from '#shared-template/utils/sanitize-html';
 
 type LocalArticle = Article & {
   content?: string[];
@@ -36,7 +35,7 @@ const fallbackArticle = computed(() => localArticles.value.find(item => item.slu
 const article = computed<LocalArticle | null>(() => fallbackArticle.value);
 const articleContent = computed(() => '');
 const localArticleContent = computed(() => article.value?.content || []);
-const sanitizedArticleContent = computed(() => sanitizeHtml(articleContent.value));
+const { data: sanitizedArticleContent } = await useSanitizedHtml(articleContent);
 const articleTitle = computed(() => article.value?.title || '');
 const articleDescription = computed(() => article.value?.intro || '');
 const articleVideo = computed(() => article.value?.video || '');

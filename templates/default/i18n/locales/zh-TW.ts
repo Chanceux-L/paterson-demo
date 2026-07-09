@@ -1,32 +1,32 @@
 const common = {
   all: '全部',
-  apply: '应用',
+  apply: '套用',
   back: '返回',
-  breadcrumb: '面包屑导航',
+  breadcrumb: '麵包屑導航',
   clear: '清除',
-  clearAll: '清除全部',
-  close: '关闭',
-  home: '首页',
-  inquiry: '咨询',
-  loadMore: '加载更多',
-  loading: '加载中',
-  nextImage: '下一张图片',
-  nextPage: '下一页',
-  none: '暂无',
-  previousImage: '上一张图片',
-  previousPage: '上一页',
+  clearAll: '全部清除',
+  close: '關閉',
+  home: '首頁',
+  inquiry: '諮詢',
+  loadMore: '載入更多',
+  loading: '載入中',
+  nextImage: '下一張圖片',
+  nextPage: '下一頁',
+  none: '暫無',
+  previousImage: '上一張圖片',
+  previousPage: '上一頁',
   showLess: '收起',
-  showMore: '展开',
-  viewImageIndex: '查看第 {index} 张图片'
+  showMore: '展開',
+  viewImageIndex: '查看第 {index} 張圖片'
 };
 
 const navItems = [
-  { label: '首页', english: 'Home', href: '/' },
-  { label: '品牌实力', english: 'Brand', href: '/about' },
-  { label: '产品系统', english: 'Products', href: '/data' },
+  { label: '首頁', english: 'Home', href: '/' },
+  { label: '品牌實力', english: 'Brand', href: '/about' },
+  { label: '產品系統', english: 'Products', href: '/data' },
   { label: '水漆科技', english: 'Technology', href: '/philosophy' },
   { label: '招商加盟', english: 'Franchise', href: '/contact' },
-  { label: '新闻中心', english: 'News', href: '/articles' }
+  { label: '新聞中心', english: 'News', href: '/articles' }
 ];
 
 const pageSeo = {
@@ -59,7 +59,7 @@ const pageSeo = {
   contact: {
     inquiry: {
       eyebrow: '联系咨询',
-      title: '开启百得胜加盟咨询',
+      title: '開啟百得勝加盟諮詢',
       description: '留下联系方式与意向城市，招商顾问将为你介绍品牌实力、开店支持与合作政策。',
       name: '姓名',
       namePlaceholder: '请输入你的姓名',
@@ -79,31 +79,31 @@ const pageSeo = {
       captchaPlaceholder: '请输入验证码',
       captchaAlt: '验证码图片',
       missingCaptcha: '请填写验证码',
-      submit: '提交咨询',
+      submit: '提交諮詢',
       submitting: '提交中',
-      success: '提交成功，我们会尽快与你联系。',
+      success: '提交成功，我們會儘快與你聯絡。',
       missingPhone: '请填写联系电话',
       invalidPhone: '请输入有效的联系电话',
-      failed: '提交失败，请稍后重试'
+      failed: '提交失敗，請稍後再試'
     }
   }
 };
 
 const starter = {
   site: {
-    name: 'Paterson 百得胜'
+    name: 'Paterson 百得勝'
   },
   common,
   languageSwitcher: {
-    aria: '切换语言',
-    label: '语言',
-    localeName: '简体中文',
-    search: '搜索语言',
-    empty: '暂无可选语言',
+    aria: '切換語言',
+    label: '語言',
+    localeName: '繁體中文',
+    search: '搜尋語言',
+    empty: '暫無可選語言',
     languages: {
       'zh-CN': {
         label: '简体中文',
-        localeName: '简体中文',
+        localeName: '繁體中文',
         searchTerms: ['中文', '汉语', 'zh']
       },
       'zh-TW': {
@@ -118,41 +118,41 @@ const starter = {
       },
       'ru': {
         label: 'Русский',
-        localeName: '俄语',
-        searchTerms: ['俄语', '俄文', 'ru']
+        localeName: '俄語',
+        searchTerms: ['俄語', '俄文', 'ru']
       },
       'de': {
         label: 'Deutsch',
-        localeName: '德语',
-        searchTerms: ['德语', '德文', 'de']
+        localeName: '德語',
+        searchTerms: ['德語', '德文', 'de']
       },
       'it': {
         label: 'Italiano',
-        localeName: '意大利语',
-        searchTerms: ['意大利语', '意文', 'it']
+        localeName: '義大利語',
+        searchTerms: ['義大利語', '意文', 'it']
       },
       'es': {
         label: 'Español',
-        localeName: '西班牙语',
-        searchTerms: ['西班牙语', '西文', 'es']
+        localeName: '西班牙語',
+        searchTerms: ['西班牙語', '西文', 'es']
       },
       'fr': {
         label: 'Français',
-        localeName: '法语',
-        searchTerms: ['法语', '法文', 'fr']
+        localeName: '法語',
+        searchTerms: ['法語', '法文', 'fr']
       }
     }
   },
   nav: {
-    homeAria: '返回首页',
-    logoAlt: 'Paterson 百得胜标识',
-    sloganAlt: '德尔未来旗下主营品牌',
-    menu: '菜单',
-    mainNav: '主导航',
-    memberCenter: '加盟咨询',
-    hotline: '招商热线',
-    stockLabel: '股票代码',
-    topInfoBrand: '德尔未来旗下',
+    homeAria: '返回首頁',
+    logoAlt: 'Paterson 百得勝標誌',
+    sloganAlt: '德爾未來旗下主營品牌',
+    menu: '選單',
+    mainNav: '主導航',
+    memberCenter: '加盟諮詢',
+    hotline: '招商熱線',
+    stockLabel: '股票代碼',
+    topInfoBrand: '德爾未來旗下',
     items: navItems,
     search: {
       scrollTop: '回到顶部'
@@ -1227,7 +1227,7 @@ const starter = {
         keywords: '隐私政策,个人信息保护,Cookie'
       },
       title: '隐私政策',
-      description: '了解我们如何收集、使用、保存和保护个人信息。',
+      description: '了解我們如何收集、使用、保存和保護個人資訊。',
       updatedAt: '2026-07-01',
       sections: [
         {
@@ -1246,7 +1246,7 @@ const starter = {
         keywords: '使用条款,网站条款,服务条款'
       },
       title: '使用条款',
-      description: '查看访问和使用本网站时适用的基本条款。',
+      description: '查看造訪和使用本網站時適用的基本條款。',
       updatedAt: '2026-07-01',
       sections: [
         {

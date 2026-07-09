@@ -274,10 +274,10 @@ useAppSeoMeta({
       </div>
     </section>
 
-    <section id="culture" class="scroll-mt-32 px-5 py-10 sm:px-8 md:py-16 lg:px-14 lg:py-24">
+    <section id="culture" class="scroll-mt-32 overflow-hidden px-5 py-10 sm:px-8 md:py-16 lg:px-14 lg:py-24">
       <div class="mx-auto max-w-7xl">
-        <div class="grid gap-6 md:gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-          <div>
+        <div class="grid min-w-0 gap-6 md:gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center">
+          <div class="min-w-0">
             <p class="text-sm font-semibold text-[#C91F2B]">
               {{ t('aboutPage.culture.eyebrow') }}
             </p>
@@ -302,11 +302,11 @@ useAppSeoMeta({
             </div>
           </div>
 
-          <div class="grid gap-4 sm:grid-cols-2">
+          <div class="grid min-w-0 gap-4 xl:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
             <article
               v-for="item in proofImages"
               :key="item.title"
-              class="group relative aspect-[4/3] overflow-hidden bg-[#171512] text-white sm:min-h-80"
+              class="group relative aspect-[4/3] min-w-0 overflow-hidden bg-[#171512] text-white md:min-h-80"
             >
               <img class="absolute inset-0 size-full object-cover transition duration-700 group-hover:scale-105" :src="item.image" :alt="item.title" />
               <div class="absolute inset-0 bg-linear-to-t from-[#171512]/86 via-[#171512]/20 to-transparent"></div>
@@ -424,6 +424,7 @@ useAppSeoMeta({
 .brand-hero-image {
   animation: brand-hero-kenburns 12s ease-out both;
   transform-origin: 50% 52%;
+  contain: paint;
 }
 
 @media (max-width: 767px) {

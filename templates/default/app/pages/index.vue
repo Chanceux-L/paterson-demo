@@ -943,6 +943,7 @@ useSchemaOrg(computed(() => [
 
 .product-swiper {
   display: flex;
+  max-width: 100%;
   gap: 16px;
   overflow: hidden;
 }
@@ -956,11 +957,13 @@ useSchemaOrg(computed(() => [
 }
 
 .product-swiper-wrap {
+  max-width: 100%;
   overflow: hidden;
 }
 
 .product-swiper swiper-slide {
   flex: 0 0 calc((100% - 16px) / 1.08);
+  max-width: 100%;
   height: auto;
 }
 

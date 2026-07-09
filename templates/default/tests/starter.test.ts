@@ -65,14 +65,16 @@ test('starter routes are scoped to v2-style pages', () => {
   assert.doesNotMatch(source(sharedPath('nuxt.config.ts')), /'\/concept': \{ redirect: '\/philosophy' \}/);
 });
 
-test('only Simplified Chinese and English locales are configured', () => {
+test('Paterson language menu includes the approved locale set', () => {
   const languages = source(sharedPath('app/utils/languages.ts'));
   const localeFiles = readdirSync(templatePath('i18n/locales')).filter(file => file.endsWith('.ts')).sort();
 
-  assert.deepEqual(localeFiles, ['en.ts', 'zh-CN.ts']);
-  assert.match(languages, /code: 'zh-CN'/);
-  assert.match(languages, /code: 'en'/);
-  assert.doesNotMatch(languages, /code: 'de'|code: 'fr'|code: 'ja'|code: 'ar'/);
+  assert.deepEqual(localeFiles, ['de.ts', 'en.ts', 'es.ts', 'fr.ts', 'it.ts', 'ru.ts', 'zh-CN.ts', 'zh-TW.ts']);
+  for (const code of ['zh-CN', 'zh-TW', 'en', 'ru', 'de', 'it', 'es', 'fr']) {
+    assert.match(languages, new RegExp(`code: '${code}'`));
+  }
+  assert.doesNotMatch(languages, /code: 'ar'/);
+  assert.doesNotMatch(languages, /العربية/);
 });
 
 test('Paterson pages use localized copy and app SEO wrapper', () => {
@@ -100,6 +102,15 @@ test('Paterson pages use localized copy and app SEO wrapper', () => {
   assert.match(zhCn, /title: 'Paterson 百得胜水漆整家定制'/);
   assert.match(zhCn, /title: '水漆科技'/);
   assert.match(source(templatePath('i18n/locales/en.ts')), /title: 'Paterson Eco Home Custom'/);
+});
+
+test('header uses compact spacing for non-Chinese locales', () => {
+  const header = source(templatePath('app/components/site/AppHeader.vue'));
+
+  assert.match(header, /const isCompactHeaderLocale = computed\(\(\) => locale\.value !== 'zh-CN' && locale\.value !== 'zh-TW'\);/);
+  assert.doesNotMatch(header, /const isEnglishLocale = computed/);
+  assert.match(header, /isCompactHeaderLocale \? 'gap-1 xl:gap-1\.5' : 'gap-1\.5 xl:gap-2'/);
+  assert.match(header, /isCompactHeaderLocale \? 'px-2 text-\[13px\] xl:px-3 xl:text-sm' : 'px-3 text-sm'/);
 });
 
 test('SEO, GEO, OG Image, cookie consent, inquiry, and request modules are preserved', () => {

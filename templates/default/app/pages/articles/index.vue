@@ -151,12 +151,12 @@ useSchemaOrg(computed(() => [
           </p>
         </div>
 
-        <div v-if="featuredArticle" class="mt-10 grid gap-6 lg:grid-cols-[1.16fr_0.84fr]">
-          <NuxtLinkLocale :to="articlePath(featuredArticle)" class="group block overflow-hidden border border-[#E5DED2] bg-[#F7F4EE] lg:h-full">
+        <div v-if="featuredArticle" class="mt-10 grid min-w-0 gap-6 lg:grid-cols-[minmax(0,1.16fr)_minmax(0,0.84fr)]">
+          <NuxtLinkLocale :to="articlePath(featuredArticle)" class="group block min-w-0 overflow-hidden border border-[#E5DED2] bg-[#F7F4EE] lg:h-full">
             <img class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105 lg:aspect-auto lg:h-full lg:min-h-[30rem]" :src="featuredArticle.image" :alt="featuredArticle.title" />
           </NuxtLinkLocale>
-          <div class="grid gap-5">
-            <NuxtLinkLocale :to="articlePath(featuredArticle)" class="group border border-[#E5DED2] bg-white p-6 transition hover:border-[#D6C5A5] hover:shadow-lg hover:shadow-[#7A5438]/10 md:p-8">
+          <div class="grid min-w-0 gap-5">
+            <NuxtLinkLocale :to="articlePath(featuredArticle)" class="group min-w-0 border border-[#E5DED2] bg-white p-6 transition hover:border-[#D6C5A5] hover:shadow-lg hover:shadow-[#7A5438]/10 md:p-8">
               <div class="flex flex-wrap items-center gap-3 text-sm text-[#A39C90]">
                 <span class="bg-[#F1E7D4] px-3 py-1 font-semibold text-[#7A5438]">{{ featuredArticle.category }}</span>
                 <span>{{ featuredArticle.date }}</span>
@@ -177,10 +177,10 @@ useSchemaOrg(computed(() => [
               v-for="article in secondaryArticles"
               :key="article.slug || article.id"
               :to="articlePath(article)"
-              class="group grid gap-4 border border-[#E5DED2] bg-[#FBFAF7] p-4 transition hover:border-[#D6C5A5] hover:bg-white sm:grid-cols-[9rem_1fr]"
+              class="group grid min-w-0 gap-4 border border-[#E5DED2] bg-[#FBFAF7] p-4 transition hover:border-[#D6C5A5] hover:bg-white sm:grid-cols-[9rem_minmax(0,1fr)]"
             >
               <img class="aspect-[4/3] w-full object-cover" :src="article.image" :alt="article.title" />
-              <div>
+              <div class="min-w-0">
                 <div class="flex flex-wrap items-center gap-2 text-xs text-[#A39C90]">
                   <span class="font-semibold text-[#7A5438]">{{ article.category }}</span>
                   <span>{{ article.date }}</span>

@@ -10,7 +10,13 @@ interface SiteLanguageShape {
 
 export const siteLanguages = [
   { code: 'zh-CN', displayCode: 'ZH', flagIcon: 'i-circle-flags-cn', localeName: '简体中文', file: 'zh-CN.ts', language: 'zh-CN', dir: 'ltr' },
-  { code: 'en', displayCode: 'EN', flagIcon: 'i-circle-flags-us', localeName: 'English', file: 'en.ts', language: 'en', dir: 'ltr' }
+  { code: 'zh-TW', displayCode: 'TW', flagIcon: 'i-circle-flags-tw', localeName: '繁體中文', file: 'zh-TW.ts', language: 'zh-TW', dir: 'ltr' },
+  { code: 'en', displayCode: 'EN', flagIcon: 'i-circle-flags-us', localeName: 'English', file: 'en.ts', language: 'en', dir: 'ltr' },
+  { code: 'ru', displayCode: 'RU', flagIcon: 'i-circle-flags-ru', localeName: 'Русский', file: 'ru.ts', language: 'ru', dir: 'ltr' },
+  { code: 'de', displayCode: 'DE', flagIcon: 'i-circle-flags-de', localeName: 'Deutsch', file: 'de.ts', language: 'de', dir: 'ltr' },
+  { code: 'it', displayCode: 'IT', flagIcon: 'i-circle-flags-it', localeName: 'Italiano', file: 'it.ts', language: 'it', dir: 'ltr' },
+  { code: 'es', displayCode: 'ES', flagIcon: 'i-circle-flags-es', localeName: 'Español', file: 'es.ts', language: 'es', dir: 'ltr' },
+  { code: 'fr', displayCode: 'FR', flagIcon: 'i-circle-flags-fr', localeName: 'Français', file: 'fr.ts', language: 'fr', dir: 'ltr' }
 ] as const satisfies readonly SiteLanguageShape[];
 
 export type SiteLanguage = (typeof siteLanguages)[number];

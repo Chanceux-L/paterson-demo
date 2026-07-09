@@ -202,8 +202,8 @@ test('content resource fields are read from attachment arrays by field_key', () 
   assert.match(articleDataSource, /video\?: string/);
   assert.match(articleDetailSource, /const articleVideo = computed/);
   assert.match(articleDetailSource, /<video[\s\S]*v-if="articleVideo"[\s\S]*controls/);
-  assert.match(articleDetailSource, /import \{ sanitizeHtml \} from '#shared-template\/utils\/sanitize-html';/);
-  assert.match(articleDetailSource, /const sanitizedArticleContent = computed\(\(\) => sanitizeHtml\(articleContent\.value\)\);/);
+  assert.doesNotMatch(articleDetailSource, /import \{ sanitizeHtml \} from '#shared-template\/utils\/sanitize-html';/);
+  assert.match(articleDetailSource, /const \{ data: sanitizedArticleContent \} = await useSanitizedHtml\(articleContent\);/);
   assert.match(articleDetailSource, /v-html="sanitizedArticleContent"/);
   assert.doesNotMatch(articleDetailSource, /v-html="articleContent"/);
 });
