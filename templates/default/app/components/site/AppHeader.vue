@@ -154,31 +154,22 @@ onBeforeUnmount(() => {
     class="sticky top-0 z-40 flex h-16 items-center border-b border-border bg-background/95 text-text-primary backdrop-blur transition-shadow duration-200"
     :class="headerScrolled ? 'shadow-sm' : ''"
   >
-    <div class="mx-auto flex h-full min-w-0 w-full max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-14">
+    <div class="relative flex h-16 min-w-0 w-full items-center justify-between px-5 sm:px-8 lg:px-14">
       <NuxtLinkLocale
         :class="cn(
-          'flex min-w-0 items-center gap-3 text-text-primary',
+          'flex min-w-0 shrink-0 items-center text-text-primary',
           isEnglishLocale ? 'shrink-0 lg:max-w-[220px] xl:max-w-none' : 'shrink'
         )"
         to="/"
         :aria-label="t('nav.homeAria')"
       >
         <img class="h-9 w-auto shrink-0" :src="publicAsset('/paterson/logo-paterson.png')" :alt="t('nav.logoAlt')" />
-        <span class="hidden h-6 w-px bg-border sm:block"></span>
-        <span
-          :class="cn(
-            'hidden max-w-48 truncate text-xs font-medium leading-tight text-text-muted md:block',
-            isEnglishLocale && 'lg:hidden 2xl:block'
-          )"
-        >
-          {{ t('nav.sloganAlt') }}
-        </span>
       </NuxtLinkLocale>
 
       <nav
         :class="cn(
-          'hidden min-w-0 items-center lg:flex',
-          isEnglishLocale ? 'gap-0 xl:gap-1' : 'gap-1'
+          'pointer-events-auto absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center px-1 lg:flex',
+          isEnglishLocale ? 'gap-1 xl:gap-1.5' : 'gap-1.5 xl:gap-2'
         )"
         :aria-label="t('nav.mainNav')"
       >
@@ -197,15 +188,30 @@ onBeforeUnmount(() => {
         </NuxtLinkLocale>
       </nav>
 
-      <div class="flex shrink-0 items-center gap-2">
+      <div class="ml-auto flex shrink-0 items-center gap-2">
+        <a class="inline-flex max-w-[8.5rem] items-center justify-center truncate text-sm font-semibold text-text-secondary transition hover:text-brand-primary sm:max-w-none lg:hidden" :href="`tel:${phone}`">
+          Tel:{{ phone }}
+        </a>
+        <span class="h-6 w-px bg-border lg:hidden"></span>
         <div class="hidden sm:block">
           <SiteLanguageSwitcher />
+        </div>
+        <div class="hidden border-l border-border pl-4 text-[11px] leading-5 text-text-muted 2xl:block">
+          <p class="whitespace-nowrap">
+            {{ t('nav.topInfoBrand') }}
+            <span class="mx-1">{{ t('nav.stockLabel') }}:</span>
+            <span class="font-semibold tracking-[0.18em] text-text-secondary">002631</span>
+          </p>
+          <p class="whitespace-nowrap">
+            {{ t('nav.hotline') }}:
+            <span class="font-semibold tracking-[0.18em] text-text-secondary">{{ phone }}</span>
+          </p>
         </div>
         <NuxtLinkLocale
           :to="sourceRegisterUrl"
           :class="cn(
             'hidden h-10 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-brand-primary text-sm font-medium text-white transition hover:bg-brand-primary-hover md:inline-flex',
-            isEnglishLocale ? 'px-3 xl:px-4' : 'px-4'
+            isEnglishLocale ? 'px-3 2xl:px-4' : 'px-3 2xl:px-4'
           )"
           :aria-label="t('nav.memberCenter')"
         >
@@ -284,6 +290,14 @@ onBeforeUnmount(() => {
 
         <div class="mt-auto grid gap-3 border-t border-border pt-5">
           <SiteLanguageSwitcher class="w-full" panel-align="start" @select="closeMenu" />
+          <div class="grid gap-1 border-l-2 border-brand-primary/70 pl-3 text-sm leading-6">
+            <a class="font-semibold text-text-primary transition hover:text-brand-primary" :href="`tel:${phone}`">
+              {{ t('nav.hotline') }}: {{ phone }}
+            </a>
+            <p class="text-xs text-text-muted">
+              {{ t('nav.topInfoBrand') }} · {{ t('nav.stockLabel') }}: 002631
+            </p>
+          </div>
           <NuxtLinkLocale
             :to="sourceRegisterUrl"
             class="inline-flex h-11 w-fit min-w-36 items-center justify-center gap-2 rounded-md bg-brand-primary px-5 text-sm font-medium text-white transition hover:bg-brand-primary-hover"
@@ -292,9 +306,6 @@ onBeforeUnmount(() => {
             <UIcon class="size-4" name="i-lucide-message-circle" />
             <span>{{ t('nav.memberCenter') }}</span>
           </NuxtLinkLocale>
-          <a class="text-sm font-medium text-text-secondary transition hover:text-brand-primary" :href="`tel:${phone}`">
-            {{ t('nav.hotline') }}: {{ phone }}
-          </a>
         </div>
       </div>
     </aside>

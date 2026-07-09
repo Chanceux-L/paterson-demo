@@ -49,7 +49,7 @@ const supportCards = computed<SupportCard[]>(() => resolveTranslatedMessageTree(
 const proofPoints = computed<ProofPoint[]>(() => resolveTranslatedMessageTree(tm('contactPage.proof.items')) as ProofPoint[]);
 const processSteps = computed<ProcessStep[]>(() => resolveTranslatedMessageTree(tm('contactPage.process.steps')) as ProcessStep[]);
 const contactMethods = computed<ContactMethod[]>(() => [
-  { icon: 'i-lucide-map-pin', label: t('contactPage.labels.address'), value: siteProfile.contact.address.text, href: '' },
+  { icon: 'i-lucide-map-pin', label: t('contactPage.labels.address'), value: t('footer.addressValue'), href: '' },
   { icon: 'i-lucide-phone', label: t('contactPage.labels.phone'), value: phone, href: `tel:${phone}` },
   { icon: 'i-lucide-mail', label: t('contactPage.labels.email'), value: siteProfile.contact.email, href: `mailto:${siteProfile.contact.email}` },
   { icon: 'i-lucide-clock', label: t('contactPage.labels.hours'), value: t('contactPage.hours'), href: '' }

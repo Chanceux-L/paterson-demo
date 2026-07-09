@@ -121,6 +121,8 @@ const starter = {
     mainNav: '主导航',
     memberCenter: '加盟咨询',
     hotline: '招商热线',
+    stockLabel: '股票代码',
+    topInfoBrand: '德尔未来旗下',
     items: navItems,
     search: {
       scrollTop: '回到顶部'
@@ -164,6 +166,12 @@ const starter = {
     followUs: '联系信息',
     email: '邮箱',
     address: '地址',
+    addressValue: '广东省广州市天河区',
+    icp: '粤ICP备2024333088号',
+    policeRecord: '粤公网安备44010602014342号',
+    legalPrefix: '百得胜|德尔未来旗下全资子公司 (股票代码：002631)',
+    legalCopyright: 'Copyright © 百得胜衣柜 广州百得胜智能家居有限公司all rights reserved.',
+    riskNotice: '欢迎有意衣柜加盟，橱柜加盟等全屋定制的有志之士加入我们，百得胜客服电话400-629-2629（投资有风险，选择需谨慎）',
     tagline: '高端家居空间、水漆科技与加盟支持，共同呈现百得胜水漆整家的品牌价值。',
     copyright: '© 2026 Paterson 百得胜. 保留所有权利。',
     privacy: '隐私政策',

@@ -30,6 +30,8 @@ export type SiteProfile = {
   record: {
     icp: string;
     url: string;
+    police: string;
+    policeUrl: string;
   };
   contact: {
     phone: string;
@@ -221,8 +223,10 @@ export const siteProfile = {
     memberCenter: '/contact'
   },
   record: {
-    icp: '粤ICP备相关备案号',
-    url: 'https://beian.miit.gov.cn/'
+    icp: '粤ICP备2024333088号',
+    url: 'https://beian.miit.gov.cn/',
+    police: '粤公网安备44010602014342号',
+    policeUrl: 'https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010602014342'
   },
   contact,
   social: {

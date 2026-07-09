@@ -1,15 +1,16 @@
 <script setup lang="ts">
 import { siteProfile } from '@site-profile';
 
-const { openSettings } = useCookieConsent();
-
 const phone = siteProfile.contact.phone;
 const email = siteProfile.contact.email;
-const address = siteProfile.contact.address.text;
 const icpRecord = siteProfile.record;
 const sourceRegisterUrl = siteProfile.urls.memberCenter;
 const { t, tm } = useI18n();
 const { resolveTranslatedMessageTree } = useI18nMessageTree();
+const publicAsset = usePublicAsset();
+const address = computed(() => t('footer.addressValue'));
+const icpText = computed(() => t('footer.icp'));
+const policeRecordText = computed(() => t('footer.policeRecord'));
 
 type FooterLink = {
   label: string;
@@ -50,10 +51,6 @@ const footerColumns = computed<Array<{ title: string; links: FooterLink[] }>>(()
     }))
   }))
 );
-
-function openCookieConsentSettings() {
-  openSettings();
-}
 </script>
 
 <template>
@@ -149,31 +146,36 @@ function openCookieConsentSettings() {
       </div>
     </div>
     <div class="border-t border-border bg-background px-5 py-6 sm:px-8 lg:px-14">
-      <div class="mx-auto flex max-w-7xl flex-col gap-3 text-xs text-text-muted sm:flex-row sm:items-center sm:justify-between">
-        <p>
-          {{ t('footer.copyright') }}
-        </p>
-        <div class="flex flex-wrap gap-3">
+      <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-6 gap-y-2 text-center text-xs leading-6 text-text-muted">
+        <span>{{ t('footer.legalPrefix') }}</span>
+        <span>{{ t('footer.legalCopyright') }}</span>
+        <div class="inline-flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+          <a
+            class="inline-flex items-center gap-1 transition hover:text-brand-primary"
+            :href="icpRecord.policeUrl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="size-4 shrink-0"
+              :src="publicAsset('/paterson/beian-police.png')"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+            <span>{{ policeRecordText }}</span>
+          </a>
           <a
             class="transition hover:text-brand-primary"
             :href="icpRecord.url"
             target="_blank"
             rel="noopener noreferrer"
-          >{{ icpRecord.icp }}</a>
-          <span>|</span>
-          <NuxtLinkLocale class="transition hover:text-brand-primary" to="/privacy-policy">
-            {{ t('footer.privacy') }}
-          </NuxtLinkLocale>
-          <span>|</span>
-          <NuxtLinkLocale class="transition hover:text-brand-primary" to="/terms-of-use">
-            {{ t('footer.terms') }}
-          </NuxtLinkLocale>
-          <span>|</span>
-          <button type="button" class="transition hover:text-brand-primary" @click="openCookieConsentSettings">
-            {{ t('footer.cookieSettings') }}
-          </button>
+          >{{ icpText }}</a>
         </div>
       </div>
+      <p class="mx-auto mt-2 max-w-7xl text-center text-xs leading-6 text-text-muted">
+        {{ t('footer.riskNotice') }}
+      </p>
     </div>
   </footer>
 </template>

@@ -33,15 +33,15 @@ const pageSeo = {
   home: {
     seo: {
       title: 'Paterson Waterborne Whole-Home Custom Franchise | Eco Cabinet Wall Door Systems',
-      description: 'Founded in 2001, Paterson is a core brand under DareGlobal, focused on waterborne cabinet-wall-door systems and eco whole-home customization with product, supply chain, design, marketing, and digital operation support for franchise partners.',
-      keywords: 'waterborne whole-home customization,eco whole-home customization,whole-home custom franchise,home furnishing franchise,cabinet wall door system,Paterson,DareGlobal,stock code 002631'
+      description: 'Founded in 2001, Paterson is a core brand under Der Future, focused on waterborne cabinet-wall-door systems and eco whole-home customization with product, supply chain, design, marketing, and digital operation support for franchise partners.',
+      keywords: 'waterborne whole-home customization,eco whole-home customization,whole-home custom franchise,home furnishing franchise,cabinet wall door system,Paterson,Der Future,stock code 002631'
     }
   },
   about: {
     seo: {
       title: 'Brand Strength | Paterson Waterborne Whole-Home Customization',
-      description: 'Learn about Paterson brand history, DareGlobal listed-company backing, waterborne technology, and franchise support for whole-home customization.',
-      keywords: 'Paterson brand strength,DareGlobal,waterborne whole-home customization,home furnishing franchise'
+      description: 'Learn about Paterson brand history, Der Future listed-company backing, waterborne technology, and franchise support for whole-home customization.',
+      keywords: 'Paterson brand strength,Der Future,waterborne whole-home customization,home furnishing franchise'
     }
   },
   articles: {
@@ -116,18 +116,20 @@ const starter = {
   nav: {
     homeAria: 'Back to home',
     logoAlt: 'Paterson logo',
-    sloganAlt: 'A core brand under DareGlobal',
+    sloganAlt: 'A core brand under Der Future',
     menu: 'Menu',
     mainNav: 'Main navigation',
     memberCenter: 'Inquiry',
     hotline: 'Franchise hotline',
+    stockLabel: 'Stock code',
+    topInfoBrand: 'Under Der Future',
     items: navItems,
     search: {
       scrollTop: 'Back to top'
     }
   },
   footer: {
-    brandDescription: 'Founded in 2001, Paterson focuses on waterborne cabinet-wall-door systems and eco whole-home customization as a core brand under DareGlobal.',
+    brandDescription: 'Founded in 2001, Paterson focuses on waterborne cabinet-wall-door systems and eco whole-home customization as a core brand under Der Future.',
     slogan: 'A new franchise growth path for waterborne whole-home customization',
     socials: [
       { icon: 'i-lucide-message-circle', label: 'WeChat' },
@@ -164,6 +166,12 @@ const starter = {
     followUs: 'Contact',
     email: 'Email',
     address: 'Address',
+    addressValue: 'Tianhe District, Guangzhou, Guangdong, China',
+    icp: '粤ICP备2024333088号',
+    policeRecord: '粤公网安备44010602014342号',
+    legalPrefix: 'Paterson | A wholly owned subsidiary of Der Future (Stock code: 002631)',
+    legalCopyright: 'Copyright © Paterson Wardrobe Guangzhou Paterson Intelligent Home Co., Ltd. all rights reserved.',
+    riskNotice: 'For wardrobe, cabinet, and whole-home customization franchise inquiries, call Paterson at 400-629-2629. Investment involves risk; please choose carefully.',
     tagline: 'Refined living spaces, waterborne technology, and franchise support present the value of Paterson whole-home customization.',
     copyright: '© 2026 Paterson. All rights reserved.',
     privacy: 'Privacy Policy',
@@ -245,7 +253,7 @@ const starter = {
       shortName: 'Paterson',
       industry: 'Waterborne whole-home customization and home furnishing franchise',
       siteTitle: 'Paterson Waterborne Whole-Home Custom Franchise',
-      siteDescription: 'Founded in 2001, Paterson is a core brand under DareGlobal, focused on waterborne cabinet-wall-door systems and eco whole-home customization.',
+      siteDescription: 'Founded in 2001, Paterson is a core brand under Der Future, focused on waterborne cabinet-wall-door systems and eco whole-home customization.',
       canonical: 'https://www.paterson.com.cn/',
       navigation: navItems.map(item => ({ label: item.label, path: item.href })),
       footerIntro: 'Paterson focuses on waterborne cabinet-wall-door systems and eco whole-home customization, supporting city partners with product, supply chain, design, marketing, and digital operations.',
@@ -269,11 +277,11 @@ const starter = {
   },
   homePage: {
     hero: {
-      badge: 'A core brand under DareGlobal · Stock code 002631',
+      badge: 'A core brand under Der Future · Stock code 002631',
       title: 'Paterson Eco Home Custom',
       titleLine1: 'Paterson',
       titleLine2: 'Eco Home Custom',
-      subtitle: 'Founded in 2001, Paterson creates eco cabinet, wall, door, and home systems under listed company DareGlobal.',
+      subtitle: 'Founded in 2001, Paterson creates eco cabinet, wall, door, and home systems under listed company Der Future.',
       ctaLabel: 'Start Franchise Inquiry',
       cta2Label: 'View Brand Strength',
       imageAlt: 'Paterson waterborne whole-home custom living space',
@@ -288,7 +296,7 @@ const starter = {
       },
       metrics: [
         { value: '2001', label: 'Brand founding year' },
-        { value: '002631', label: 'DareGlobal stock code' },
+        { value: '002631', label: 'Der Future stock code' },
         { value: '4.0', label: 'Waterborne factory upgrade' },
         { value: 'Systems', label: 'Cabinet, wall, and door integration' }
       ]
@@ -319,10 +327,10 @@ const starter = {
     trust: {
       eyebrow: 'About Us',
       title: 'A long-term brand for waterborne whole-home customization',
-      description: 'Founded in 2001, Paterson is a core brand under DareGlobal. The brand has long focused on customized home furnishing, building market trust through waterborne technology, eco whole-home customization, and full-chain service capability.',
+      description: 'Founded in 2001, Paterson is a core brand under Der Future. The brand has long focused on customized home furnishing, building market trust through waterborne technology, eco whole-home customization, and full-chain service capability.',
       stats: [
         { value: '2001', label: 'Paterson was founded and has stayed focused on customized home furnishing.' },
-        { value: 'DareGlobal', label: 'A core brand under a listed company, stock code 002631.' },
+        { value: 'Der Future', label: 'A core brand under a listed company, stock code 002631.' },
         { value: 'Standard Lead', label: 'Technical and standard-setting credentials for waterborne custom home furnishing.' },
         { value: 'Smart Coating', label: 'Waterborne 3D intelligent coating line and factory 4.0 upgrade.' }
       ]
@@ -365,8 +373,8 @@ const starter = {
           tags: ['Cabinet custom', 'Eco-friendly', 'Healthy']
         },
         {
-          title: 'Future Home by ér',
-          description: 'Let children participate in design and create a growth environment that protects body, mind, learning, and imagination.',
+          title: 'Baier Future Home',
+          description: 'A children-focused Paterson line where young users can take part in shaping a room that supports wellbeing, learning, and imagination.',
           image: '/paterson/product-children-room.webp',
           tags: ['Children room', 'Growth space', 'Future home']
         }
@@ -378,7 +386,7 @@ const starter = {
       items: [
         { icon: 'i-lucide-droplets', title: 'Closed-loop Waterborne Chain', description: 'Waterborne 3D intelligent coating line, factory 4.0 waterborne upgrade, and waterborne standard leadership.' },
         { icon: 'i-lucide-wind', title: 'Wellness Oxygen Chain', description: 'Intelligent wellness bedrooms, super health center, and indoor-air standard leadership.' },
-        { icon: 'i-lucide-layers-3', title: 'Carbon Fiber Aerospace Material', description: 'Nine performance advantages and dimensional control that solves key light-luxury customization challenges.' },
+        { icon: 'i-lucide-layers-3', title: 'Carbon-Fiber Aerospace Material', description: 'Nine performance advantages, deformation control within +/-0.3% over 10 meters, and solutions for three major light-luxury customization challenges.' },
         { icon: 'i-lucide-megaphone', title: 'Marketing Innovation', description: 'AI digital enablement, waterborne new retail, and diversified campaign traffic generation.' },
         { icon: 'i-lucide-award', title: 'Enterprise Honors', description: 'Technology certifications, industry awards, standard-setting, and major brand events create credible brand proof.' },
         { icon: 'i-lucide-history', title: 'Long-Term Focus', description: 'Since 2001, Paterson has built brand, product, and service experience in customized home furnishing.' }
@@ -455,7 +463,7 @@ const starter = {
     },
     faq: {
       items: [
-        { question: 'What is Paterson’s core differentiation?', answer: 'Paterson combines waterborne cabinet-wall-door systems, eco whole-home customization, and DareGlobal listed-company backing.' },
+        { question: 'What is Paterson’s core differentiation?', answer: 'Paterson combines waterborne cabinet-wall-door systems, eco whole-home customization, and Der Future listed-company backing.' },
         { question: 'What information is needed for franchise inquiry?', answer: 'Name, phone, target city, budget, and store resources help our franchise team introduce more suitable cooperation policies.' }
       ]
     }
@@ -473,12 +481,12 @@ const starter = {
       eyebrow: 'Brand Strength',
       titleLine1: 'Paterson',
       titleLine2: 'Long-Term Brand Strength',
-      subtitle: 'From its founding in 2001 to becoming a core brand under DareGlobal, Paterson builds long-term trust for city partners through waterborne cabinet-wall-door systems, eco whole-home customization, and headquarters service capability.',
+      subtitle: 'From its founding in 2001 to becoming a core brand under Der Future, Paterson builds long-term trust for city partners through waterborne cabinet-wall-door systems, eco whole-home customization, and headquarters service capability.',
       primaryCta: 'Discuss Franchise Cooperation',
       imageAlt: 'Paterson brand strength visual',
       stats: [
         { value: '2001', label: 'Founded and focused on customized home furnishing' },
-        { value: '002631', label: 'DareGlobal listed-company stock code' },
+        { value: '002631', label: 'Der Future listed-company stock code' },
         { value: 'Waterborne', label: 'Cabinet-wall-door systems and eco customization' },
         { value: 'Full Chain', label: 'Product, supply chain, design, marketing, and operations' }
       ]
@@ -486,15 +494,15 @@ const starter = {
     proof: {
       eyebrow: 'Trust Proof',
       title: 'A Stable Brand Foundation',
-      description: 'Founded in 2001, Paterson is a core brand under DareGlobal. It focuses on waterborne cabinet-wall-door systems and eco whole-home customization, building competitiveness through product innovation, technology, and retail focus.',
+      description: 'Founded in 2001, Paterson is a core brand under Der Future. It focuses on waterborne cabinet-wall-door systems and eco whole-home customization, building competitiveness through product innovation, technology, and retail focus.',
       tags: [
         { label: 'Founded in 2001' },
-        { label: 'Under DareGlobal' },
+        { label: 'Under Der Future' },
         { label: 'Waterborne Systems' },
         { label: 'Eco Whole-Home Customization' }
       ],
       items: [
-        { icon: 'i-lucide-building-2', title: 'Under DareGlobal', description: 'A core brand under a listed company, supported by more stable governance and long-term resources.' },
+        { icon: 'i-lucide-building-2', title: 'Under Der Future', description: 'A core brand under a listed company, supported by more stable governance and long-term resources.' },
         { icon: 'i-lucide-droplets', title: 'Waterborne Credibility', description: 'Materials, intelligent coating, factory waterborne upgrades, and standards shape eco whole-home differentiation.' },
         { icon: 'i-lucide-factory', title: 'Supply-Chain Delivery', description: 'Process, product systems, and delivery standards are aligned so consistent quality reaches more homes.' },
         { icon: 'i-lucide-store', title: 'Operation Support', description: 'City partners receive design, store setup, marketing, training, and digital operation support.' }
@@ -548,7 +556,7 @@ const starter = {
       description: 'Paterson follows long-term eco development, continuously evolving through formaldehyde-free substrates, waterborne processes, healthy air, and light luxury customization.',
       items: [
         { year: '2001', title: 'Brand Founded', description: 'Paterson was founded and entered the customized home furnishing sector.' },
-        { year: '002631', title: 'Listed-Company Backing', description: 'As a core brand under DareGlobal, Paterson is supported by governance and resources from a listed company.' },
+        { year: '002631', title: 'Listed-Company Backing', description: 'As a core brand under Der Future, Paterson is supported by governance and resources from a listed company.' },
         { year: 'Waterborne Tech', title: 'Differentiated Technology Proposition', description: 'Waterborne cabinet-wall-door systems, intelligent coating, and factory upgrades shape eco whole-home advantages.' },
         { year: 'Now', title: 'For City Partners', description: 'Product, supply chain, design, marketing, and digital operation support help whole-home franchise stores launch.' }
       ]
@@ -652,7 +660,7 @@ const starter = {
       imageAlt: 'Paterson product system interior space',
       primaryCta: 'Explore Products',
       metrics: [
-        { value: '3+2', label: 'Waterborne coating process for eco value and surface quality' },
+        { value: '3+2 / 72', label: 'Three primer coats, two finish coats, and 72 waterborne process steps' },
         { value: '6 spaces', label: 'Entry, living, dining, study, bedroom, and balcony scenarios' },
         { value: '23 years', label: 'Long-term focus on eco customization and home delivery' }
       ]
@@ -667,7 +675,7 @@ const starter = {
         { title: 'Wardrobe Customization', description: 'Paterson has focused on eco customization for 23 years and is a chief editor of the waterborne coating group standard. Its waterborne wardrobes use formaldehyde-free substrates, waterborne wood veneer, and a multi-step pure waterborne process for low-odor, ready-living customization.', image: '/paterson/product-wardrobe-intro.webp', points: ['Waterborne wardrobe', 'Formaldehyde-free', 'Ready living'] },
         { title: 'Cabinet Customization', description: 'Paterson cabinets follow long-term eco principles, creating safer and healthier home environments with environmental materials, comfortable aesthetics, and efficient user-centered service.', image: '/paterson/product-cabinet-intro.webp', points: ['Appliance integration', 'Wardrobe-cabinet integration', 'Multi-style system'] },
         { title: 'Paterson Furniture', description: 'Paterson furniture extends the whole-home product system beyond cabinetry, using living, dining, bedroom, and multi-function furniture to align style, storage, and daily experience.', image: '/paterson/product-series-guangyin.webp', points: ['Living dining', 'Furniture', 'Whole-home matching'] },
-        { title: 'Future Home by er', description: 'Future Home by er is built for children’s growth needs, organizing study, storage, sleep, safety, and eco health into a room system that can grow with the child.', image: '/paterson/product-series-yuanye.webp', points: ['Children growth', 'Study storage', 'Healthy space'] }
+        { title: 'Baier Future Home', description: 'Baier Future Home is built for children’s growth needs, organizing study, storage, sleep, safety, and eco health into a room system that can grow with the child.', image: '/paterson/product-series-yuanye.webp', points: ['Children growth', 'Study storage', 'Healthy space'] }
       ]
     },
 
@@ -720,15 +728,15 @@ const starter = {
             { title: 'Couple Gaming Room', category: 'Paterson Furniture', image: '/paterson/product-gaming-bedroom.webp', tags: ['Bedroom', 'Gaming Space', 'Future'] }
           ]
         },
-        'Future Home by er': {
+        'Baier Future Home': {
           filters: [
             { label: 'Age', options: ['All', 'Toddler', 'School Age', 'Teen'] },
             { label: 'Function', options: ['All', 'Study Area', 'Storage Area', 'Sleep Area', 'Growth Space'] }
           ],
           items: [
-            { title: 'Future Home Growth Room', category: 'Future Home by er', image: '/paterson/product-children-room.webp', tags: ['School Age', 'Study Area', 'Growth Space'] },
-            { title: 'Children Storage Study System', category: 'Future Home by er', image: '/paterson/product-bedroom-system.webp', tags: ['Teen', 'Storage Area', 'Study Area'] },
-            { title: 'Healthy Sleep Children Room', category: 'Future Home by er', image: '/paterson/product-water-paint-wardrobe.webp', tags: ['Toddler', 'Sleep Area', 'Growth Space'] }
+            { title: 'Baier Future Home Growth Room', category: 'Baier Future Home', image: '/paterson/product-children-room.webp', tags: ['School Age', 'Study Area', 'Growth Space'] },
+            { title: 'Children Storage Study System', category: 'Baier Future Home', image: '/paterson/product-bedroom-system.webp', tags: ['Teen', 'Storage Area', 'Study Area'] },
+            { title: 'Healthy Sleep Children Room', category: 'Baier Future Home', image: '/paterson/product-water-paint-wardrobe.webp', tags: ['Toddler', 'Sleep Area', 'Growth Space'] }
           ]
         }
       }
@@ -834,7 +842,7 @@ const starter = {
     items: [
       { title: 'Waterborne Wardrobe Customization', summary: 'An eco bedroom system with waterborne process, refined storage, and unified whole-home style.', category: 'Bedroom System', detailPath: '/data/bedroom-system' },
       { title: 'Eco Cabinet Customization', summary: 'Kitchen solutions focused on workflow, storage efficiency, healthy materials, and refined appearance.', category: 'Kitchen System', detailPath: '/data/kitchen-system' },
-      { title: 'Future Home by er', summary: 'Growth spaces for children that combine learning, storage, rest, and imagination.', category: 'Children Space', detailPath: '/data/children-room' }
+      { title: 'Baier Future Home', summary: 'Growth spaces for children that combine learning, storage, rest, and imagination.', category: 'Children Space', detailPath: '/data/children-room' }
     ],
     detail: {
       title: 'Waterborne Whole-Home Customization Solution',
@@ -931,11 +939,11 @@ const starter = {
           date: '2021-04-19',
           browse: 0,
           image: '/paterson/news-activity-pet-ai.webp',
-          intro: 'Paterson’s custom festival combined livestreaming and campaign benefits to create a stronger interactive brand moment.',
+          intro: 'Paterson’s Chong Ai Custom Festival combined livestreaming with tens of millions in campaign gifts to create a stronger interactive brand moment.',
           slug: 'pet-ai-custom-festival',
-          title: 'Paterson custom festival brings host Li Ai to the livestream with campaign benefits',
+          title: 'Paterson Chong Ai Custom Festival brings host Li Ai to the livestream with tens of millions in campaign gifts',
           content: [
-            'The Paterson custom festival used livestreaming, a celebrity host, and campaign benefits to increase consumer participation in brand activities.',
+            'The Paterson Chong Ai Custom Festival used livestreaming, a celebrity host, and tens of millions in campaign gifts to increase consumer participation in brand activities.',
             'The activity connects custom home demand with lighter campaign communication and creates a stronger brand topic during marketing moments.',
             'This activity content complements news flash updates by showing not only industry events, but also user-facing brand interaction.'
           ]
@@ -1066,12 +1074,12 @@ const starter = {
       eyebrow: 'Franchise',
       titleLine1: 'Waterborne whole-home',
       titleLine2: 'custom franchise growth',
-      subtitle: 'Backed by DareGlobal, Paterson combines waterborne cabinet-wall-door systems with mature terminal operation support, giving city partners a clear path from product and store setup to marketing and operations.',
+      subtitle: 'Backed by Der Future, Paterson combines waterborne cabinet-wall-door systems with mature terminal operation support, giving city partners a clear path from product and store setup to marketing and operations.',
       primaryCta: 'Submit Inquiry',
       imageAlt: 'Paterson franchise store and support image',
       metrics: [
         { value: '2001', label: 'Brand founded with long-term focus on custom home furnishings' },
-        { value: '002631', label: 'DareGlobal listed-company stock code' },
+        { value: '002631', label: 'Der Future listed-company stock code' },
         { value: 'Full path', label: 'Product, supply chain, design, store setup, marketing, and operation support' }
       ]
     },
@@ -1093,7 +1101,7 @@ const starter = {
       title: 'From brand strength to store launch, Paterson supports every key step',
       description: 'Paterson supports city partners with brand, product, supply chain, design, marketing, and operation resources so showroom setup, team training, and opening campaigns can move with clearer rhythm.',
       items: [
-        { icon: 'i-lucide-award', title: 'Brand Strength', description: 'Founded in 2001 with DareGlobal backing and waterborne technology credibility, Paterson gives local stores a trusted starting point.' },
+        { icon: 'i-lucide-award', title: 'Brand Strength', description: 'Founded in 2001 with Der Future backing and waterborne technology credibility, Paterson gives local stores a trusted starting point.' },
         { icon: 'i-lucide-layout-grid', title: 'Product Strength', description: 'Waterborne cabinet-wall-door systems, wardrobes, kitchens, and whole-home spaces create a more recognizable showroom experience.' },
         { icon: 'i-lucide-factory', title: 'Supply Chain Strength', description: 'Material, process, production, and delivery capabilities support stable quality as good products enter more homes.' },
         { icon: 'i-lucide-pencil-ruler', title: 'Design Support', description: 'Space plans, showroom image, terminal materials, and product training present whole-home customization through real living scenes.' },
