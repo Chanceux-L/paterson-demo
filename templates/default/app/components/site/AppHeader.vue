@@ -24,6 +24,7 @@ const navItems = computed<NavItem[]>(() => resolveTranslatedMessageTree(tm('nav.
 const isEnglishLocale = computed(() => locale.value === 'en');
 const preferredMotion = usePreferredReducedMotion();
 const bodyScrollLocked = useScrollLock(import.meta.client ? document.body : null);
+const { visible: cookieConsentVisible } = useCookieConsent();
 const showScrollTop = ref(false);
 const headerScrolled = ref(false);
 const route = useRoute();
@@ -308,7 +309,10 @@ onBeforeUnmount(() => {
     <button
       v-if="showScrollTop"
       type="button"
-      class="fixed right-5 bottom-5 z-40 grid size-11 place-items-center rounded-full border border-border bg-background text-text-primary shadow-md transition hover:-translate-y-1 hover:border-brand-primary hover:text-brand-primary active:scale-95 sm:right-8 sm:bottom-8"
+      :class="cn(
+        'fixed right-5 z-40 grid size-11 place-items-center rounded-full border border-border bg-background text-text-primary shadow-md transition hover:-translate-y-1 hover:border-brand-primary hover:text-brand-primary active:scale-95 sm:right-8 sm:bottom-8',
+        cookieConsentVisible ? 'bottom-30' : 'bottom-18'
+      )"
       :aria-label="t('nav.search.scrollTop')"
       @click="scrollToPageTop"
     >
