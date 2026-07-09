@@ -340,34 +340,34 @@ useSchemaOrg(computed(() => [
           </div>
         </div>
 
-        <div class="relative">
-          <div class="absolute left-6 right-6 top-1/2 hidden h-px bg-[#B99A63]/28 md:block"></div>
-          <div class="absolute bottom-8 top-8 left-1/2 hidden w-px bg-[#B99A63]/28 md:block"></div>
-          <div class="grid gap-4 md:grid-cols-2">
-            <article
-              v-for="(node, index) in technologyNodes"
-              :key="node.title"
-              class="group relative min-h-56 border border-white/12 bg-[#211E1A]/78 p-6 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-[#B99A63]/45 hover:bg-[#27231F]/88"
-              :style="{ '--stagger': `${index * 90}ms` }"
-            >
-              <div class="flex items-start justify-between gap-4">
-                <span class="grid size-12 place-items-center bg-[#2F2A23] text-[#B99A63] transition duration-300 group-hover:bg-[#B99A63] group-hover:text-[#171512]">
-                  <UIcon class="size-6" :name="node.icon" />
-                </span>
-                <span class="text-sm font-semibold text-white/24">0{{ index + 1 }}</span>
-              </div>
-              <h3 class="mt-8 text-xl font-semibold leading-snug text-[#F7F4EE]">
-                {{ node.title }}
-              </h3>
-              <p class="mt-4 text-sm leading-7 text-white/64">
-                {{ node.description }}
-              </p>
-            </article>
+        <div class="relative min-w-0">
+          <div class="relative">
+            <div class="grid gap-4 lg:grid-cols-2">
+              <article
+                v-for="(node, index) in technologyNodes"
+                :key="node.title"
+                class="group relative min-h-56 min-w-0 border border-white/12 bg-[#211E1A]/78 p-6 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-[#B99A63]/45 hover:bg-[#27231F]/88"
+                :style="{ '--stagger': `${index * 90}ms` }"
+              >
+                <div class="flex items-start justify-between gap-4">
+                  <span class="grid size-12 place-items-center bg-[#2F2A23] text-[#B99A63] transition duration-300 group-hover:bg-[#B99A63] group-hover:text-[#171512]">
+                    <UIcon class="size-6" :name="node.icon" />
+                  </span>
+                  <span class="text-sm font-semibold text-white/24">0{{ index + 1 }}</span>
+                </div>
+                <h3 class="mt-8 text-xl font-semibold leading-snug text-[#F7F4EE] break-words">
+                  {{ node.title }}
+                </h3>
+                <p class="mt-4 text-sm leading-7 text-white/64 break-words">
+                  {{ node.description }}
+                </p>
+              </article>
+            </div>
           </div>
 
           <div class="mt-5 flex flex-col gap-3 bg-[#F7F4EE] px-5 py-4 text-[#24211D] sm:flex-row sm:items-center sm:justify-between">
-            <span class="text-sm font-semibold">{{ t('homePage.technology.eyebrow') }}</span>
-            <span class="text-sm leading-6 text-[#6F6A61]">{{ t('homePage.technology.summary') }}</span>
+            <span class="shrink-0 text-sm font-semibold">{{ t('homePage.technology.eyebrow') }}</span>
+            <span class="min-w-0 text-sm leading-6 text-[#6F6A61] break-words sm:text-right">{{ t('homePage.technology.summary') }}</span>
           </div>
         </div>
       </div>
