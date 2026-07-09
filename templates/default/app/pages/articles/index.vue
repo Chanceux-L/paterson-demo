@@ -161,10 +161,10 @@ useSchemaOrg(computed(() => [
                 <span class="bg-[#F1E7D4] px-3 py-1 font-semibold text-[#7A5438]">{{ featuredArticle.category }}</span>
                 <span>{{ featuredArticle.date }}</span>
               </div>
-              <h3 class="mt-5 text-2xl font-semibold leading-tight transition group-hover:text-[#7A5438] md:text-3xl">
+              <h3 class="mt-5 line-clamp-3 text-2xl font-semibold leading-tight transition group-hover:text-[#7A5438] md:text-3xl">
                 {{ featuredArticle.title }}
               </h3>
-              <p class="mt-5 text-base leading-8 text-[#6F6A61]">
+              <p class="mt-5 line-clamp-3 text-base leading-8 text-[#6F6A61]">
                 {{ featuredArticle.intro }}
               </p>
               <span class="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-[#7A5438]">
