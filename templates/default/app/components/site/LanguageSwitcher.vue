@@ -54,7 +54,7 @@ function selectLanguage(code: SiteLanguageCode, close: () => void) {
 
     <template #content="{ close }">
       <div class="border-b border-border px-4 py-3">
-        <span class="block text-xs font-semibold uppercase text-text-muted">{{ t('languageSwitcher.label') }}</span>
+        <span class="block text-overline text-text-muted">{{ t('languageSwitcher.label') }}</span>
         <span class="mt-1 block text-sm text-text-primary">{{ currentLanguage.localeName }}</span>
       </div>
       <div
@@ -78,7 +78,7 @@ function selectLanguage(code: SiteLanguageCode, close: () => void) {
           </span>
 
           <span class="ml-auto flex shrink-0 items-center gap-2">
-            <span class="shrink-0 font-mono text-xs text-text-muted">{{ language.displayCode }}</span>
+            <span class="shrink-0 font-latin text-xs font-medium text-text-muted">{{ language.displayCode }}</span>
             <UIcon v-if="language.code === locale" class="size-4 shrink-0 text-brand-primary" name="i-lucide-check" />
           </span>
         </button>

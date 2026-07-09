@@ -69,21 +69,22 @@
 
   --font-heading: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", Inter, system-ui, sans-serif;
   --font-body: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", Inter, system-ui, sans-serif;
+  --font-latin: Inter, "Helvetica Neue", Arial, sans-serif;
   --font-mono: "JetBrains Mono", "Fira Code", monospace;
 
   --fs-hero-size: clamp(2.75rem, 6vw, 4.25rem);
   --fs-hero-leading: 1.06;
-  --fs-hero-weight: 750;
+  --fs-hero-weight: 600;
   --fs-hero-tracking: 0;
 
   --fs-h1-size: clamp(2rem, 4.5vw, 3rem);
   --fs-h1-leading: 1.12;
-  --fs-h1-weight: 700;
+  --fs-h1-weight: 600;
   --fs-h1-tracking: 0;
 
   --fs-h2-size: clamp(1.625rem, 3.5vw, 2.25rem);
   --fs-h2-leading: 1.2;
-  --fs-h2-weight: 650;
+  --fs-h2-weight: 600;
   --fs-h2-tracking: 0;
 
   --fs-h3-size: 1.25rem;
@@ -194,6 +195,7 @@
   /* Font families → font-heading / font-body / font-mono */
   --font-heading: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", Inter, system-ui, sans-serif;
   --font-body: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", Inter, system-ui, sans-serif;
+  --font-latin: Inter, "Helvetica Neue", Arial, sans-serif;
   --font-mono: "JetBrains Mono", "Fira Code", monospace;
 
   /* Layout maxWidth → max-w-site / max-w-reading */
@@ -302,6 +304,14 @@
     -webkit-overflow-scrolling: touch;
   }
 
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading;
+    font-weight: 600;
+  }
+
   button,
   a {
     @apply touch-manipulation;
@@ -344,6 +354,18 @@
   ::-webkit-scrollbar-corner {
     background-color: var(--color-background);
   }
+}
+
+@utility font-latin {
+  font-family: var(--font-latin);
+}
+
+@utility text-overline {
+  font-family: var(--font-latin);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 @layer components {

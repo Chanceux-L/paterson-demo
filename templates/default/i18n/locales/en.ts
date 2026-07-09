@@ -329,9 +329,9 @@ const starter = {
     },
     technology: {
       eyebrow: 'Waterborne Technology',
-      title: 'A closed-loop waterborne chain from materials and process to whole-home spaces',
-      description: 'Paterson’s waterborne 3D intelligent coating line, factory 4.0 upgrade, and standard-setting capability support stable delivery for waterborne whole-home customization.',
-      summary: 'Materials, coating, product systems, and delivery work as one capability chain.',
+      title: 'Closed-loop waterborne whole-home chain',
+      description: '3D intelligent coating, factory 4.0 upgrades, and standards support stable whole-home delivery.',
+      summary: 'Materials, coating, products, and delivery work as one chain.',
       metrics: [
         { value: '3D', label: 'Intelligent coating line' },
         { value: '4.0', label: 'Factory waterborne upgrade' },
@@ -341,10 +341,10 @@ const starter = {
         { title: 'Waterborne Cabinet-Wall-Door System', description: 'A differentiated product capability built around waterborne process, integrated cabinet-wall-door design, and whole-home delivery.', href: '/data' }
       ],
       nodes: [
-        { icon: 'i-lucide-droplets', title: 'Closed-loop waterborne chain', description: 'Materials, coating, product systems, and delivery work together around waterborne customization.' },
-        { icon: 'i-lucide-factory', title: '3D intelligent coating line', description: 'Intelligent processes improve stability, surface quality, and scalable delivery.' },
-        { icon: 'i-lucide-leaf', title: 'Factory 4.0 waterborne upgrade', description: 'Factory-side waterborne upgrading supports scalable delivery for whole-home customization.' },
-        { icon: 'i-lucide-award', title: 'Certified leading technology', description: 'Paterson waterborne coating technology has received expert-panel recognition.' }
+        { icon: 'i-lucide-droplets', title: 'Closed-loop waterborne chain', description: 'Materials, coating, products, and delivery work together.' },
+        { icon: 'i-lucide-factory', title: '3D intelligent coating', description: 'Smart processes improve stability, finish quality, and delivery.' },
+        { icon: 'i-lucide-leaf', title: 'Factory 4.0 upgrade', description: 'Waterborne production supports scalable whole-home delivery.' },
+        { icon: 'i-lucide-award', title: 'Certified technology', description: 'Recognized waterborne coating expertise supports brand credibility.' }
       ]
     },
     products: {

@@ -75,17 +75,17 @@ function getString(value: unknown) {
     <main class="min-h-dvh overflow-hidden bg-surface font-body text-text-primary">
       <section class="grid min-h-dvh items-center px-5 py-24 sm:px-8 lg:px-14">
         <div class="mx-auto w-full max-w-3xl rounded-lg border border-border bg-background p-7 shadow-sm md:p-10">
-          <p class="text-sm font-semibold uppercase text-brand-primary">
+          <p class="text-overline text-brand-primary">
             {{ pageEyebrow }}
           </p>
-          <p class="mt-6 font-mono text-6xl font-bold leading-none text-text-primary md:text-7xl">
+          <p class="mt-6 font-latin text-6xl font-semibold leading-none text-text-primary md:text-7xl">
             {{ statusCode }}
           </p>
           <p class="mt-4 text-sm font-medium text-text-muted">
             {{ t('error.pageLabel') }} · {{ t('site.name') }}
           </p>
 
-          <h1 class="font-heading mt-8 text-3xl font-bold leading-tight text-text-primary md:text-5xl">
+          <h1 class="font-heading mt-8 text-3xl font-semibold leading-tight text-text-primary md:text-5xl">
             {{ pageTitle }}
           </h1>
           <p class="mt-5 max-w-2xl text-base leading-8 text-text-secondary md:text-lg md:leading-9">

@@ -57,7 +57,7 @@ const contactLabel = computed(() => props.contactLabel ?? t('cta.contactLabel'))
         <span>{{ contactLabel }}</span>
         <a
           :href="`tel:${phone}`"
-          class="font-mono text-xl font-semibold text-text-primary transition hover:text-brand-primary"
+          class="font-latin text-xl font-semibold text-text-primary transition hover:text-brand-primary"
         >{{ phone }}</a>
       </div>
     </div>

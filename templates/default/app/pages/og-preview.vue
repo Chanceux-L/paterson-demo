@@ -43,7 +43,7 @@ useAppSeoMeta({
         <p class="text-sm font-medium text-text-secondary">
           1200 x 630
         </p>
-        <h1 class="mt-2 font-heading text-3xl font-bold leading-tight text-text-primary md:text-4xl">
+        <h1 class="mt-2 font-heading text-3xl font-semibold leading-tight text-text-primary md:text-4xl">
           品牌分享图
         </h1>
       </div>

@@ -90,13 +90,13 @@ function actionClasses(action: HeroAction) {
 
         <p
           v-if="eyebrow"
-          class="mb-5 text-xs font-semibold uppercase text-brand-primary"
+          class="mb-5 text-overline text-brand-primary"
         >
           {{ eyebrow }}
         </p>
         <h1
           :class="cn(
-            'font-heading font-bold leading-tight',
+            'font-heading font-semibold leading-tight',
             isCompact ? 'text-3xl md:text-5xl' : 'text-4xl md:text-5xl xl:text-6xl'
           )"
         >

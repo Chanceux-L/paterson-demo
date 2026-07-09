@@ -48,7 +48,7 @@ useAppSeoMeta({
       <section>
         <div class="mb-6 flex items-center gap-3">
           <UIcon name="i-lucide-eye" class="size-6 text-brand-primary" />
-          <h2 class="font-heading text-3xl font-bold text-text-primary">
+          <h2 class="font-heading text-3xl font-semibold text-text-primary">
             {{ t('designSystemPage.sections.philosophy') }}
           </h2>
         </div>
@@ -80,7 +80,7 @@ useAppSeoMeta({
       <section>
         <div class="mb-6 flex items-center gap-3">
           <UIcon name="i-lucide-palette" class="size-6 text-brand-primary" />
-          <h2 class="font-heading text-3xl font-bold text-text-primary">
+          <h2 class="font-heading text-3xl font-semibold text-text-primary">
             {{ t('designSystemPage.sections.colors') }}
           </h2>
         </div>
@@ -101,7 +101,7 @@ useAppSeoMeta({
       <section>
         <div class="mb-6 flex items-center gap-3">
           <UIcon name="i-lucide-type" class="size-6 text-brand-primary" />
-          <h2 class="font-heading text-3xl font-bold text-text-primary">
+          <h2 class="font-heading text-3xl font-semibold text-text-primary">
             {{ t('designSystemPage.sections.typography') }}
           </h2>
         </div>
@@ -113,7 +113,7 @@ useAppSeoMeta({
             <p class="text-xs text-text-muted">
               首页主标题
             </p>
-            <p class="mt-2 font-heading text-4xl font-bold leading-tight md:text-5xl">
+            <p class="mt-2 font-heading text-4xl font-semibold leading-tight md:text-5xl">
               {{ t('designSystemPage.samples.hero') }}
             </p>
           </article>
@@ -121,7 +121,7 @@ useAppSeoMeta({
             <p class="text-xs text-text-muted">
               页面标题
             </p>
-            <p class="mt-2 font-heading text-3xl font-bold leading-tight md:text-4xl">
+            <p class="mt-2 font-heading text-3xl font-semibold leading-tight md:text-4xl">
               {{ t('designSystemPage.samples.h1') }}
             </p>
           </article>
@@ -147,7 +147,7 @@ useAppSeoMeta({
       <section>
         <div class="mb-6 flex items-center gap-3">
           <UIcon name="i-lucide-layout" class="size-6 text-brand-primary" />
-          <h2 class="font-heading text-3xl font-bold text-text-primary">
+          <h2 class="font-heading text-3xl font-semibold text-text-primary">
             {{ t('designSystemPage.sections.layout') }}
           </h2>
         </div>
@@ -160,7 +160,7 @@ useAppSeoMeta({
       <section>
         <div class="mb-6 flex items-center gap-3">
           <UIcon name="i-lucide-mouse-pointer-2" class="size-6 text-brand-primary" />
-          <h2 class="font-heading text-3xl font-bold text-text-primary">
+          <h2 class="font-heading text-3xl font-semibold text-text-primary">
             {{ t('designSystemPage.sections.components') }}
           </h2>
         </div>

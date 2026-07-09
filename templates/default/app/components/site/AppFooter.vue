@@ -121,7 +121,7 @@ function openCookieConsentSettings() {
                   <UIcon name="i-lucide-phone" />
                 </span>
                 <div>
-                  <span class="block text-xs font-medium uppercase text-text-muted">{{ t('nav.hotline') }}</span>
+                  <span class="block text-overline text-text-muted">{{ t('nav.hotline') }}</span>
                   <a class="text-sm text-text-secondary hover:text-brand-primary" :href="`tel:${phone}`">{{ phone }}</a>
                 </div>
               </div>
@@ -130,7 +130,7 @@ function openCookieConsentSettings() {
                   <UIcon name="i-lucide-mail" />
                 </span>
                 <div>
-                  <span class="block text-xs font-medium uppercase text-text-muted">{{ t('footer.email') }}</span>
+                  <span class="block text-overline text-text-muted">{{ t('footer.email') }}</span>
                   <a class="text-sm text-text-secondary hover:text-brand-primary" :href="`mailto:${email}`">{{ email }}</a>
                 </div>
               </div>
@@ -139,7 +139,7 @@ function openCookieConsentSettings() {
                   <UIcon name="i-lucide-map-pin" />
                 </span>
                 <div>
-                  <span class="block text-xs font-medium uppercase text-text-muted">{{ t('footer.address') }}</span>
+                  <span class="block text-overline text-text-muted">{{ t('footer.address') }}</span>
                   <span class="text-sm leading-6 text-text-secondary">{{ address }}</span>
                 </div>
               </div>

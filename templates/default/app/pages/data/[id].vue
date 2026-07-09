@@ -41,7 +41,7 @@ useAppSeoMeta({
           <StarterBadge class="mb-4">
             {{ t('dataPage.detail.category') }}
           </StarterBadge>
-          <h1 class="font-heading text-4xl font-bold leading-tight text-text-primary md:text-5xl">
+          <h1 class="font-heading text-4xl font-semibold leading-tight text-text-primary md:text-5xl">
             {{ t('dataPage.detail.title') }}
           </h1>
           <p class="mt-5 text-base leading-8 text-text-secondary md:text-lg">
@@ -74,7 +74,7 @@ useAppSeoMeta({
               </h2>
               <dl class="mt-5 grid gap-4">
                 <div v-for="spec in specifications" :key="spec.label">
-                  <dt class="text-xs font-semibold uppercase tracking-wide text-text-muted">
+                  <dt class="text-overline text-text-muted">
                     {{ spec.label }}
                   </dt>
                   <dd class="mt-1 text-sm font-semibold text-text-primary">

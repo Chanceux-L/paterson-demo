@@ -31,7 +31,7 @@ const featureVisualPlaceholder = 'Paterson 品牌空间';
   <section class="section">
     <div class="section-container">
       <header class="mb-12 max-w-reading">
-        <h2 class="font-heading text-3xl font-bold leading-tight text-text-primary md:text-4xl">
+        <h2 class="font-heading text-3xl font-semibold leading-tight text-text-primary md:text-4xl">
           {{ title }}
         </h2>
         <p v-if="subtitle" class="mt-4 text-base leading-8 text-text-secondary md:text-lg">
@@ -67,7 +67,7 @@ const featureVisualPlaceholder = 'Paterson 品牌空间';
             <div class="absolute inset-0 bg-(image:--pattern-dots) bg-size-[20px_20px] opacity-50"></div>
             <div class="absolute inset-0 grid place-items-center text-text-muted">
               <UIcon v-if="item.icon" :name="item.icon" class="size-14 opacity-25" />
-              <span v-else class="text-xs font-semibold tracking-widest uppercase">{{ featureVisualPlaceholder }}</span>
+              <span v-else class="text-overline">{{ featureVisualPlaceholder }}</span>
             </div>
           </div>
         </article>

@@ -38,7 +38,7 @@ const heroVisualPlaceholder = 'Paterson 空间形象';
           <StarterBadge v-if="badge" class="mb-6">
             {{ badge }}
           </StarterBadge>
-          <h1 class="font-heading text-4xl font-bold leading-tight text-text-primary md:text-5xl xl:text-6xl">
+          <h1 class="font-heading text-4xl font-semibold leading-tight text-text-primary md:text-5xl xl:text-6xl">
             {{ title }}
           </h1>
           <p :class="cn('mt-6 max-w-reading text-base leading-8 text-text-secondary md:text-lg md:leading-9', !isSplit && 'mx-auto')">
@@ -75,7 +75,7 @@ const heroVisualPlaceholder = 'Paterson 空间形象';
                   <div class="mx-auto mb-4 grid size-20 place-items-center rounded-md border border-brand-primary/15 bg-brand-primary/8 text-2xl font-bold text-brand-primary">
                     B
                   </div>
-                  <p class="text-xs font-semibold tracking-widest uppercase">
+                  <p class="text-overline">
                     {{ heroVisualPlaceholder }}
                   </p>
                 </div>
