@@ -37,6 +37,26 @@ const viteOptimizedDependencies = [
   'swiper/element'
 ];
 
+function getBuildChunkName(id: string) {
+  if (!id.includes('/node_modules/')) {
+    return undefined;
+  }
+
+  if (id.includes('/@vueuse/')) {
+    return 'vendor-vueuse';
+  }
+
+  if (id.includes('/swiper/')) {
+    return 'vendor-swiper';
+  }
+
+  if (id.includes('/isomorphic-dompurify/') || id.includes('/dompurify/') || id.includes('/jsdom/')) {
+    return 'vendor-sanitize';
+  }
+
+  return undefined;
+}
+
 // Environment and URL helpers
 function getHost(value: string) {
   if (!value) {
@@ -280,6 +300,24 @@ export default defineNuxtConfig({
   },
 
   vite: {
+    build: {
+      chunkSizeWarningLimit: 700,
+      modulePreload: {
+        polyfill: false
+      },
+      rollupOptions: {
+        onwarn(warning, warn) {
+          if (warning.code === 'INVALID_ANNOTATION' && warning.id?.includes('/@vueuse/core/dist/index.js')) {
+            return;
+          }
+
+          warn(warning);
+        },
+        output: {
+          manualChunks: getBuildChunkName
+        }
+      }
+    },
     optimizeDeps: {
       include: viteOptimizedDependencies
     },

@@ -91,6 +91,8 @@ const productSwiper = useSwiper(productSwiperRef, {
 const showPreviousProduct = () => productSwiper.prev();
 const showNextProduct = () => productSwiper.next();
 
+useMotionReveal();
+
 onMounted(async () => {
   const { register } = await import('swiper/element/bundle');
 
@@ -120,14 +122,14 @@ useSchemaOrg(computed(() => [
 <template>
   <main class="home-page bg-[#F4F1EA] text-[#24211D]">
     <section class="relative overflow-hidden bg-[#F4F1EA] px-5 pt-0 text-[#24211D] sm:px-8 lg:px-14">
-      <div class="hero-image-panel absolute inset-y-0 right-0 hidden w-[46%] bg-[#F4F1EA] lg:block">
+      <div class="hero-image-panel hero-visual-reveal absolute inset-y-0 right-0 hidden w-[46%] bg-[#F4F1EA] lg:block">
         <img
           class="hero-side-image paterson-hero-image size-full object-cover object-[60%_50%]"
           :src="publicAsset('/paterson/oxygen-space-bg.webp')"
           :alt="t('homePage.hero.imageAlt')"
         />
       </div>
-      <div class="hero-mobile-image-panel absolute inset-x-0 top-0 h-full lg:hidden" aria-hidden="true">
+      <div class="hero-mobile-image-panel hero-visual-reveal absolute inset-x-0 top-0 h-full lg:hidden" aria-hidden="true">
         <img
           class="hero-mobile-image size-full object-cover object-[64%_28%]"
           :src="publicAsset('/paterson/oxygen-space-bg.webp')"
@@ -147,7 +149,7 @@ useSchemaOrg(computed(() => [
         aria-hidden="true"
       />
       <div class="relative mx-auto grid max-w-7xl gap-10 py-6 md:py-10 lg:min-h-[760px] lg:grid-cols-[0.9fr_0.82fr] lg:items-center lg:gap-12 lg:py-20">
-        <div class="relative z-10 max-w-xl motion-safe:animate-[paterson-fade-up_560ms_cubic-bezier(0.22,1,0.36,1)_both]">
+        <div class="hero-copy-reveal relative z-10 max-w-xl">
           <p class="inline-flex items-center gap-3 text-sm font-medium text-[#7A5438]">
             <span class="h-px w-10 bg-[#B99A63]"></span>
             {{ t('homePage.hero.badge') }}
@@ -202,14 +204,8 @@ useSchemaOrg(computed(() => [
     </section>
 
     <section class="relative overflow-hidden bg-[#14352F] px-5 py-20 text-white sm:px-8 lg:px-14 lg:py-28">
-      <img
-        class="wellness-airflow-svg"
-        :src="publicAsset('/paterson/wellness-airflow.svg')"
-        alt=""
-        aria-hidden="true"
-      />
       <div class="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.86fr_1.14fr] lg:items-center">
-        <div class="relative z-10">
+        <div class="motion-reveal relative z-10">
           <p class="inline-flex items-center gap-3 text-sm font-semibold text-[#D2B574]">
             <span class="h-px w-10 bg-[#D2B574]"></span>
             {{ t('homePage.forest.eyebrow') }}
@@ -226,9 +222,12 @@ useSchemaOrg(computed(() => [
             </p>
           </div>
         </div>
-        <div class="relative overflow-hidden bg-[#0D241F]/76 shadow-2xl shadow-black/20 backdrop-blur">
-          <div class="grid lg:grid-cols-3">
-            <article class="oxygen-proof oxygen-proof-first motion-safe:animate-[paterson-fade-up_620ms_cubic-bezier(0.22,1,0.36,1)_both]">
+        <div class="oxygen-chain-panel motion-reveal relative overflow-hidden bg-[#0D241F]/76 shadow-2xl shadow-black/20 backdrop-blur" style="--stagger: 120ms">
+          <span class="oxygen-flow-sweep" aria-hidden="true"></span>
+          <span class="oxygen-flow-halo oxygen-flow-halo-primary" aria-hidden="true"></span>
+          <span class="oxygen-flow-halo oxygen-flow-halo-secondary" aria-hidden="true"></span>
+          <div class="relative z-10 grid lg:grid-cols-3">
+            <article class="oxygen-proof oxygen-proof-first motion-reveal">
               <span class="text-xs font-semibold text-[#D2B574]">01</span>
               <UIcon class="mt-8 size-6 text-[#D2B574]" name="i-lucide-bed-double" />
               <h3 class="mt-5 text-xl font-semibold leading-tight text-[#F7F4EE]">
@@ -238,7 +237,7 @@ useSchemaOrg(computed(() => [
                 {{ t('homePage.forest.proofDescriptions.bedroom') }}
               </p>
             </article>
-            <article class="oxygen-proof motion-safe:animate-[paterson-fade-up_620ms_cubic-bezier(0.22,1,0.36,1)_100ms_both]">
+            <article class="oxygen-proof motion-reveal" style="--stagger: 100ms">
               <span class="text-xs font-semibold text-[#D2B574]">02</span>
               <UIcon class="mt-8 size-6 text-[#D2B574]" name="i-lucide-activity" />
               <h3 class="mt-5 text-xl font-semibold leading-tight text-[#F7F4EE]">
@@ -248,7 +247,7 @@ useSchemaOrg(computed(() => [
                 {{ t('homePage.forest.proofDescriptions.center') }}
               </p>
             </article>
-            <article class="oxygen-proof motion-safe:animate-[paterson-fade-up_620ms_cubic-bezier(0.22,1,0.36,1)_200ms_both]">
+            <article class="oxygen-proof motion-reveal" style="--stagger: 200ms">
               <span class="text-xs font-semibold text-[#D2B574]">03</span>
               <UIcon class="mt-8 size-6 text-[#D2B574]" name="i-lucide-shield-check" />
               <h3 class="mt-5 text-xl font-semibold leading-tight text-[#F7F4EE]">
@@ -265,7 +264,7 @@ useSchemaOrg(computed(() => [
 
     <section id="brand" class="bg-[#F4F1EA] px-5 py-16 sm:px-8 lg:px-14 lg:py-24">
       <div class="mx-auto max-w-7xl">
-        <div class="grid gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:items-end">
+        <div class="motion-reveal grid gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:items-end">
           <div>
             <p class="inline-flex items-center gap-3 text-sm font-semibold text-[#C91F2B]">
               <span class="h-px w-10 bg-[#C91F2B]"></span>
@@ -285,7 +284,7 @@ useSchemaOrg(computed(() => [
             <article
               v-for="(stat, index) in trustStats"
               :key="stat.label"
-              class="group p-5 transition duration-300 hover:bg-[#FBF8F2] sm:p-6"
+              class="motion-reveal group p-5 transition duration-300 hover:bg-[#FBF8F2] sm:p-6"
               :style="{ '--stagger': `${index * 90}ms` }"
             >
               <span class="text-xs font-semibold text-[#B99A63]">
@@ -314,7 +313,7 @@ useSchemaOrg(computed(() => [
       <div class="absolute inset-0 bg-linear-to-r from-[#171512]/86 via-[#171512]/54 to-[#171512]/68"></div>
       <div class="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-[#B99A63]/50 to-transparent"></div>
       <div class="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:items-stretch">
-        <div class="flex flex-col justify-between">
+        <div class="motion-reveal flex flex-col justify-between">
           <div>
             <p class="inline-flex items-center gap-3 text-sm font-semibold text-[#B99A63]">
               <span class="h-px w-10 bg-[#B99A63]"></span>
@@ -346,7 +345,7 @@ useSchemaOrg(computed(() => [
               <article
                 v-for="(node, index) in technologyNodes"
                 :key="node.title"
-                class="group relative min-h-56 min-w-0 border border-white/12 bg-[#211E1A]/78 p-6 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-[#B99A63]/45 hover:bg-[#27231F]/88"
+                class="motion-reveal group relative min-h-56 min-w-0 border border-white/12 bg-[#211E1A]/78 p-6 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-[#B99A63]/45 hover:bg-[#27231F]/88"
                 :style="{ '--stagger': `${index * 90}ms` }"
               >
                 <div class="flex items-start justify-between gap-4">
@@ -373,9 +372,14 @@ useSchemaOrg(computed(() => [
       </div>
     </section>
 
-    <section id="products" class="px-5 py-16 sm:px-8 lg:px-14 lg:py-24">
-      <div class="mx-auto max-w-7xl">
-        <div class="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+    <section id="products" class="product-showcase-section relative overflow-hidden px-5 py-16 sm:px-8 lg:px-14 lg:py-24">
+      <div class="product-showcase-atmosphere" aria-hidden="true">
+        <img :src="publicAsset('/paterson/product-cabinet-alps.webp')" alt="" />
+        <img :src="publicAsset('/paterson/product-bedroom-system.webp')" alt="" />
+        <img :src="publicAsset('/paterson/product-kitchen-system.webp')" alt="" />
+      </div>
+      <div class="relative mx-auto max-w-7xl">
+        <div class="motion-reveal flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
           <div class="max-w-2xl">
             <p class="text-sm font-semibold text-[#C91F2B]">
               {{ t('homePage.products.eyebrow') }}
@@ -422,7 +426,8 @@ useSchemaOrg(computed(() => [
                 class="group home-media-card relative min-h-[380px] overflow-hidden bg-[#171512] text-white shadow-xl shadow-[#7A5438]/10 md:min-h-[440px]"
                 :style="{ '--stagger': `${index * 90}ms` }"
               >
-                <img class="absolute inset-0 size-full object-cover transition duration-700 group-hover:scale-105" :src="publicAsset(item.image)" :alt="item.title" />
+                <img class="home-media-card__image absolute inset-0 size-full object-cover" :src="publicAsset(item.image)" :alt="item.title" />
+                <div class="home-media-card__grain" aria-hidden="true"></div>
                 <div class="absolute inset-0 bg-linear-to-t from-[#171512]/90 via-[#171512]/24 to-transparent"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5 md:p-6">
                   <div class="flex flex-wrap gap-2">
@@ -445,7 +450,7 @@ useSchemaOrg(computed(() => [
 
     <section id="join" class="bg-white px-5 py-16 sm:px-8 lg:px-14 lg:py-24">
       <div class="mx-auto max-w-7xl">
-        <div class="max-w-2xl">
+        <div class="motion-reveal max-w-2xl">
           <p class="text-sm font-semibold text-[#C91F2B]">
             {{ t('homePage.advantages.eyebrow') }}
           </p>
@@ -457,7 +462,7 @@ useSchemaOrg(computed(() => [
           <article
             v-for="(item, index) in advantages"
             :key="item.title"
-            class="advantage-card group"
+            class="advantage-card motion-reveal group"
             :style="{ '--stagger': `${index * 80}ms` }"
           >
             <div class="advantage-card__bar" aria-hidden="true"></div>
@@ -491,7 +496,7 @@ useSchemaOrg(computed(() => [
     <section class="bg-[#F4F1EA] px-5 py-20 sm:px-8 lg:px-14 lg:py-28">
       <div class="mx-auto max-w-7xl">
         <div class="grid gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:items-start">
-          <div class="lg:sticky lg:top-28">
+          <div class="motion-reveal lg:sticky lg:top-28">
             <p class="inline-flex items-center gap-3 text-sm font-semibold text-[#C91F2B]">
               <span class="h-px w-10 bg-[#C91F2B]"></span>
               {{ t('homePage.process.eyebrow') }}
@@ -505,12 +510,12 @@ useSchemaOrg(computed(() => [
           </div>
 
           <div class="relative">
-            <div class="absolute bottom-0 left-5 top-0 w-px bg-[#D8CDBB] md:left-1/2"></div>
+            <div class="motion-progress-line absolute bottom-0 left-5 top-0 w-px bg-[#D8CDBB] md:left-1/2"></div>
             <div class="grid gap-4">
               <article
                 v-for="(step, index) in processSteps"
                 :key="step.title"
-                class="relative grid gap-4 pl-20 md:grid-cols-2 md:gap-16 md:pl-0"
+                class="motion-reveal relative grid gap-4 pl-20 md:grid-cols-2 md:gap-16 md:pl-0"
                 :style="{ '--stagger': `${index * 80}ms` }"
               >
                 <div
@@ -570,7 +575,7 @@ useSchemaOrg(computed(() => [
 
     <section id="news" class="border-y border-[#E5DED2] bg-white px-5 py-16 sm:px-8 lg:px-14 lg:py-24">
       <div class="mx-auto max-w-7xl">
-        <div class="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+        <div class="motion-reveal flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
           <div>
             <p class="text-sm font-semibold text-[#C91F2B]">
               {{ t('homePage.news.eyebrow') }}
@@ -585,7 +590,7 @@ useSchemaOrg(computed(() => [
           </NuxtLinkLocale>
         </div>
         <div class="mt-10 grid gap-6 md:grid-cols-3">
-          <article v-for="item in newsItems" :key="item.title" class="group home-soft-card border border-[#E8E0D3] bg-[#FBFAF7] shadow-sm shadow-[#7A5438]/6 transition duration-300 hover:-translate-y-1 hover:border-[#D6C5A5] hover:bg-white hover:shadow-lg hover:shadow-[#7A5438]/10">
+          <article v-for="item in newsItems" :key="item.title" class="motion-reveal group home-soft-card border border-[#E8E0D3] bg-[#FBFAF7] shadow-sm shadow-[#7A5438]/6 transition duration-300 hover:-translate-y-1 hover:border-[#D6C5A5] hover:bg-white hover:shadow-lg hover:shadow-[#7A5438]/10">
             <img class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105" :src="publicAsset(item.image)" :alt="item.title" />
             <div class="p-6">
               <span class="text-xs font-semibold text-[#B99A63]">{{ item.tag }}</span>
@@ -603,7 +608,7 @@ useSchemaOrg(computed(() => [
 
     <section id="consult" class="bg-[#171512] px-5 py-16 text-white sm:px-8 lg:px-14 lg:py-24">
       <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-        <div>
+        <div class="motion-reveal">
           <p class="text-sm font-semibold text-[#B99A63]">
             {{ t('homePage.consult.eyebrow') }}
           </p>
@@ -629,7 +634,7 @@ useSchemaOrg(computed(() => [
           </div>
         </div>
 
-        <form class="grid gap-4 bg-[#F7F4EE] p-5 text-[#24211D] sm:p-8" @submit.prevent>
+        <form class="motion-reveal grid gap-4 bg-[#F7F4EE] p-5 text-[#24211D] sm:p-8" @submit.prevent>
           <div class="grid gap-4 sm:grid-cols-2">
             <label class="grid gap-2 text-sm font-medium">
               {{ t('homePage.consult.form.name') }}
@@ -686,11 +691,17 @@ useSchemaOrg(computed(() => [
 
 <style scoped>
 @keyframes paterson-hero-kenburns {
-  from {
-    transform: scale(1);
+  0% {
+    filter: brightness(1.04) saturate(0.92);
+    transform: scale(1.01);
   }
 
-  to {
+  12% {
+    filter: brightness(1.16) saturate(1.04);
+  }
+
+  100% {
+    filter: brightness(1.16) saturate(1.04);
     transform: scale(1.04);
   }
 }
@@ -707,9 +718,63 @@ useSchemaOrg(computed(() => [
   }
 }
 
+@keyframes paterson-hero-visual-reveal {
+  from {
+    opacity: 0.18;
+    transform: translate3d(18px, 0, 0) scale(1.015);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes paterson-hero-copy-reveal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 .paterson-hero-image {
   animation: paterson-hero-kenburns 12s ease-out both;
   transform-origin: 58% 48%;
+}
+
+.hero-visual-reveal {
+  animation: paterson-hero-visual-reveal 1100ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero-copy-reveal {
+  animation: paterson-hero-copy-reveal 720ms cubic-bezier(0.22, 1, 0.36, 1) 120ms both;
+}
+
+.motion-reveal-ready .motion-reveal {
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+}
+
+.motion-reveal {
+  transition:
+    opacity 620ms ease,
+    transform 780ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--stagger, 0ms);
+  will-change: opacity, transform;
+}
+
+.motion-reveal.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.motion-reveal.is-visible {
+  will-change: auto;
 }
 
 .mobile-action-bar {
@@ -756,8 +821,11 @@ useSchemaOrg(computed(() => [
   background: linear-gradient(180deg, rgba(244, 241, 234, 0) 0%, #f4f1ea 100%);
 }
 
+.hero-image-panel {
+  transform-origin: 70% 50%;
+}
+
 .hero-side-image {
-  filter: brightness(1.16) saturate(1.04);
   -webkit-mask-image: linear-gradient(
     90deg,
     transparent 0%,
@@ -843,14 +911,6 @@ useSchemaOrg(computed(() => [
 .home-soft-card,
 .home-dark-card,
 .advantage-card {
-  animation: paterson-fade-up 620ms cubic-bezier(0.22, 1, 0.36, 1) both;
-  animation-delay: var(--stagger, 0ms);
-}
-
-.home-soft-stat,
-.home-soft-card,
-.home-dark-card,
-.advantage-card {
   position: relative;
   overflow: hidden;
 }
@@ -863,14 +923,18 @@ useSchemaOrg(computed(() => [
   pointer-events: none;
   content: "";
   opacity: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.42), transparent 46%);
-  transition: opacity 300ms ease;
+  background: linear-gradient(115deg, transparent 0%, rgba(255, 255, 255, 0.2) 38%, transparent 64%);
+  transform: translate3d(-38%, 0, 0);
+  transition:
+    opacity 300ms ease,
+    transform 720ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .home-soft-stat:hover::after,
 .home-soft-card:hover::after,
 .home-dark-card:hover::after {
   opacity: 1;
+  transform: translate3d(38%, 0, 0);
 }
 
 .advantage-card {
@@ -941,6 +1005,99 @@ useSchemaOrg(computed(() => [
   transform: translateY(-2px);
 }
 
+.product-showcase-section {
+  isolation: isolate;
+  background:
+    linear-gradient(180deg, #f4f1ea 0%, #fbfaf7 42%, #f4f1ea 100%);
+}
+
+.product-showcase-atmosphere {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.22;
+}
+
+.product-showcase-atmosphere::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background:
+    linear-gradient(90deg, #f4f1ea 0%, rgba(244, 241, 234, 0.74) 34%, #f4f1ea 100%),
+    linear-gradient(180deg, #f4f1ea 0%, rgba(244, 241, 234, 0.58) 44%, #f4f1ea 100%);
+}
+
+.product-showcase-atmosphere img {
+  position: absolute;
+  width: clamp(18rem, 28vw, 30rem);
+  height: clamp(22rem, 34vw, 40rem);
+  object-fit: cover;
+  opacity: 0.26;
+  transform: rotate(var(--tilt, -4deg));
+  --tilt-to: 3deg;
+}
+
+.product-showcase-atmosphere img:nth-child(1) {
+  right: 4%;
+  top: 3rem;
+  --tilt: 4deg;
+  --tilt-to: -3deg;
+}
+
+.product-showcase-atmosphere img:nth-child(2) {
+  left: -5rem;
+  top: 11rem;
+  --tilt: -5deg;
+  --tilt-to: 3deg;
+}
+
+.product-showcase-atmosphere img:nth-child(3) {
+  bottom: 2rem;
+  right: 24%;
+  --tilt: -2deg;
+  --tilt-to: 2deg;
+}
+
+.home-media-card {
+  transform-origin: 50% 70%;
+}
+
+.home-media-card__grain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+}
+
+.home-media-card__image {
+  transform: scale(1.01);
+  transition:
+    opacity 300ms ease,
+    transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.home-media-card__grain {
+  z-index: 1;
+  opacity: 0.22;
+  background-image:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mix-blend-mode: soft-light;
+  transform: translate3d(0, 0, 0);
+  transition: transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.home-media-card:hover .home-media-card__image {
+  opacity: 0.96;
+  transform: scale(1.035) translate3d(0.6%, -0.6%, 0);
+}
+
+.home-media-card:hover .home-media-card__grain {
+  transform: translate3d(16px, -10px, 0);
+}
+
 .product-swiper {
   display: flex;
   max-width: 100%;
@@ -1004,20 +1161,85 @@ useSchemaOrg(computed(() => [
   animation: paterson-product-progress 4.2s ease-in-out infinite;
 }
 
-.wellness-airflow-svg {
+.oxygen-chain-panel {
+  isolation: isolate;
+  border: 1px solid rgba(210, 181, 116, 0.16);
+}
+
+.oxygen-chain-panel::before {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  width: min(72rem, 112vw);
-  max-width: none;
+  inset: 0;
   pointer-events: none;
-  opacity: 0.3;
-  transform: translate3d(-46%, -52%, 0);
-  animation: paterson-air-svg 14s ease-in-out infinite alternate;
+  content: "";
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.05), transparent 30%),
+    linear-gradient(90deg, rgba(185, 154, 99, 0.08), transparent 24%, transparent 80%, rgba(220, 233, 214, 0.05));
+  opacity: 0;
+  transform: translate3d(-10%, 0, 0);
+  transition:
+    opacity 900ms ease,
+    transform 1100ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.oxygen-chain-panel.is-visible::before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.oxygen-flow-sweep {
+  position: absolute;
+  inset-block: -32%;
+  left: -34%;
+  z-index: 0;
+  width: 34%;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(220, 233, 214, 0.04) 22%,
+    rgba(210, 181, 116, 0.16) 48%,
+    rgba(220, 233, 214, 0.05) 70%,
+    transparent
+  );
+  filter: blur(10px);
+  opacity: 0;
+  transform: skewX(-12deg) translate3d(0, 0, 0);
+}
+
+.oxygen-chain-panel.is-visible .oxygen-flow-sweep {
+  animation: oxygen-flow-sweep 6.8s ease-in-out 520ms infinite;
+}
+
+.oxygen-flow-halo {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 999px;
+  filter: blur(14px);
+  opacity: 0.22;
+  transform: translate3d(0, 0, 0);
+  animation: oxygen-flow-halo 8s ease-in-out infinite alternate;
+}
+
+.oxygen-flow-halo-primary {
+  right: 8%;
+  top: 18%;
+  width: 6rem;
+  height: 6rem;
+  background: rgba(210, 181, 116, 0.12);
+}
+
+.oxygen-flow-halo-secondary {
+  left: 14%;
+  bottom: 10%;
+  width: 7rem;
+  height: 7rem;
+  background: rgba(220, 233, 214, 0.07);
+  animation-delay: -3s;
 }
 
 .oxygen-proof {
   position: relative;
+  z-index: 1;
   padding: 1.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   transition: background-color 300ms ease, transform 300ms ease;
@@ -1034,6 +1256,14 @@ useSchemaOrg(computed(() => [
 
 .process-node-connector {
   display: none;
+}
+
+.motion-progress-line {
+  transform: scaleY(0);
+  transform-origin: top;
+  animation: paterson-process-line 980ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-timeline: view();
+  animation-range: entry 10% cover 48%;
 }
 
 @media (min-width: 768px) {
@@ -1085,15 +1315,44 @@ useSchemaOrg(computed(() => [
   }
 }
 
-@keyframes paterson-air-svg {
+@keyframes paterson-process-line {
   from {
-    opacity: 0.2;
-    transform: translate3d(-50%, -52%, 0);
+    transform: scaleY(0);
   }
 
   to {
-    opacity: 0.34;
-    transform: translate3d(-40%, -50%, 0);
+    transform: scaleY(1);
+  }
+}
+
+@keyframes oxygen-flow-halo {
+  from {
+    opacity: 0.2;
+    transform: translate3d(-8px, -6px, 0) scale(0.96);
+  }
+
+  to {
+    opacity: 0.42;
+    transform: translate3d(8px, 6px, 0) scale(1.04);
+  }
+}
+
+@keyframes oxygen-flow-sweep {
+  0%,
+  22% {
+    opacity: 0;
+    transform: skewX(-12deg) translate3d(0, 0, 0);
+  }
+
+  42%,
+  64% {
+    opacity: 1;
+  }
+
+  88%,
+  100% {
+    opacity: 0;
+    transform: skewX(-12deg) translate3d(410%, 0, 0);
   }
 }
 
@@ -1119,21 +1378,33 @@ useSchemaOrg(computed(() => [
 
 @media (prefers-reduced-motion: reduce) {
   .paterson-hero-image,
+  .hero-visual-reveal,
+  .hero-copy-reveal,
   .hero-mobile-image-panel::after,
   .hero-mobile-pattern,
   .hero-desktop-pattern,
-  .wellness-airflow-svg,
+  .oxygen-flow-sweep,
+  .oxygen-flow-halo,
   .home-soft-stat,
   .home-soft-card,
+  .home-media-card,
+  .product-showcase-atmosphere img,
   .advantage-card,
   .home-dark-card,
+  .motion-reveal,
+  .motion-progress-line,
   .product-swiper-progress::after {
     animation: none;
+    clip-path: none;
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 
   .oxygen-proof:hover,
   .home-soft-stat:hover,
   .home-soft-card:hover,
+  .home-media-card:hover,
   .advantage-card:hover,
   .home-dark-card:hover {
     transform: none;

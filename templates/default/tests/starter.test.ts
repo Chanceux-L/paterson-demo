@@ -238,6 +238,28 @@ test('Paterson profile replaces placeholders and previous business copy', () => 
   assert.doesNotMatch(combined, /中赛照明|NINGBO\s+CLSA\s*SELF/i);
 });
 
+test('Paterson homepage uses lightweight performance-aware motion', () => {
+  const homePage = source(templatePath('app/pages/index.vue'));
+  const packageJson = source(repoPath('package.json'));
+
+  assert.match(homePage, /useMotionReveal\(/);
+  assert.match(homePage, /motion-reveal/);
+  assert.match(homePage, /hero-visual-reveal/);
+  assert.match(homePage, /motion-progress-line/);
+  assert.match(homePage, /prefers-reduced-motion: reduce/);
+  assert.doesNotMatch(packageJson, /"gsap"|"three"/);
+});
+
+test('Paterson oxygen chain section uses restrained panel motion', () => {
+  const homePage = source(templatePath('app/pages/index.vue'));
+
+  assert.match(homePage, /oxygen-chain-panel/);
+  assert.match(homePage, /oxygen-flow-halo/);
+  assert.match(homePage, /oxygen-flow-sweep/);
+  assert.match(homePage, /@keyframes oxygen-flow-sweep/);
+  assert.doesNotMatch(homePage, /wellness-airflow-svg|wellness-airflow\.svg/);
+});
+
 function listFiles(dir: string): string[] {
   return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
     const path = `${dir}/${entry.name}`;
