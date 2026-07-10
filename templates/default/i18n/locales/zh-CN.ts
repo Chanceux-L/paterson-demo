@@ -91,7 +91,8 @@ const pageSeo = {
 
 const starter = {
   site: {
-    name: 'Paterson 百得胜'
+    name: 'Paterson 百得胜',
+    titleTemplate: '{title} - Paterson 百得胜'
   },
   common,
   languageSwitcher: {
@@ -199,7 +200,7 @@ const starter = {
     addressValue: '广东省广州市天河区',
     icp: '粤ICP备2024333088号',
     policeRecord: '粤公网安备44010602014342号',
-    legalPrefix: '百得胜|德尔未来旗下全资子公司 (股票代码：002631)',
+    legalPrefix: '百得胜 - 德尔未来旗下全资子公司 (股票代码：002631)',
     legalCopyright: 'Copyright © 百得胜衣柜 广州百得胜智能家居有限公司all rights reserved.',
     riskNotice: '欢迎有意衣柜加盟，橱柜加盟等全屋定制的有志之士加入我们，百得胜客服电话400-629-2629（投资有风险，选择需谨慎）',
     tagline: '高端家居空间、水漆科技与加盟支持，共同呈现百得胜水漆整家的品牌价值。',
@@ -445,7 +446,7 @@ const starter = {
       items: [
         {
           tag: '技术认证',
-          title: '国际领先 | 百得胜家居水漆核心科技成果获院士领衔专家组认证',
+          title: '国际领先 - 百得胜家居水漆核心科技成果获院士领衔专家组认证',
           description: '高硬度全水性涂料涂饰家居板件关键技术获得权威专家组认证。',
           image: '/paterson/news-water-paint-tech.webp'
         },
@@ -1061,7 +1062,7 @@ const starter = {
         image: '/paterson/news-waterborne-tech-certification.webp',
         intro: '百得胜“高硬度全水性涂料涂饰家居板件”及关键技术获院士领衔专家组认证，达到国际领先水平。',
         slug: 'waterborne-technology-certification',
-        title: '国际领先 | 百得胜家居水漆核心科技成果获院士领衔专家组认证，产学研深度融合引领定制家居绿色革命',
+        title: '国际领先 - 百得胜家居水漆核心科技成果获院士领衔专家组认证，产学研深度融合引领定制家居绿色革命',
         content: [
           '官网新闻显示，百得胜家居联合中国林业科学研究院木材工业研究所完成的“高硬度全水性涂料涂饰家居板件”及关键技术，获得院士领衔专家组认证。',
           '该成果围绕全水性连续化涂饰、漆膜性能和绿色制造展开，为水漆柜墙门系统提供更强的技术可信度。',

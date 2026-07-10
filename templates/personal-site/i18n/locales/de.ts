@@ -92,6 +92,7 @@ const articles = [
 export default {
   site: {
     name: 'Lin Chen',
+    titleTemplate: '{title} - Lin Chen',
     monogram: 'LC',
     role: 'Product designer / frontend developer'
   },
@@ -137,7 +138,7 @@ export default {
   },
   homePage: {
     seo: {
-      title: 'Lin Chen | Personal Site Template',
+      title: 'Personal Site Template',
       description: 'A personal website template for independent developers, designers, consultants, and creators.',
       keywords: 'personal website, portfolio, Nuxt template, personal brand'
     },
@@ -167,7 +168,7 @@ export default {
   },
   aboutPage: {
     seo: {
-      title: 'About | Lin Chen',
+      title: 'About',
       description: 'About page structure for a personal website template, including profile, principles, and timeline.',
       keywords: 'about me, personal profile, working principles'
     },
@@ -190,7 +191,7 @@ export default {
   },
   projectsPage: {
     seo: {
-      title: 'Work | Lin Chen',
+      title: 'Work',
       description: 'Portfolio page for the personal website template, with project cases and capability areas.',
       keywords: 'portfolio, project case studies, personal website'
     },
@@ -201,7 +202,7 @@ export default {
   },
   articlesPage: {
     seo: {
-      title: 'Writing | Lin Chen',
+      title: 'Writing',
       description: 'Article list and detail pages for the personal website template.',
       keywords: 'personal blog, articles, writing'
     },
@@ -211,7 +212,7 @@ export default {
   },
   contactPage: {
     seo: {
-      title: 'Contact | Lin Chen',
+      title: 'Contact',
       description: 'Contact page and collaboration entry for the personal website template.',
       keywords: 'contact, collaboration, personal website'
     },
@@ -235,7 +236,7 @@ export default {
   },
   privacyPage: {
     seo: {
-      title: 'Privacy Policy | Lin Chen',
+      title: 'Privacy Policy',
       description: 'Privacy policy placeholder for the personal website template.'
     },
     title: 'Privacy Policy',
@@ -243,7 +244,7 @@ export default {
   },
   termsPage: {
     seo: {
-      title: 'Terms of Use | Lin Chen',
+      title: 'Terms of Use',
       description: 'Terms of use placeholder for the personal website template.'
     },
     title: 'Terms of Use',

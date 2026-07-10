@@ -132,6 +132,7 @@ test('SEO, GEO, OG Image, cookie consent, inquiry, and request modules are prese
   assert.doesNotMatch(config, /LLMS_OVERVIEW_POINT_1/);
   assert.match(config, /robots:/);
   assert.match(config, /schemaOrg:/);
+  assert.match(app, /titleTemplate:\s*title => title \? t\('site\.titleTemplate', \{ title \}\) : t\('site\.name'\)/);
   assert.match(seoWrapper, /defineOgImage\(APP_OG_IMAGE_COMPONENT/);
   assert.match(seoWrapper, /fontFamily: APP_OG_IMAGE_FONT_FAMILY/);
   assert.match(ogTemplate, /<SiteAppOgImagePreview/);
@@ -146,6 +147,46 @@ test('SEO, GEO, OG Image, cookie consent, inquiry, and request modules are prese
   assert.match(source(templatePath('app/pages/contact.vue')), /<ContactInquiryForm \/>/);
   assert.match(source(sharedPath('app/composables/useRequest.ts')), /createAlova/);
   assert.match(source(sharedPath('app/composables/usePublicApiBundles.ts')), /useDataCategory/);
+});
+
+test('Paterson SEO title template is localized for every default locale', () => {
+  const localeFiles = readdirSync(templatePath('i18n/locales')).filter(file => file.endsWith('.ts'));
+
+  for (const file of localeFiles) {
+    const locale = source(templatePath(`i18n/locales/${file}`));
+
+    assert.match(locale, /site:\s*\{\s*name: '[^']+',\s*titleTemplate: '[^']+'/s, `${file} should provide a localized site title template`);
+    assert.doesNotMatch(locale, /title(?:Template)?: '[^']*\|[^']*'/, `${file} SEO titles should not use vue-i18n plural separators`);
+  }
+});
+
+test('i18n locale strings avoid vue-i18n pipe separators', () => {
+  const templateNames = ['default', 'personal-site'];
+
+  for (const templateName of templateNames) {
+    const localeRoot = resolve(repoRoot, `templates/${templateName}/i18n/locales`);
+    const localeFiles = readdirSync(localeRoot).filter(file => file.endsWith('.ts'));
+
+    for (const file of localeFiles) {
+      const locale = source(resolve(localeRoot, file));
+
+      assert.doesNotMatch(locale, /\|/, `${templateName}/${file} should avoid unescaped pipe characters in translated strings`);
+    }
+  }
+});
+
+test('personal-site SEO title template is localized for every locale', () => {
+  const app = source(repoPath('templates/personal-site/app/app.vue'));
+  const localeRoot = repoPath('templates/personal-site/i18n/locales');
+  const localeFiles = readdirSync(localeRoot).filter(file => file.endsWith('.ts'));
+
+  assert.match(app, /titleTemplate:\s*title => title \? t\('site\.titleTemplate', \{ title \}\) : t\('site\.name'\)/);
+
+  for (const file of localeFiles) {
+    const locale = source(resolve(localeRoot, file));
+
+    assert.match(locale, /site:\s*\{\s*name: '[^']+',\s*titleTemplate: '[^']+'/s, `${file} should provide a localized site title template`);
+  }
 });
 
 test('site components are reused and starter components fill only page-section gaps', () => {

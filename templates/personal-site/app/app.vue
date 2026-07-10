@@ -6,6 +6,7 @@ const localeHead = useLocaleHead({ lang: false, dir: false, seo: true });
 
 useHead({
   title: () => t('site.name'),
+  titleTemplate: title => title ? t('site.titleTemplate', { title }) : t('site.name'),
   htmlAttrs: {
     lang: () => locale.value,
     dir: () => getSiteLanguageDirection(locale.value)

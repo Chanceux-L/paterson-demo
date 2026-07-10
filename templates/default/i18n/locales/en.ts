@@ -32,26 +32,26 @@ const navItems = [
 const pageSeo = {
   home: {
     seo: {
-      title: 'Paterson Waterborne Whole-Home Custom Franchise | Eco Cabinet Wall Door Systems',
-      description: 'Founded in 2001, Paterson is a core brand under Der Future, focused on waterborne cabinet-wall-door systems and eco whole-home customization with product, supply chain, design, marketing, and digital operation support for franchise partners.',
+      title: 'Paterson Eco Whole-Home Franchise',
+      description: 'Founded in 2001, Paterson focuses on waterborne cabinet-wall-door systems and eco whole-home customization, with full support for franchise partners.',
       keywords: 'waterborne whole-home customization,eco whole-home customization,whole-home custom franchise,home furnishing franchise,cabinet wall door system,Paterson,Der Future,stock code 002631'
     }
   },
   about: {
     seo: {
-      title: 'Brand Strength | Paterson Waterborne Whole-Home Customization',
-      description: 'Learn about Paterson brand history, Der Future listed-company backing, waterborne technology, and franchise support for whole-home customization.',
+      title: 'Brand Strength',
+      description: 'Learn about Paterson history, Der Future backing, waterborne technology, and whole-home franchise support.',
       keywords: 'Paterson brand strength,Der Future,waterborne whole-home customization,home furnishing franchise'
     }
   },
   articles: {
     seo: {
-      title: 'News | Paterson Brand Updates and Industry Insights',
-      description: 'Read Paterson updates on waterborne technology, industry standards, exhibitions, brand honors, and whole-home customization.',
+      title: 'News',
+      description: 'Read Paterson updates on waterborne technology, exhibitions, brand honors, and whole-home customization.',
       keywords: 'Paterson news,waterborne technology,home furnishing exhibition,whole-home customization news'
     },
     detailSeo: {
-      title: '{title} | Paterson News',
+      title: '{title} - Paterson News',
       description: 'Read Paterson news update: {title}',
       keywords: '{title},Paterson news,waterborne whole-home customization'
     }
@@ -91,7 +91,8 @@ const pageSeo = {
 
 const starter = {
   site: {
-    name: 'Paterson'
+    name: 'Paterson',
+    titleTemplate: '{title} - Paterson'
   },
   common,
   languageSwitcher: {
@@ -199,7 +200,7 @@ const starter = {
     addressValue: 'Tianhe District, Guangzhou, Guangdong, China',
     icp: '粤ICP备2024333088号',
     policeRecord: '粤公网安备44010602014342号',
-    legalPrefix: 'Paterson | A wholly owned subsidiary of Der Future (Stock code: 002631)',
+    legalPrefix: 'Paterson - A wholly owned subsidiary of Der Future (Stock code: 002631)',
     legalCopyright: 'Copyright © Paterson Wardrobe Guangzhou Paterson Intelligent Home Co., Ltd. all rights reserved.',
     riskNotice: 'For wardrobe, cabinet, and whole-home customization franchise inquiries, call Paterson at 400-629-2629. Investment involves risk; please choose carefully.',
     tagline: 'Refined living spaces, waterborne technology, and franchise support present the value of Paterson whole-home customization.',
@@ -600,8 +601,8 @@ const starter = {
   },
   philosophyPage: {
     seo: {
-      title: 'Waterborne Technology | Paterson Cabinet-Wall-Door Systems',
-      description: 'Learn about Paterson waterborne chain, 3D intelligent coating line, factory 4.0 waterborne upgrade, and eco whole-home customization technology.',
+      title: 'Waterborne Technology',
+      description: 'Learn about Paterson waterborne materials, intelligent coating, factory upgrades, and eco whole-home customization technology.',
       keywords: 'waterborne technology,cabinet wall door system,intelligent coating,eco whole-home customization'
     },
     hero: {
@@ -678,8 +679,8 @@ const starter = {
   },
   dataPage: {
     seo: {
-      title: 'Product Systems | Paterson Waterborne Cabinet-Wall-Door Systems',
-      description: 'Explore Paterson waterborne wardrobes, entry, living, dining, bedroom, balcony, pet, and gaming space systems for eco whole-home customization and spatial value.',
+      title: 'Product Systems',
+      description: 'Explore Paterson wardrobes, cabinets, furniture, and whole-home systems built around waterborne materials and healthy living.',
       keywords: 'Paterson product systems,waterborne wardrobe,cabinet wall door system,eco whole-home customization,whole-home franchise,Tiya series,Guangyin series,Yuanye series'
     },
     hero: {
@@ -1087,8 +1088,8 @@ const starter = {
   },
   contactPage: {
     seo: {
-      title: 'Franchise | Paterson Waterborne Whole-Home Customization Inquiry',
-      description: 'Explore Paterson franchise advantages, headquarters support, cooperation process, and policy for waterborne whole-home customization. Submit your target city and contact details to receive franchise information.',
+      title: 'Franchise Inquiry',
+      description: 'Explore Paterson franchise support, product systems, cooperation process, and policy. Submit your city and contact details to receive information.',
       keywords: 'Paterson franchise,whole-home customization franchise,waterborne customization franchise,franchise inquiry'
     },
     title: 'Franchise',

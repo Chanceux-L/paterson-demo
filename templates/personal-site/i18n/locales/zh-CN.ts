@@ -92,6 +92,7 @@ const articles = [
 export default {
   site: {
     name: '林澈',
+    titleTemplate: '{title} - 林澈',
     monogram: '林',
     role: '产品设计师 / 前端开发者'
   },
@@ -137,7 +138,7 @@ export default {
   },
   homePage: {
     seo: {
-      title: '林澈 | 个人网站模板',
+      title: '个人网站模板',
       description: '适合独立开发者、设计师、顾问和创作者的个人网站模板。',
       keywords: '个人网站,作品集,Nuxt模板,个人品牌'
     },
@@ -167,7 +168,7 @@ export default {
   },
   aboutPage: {
     seo: {
-      title: '关于 | 林澈',
+      title: '关于',
       description: '了解个人网站模板中的关于页结构、经历展示和工作原则。',
       keywords: '关于我,个人简介,工作原则'
     },
@@ -190,7 +191,7 @@ export default {
   },
   projectsPage: {
     seo: {
-      title: '作品 | 林澈',
+      title: '作品',
       description: '个人网站模板中的作品集页面，展示项目案例和能力范围。',
       keywords: '作品集,项目案例,个人网站'
     },
@@ -201,7 +202,7 @@ export default {
   },
   articlesPage: {
     seo: {
-      title: '文章 | 林澈',
+      title: '文章',
       description: '个人网站模板中的文章列表和文章详情页。',
       keywords: '个人博客,文章,写作'
     },
@@ -211,7 +212,7 @@ export default {
   },
   contactPage: {
     seo: {
-      title: '联系 | 林澈',
+      title: '联系',
       description: '个人网站模板中的联系页和合作入口。',
       keywords: '联系,合作,个人网站'
     },
@@ -235,7 +236,7 @@ export default {
   },
   privacyPage: {
     seo: {
-      title: '隐私政策 | 林澈',
+      title: '隐私政策',
       description: '个人网站模板隐私政策占位页。'
     },
     title: '隐私政策',
@@ -243,7 +244,7 @@ export default {
   },
   termsPage: {
     seo: {
-      title: '使用条款 | 林澈',
+      title: '使用条款',
       description: '个人网站模板使用条款占位页。'
     },
     title: '使用条款',
