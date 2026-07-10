@@ -252,20 +252,20 @@ useAppSeoMeta({
           </p>
         </div>
 
-        <div class="mt-10 grid gap-6 lg:grid-cols-3">
-          <article v-for="item in experienceCards" :key="item.title" class="group bg-white">
+        <div class="mt-10 grid items-stretch gap-6 lg:grid-cols-3">
+          <article v-for="item in experienceCards" :key="item.title" class="group flex h-full flex-col bg-white">
             <div class="relative overflow-hidden bg-[#171512]">
               <img class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105" :src="item.image" :alt="item.title" />
               <div class="absolute inset-0 bg-linear-to-t from-[#171512]/72 via-transparent to-transparent"></div>
             </div>
-            <div class="border-x border-b border-[#E5DED2] px-5 py-5">
+            <div class="flex flex-1 flex-col border-x border-b border-[#E5DED2] px-5 py-5">
               <h3 class="text-xl font-semibold leading-tight">
                 {{ item.title }}
               </h3>
-              <p class="mt-4 text-sm leading-7 text-[#6F6A61]">
+              <p class="mt-4 text-sm leading-7 text-[#6F6A61] lg:min-h-24">
                 {{ item.description }}
               </p>
-              <div class="mt-5 flex flex-wrap gap-2">
+              <div class="mt-auto flex flex-wrap gap-2 pt-5">
                 <span v-for="tag in item.tags" :key="tag" class="bg-[#F4F1EA] px-3 py-1 text-xs font-semibold text-[#7A5438]">
                   {{ tag }}
                 </span>
